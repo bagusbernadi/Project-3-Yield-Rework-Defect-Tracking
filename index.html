@@ -1,0 +1,428 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<a href="https://bagusbernadi.github.io/" style="display:inline-block;margin:12px 16px;font:600 14px/1.4 'Source Sans 3',Arial,sans-serif;color:#1A73E8;text-decoration:none">← All projects / Semua project</a>
+<title>Project 3: Yield, Rework &amp; Defect Tracking</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Rancangan project portofolio Data Analyst: sistem pelacakan yield, rework, dan defect perakitan smartphone dengan SQL dan dashboard.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: tema terang ala Google (single theme, sengaja): latar putih keabuan, kartu putih;
+   biru = struktur, kuning = penanda utama, hijau = info pendukung, merah = aksen.
+   Skala huruf: H1 32 · H2 25 · H3 19 · body 16.5 · keterangan 14 · label 12.5 */
+:root{color-scheme:light;
+--bg:#F8F9FA;--card:#FFFFFF;--sub:#F1F3F4;--line:#DADCE0;
+--ink:#202124;--head:#174EA6;--mut:#5F6368;
+--navy:#1A73E8;--navy-ink:#FFFFFF;--teal:#188038;--amber:#FBBC04;--amber-ink:#3C2A00;--bar:#1A73E8;--soft:#E8F0FE;
+--gb:#4285F4;--gr:#EA4335;--gy:#FBBC04;--gg:#34A853;
+--navyH:#1A73E8;--amberH:#B06000;--tealH:#188038;--plumH:#9334E6;--roseH:#D93025;--skyH:#1967D2;--onph:#fff;
+--f:"Source Sans 3",Calibri,Carlito,"Segoe UI",Arial,sans-serif;
+--h1:clamp(26px,2.6vw,32px);--h2:clamp(21px,2vw,25px);--h3:19px;--body:16.5px;--small:14px;--label:12.5px}
+[hidden]{display:none!important}
+*{box-sizing:border-box}html{scroll-padding-top:64px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--body)/1.6 var(--f)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+main{max-width:880px;margin:0 auto;padding-block:16px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+b,strong{font-weight:700}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);padding:8px 0;display:flex;gap:6px;overflow-x:auto}
+nav a{flex:none;background:var(--card);border:1px solid var(--line);color:var(--ink);text-decoration:none;border-radius:999px;padding:6px 14px;font-size:var(--small);font-weight:600}
+nav a:hover,nav a:focus-visible{background:var(--amber);border-color:var(--amber);color:var(--amber-ink);outline:none}
+.banner{background:var(--navy);color:var(--navy-ink);border-radius:18px;padding:22px 26px}
+.banner h1{margin:0 0 8px;font-size:var(--h1);font-weight:800;line-height:1.2;text-wrap:balance;letter-spacing:-.01em}.banner p{margin:0;font-size:18px;line-height:1.55;opacity:.97}.banner .goal b{font-weight:800}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.tags{align-items:center}.tlab{font-size:var(--small);font-weight:700;margin-right:4px;opacity:.95}
+.tag{border-radius:999px;padding:3px 12px;font-size:var(--label);font-weight:700;background:rgba(255,255,255,.2);letter-spacing:.02em}.tag.a{background:var(--amber);color:var(--amber-ink)}
+.card{border-radius:16px;padding:16px 20px;background:var(--card);border:1px solid var(--line);margin:12px 0}
+.card p{margin:8px 0}
+h2{font-size:var(--h2);font-weight:800;color:var(--head);margin:48px 0 10px;padding-bottom:8px;border-bottom:2px solid var(--line);line-height:1.25;text-wrap:balance}
+h2 small{display:block;font-size:var(--small);font-weight:400;color:var(--mut);margin-top:4px}
+h3{font-size:var(--h3);font-weight:700;color:var(--head);margin:16px 0 6px;line-height:1.3}
+.card h3:first-child,.card>div>h3:first-child{margin-top:4px}
+.add{display:inline-block;vertical-align:middle;margin-left:8px;border-radius:999px;padding:2px 10px;font-size:var(--label);font-weight:700;background:var(--teal);color:#fff}
+.how{background:var(--soft);border-radius:12px;padding:12px 16px;margin:10px 0;font-size:var(--small);line-height:1.55;color:var(--ink)}.how::before{content:"Cara membaca ";font-weight:700;color:var(--teal)}
+.callout{border-radius:14px;padding:14px 20px;margin:12px 0;font-size:16px}.callout h4{margin:0 0 6px;font-size:var(--h3);font-weight:700}.callout p{margin:6px 0}
+.callout.a{background:var(--amber);color:var(--amber-ink)}.callout.g{background:var(--teal);color:#fff}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}.kpis .card{margin:0}
+.kpi .v{font-size:30px;font-weight:800;display:block;line-height:1.15;color:var(--head);font-variant-numeric:tabular-nums}.kpi .l{display:block;font-weight:700;font-size:16px;margin-top:2px}.kpi .d{display:block;font-size:var(--small);line-height:1.4;margin-top:6px;color:var(--mut)}
+.kpi.t{background:var(--teal);border-color:var(--teal);color:#fff}.kpi.am{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}
+.kpi.t .v,.kpi.t .d,.kpi.am .v,.kpi.am .d{color:inherit}
+table{border-collapse:collapse;width:100%;font-size:15px;background:var(--card);border-radius:12px;overflow:hidden}
+th{background:var(--navy);color:var(--navy-ink);padding:9px 12px;text-align:left;vertical-align:top;font-weight:700}
+td{padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(odd) td{background:var(--sub)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:10px 0}
+.q{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:6px 0;display:grid;grid-template-columns:40px 1fr;gap:4px 8px;font-size:16px;line-height:1.45}
+.q .id{font-weight:800;color:var(--head)}.q .m{grid-column:2;font-size:var(--small);color:var(--mut)}
+.pri{display:inline-block;border-radius:999px;padding:1px 9px;font-size:var(--label);font-weight:700;margin-left:6px;background:var(--sub);border:1px solid var(--line);color:var(--mut)}.pri.M{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}.pri.S{background:var(--navy);border-color:var(--navy);color:#fff}
+.theme{font-size:var(--label);font-weight:700;color:var(--teal);margin:20px 0 4px;text-transform:uppercase;letter-spacing:.08em}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:8px 0}
+.flow span{border-radius:999px;padding:5px 12px;font-size:var(--small);font-weight:700;background:var(--sub);border:1px solid var(--line)}
+.flow span.ng{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}.flow span.ok{background:var(--teal);border-color:var(--teal);color:#fff}.flow i{font-style:normal;color:var(--mut);font-size:var(--small)}
+.row{display:flex;align-items:center;gap:8px;margin:6px 0;width:100%;font:inherit;font-size:var(--small);color:var(--ink);background:none;border:0;padding:0;cursor:pointer;text-align:left}
+.row .n{width:96px;flex:none;font-weight:600}.row .tr{flex:1;background:var(--sub);border-radius:8px;height:24px;position:relative;overflow:hidden}
+.row .b{position:absolute;left:0;top:0;bottom:0;border-radius:8px;background:var(--bar);transition:width .25s}
+.row.sel .b{background:var(--amber)}.row.sel .n{color:var(--head);font-weight:800}
+.row .c{width:58px;text-align:right;flex:none;font-variant-numeric:tabular-nums;font-weight:600}
+.row:focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:8px}
+.ctl{display:flex;align-items:center;gap:12px;margin:14px 0 10px;font-weight:700;font-size:15px}.ctl input{flex:1;accent-color:#F2A541}.ctl output{min-width:48px;text-align:right}
+.res{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}.res div{background:var(--sub);border-radius:12px;padding:10px 14px;font-size:var(--small);color:var(--mut)}.res b{display:block;font-size:24px;font-weight:800;color:var(--head);font-variant-numeric:tabular-nums}
+.steps{counter-reset:s;display:grid;gap:8px;margin:10px 0;padding:0;list-style:none}
+.steps li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px 12px 54px;position:relative}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:14px;top:12px;width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;display:grid;place-items:center;font-size:14px}
+.steps li.L::before{background:var(--amber);color:var(--amber-ink)}
+.steps b.t{display:block;font-size:17px;color:var(--head);line-height:1.3}.steps p{margin:6px 0;font-size:15px;line-height:1.5}.steps .meta{font-size:13px;color:var(--mut)}
+.phase{font-size:var(--label);font-weight:700;color:var(--teal);margin:18px 0 0;text-transform:uppercase;letter-spacing:.08em}
+.tools{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:12px 0}.tools .card{margin:0}
+.tools b{display:block;font-size:var(--h3);color:var(--head)}.tools .r{font-size:15px;margin:6px 0 0}.tools .alt{font-size:var(--small);color:var(--mut);margin:8px 0 0;padding-top:8px;border-top:1px dashed var(--line)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:8px 0}summary{cursor:pointer;font-weight:700;font-size:17px;color:var(--head)}details p{font-size:15.5px}
+.pill{border-radius:999px;padding:1px 9px;font-size:var(--label);font-weight:700;background:var(--teal);color:#fff;margin-left:4px}.pill.d{background:var(--sub);border:1px solid var(--line);color:var(--mut)}
+.chip{display:inline-block;border-radius:999px;padding:3px 11px;margin:3px 4px 3px 0;font-size:var(--small);font-weight:600;background:var(--sub);border:1px solid var(--line)}
+.tm{border-bottom:2px dotted var(--amber);background:rgba(242,165,65,.16);border-radius:4px;padding:0 2px;cursor:help}
+#tip{position:fixed;display:none;max-width:320px;white-space:pre-line;background:#202124;color:#fff;padding:10px 12px;border-radius:12px;font-size:var(--small);line-height:1.4;z-index:20;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+ul.tight{margin:6px 0;padding-left:20px}ul.tight li{margin:5px 0}
+.intro>.layout{grid-column:1/-1}
+.layout{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}.layout .lead{margin:4px 0 10px;max-width:90ch}
+.figw{overflow-x:auto;margin:8px 0}.figw svg{display:block;width:100%;min-width:860px;height:auto;font-family:var(--f)}
+.figw .lane{fill:var(--sub)}.figw .box{fill:var(--card);stroke:var(--line);stroke-width:1.5}.figw .box.hi{stroke:var(--bar);stroke-width:2.5}
+.figw text{fill:var(--ink)}.figw .ln{font-size:15px;font-weight:700;fill:var(--head)}.figw .gl{font-size:13px;font-weight:700;fill:var(--teal);letter-spacing:.03em}
+.figw .bt{font-size:13px}.figw .b{font-size:15px;font-weight:700}.figw .st{font-size:13px;fill:var(--mut)}
+.figw .grp{stroke:var(--teal);stroke-width:2}.figw .ar{stroke:var(--bar);stroke-width:2}.figw .ah{fill:var(--bar)}
+.figw .ng,.figw .ngs{stroke:var(--amber);stroke-width:2;stroke-dasharray:5 4}.figw .aha{fill:var(--amber)}.figw .nl{font-size:14px;font-weight:700;fill:var(--amberH)}
+.figw .dt{stroke:var(--mut);stroke-width:2;stroke-dasharray:2 4}
+.figw .okb{fill:var(--teal)}.figw .scb{fill:var(--amber)}.figw .wt{fill:#fff;font-size:14px;font-weight:700}.figw .at{fill:var(--amber-ink);font-size:14px;font-weight:700}
+.figw .mk{fill:var(--amber)}.figw .mt{fill:var(--amber-ink);font-size:14px;font-weight:800}
+.legend{counter-reset:l;list-style:none;padding:0;margin:10px 0 0;display:grid;gap:10px}
+.legend li{counter-increment:l;position:relative;padding-left:38px;font-size:15.5px;line-height:1.55}
+.legend li::before{content:counter(l);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--amber);color:var(--amber-ink);font-weight:800;font-size:14px;display:grid;place-items:center}
+@media (min-width:1000px){.legend{grid-template-columns:repeat(4,1fr);gap:16px}}
+.kpi{--h:var(--navyH);background:color-mix(in srgb,var(--h) 11%,var(--card));border-color:color-mix(in srgb,var(--h) 35%,var(--card))}
+.kpi .v{color:var(--h)}.kpi .l{color:var(--ink)}.kpi .d{color:var(--mut)}
+.q[data-p="M"]{background:color-mix(in srgb,var(--amber) 13%,var(--card));border-color:color-mix(in srgb,var(--amber) 60%,var(--card))}
+.q[data-p="S"]{background:color-mix(in srgb,var(--skyH) 9%,var(--card));border-color:color-mix(in srgb,var(--skyH) 35%,var(--card))}
+.q[data-p="N"]{border-style:dashed}
+.q[data-p="M"] .id{color:var(--amberH)}.q[data-p="S"] .id{color:var(--skyH)}.q[data-p="N"] .id{color:var(--mut)}
+.pri.S{background:var(--skyH);border-color:var(--skyH);color:var(--onph)}
+.fbar{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:12px 0 4px}.fbar span{font-size:var(--small);font-weight:700;color:var(--mut);margin-right:2px}
+.fb{font:inherit;font-size:var(--small);font-weight:700;cursor:pointer;border-radius:999px;padding:6px 14px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.fb i{font-style:normal;opacity:.7;margin-left:4px}.fb:hover{border-color:var(--bar)}.fb:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.fb.on{background:var(--navy);border-color:var(--navy);color:#fff}.fb.on[data-f="M"]{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}.fb.on[data-f="S"]{background:var(--skyH);border-color:var(--skyH);color:var(--onph)}
+.defs p{margin:0 0 12px}.defs p:last-child{margin:0}
+.fx{display:inline-block;margin:2px 0;padding:1px 9px;border-radius:8px;background:color-mix(in srgb,var(--tealH) 12%,var(--card));border:1px solid color-mix(in srgb,var(--tealH) 40%,var(--card));color:var(--tealH);font-weight:700;font-size:15px;white-space:normal}
+.figw.fl svg{min-width:520px;max-width:1000px;margin:0 auto}.flowfull .card{padding:20px 24px}.flowfull .card>p{text-align:center;margin:12px 0 0}.figw .dia{fill:var(--sub);stroke:var(--bar);stroke-width:2}.figw .b2{font-size:14px;font-weight:700}
+.figw .arT{fill:none;stroke:var(--teal);stroke-width:2}.figw .aht{fill:var(--teal)}.figw .arA{fill:none;stroke:var(--amber);stroke-width:2}.figw .aha2{fill:var(--amber)}
+.figw .lt{font-size:13px;font-weight:700;fill:var(--tealH)}.figw .la{font-size:13px;font-weight:700;fill:var(--amberH)}
+.ph .phase{color:var(--ph);font-size:13.5px}
+.ph .steps li{background:color-mix(in srgb,var(--ph) 8%,var(--card));border-color:color-mix(in srgb,var(--ph) 32%,var(--card))}
+.ph .steps li::before,.ph .steps li.L::before{background:var(--ph);color:var(--onph)}
+.ph .steps b.t{color:var(--ink)}
+.steps li.L::after{content:"beban besar";position:absolute;right:12px;top:12px;font-size:11.5px;font-weight:700;letter-spacing:.03em;padding:1px 8px;border-radius:999px;border:1px solid var(--ph,var(--amber));color:var(--ph,var(--amber))}
+.steps li.L b.t{padding-right:84px}
+.banner{background:linear-gradient(120deg,#1A73E8,#4285F4)}
+h2{border-bottom:3px solid transparent;border-image:linear-gradient(90deg,var(--gb) 0 60px,var(--line) 60px) 1}
+nav a:nth-child(4n+1):hover{background:var(--gb);border-color:var(--gb);color:#fff}nav a:nth-child(4n+2):hover{background:var(--gr);border-color:var(--gr);color:#fff}nav a:nth-child(4n+4):hover{background:var(--gg);border-color:var(--gg);color:#fff}
+.callout.g{background:#E6F4EA;color:#0D652D;border:1px solid #A8DAB5}.callout.g h4{color:#137333}
+.callout.a{background:#FEF7E0;color:#3C2A00;border:1px solid #FDD663}
+.outs{display:grid;gap:12px;margin:12px 0}.outs .card{margin:0}
+.out{--h:var(--navyH);border-top:4px solid var(--h)}
+.out .oh{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}.out .oh b{font-size:var(--h3);color:var(--h);line-height:1.3}
+.ob{flex:none;border-radius:999px;padding:1px 9px;font-size:var(--label);font-weight:700;background:var(--amber);color:var(--amber-ink)}.ob.opt{background:var(--sub);border:1px solid var(--line);color:var(--mut)}
+.out ul{margin:8px 0 0;padding-left:18px;font-size:15px;line-height:1.5}.out li{margin:4px 0}
+.out li:nth-last-child(-n+2){color:var(--mut);font-size:14px}
+@media (min-width:700px){.outs{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1280px){.outs{grid-template-columns:repeat(4,1fr)}}
+.tag.c1{background:#188038;color:#fff}.tag.c2{background:#9334E6;color:#fff}.tag.c3{background:#D93025;color:#fff}.tag.c4{background:#fff;color:#1A73E8}
+.sample td:first-child{white-space:nowrap}.src{border-top:1px dashed var(--line);padding-top:8px;font-size:15px}.src code{font-size:13.5px;background:var(--soft);padding:1px 6px;border-radius:6px}.note{font-size:13px;color:var(--mut);margin:6px 0 0}
+.wf{display:grid;gap:4px}
+.wl{--c:var(--navyH);position:relative;background:color-mix(in srgb,var(--c) 8%,var(--card));border:1px solid color-mix(in srgb,var(--c) 30%,var(--card));border-radius:14px;padding:10px 12px 12px}
+.wl h4{margin:0 0 10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--c)}
+.ws{display:grid;gap:22px}
+.wb{position:relative;background:var(--card);border:2px solid var(--c);border-radius:12px;padding:10px 12px 10px 52px;min-height:62px}
+.wb .n{position:absolute;left:12px;top:12px;width:30px;height:30px;border-radius:50%;background:var(--c);color:var(--onph);font-weight:800;font-size:14px;display:grid;place-items:center}
+.wb b{display:block;font-size:15px;line-height:1.3}.wb .s{display:block;font-size:13px;color:var(--mut);margin-top:2px}
+.wb.L::before{content:"beban besar";position:absolute;top:-10px;right:10px;background:var(--amber);color:var(--amber-ink);font-size:11px;font-weight:700;padding:0 8px;border-radius:999px;line-height:18px}
+.wb:not(:last-child)::after{content:"↓";position:absolute;left:50%;bottom:-21px;transform:translateX(-50%);color:var(--c);font-weight:800;font-size:16px;line-height:1}
+.wa{text-align:center;font-weight:800;font-size:20px;color:var(--mut);line-height:1.2}
+.wrow,.wrow1{display:grid;gap:4px}
+.wrow>.wl:first-child{margin-bottom:24px}.wrow>.wl:first-child::after{content:"↓";position:absolute;left:50%;bottom:-24px;transform:translateX(-50%);font-weight:800;font-size:20px;color:var(--mut)}
+@media (min-width:1200px){
+.wrow{grid-template-columns:2fr 3fr;gap:30px}.wrow>.wl:first-child{margin-bottom:0}.wrow>.wl:first-child::after{content:"→";left:auto;right:-24px;bottom:auto;top:50%;transform:translateY(-50%)}
+.wrow1{grid-template-columns:2fr 3fr}
+.ws{grid-template-columns:repeat(var(--k),1fr);gap:26px}
+.wb:not(:last-child)::after{content:"→";left:auto;right:-25px;bottom:auto;top:50%;transform:translateY(-50%)}
+.wl{padding-left:8px;padding-right:8px}.ws{gap:34px}
+.wrow,.wrow1{gap:16px}.wrow>.wl:first-child::after{right:-14px;font-size:16px}
+}
+.docs code{font-size:13.5px;background:var(--soft);padding:1px 6px;border-radius:6px;white-space:nowrap}.docs td:nth-child(3){white-space:nowrap}
+/* layar lebar: nav jadi sidebar, konten dibagi kolom */
+.two{display:grid;gap:0 24px;align-items:start}.two>*{min-width:0}
+.qgrid{display:grid;gap:0 12px}.qgrid>*{min-width:0}
+@media (min-width:1000px){
+main{max-width:1480px}
+.two,.qgrid{grid-template-columns:1fr 1fr}.qgrid .theme{grid-column:1/-1}
+.kpis{grid-template-columns:repeat(6,1fr)}.tools{grid-template-columns:repeat(3,1fr)}
+.intro{display:grid;grid-template-columns:1fr 1fr;column-gap:28px;align-items:start}.intro h3{grid-column:1/-1}.intro>p{grid-column:1}.intro>.scroll{grid-column:2;grid-row:2/span 3;margin-top:8px}
+.phases{display:grid;grid-template-columns:repeat(2,1fr);gap:0 24px}.phases>*{min-width:0}
+}
+@media (min-width:1280px){
+main{display:grid;grid-template-columns:190px minmax(0,1fr);column-gap:32px}
+main>*{grid-column:2}
+main>nav{grid-column:1;grid-row:1/span 60;align-self:start;flex-direction:column;padding-top:16px}
+main>nav a{border-radius:10px;font-size:15px;padding:8px 14px}
+.phases{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:620px){.kpis,.res{grid-template-columns:1fr 1fr}.tools{grid-template-columns:1fr}.row .n{width:78px}.banner{padding:18px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.row .b{transition:none}}
+</style>
+
+<main>
+<nav aria-label="Section navigation"><a href="#s1">Background</a><a href="#s2">Business Questions</a><a href="#s3">NG Flow &amp; Yield</a><a href="#s4">Dataset</a><a href="#s5">Tools</a><a href="#s6">Work Plan</a><a href="#s7">Project Outputs</a><a href="#s8">Success Criteria</a><a href="#s9">Assumptions &amp; Limitations</a></nav>
+
+<header class="banner"><h1>Project 3: Yield, Rework &amp; Defect Tracking System</h1>
+<p class="goal"><b>Tujuan project:</b> membangun sistem pemantauan harian yang menunjukkan stasiun, shift, dan jenis defect yang paling menurunkan yield dan menambah beban rework, sehingga perbaikan dapat difokuskan pada sumber masalah terbesar dan dampaknya dapat dipantau dari hari ke hari.</p>
+<div class="tags"><span class="tlab">Kategori:</span><span class="tag a">Rancangan project</span><span class="tag c1">Manufaktur smartphone</span><span class="tag c2">Data simulasi</span><span class="tag c3">SQL + dashboard</span><span class="tag c4">Tingkat: Mudah</span></div></header>
+
+<section class="card intro">
+<h3>Project Introduction</h3>
+<p>Bayangkan dapur restoran yang memasak 100 piring nasi goreng sehari. Setiap piring melewati beberapa meja: memotong bahan, menggoreng, menata, lalu diperiksa kepala koki. Piring yang tidak lolos pemeriksaan dikembalikan untuk diperbaiki. Kadang bisa diselamatkan, kadang terpaksa dibuang.</p>
+<p>Pemilik restoran ingin tahu tiga hal: meja mana yang paling sering membuat piring gagal, jenis kesalahan apa yang paling sering terjadi, dan berapa banyak waktu serta bahan yang terbuang untuk memperbaiki atau membuang piring gagal.</p>
+<div class="scroll"><table><tr><th>Di dapur restoran</th><th>Di pabrik smartphone</th></tr>
+<tr><td>Meja kerja (potong, goreng, tata)</td><td>Stasiun perakitan, misalnya Solder Paste Printing, Reflow Soldering, Functional Test</td></tr>
+<tr><td>Piring yang langsung lolos pemeriksaan</td><td>Produk OK pada percobaan pertama (dasar perhitungan yield)</td></tr>
+<tr><td>Jenis kesalahan (gosong, keasinan)</td><td>Jenis defect, misalnya solder bridge di papan sirkuit atau layar retak</td></tr>
+<tr><td>Piring dikembalikan untuk diperbaiki</td><td>Rework: produk NG diperbaiki lalu diuji ulang</td></tr>
+<tr><td>Piring yang dibuang</td><td>Scrap: produk yang tidak bisa diselamatkan</td></tr>
+</table></div>
+<p>Project ini membangun <b>sistem pencatatan dan pemantauan</b>: data produksi harian dikumpulkan dalam satu database, lalu ditampilkan dalam dashboard yang langsung menjawab tiga pertanyaan di atas setiap hari. Datanya adalah data simulasi buatan sendiri karena data pabrik bersifat rahasia. Kata bergaris bawah putus-putus kuning bisa diklik untuk melihat artinya.</p>
+<div class="layout">
+<h3>Gambaran alur kerja di lini perakitan smartphone</h3>
+<p class="lead">Lini produksi bisa dibayangkan sebagai tiga jalur yang berjalan bersamaan. Dua jalur pertama sudah ada di pabrik. Jalur ketiga adalah yang dibangun di project ini.</p>
+<div class="figw"><svg viewBox="0 0 1240 432" role="img" aria-label="Alur kerja lini perakitan smartphone: jalur produksi 10 stasiun, jalur rework untuk produk NG, dan jalur data menuju database dan dashboard"><defs><marker id="mN" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="ah" d="M0 0L10 5L0 10z"/></marker><marker id="mA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="aha" d="M0 0L10 5L0 10z"/></marker></defs><rect class="lane" x="0" y="8" width="1240" height="130" rx="14"/><rect class="lane" x="0" y="150" width="1240" height="140" rx="14"/><rect class="lane" x="0" y="302" width="1240" height="128" rx="14"/><text class="ln" x="18" y="78">Jalur</text><text class="ln" x="18" y="96">produksi</text><text class="ln" x="18" y="218">Jalur</text><text class="ln" x="18" y="236">rework</text><text class="ln" x="18" y="362">Jalur</text><text class="ln" x="18" y="380">data</text><line class="grp" x1="150" x2="632" y1="40" y2="40"/><text class="gl" x="391.0" y="32" text-anchor="middle">Awal: merakit papan sirkuit (PCB)</text><line class="grp" x1="640" x2="828" y1="40" y2="40"/><text class="gl" x="734.0" y="32" text-anchor="middle">Tengah: merakit unit</text><line class="grp" x1="836" x2="1122" y1="40" y2="40"/><text class="gl" x="979.0" y="32" text-anchor="middle">Akhir: menguji &amp; mengemas</text><rect class="box" x="150" y="52" width="90" height="60" rx="10"/><text class="bt" x="195" y="78" text-anchor="middle">Solder Paste</text><text class="bt" x="195" y="95" text-anchor="middle">Printing</text><line class="ar" x1="240" x2="246" y1="82" y2="82" marker-end="url(#mN)"/><line class="ng" x1="195" x2="195" y1="112" y2="178"/><rect class="box" x="248" y="52" width="90" height="60" rx="10"/><text class="bt" x="293" y="78" text-anchor="middle">Component</text><text class="bt" x="293" y="95" text-anchor="middle">Placement</text><line class="ar" x1="338" x2="344" y1="82" y2="82" marker-end="url(#mN)"/><line class="ng" x1="293" x2="293" y1="112" y2="178"/><rect class="box" x="346" y="52" width="90" height="60" rx="10"/><text class="bt" x="391" y="78" text-anchor="middle">Reflow</text><text class="bt" x="391" y="95" text-anchor="middle">Soldering</text><line class="ar" x1="436" x2="442" y1="82" y2="82" marker-end="url(#mN)"/><line class="ng" x1="391" x2="391" y1="112" y2="178"/><rect class="box" x="444" y="52" width="90" height="60" rx="10"/><text class="bt" x="489" y="78" text-anchor="middle">AOI</text><text class="bt" x="489" y="95" text-anchor="middle">Inspection</text><line class="ar" x1="534" x2="540" y1="82" y2="82" marker-end="url(#mN)"/><line class="ng" x1="489" x2="489" y1="112" y2="178"/><rect class="box" x="542" y="52" width="90" height="60" rx="10"/><text class="bt" x="587" y="78" text-anchor="middle">Board Test</text><text class="bt" x="587" y="95" text-anchor="middle">(ICT)</text><line class="ar" x1="632" x2="638" y1="82" y2="82" marker-end="url(#mN)"/><line class="ng" x1="587" x2="587" y1="112" y2="178"/><rect class="box" x="640" y="52" width="90" height="60" rx="10"/><text class="bt" x="685" y="78" text-anchor="middle">Screen</text><text class="bt" x="685" y="95" text-anchor="middle">Assembly</text><line class="ar" x1="730" x2="736" y1="82" y2="82" marker-end="url(#mN)"/><line class="ng" x1="685" x2="685" y1="112" y2="178"/><rect class="box" x="738" y="52" width="90" height="60" rx="10"/><text class="bt" x="783" y="78" text-anchor="middle">Housing</text><text class="bt" x="783" y="95" text-anchor="middle">Assembly</text><line class="ar" x1="828" x2="834" y1="82" y2="82" marker-end="url(#mN)"/><line class="ng" x1="783" x2="783" y1="112" y2="178"/><rect class="box" x="836" y="52" width="90" height="60" rx="10"/><text class="bt" x="881" y="78" text-anchor="middle">Final</text><text class="bt" x="881" y="95" text-anchor="middle">Inspection</text><line class="ar" x1="926" x2="932" y1="82" y2="82" marker-end="url(#mN)"/><line class="ng" x1="881" x2="881" y1="112" y2="178"/><rect class="box" x="934" y="52" width="90" height="60" rx="10"/><text class="bt" x="979" y="78" text-anchor="middle">Functional</text><text class="bt" x="979" y="95" text-anchor="middle">Test</text><line class="ar" x1="1024" x2="1030" y1="82" y2="82" marker-end="url(#mN)"/><line class="ng" x1="979" x2="979" y1="112" y2="178"/><rect class="box" x="1032" y="52" width="90" height="60" rx="10"/><text class="bt" x="1077" y="87" text-anchor="middle">Packaging</text><line class="ng" x1="1077" x2="1077" y1="112" y2="178"/><line class="ar" x1="1122" x2="1160" y1="82" y2="82" marker-end="url(#mN)"/><text class="bt" x="1166" y="87">Gudang</text><line class="ng" x1="195" x2="1077" y1="178" y2="178"/><text class="nl" x="1090" y="183">NG</text><line class="ngs" x1="420" x2="420" y1="178" y2="198" marker-end="url(#mA)"/><rect class="box" x="350" y="202" width="140" height="52" rx="10"/><text class="bt b" x="420" y="233" text-anchor="middle">Rework</text><line class="ar" x1="490" x2="546" y1="228" y2="228" marker-end="url(#mN)"/><rect class="box" x="550" y="202" width="120" height="52" rx="10"/><text class="bt b" x="610" y="233" text-anchor="middle">Re-Processed</text><line class="ar" x1="670" x2="736" y1="218" y2="211" marker-end="url(#mN)"/><line class="ar" x1="670" x2="736" y1="238" y2="257" marker-end="url(#mN)"/><rect class="okb" x="740" y="194" width="250" height="34" rx="17"/><text class="wt" x="865" y="216" text-anchor="middle">OK: Next Station</text><rect class="scb" x="740" y="240" width="250" height="34" rx="17"/><text class="at" x="865" y="262" text-anchor="middle">Scrap</text><rect class="box" x="150" y="336" width="200" height="62" rx="10"/><text class="bt b" x="250" y="362" text-anchor="middle">Catatan harian</text><text class="st" x="250" y="382" text-anchor="middle">input, OK, NG, defect</text><line class="ar" x1="350" x2="396" y1="367" y2="367" marker-end="url(#mN)"/><rect class="box hi" x="400" y="336" width="200" height="62" rx="10"/><text class="bt b" x="500" y="362" text-anchor="middle">Database</text><text class="st" x="500" y="382" text-anchor="middle">DuckDB + SQL</text><line class="ar" x1="600" x2="646" y1="367" y2="367" marker-end="url(#mN)"/><rect class="box hi" x="650" y="336" width="200" height="62" rx="10"/><text class="bt b" x="750" y="362" text-anchor="middle">Dashboard</text><text class="st" x="750" y="382" text-anchor="middle">Streamlit</text><line class="ar" x1="850" x2="896" y1="367" y2="367" marker-end="url(#mN)"/><rect class="box" x="900" y="336" width="200" height="62" rx="10"/><text class="bt b" x="1000" y="362" text-anchor="middle">Keputusan</text><text class="st" x="1000" y="382" text-anchor="middle">perbaikan yang tepat sasaran</text><line class="dt" x1="250" x2="250" y1="286" y2="332" marker-end="url(#mN)"/><text class="st" x="260" y="318" text-anchor="start">semua kejadian di jalur produksi &amp; rework dicatat</text><text class="gl" x="650" y="422" text-anchor="middle">Bagian yang dibangun di project ini</text><line class="grp" x1="400" x2="850" y1="404" y2="404"/><circle class="mk" cx="130" cy="58" r="13"/><text class="mt" x="130" y="63" text-anchor="middle">1</text><circle class="mk" cx="1124" cy="178" r="13"/><text class="mt" x="1124" y="183" text-anchor="middle">2</text><circle class="mk" cx="350" cy="202" r="13"/><text class="mt" x="350" y="207" text-anchor="middle">3</text><circle class="mk" cx="130" cy="342" r="13"/><text class="mt" x="130" y="347" text-anchor="middle">4</text></svg></div>
+<ol class="legend">
+<li><b>Jalur produksi.</b> Bahan masuk lalu melewati 10 stasiun secara berurutan, seperti piring yang melewati meja potong, goreng, dan tata. Setiap stasiun mengerjakan satu tahap lalu memeriksa hasilnya.</li>
+<li><b>Produk NG keluar dari jalur.</b> Produk yang lolos (OK) lanjut ke stasiun berikutnya. Produk yang gagal (NG) dikeluarkan dari jalur, seperti piring yang dikembalikan oleh kepala koki.</li>
+<li><b>Jalur rework.</b> Produk NG diperbaiki di stasiun rework lalu diuji ulang. Jika lolos, produk kembali ke jalur produksi. Jika tetap gagal, produk menjadi scrap dan dibuang.</li>
+<li><b>Jalur data.</b> Setiap stasiun mencatat jumlah input, OK, NG, dan jenis defect setiap hari. Catatan dikumpulkan di database, diolah menjadi dashboard, lalu dipakai untuk menentukan stasiun dan defect mana yang perlu diperbaiki lebih dulu.</li>
+</ol>
+</div>
+</section>
+
+<div class="kpis">
+<div class="card kpi" style="--h:var(--navyH)"><span class="v">14</span><span class="l">pertanyaan analisis</span><span class="d">Hal yang ingin dijawab dari data, 9 di antaranya prioritas utama (bagian 2).</span></div>
+<div class="card kpi" style="--h:var(--amberH)"><span class="v">5</span><span class="l">ukuran kinerja (KPI)</span><span class="d">Angka kunci yang dipantau di dashboard, dengan rumus yang disepakati sejak awal (bagian 3).</span></div>
+<div class="card kpi" style="--h:var(--tealH)"><span class="v">12</span><span class="l">langkah pengerjaan</span><span class="d">Dari menyepakati definisi sampai project siap ditinjau (bagian 6).</span></div>
+<div class="card kpi" style="--h:var(--plumH)"><span class="v">10 / 3</span><span class="l">stasiun / model</span><span class="d">10 stasiun perakitan dan 3 model smartphone: Basic, Plus, Pro.</span></div>
+<div class="card kpi" style="--h:var(--roseH)"><span class="v">±3 bulan</span><span class="l">periode data</span><span class="d">Sekitar 75 hari kerja, cukup untuk melihat tren harian dan mingguan.</span></div>
+<div class="card kpi" style="--h:var(--skyH)"><span class="v">4</span><span class="l">tabel data</span><span class="d">Produksi harian, catatan defect, catatan rework, dan daftar kode defect (bagian 4).</span></div>
+</div>
+
+<h2 id="s1">1. Background<small>Kenapa tema ini dipilih</small></h2>
+<div class="card two">
+<div><h3>Latar belakang masalah</h3>
+<p>Di lini perakitan smartphone, data hasil kerja (berapa produk OK, berapa NG, berapa yang masuk rework) umumnya dicatat di beberapa file Excel terpisah per stasiun atau per bulan. Akibatnya:</p>
+<ul class="tight">
+<li>Untuk tahu yield bulan ini, seseorang harus menggabungkan banyak file secara manual. Prosesnya lama dan rawan salah hitung.</li>
+<li>Masalah baru terlihat di akhir bulan, saat laporan dibuat. Lonjakan defect di hari tertentu terlambat diketahui.</li>
+<li>Tiap orang bisa memakai rumus yield yang berbeda, sehingga angka antar laporan tidak sama.</li>
+<li>Produk yang lolos setelah rework sering ikut dihitung sebagai "OK", sehingga yield tampak lebih baik dari kenyataannya dan biaya rework tersembunyi.</li>
+</ul></div>
+<div><h3>Alasan memilih tema ini sebagai portofolio</h3>
+<ul class="tight">
+<li><b>Dekat dengan pekerjaan sehari-hari.</b> Pelaporan output, yield, dan rework adalah pekerjaan rutin Process Engineer, sehingga konteks bisnisnya dikuasai dan bisa dijelaskan dengan meyakinkan saat wawancara.</li>
+<li><b>Menunjukkan skill inti Data Analyst.</b> Merancang database, menulis SQL, membersihkan data, menghitung KPI, dan membuat dashboard yang bisa dibuka lewat link.</li>
+<li><b>Tingkat kesulitan mudah.</b> Analisisnya deskriptif (persentase, Pareto, tren), cocok sebagai project awal sebelum masuk ke project statistik yang lebih berat.</li>
+<li><b>Menjadi fondasi project lain.</b> Database dan definisi KPI dari project ini bisa dipakai ulang di project berikutnya, misalnya SPC Control Chart (#15), Supplier Quality Scorecard (#17), LLM Defect Note Classifier (#18), Telegram Bot KPI Reporting (#23), dan Root Cause Analysis Statistik (#29).</li>
+</ul></div>
+</div>
+
+<h2 id="s2">2. Business Questions<small>Satu pertanyaan utama, dipecah menjadi pertanyaan yang lebih kecil</small></h2>
+<div class="callout a"><h4>Pertanyaan utama</h4>Stasiun, shift, dan jenis defect mana yang paling menurunkan yield dan menambah rework, dan bagaimana trennya dari hari ke hari?</div>
+<p class="how">Pertanyaan utama terlalu besar untuk dijawab sekaligus, jadi dipecah per tema. Label "Utama" berarti wajib dijawab dan dikerjakan lebih dulu. "Pendukung" memperdalam hasil. "Tambahan" dikerjakan jika waktu tersisa. Teks abu-abu di bawah tiap pertanyaan adalah cara menjawabnya.</p>
+
+<div class="fbar" role="group" aria-label="Filter pertanyaan"><span>Tampilkan:</span><button type="button" class="fb on" data-f="*">Semua <i>14</i></button><button type="button" class="fb" data-f="M">Utama <i>9</i></button><button type="button" class="fb" data-f="S">Pendukung <i>4</i></button><button type="button" class="fb" data-f="N">Tambahan <i>1</i></button></div>
+<div class="qgrid" id="qg">
+<p class="theme">Yield: seberapa banyak produk lolos</p>
+<div class="q" data-p="M"><span class="id">Q1</span><span>Stasiun mana yang paling banyak meloloskan produk gagal pada percobaan pertama, dan seberapa besar pengaruhnya terhadap yield seluruh lini?<span class="pri M">Utama</span></span><span class="m">FPY per stasiun, RTY, peringkat stasiun</span></div>
+<div class="q" data-p="M"><span class="id">Q2</span><span>Berapa yield akhir setelah rework, dan seberapa jauh bedanya dengan yield percobaan pertama?<span class="pri M">Utama</span></span><span class="m">Final yield vs FPY</span></div>
+<div class="q" data-p="M"><span class="id">Q3</span><span>Apakah yield berbeda untuk model Basic, Plus, dan Pro?<span class="pri M">Utama</span></span><span class="m">FPY per model per stasiun</span></div>
+
+<p class="theme">Defect: jenis kegagalan</p>
+<div class="q" data-p="M"><span class="id">Q4</span><span>Jenis defect apa saja yang menyumbang sekitar 80% dari semua produk NG, di seluruh lini dan di tiap stasiun?<span class="pri M">Utama</span></span><span class="m">Pareto defect</span></div>
+<div class="q" data-p="S"><span class="id">Q5</span><span>Apakah defect tertentu lebih sering muncul di shift tertentu?<span class="pri S">Pendukung</span></span><span class="m">Defect rate per shift, tabel silang</span></div>
+
+<p class="theme">Rework: memperbaiki produk gagal</p>
+<div class="q" data-p="M"><span class="id">Q6</span><span>Dari semua produk NG, berapa persen yang berhasil diselamatkan lewat rework dan berapa persen yang menjadi scrap?<span class="pri M">Utama</span></span><span class="m">Recovery rate, scrap rate</span></div>
+<div class="q" data-p="S"><span class="id">Q7</span><span>Defect mana yang paling sulit diperbaiki (persentase berhasil diselamatkan paling rendah)?<span class="pri S">Pendukung</span></span><span class="m">Recovery rate per jenis defect</span></div>
+<div class="q" data-p="S"><span class="id">Q8</span><span>Berapa lama produk menunggu di stasiun rework, dan apakah antrean menumpuk?<span class="pri S">Pendukung</span></span><span class="m">Lead time rework, backlog harian</span></div>
+
+<p class="theme">Tren: perubahan dari waktu ke waktu</p>
+<div class="q" data-p="M"><span class="id">Q9</span><span>Bagaimana tren yield dan rework per hari dan per minggu, dan adakah hari dengan lonjakan defect?<span class="pri M">Utama</span></span><span class="m">Grafik tren, rata-rata bergerak 7 hari</span></div>
+<div class="q" data-p="S"><span class="id">Q10</span><span>Saat terjadi lonjakan, apakah lonjakan itu terpusat di satu stasiun, model, atau shift?<span class="pri S">Pendukung</span></span><span class="m">Drill-down lonjakan</span></div>
+
+<p class="theme">Dampak: jika diperbaiki, hasilnya apa</p>
+<div class="q" data-p="M"><span class="id">Q11</span><span>Jika NG di stasiun atau defect teratas turun sekian persen, berapa produk yang terselamatkan per bulan?<span class="pri M">Utama</span></span><span class="m">Unit terselamatkan = (rate lama − rate baru) × volume</span></div>
+<div class="q" data-p="N"><span class="id">Q12</span><span>Berapa jam kerja rework yang bisa dihemat dari perbaikan tersebut?<span class="pri">Tambahan</span></span><span class="m">Unit rework berkurang × waktu rework per unit</span></div>
+
+<p class="theme">Validitas: apakah datanya bisa dipercaya</p>
+<div class="q" data-p="M"><span class="id">Q13</span><span>Berapa persen data yang tidak valid, dan apakah hasil berubah jika data itu dibuang atau dikoreksi?<span class="pri M">Utama</span></span><span class="m">Audit kualitas data</span></div>
+<div class="q" data-p="M"><span class="id">Q14</span><span>Apakah angka KPI dari database sama persis dengan hitungan manual di Excel?<span class="pri M">Utama</span></span><span class="m">Cek silang SQL vs Excel</span></div>
+</div>
+
+<h2 id="s3">3. NG Flow &amp; Yield<span class="add">Komponen tambahan</span><small>Bagaimana produk NG mengalir, dan bagaimana yield tiap stasiun membentuk yield seluruh lini</small></h2>
+<p class="how">Masalah yang sering terjadi di laporan pabrik adalah dua orang menghitung "yield" dengan rumus berbeda. Karena itu definisi ditetapkan di awal. Arahkan kursor atau klik kata yang diberi garis bawah kuning untuk melihat pengertian dan rumusnya.</p>
+<div class="flowfull"><h3>Alur produk NG</h3>
+<div class="card"><div class="figw fl"><svg viewBox="0 0 640 270" role="img" aria-label="Diagram percabangan: produk diperiksa, yang lolos lanjut ke stasiun berikutnya, yang gagal masuk rework lalu diuji ulang; yang lolos terselamatkan, yang gagal menjadi scrap"><defs><marker id="fN" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="ah" d="M0 0L10 5L0 10z"/></marker><marker id="fT" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="aht" d="M0 0L10 5L0 10z"/></marker><marker id="fA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="aha2" d="M0 0L10 5L0 10z"/></marker></defs><rect class="box" x="8" y="113" width="96" height="44" rx="10"/><text class="b2" x="56.0" y="132.0" text-anchor="middle">Input</text><text class="b2" x="56.0" y="148.0" text-anchor="middle">stasiun</text><line class="ar" x1="104" x2="140" y1="135" y2="135" marker-end="url(#fN)"/><polygon class="dia" points="142,135 190,101 238,135 190,169"/><text class="b2" x="190" y="140" text-anchor="middle">Processed</text><polyline class="arT" points="190,101 190,40 266,40" marker-end="url(#fT)"/><text class="lt" x="198" y="74">OK</text><rect class="okb" x="270" y="20" width="150" height="40" rx="20.0"/><text class="wt" x="345.0" y="45.0" text-anchor="middle">Next Station</text><polyline class="arA" points="190,169 190,230 266,230" marker-end="url(#fA)"/><text class="la" x="198" y="205">NG</text><rect class="box" x="270" y="208" width="100" height="44" rx="10"/><text class="b2" x="320.0" y="235.0" text-anchor="middle">Rework</text><line class="ar" x1="370" x2="390" y1="230" y2="230" marker-end="url(#fN)"/><polygon class="dia" points="392,230 446,196 500,230 446,264"/><text class="b2" x="446" y="235" text-anchor="middle" style="font-size:13px">Re-Processed</text><polyline class="arT" points="446,196 446,135 526,135" marker-end="url(#fT)"/><text class="lt" x="454" y="170">OK</text><rect class="okb" x="530" y="113" width="104" height="44" rx="22.0"/><text class="wt" x="582.0" y="140.0" text-anchor="middle">Next Station</text><line class="arA" x1="500" x2="526" y1="230" y2="230" marker-end="url(#fA)"/><text class="la" x="510" y="220" text-anchor="middle">NG</text><rect class="scb" x="530" y="210" width="104" height="40" rx="20.0"/><text class="at" x="582.0" y="235.0" text-anchor="middle">Scrap</text></svg></div>
+<p>Produk yang lolos setelah rework tetap dihitung di final yield, tetapi <b>tidak</b> di FPY. Pemisahan ini membuat biaya rework terlihat.</p></div></div>
+
+<h3>Kenapa yield tiap stasiun tinggi tetapi yield lini rendah</h3>
+<p class="how">Setiap batang adalah FPY satu stasiun (angka contoh, bukan hasil dari data). Semuanya di atas 95%, tetapi RTY jauh lebih rendah karena kegagalan kecil di tiap stasiun saling menumpuk. Klik sebuah stasiun lalu geser slider untuk mengurangi NG di stasiun itu, dan lihat berapa produk yang terselamatkan per bulan dengan volume contoh 6.000 unit.</p>
+<div class="card"><div id="bars"></div>
+<div class="ctl"><label for="sl">Kurangi NG stasiun terpilih</label><input id="sl" type="range" min="0" max="50" value="30"><output id="slo" for="sl">30%</output></div>
+<div class="res"><div>RTY saat ini<b id="r1"></b></div><div>RTY setelah perbaikan<b id="r2"></b></div><div>Unit terselamatkan/bulan<b id="r3"></b></div></div>
+<p id="ins" style="margin:12px 0 0;font-size:15.5px"></p></div>
+
+<h2 id="s4">4. Dataset<small>Data simulasi buatan sendiri yang meniru kondisi lini perakitan smartphone</small></h2>
+<div class="two"><div class="card">
+<p><b>Kenapa data simulasi?</b> Data pabrik bersifat rahasia. Data dibuat dengan program Python yang meniru pola nyata: ada stasiun yang lebih sering gagal, ada pengaruh shift dan model, dan ada beberapa kejadian khusus yang sengaja ditanam. Karena kita tahu kejadian yang ditanam, kita bisa memeriksa apakah dashboard berhasil menemukannya.</p>
+<p><b>Ukuran:</b> 10 stasiun, 3 model, 2 shift, sekitar 20 operator, sekitar 75 hari kerja. Perkiraan jumlah baris: ±4.500 baris produksi harian, ±6.000 baris defect, dan ±1 baris per unit yang masuk rework. Jumlah pastinya baru diketahui setelah data dibuat.</p>
+<p class="src"><b>Sumber data:</b> data simulasi buatan sendiri, dibuat oleh skrip <code>scripts/generate_data.py</code> di repositori project (Versi: v1, rancangan; Tanggal dibuat: saat Tahap B dikerjakan). Tidak memakai dataset publik atau data perusahaan.</p>
+</div>
+<div class="callout g"><h4>Fakta yang sengaja ditanam (ground truth)</h4>
+<p>1. Satu stasiun (usulan: Reflow Soldering) dibuat paling sering NG, didominasi defect solder bridge.</p>
+<p>2. Shift 2 dibuat sedikit lebih tinggi NG-nya di satu stasiun.</p>
+<p>3. Satu lonjakan defect selama ±1 minggu di tengah periode (misalnya akibat ganti lot material).</p>
+<p>4. Defect tertentu dibuat sulit di-rework sehingga banyak menjadi scrap.</p>
+<p>5. Sekitar 2–3% data kotor disisipkan: jumlah negatif, OK + NG lebih dari input, baris ganda, kode defect salah ketik, shift kosong.</p></div></div>
+
+<h3>Empat tabel yang akan dibuat</h3>
+<p class="how">Data disimpan dalam beberapa tabel yang saling terhubung, seperti beberapa sheet Excel yang dihubungkan lewat kolom yang sama (misalnya tanggal, stasiun, dan kode defect). Pemisahan ini menghindari data ganda dan memudahkan perhitungan.</p>
+<div class="scroll"><table>
+<tr><th>Tabel</th><th>Isi (1 baris = …)</th><th>Kolom utama</th></tr>
+<tr><td><b>production_daily</b></td><td>Hasil satu stasiun, satu model, satu shift, satu hari</td><td>date, shift, station, model, operator_id, input_qty, ok_first_pass, ng_qty</td></tr>
+<tr><td><b>defect_log</b></td><td>Jumlah satu jenis defect di satu stasiun, model, shift, hari</td><td>date, shift, station, model, defect_code, qty</td></tr>
+<tr><td><b>rework_log</b></td><td>Satu unit NG yang masuk rework</td><td>rework_id, date_in, date_out, station_origin, model, defect_code, result (OK / Scrap)</td></tr>
+<tr><td><b>dim_defect</b></td><td>Daftar kode defect (tabel referensi)</td><td>defect_code, defect_name, station, category</td></tr>
+</table></div>
+
+<div class="two"><div><h3>Contoh isi tabel production_daily</h3>
+<div class="scroll"><table class="sample"><tr><th>date</th><th>station</th><th>model</th><th>input_qty</th><th>ok_first_pass</th><th>ng_qty</th></tr>
+<tr><td>2026-03-02</td><td>Reflow Soldering</td><td>Pro</td><td>420</td><td>401</td><td>19</td></tr>
+<tr><td>2026-03-02</td><td>Functional Test</td><td>Plus</td><td>550</td><td>531</td><td>19</td></tr></table></div>
+<p class="note">Angka karangan, bukan data asli. Kolom shift dan operator_id tidak ditampilkan agar tabel ringkas.</p></div>
+
+<div class="card"><p style="margin:0 0 6px"><b>10 stasiun perakitan</b> (berurutan):</p>
+<span class="chip">1. Solder Paste Printing</span><span class="chip">2. Component Placement</span><span class="chip">3. Reflow Soldering</span><span class="chip">4. AOI Inspection</span><span class="chip">5. Board Test (ICT)</span><span class="chip">6. Screen Assembly</span><span class="chip">7. Housing Assembly</span><span class="chip">8. Final Inspection</span><span class="chip">9. Functional Test</span><span class="chip">10. Packaging</span>
+<p style="margin:10px 0 4px"><b>Contoh kode defect</b> (usulan awal, bisa disesuaikan): pasta solder kurang di Solder Paste Printing; missing component dan komponen terbalik di Component Placement; solder bridge dan cold solder di Reflow Soldering; komponen bergeser di AOI Inspection; short dan open circuit di Board Test (ICT); layar retak dan dead pixel di Screen Assembly; gores dan celah casing di Housing Assembly; cacat kosmetik di Final Inspection; kamera, sensor, atau baterai gagal tes di Functional Test; label salah di Packaging.</p></div></div>
+
+
+
+<h2 id="s5">5. Tools<small>Alat yang dipakai dan alasannya</small></h2>
+<div class="tools">
+<div class="card"><b>Python (pandas, NumPy)</b><p class="r">Membuat data simulasi dan membersihkan data. Satu skrip bisa dijalankan ulang kapan saja dan menghasilkan data yang sama (pengacakan dikunci dengan seed).</p><p class="alt">Bahasa paling umum di lowongan Data Analyst.</p></div>
+<div class="card"><b>DuckDB + SQL</b><p class="r">Database tempat semua tabel disimpan. SQL dipakai untuk menghitung KPI: yield per stasiun, Pareto defect, tren. Perhitungan KPI dibuat sebagai view sehingga dashboard selalu memakai rumus yang sama.</p><p class="alt">Gratis, tidak perlu server, cukup satu file. Konsisten dengan project lain di portofolio ini.</p></div>
+<div class="card"><b>Excel</b><p class="r">Cek silang: menghitung ulang beberapa KPI secara manual untuk memastikan angka SQL benar (Q14).</p><p class="alt">Alat yang sudah biasa dipakai di pabrik, jadi hasilnya mudah diverifikasi rekan kerja.</p></div>
+<div class="card"><b>Streamlit + Plotly</b><p class="r">Membuat dashboard web interaktif dengan filter tanggal, stasiun, model, dan shift. Dipublikasikan gratis di Streamlit Community Cloud sehingga bisa dibuka lewat link.</p><p class="alt">Semua tetap di Python. Dashboard Power BI butuh akun work/school untuk publish.</p></div>
+<div class="card"><b>GitHub</b><p class="r">Menyimpan kode, data contoh, dan README. Recruiter melihat project langsung dari repositori.</p><p class="alt">Standar industri untuk portofolio dan riwayat perubahan kode.</p></div>
+<div class="card"><b>Markdown</b><p class="r">Menulis README: masalah, data, analisis, rekomendasi, dampak, dan batasan.</p><p class="alt">Format teks sederhana yang tampil rapi otomatis di GitHub.</p></div>
+</div>
+
+<h2 id="s6">6. Work Plan<small>Setiap tahap punya warna sendiri. Label "beban besar" = langkah yang paling banyak memakan waktu</small></h2>
+<p class="how">Urutannya seperti membangun rumah: gambar rencana dulu, siapkan bahan, bangun fondasi, baru isi ruangan. Setiap langkah memakai hasil langkah sebelumnya, jadi urutannya tidak boleh dilompati.</p>
+
+<h3>Alur tahapan kerja</h3>
+<div class="card"><div class="wf">
+<div class="wrow"><div class="wl" style="--c:var(--navyH)"><h4>Tahap A · Perencanaan</h4><div class="ws" style="--k:2"><div class="wb"><span class="n">1</span><b>Menyepakati definisi KPI</b><span class="s">dokumen definisi</span></div><div class="wb"><span class="n">2</span><b>Merancang struktur tabel</b><span class="s">kamus data</span></div></div></div><div class="wl" style="--c:var(--tealH)"><h4>Tahap B · Menyiapkan data</h4><div class="ws" style="--k:3"><div class="wb L"><span class="n">3</span><b>Membuat data simulasi</b><span class="s">CSV + ground truth</span></div><div class="wb"><span class="n">4</span><b>Membersihkan data</b><span class="s">Q13 · log cleaning</span></div><div class="wb"><span class="n">5</span><b>Memasukkan ke database</b><span class="s">file DuckDB</span></div></div></div></div>
+<div class="wa">↓</div>
+<div class="wl" style="--c:var(--plumH)"><h4>Tahap C · Menghitung dan menganalisis</h4><div class="ws" style="--k:5"><div class="wb L"><span class="n">6</span><b>Menulis query KPI</b><span class="s">view KPI</span></div><div class="wb"><span class="n">7</span><b>Cek silang Excel</b><span class="s">Q14</span></div><div class="wb"><span class="n">8</span><b>Analisis yield & defect</b><span class="s">Q1–Q10</span></div><div class="wb"><span class="n">9</span><b>Hitung dampak</b><span class="s">Q11–Q12</span></div><div class="wb"><span class="n">10</span><b>Cocokkan ground truth</b><span class="s">validasi</span></div></div></div>
+<div class="wa">↓</div>
+<div class="wrow1"><div class="wl" style="--c:var(--roseH)"><h4>Tahap D · Menyajikan</h4><div class="ws" style="--k:2"><div class="wb L"><span class="n">11</span><b>Membuat dashboard</b><span class="s">link dashboard</span></div><div class="wb"><span class="n">12</span><b>README & finalisasi</b><span class="s">repositori siap</span></div></div></div></div>
+</div>
+<p class="note" style="text-align:center;margin-top:12px">Panah menunjukkan urutan pengerjaan. Angka di kotak sama dengan nomor langkah di bawah.</p></div>
+
+<div class="phases"><div class="ph" style="--ph:var(--navyH)"><p class="phase">Tahap A · Perencanaan</p>
+<ol class="steps">
+<li><b class="t">Menyepakati definisi KPI dan alur rework</b><p>Menetapkan rumus FPY, RTY, final yield, rework rate, dan scrap rate (bagian 3), serta aturan kapan produk dihitung OK, NG, rework, atau scrap.</p><p class="meta">Hasil: dokumen definisi · Alat: Excel / Markdown</p></li>
+<li><b class="t">Merancang struktur tabel</b><p>Menentukan 4 tabel, kolom, dan kolom penghubung antar tabel. Membuat kamus data yang menjelaskan arti setiap kolom.</p><p class="meta">Hasil: diagram tabel dan kamus data · Alat: Markdown</p></li>
+</ol></div>
+
+<div class="ph" style="--ph:var(--tealH)"><p class="phase">Tahap B · Menyiapkan data</p>
+<ol class="steps" start="3" style="counter-reset:s 2">
+<li class="L"><b class="t">Membuat data simulasi</b><p>Program Python membuat data 3 bulan dengan pola yang realistis, termasuk fakta yang ditanam dan data kotor 2–3%.</p><p class="meta">Hasil: file CSV, skrip generator, catatan ground truth · Alat: Python</p></li>
+<li><b class="t">Memeriksa dan membersihkan data</b><p>Mencari baris bermasalah (jumlah negatif, OK + NG lebih dari input, baris ganda, kode defect tidak dikenal). Setiap baris diputuskan dibuang atau diperbaiki, dan keputusannya dicatat (Q13).</p><p class="meta">Hasil: data bersih dan log cleaning · Alat: Python (pandas)</p></li>
+<li><b class="t">Memasukkan data ke database</b><p>Memuat data bersih ke DuckDB dan menambahkan aturan pengecekan agar data yang salah tidak bisa masuk.</p><p class="meta">Hasil: file database · Alat: DuckDB</p></li>
+</ol></div>
+
+<div class="ph" style="--ph:var(--plumH)"><p class="phase">Tahap C · Menghitung dan menganalisis</p>
+<ol class="steps" style="counter-reset:s 5">
+<li class="L"><b class="t">Menulis query KPI</b><p>Membuat query SQL untuk FPY, RTY, final yield, rework, scrap, Pareto defect, dan tren harian, lalu disimpan sebagai view.</p><p class="meta">Hasil: kumpulan query dan view KPI · Alat: SQL</p></li>
+<li><b class="t">Cek silang dengan Excel</b><p>Mengambil beberapa hari dan stasiun sebagai sampel, menghitung ulang secara manual, lalu memastikan hasilnya sama dengan SQL (Q14).</p><p class="meta">Hasil: lembar cek silang · Alat: Excel</p></li>
+<li><b class="t">Menganalisis yield, defect, dan rework</b><p>Menjawab Q1–Q10: peringkat stasiun, Pareto defect, perbandingan shift dan model, keberhasilan rework, dan tren beserta lonjakannya.</p><p class="meta">Hasil: grafik dan tabel temuan · Alat: SQL, Python (Plotly)</p></li>
+<li><b class="t">Menghitung dampak perbaikan</b><p>Menghitung unit terselamatkan per bulan jika NG di stasiun atau defect teratas turun 10%, 20%, dan 30% (Q11–Q12). Semua angka diberi label estimasi.</p><p class="meta">Hasil: tabel skenario · Alat: Python (pandas)</p></li>
+<li><b class="t">Mencocokkan dengan fakta yang ditanam</b><p>Memeriksa apakah analisis menemukan semua kejadian yang sengaja ditanam di langkah 3. Jika ya, metode terbukti bekerja.</p><p class="meta">Hasil: bagian validasi di README · Alat: Python</p></li>
+</ol></div>
+
+<div class="ph" style="--ph:var(--roseH)"><p class="phase">Tahap D · Menyajikan</p>
+<ol class="steps" style="counter-reset:s 10">
+<li class="L"><b class="t">Membuat dashboard</b><p>Dashboard 4 halaman: Ringkasan (KPI utama dan tren), Yield per Stasiun, Pareto Defect, dan Rework (keberhasilan, scrap, antrean). Dilengkapi filter, lalu dipublikasikan agar bisa dibuka lewat link.</p><p class="meta">Hasil: link dashboard · Alat: Streamlit, Plotly</p></li>
+<li><b class="t">Menulis README, rekomendasi, dan finalisasi</b><p>Menulis masalah, data, analisis, rekomendasi, dampak, dan batasan. Merapikan repositori dan memperbarui checklist di daftar portofolio.</p><p class="meta">Hasil: repositori GitHub siap ditinjau · Alat: Markdown, GitHub</p></li>
+</ol></div></div>
+
+<h2 id="s7">7. Project Outputs<span class="add">Komponen tambahan</span><small>Hasil nyata yang bisa dibuka, dibaca, atau dipakai ulang setelah project selesai</small></h2>
+<p class="how">Setiap kartu adalah satu output. Label "Utama" berarti wajib dibuat, "Opsional" dibuat jika waktu tersisa. Setiap output ditujukan untuk pembaca yang berbeda, mulai dari manajemen sampai analis lain.</p>
+<div class="outs"><div class="card out" style="--h:var(--navyH)"><div class="oh"><b>Dashboard interaktif</b><span class="ob">Utama</span></div><ul><li>Halaman web 4 bagian: Ringkasan, Yield per Stasiun, Pareto Defect, dan Rework.</li><li>Dilengkapi filter tanggal, stasiun, model, dan shift.</li><li>Bentuk: link publik (Streamlit Community Cloud).</li><li>Untuk: supervisor dan engineer yang memantau lini setiap hari.</li></ul></div><div class="card out" style="--h:var(--roseH)"><div class="oh"><b>One-sheet infografik</b><span class="ob">Utama</span></div><ul><li>Ringkasan satu halaman: yield lini, 3 stasiun dan defect teratas, serta estimasi unit terselamatkan.</li><li>Bisa dipahami dalam waktu kurang dari 1 menit.</li><li>Bentuk: file PDF dan PNG.</li><li>Untuk: manajemen dan recruiter yang tidak sempat membuka dashboard.</li></ul></div><div class="card out" style="--h:var(--tealH)"><div class="oh"><b>Database & query SQL</b><span class="ob">Utama</span></div><ul><li>File database DuckDB berisi 4 tabel yang sudah bersih.</li><li>Kumpulan query dan view untuk menghitung semua KPI dengan rumus yang sama.</li><li>Bentuk: file .duckdb dan folder query .sql.</li><li>Untuk: analis lain yang ingin memakai ulang atau mengembangkan data.</li></ul></div><div class="card out" style="--h:var(--plumH)"><div class="oh"><b>Aplikasi pembuat data simulasi</b><span class="ob">Utama</span></div><ul><li>Skrip Python yang membuat data 3 bulan, termasuk fakta yang ditanam dan data kotor.</li><li>Hasilnya selalu sama setiap dijalankan, dan parameternya bisa diubah.</li><li>Bentuk: skrip .py beserta kamus data.</li><li>Untuk: menguji ulang metode dengan skenario yang berbeda.</li></ul></div><div class="card out" style="--h:var(--skyH)"><div class="oh"><b>Notebook analisis</b><span class="ob">Utama</span></div><ul><li>Langkah analisis Q1–Q14 lengkap dengan grafik dan penjelasan singkat.</li><li>Mencatat proses cleaning dan cek silang dengan Excel.</li><li>Bentuk: Jupyter Notebook (.ipynb).</li><li>Untuk: pembaca teknis yang ingin melihat cara angka dihitung.</li></ul></div><div class="card out" style="--h:var(--amberH)"><div class="oh"><b>Laporan temuan & rekomendasi</b><span class="ob">Utama</span></div><ul><li>Berisi masalah, data, temuan, rekomendasi, estimasi dampak, dan batasan.</li><li>Angka dampak diberi label estimasi.</li><li>Bentuk: README di GitHub.</li><li>Untuk: semua pembaca, sebagai pintu masuk project.</li></ul></div><div class="card out" style="--h:var(--navyH)"><div class="oh"><b>Repositori GitHub</b><span class="ob">Utama</span></div><ul><li>Semua output di atas tersusun dalam satu folder project yang rapi.</li><li>Dilengkapi petunjuk cara menjalankan ulang project.</li><li>Bentuk: link repositori GitHub.</li><li>Untuk: recruiter dan reviewer portofolio.</li></ul></div><div class="card out" style="--h:var(--tealH)"><div class="oh"><b>Slide presentasi</b><span class="ob opt">Opsional</span></div><ul><li>5–7 slide yang menceritakan masalah, pendekatan, temuan, dan rekomendasi.</li><li>Bentuk: PDF atau PowerPoint.</li><li>Untuk: presentasi saat wawancara kerja.</li></ul></div></div>
+
+<h3>Daftar dokumen yang akan dihasilkan</h3>
+<p class="how">Nama file adalah usulan awal dan bisa disesuaikan. Tabel diurutkan menurut tahap pengerjaan (A sampai D). File berukuran besar (data mentah dan database) tidak di-commit ke GitHub karena bisa dibuat ulang dari skrip.</p>
+<div class="scroll"><table class="docs"><tr><th>Nama dokumen</th><th>Isi</th><th>Tahap</th><th>Label</th></tr><tr><td><code>docs/kpi_definitions.md</code></td><td>Definisi KPI (FPY, RTY, final yield, rework rate, scrap rate) dan alur rework</td><td>Tahap A</td><td><span class="ob">Utama</span></td></tr><tr><td><code>docs/data_dictionary.md</code></td><td>Kamus data dan diagram hubungan 4 tabel</td><td>Tahap A</td><td><span class="ob">Utama</span></td></tr><tr><td><code>scripts/generate_data.py</code></td><td>Skrip pembuat data simulasi (seed tetap, parameter bisa diubah)</td><td>Tahap B</td><td><span class="ob">Utama</span></td></tr><tr><td><code>data/raw/*.csv</code></td><td>Data simulasi mentah. Tidak di-commit, dibuat ulang dari skrip</td><td>Tahap B</td><td><span class="ob">Utama</span></td></tr><tr><td><code>data/ground_truth.json</code></td><td>Catatan fakta yang sengaja ditanam</td><td>Tahap B</td><td><span class="ob">Utama</span></td></tr><tr><td><code>scripts/clean_data.py</code></td><td>Skrip pembersihan data</td><td>Tahap B</td><td><span class="ob">Utama</span></td></tr><tr><td><code>docs/cleaning_log.md</code></td><td>Catatan baris bermasalah dan keputusan dibuang/diperbaiki</td><td>Tahap B</td><td><span class="ob">Utama</span></td></tr><tr><td><code>data/README.md</code></td><td>Cara membuat ulang data dari skrip</td><td>Tahap B</td><td><span class="ob">Utama</span></td></tr><tr><td><code>yield.duckdb</code></td><td>File database. Tidak di-commit, dibuat ulang dari skrip</td><td>Tahap B</td><td><span class="ob">Utama</span></td></tr><tr><td><code>sql/</code></td><td>Kumpulan query dan view KPI</td><td>Tahap C</td><td><span class="ob">Utama</span></td></tr><tr><td><code>outputs/crosscheck.xlsx</code></td><td>Cek silang KPI SQL vs hitungan manual Excel</td><td>Tahap C</td><td><span class="ob">Utama</span></td></tr><tr><td><code>notebooks/analysis.ipynb</code></td><td>Analisis Q1–Q14 dengan grafik</td><td>Tahap C</td><td><span class="ob">Utama</span></td></tr><tr><td><code>outputs/*.csv</code></td><td>Tabel temuan dan skenario dampak</td><td>Tahap C</td><td><span class="ob">Utama</span></td></tr><tr><td><code>dashboard/app.py</code></td><td>Aplikasi dashboard Streamlit (4 halaman)</td><td>Tahap D</td><td><span class="ob">Utama</span></td></tr><tr><td><code>requirements.txt</code></td><td>Daftar library Python yang dibutuhkan</td><td>Tahap D</td><td><span class="ob">Utama</span></td></tr><tr><td><code>outputs/infographic.pdf / .png</code></td><td>One-sheet infografik</td><td>Tahap D</td><td><span class="ob">Utama</span></td></tr><tr><td><code>README.md</code></td><td>Laporan temuan, rekomendasi, dampak, dan batasan</td><td>Tahap D</td><td><span class="ob">Utama</span></td></tr><tr><td><code>index.html</code></td><td>Halaman rancangan project ini (GitHub Pages)</td><td>Tahap D</td><td><span class="ob">Utama</span></td></tr><tr><td><code>slides/presentation.pdf</code></td><td>Slide presentasi wawancara</td><td>Tahap D</td><td><span class="ob opt">Opsional</span></td></tr></table></div>
+
+<h2 id="s8">8. Success Criteria<span class="add">Komponen tambahan</span><small>Kapan project dianggap selesai dan berhasil</small></h2>
+<div class="card">
+<h3>Project dianggap berhasil jika</h3>
+<ul class="tight">
+<li>Kesembilan pertanyaan berlabel "Utama" terjawab dengan angka dari data.</li>
+<li>Angka KPI dari SQL sama dengan hitungan manual Excel pada sampel yang dicek.</li>
+<li>Kelima fakta yang ditanam ditemukan oleh analisis.</li>
+<li>Orang awam bisa membuka dashboard dan menyebutkan stasiun dan defect terburuk dalam waktu kurang dari 1 menit.</li>
+<li>Checklist standar terpenuhi: pertanyaan bisnis, data cleaning, analisis SQL, dashboard ter-deploy, README berisi insight dan rekomendasi.</li>
+</ul></div>
+
+<h2 id="s9">9. Assumptions &amp; Limitations<span class="add">Komponen tambahan</span><small>Keputusan yang sudah diambil dan hal yang perlu diwaspadai</small></h2>
+<div class="two"><div><details open><summary>Jenis data: simulasi penuh <span class="pill">Sudah Anda setujui</span></summary><p>Semua data dibuat dengan program. Angka hasil akhir membuktikan bahwa metode dan sistemnya bekerja, bukan menggambarkan kondisi pabrik sebenarnya.</p></details>
+<details><summary>Tools: DuckDB + Streamlit <span class="pill">Sudah Anda setujui</span></summary><p>Konsisten dengan project lain di portofolio ini sehingga skrip dan pola kerja bisa dipakai ulang. Daftar portofolio sebelumnya menulis SQLite/BigQuery dan Power BI/Looker Studio; kolom Tools di daftar sebaiknya diperbarui.</p></details></div>
+<div>
+<details><summary>Ruang lingkup <span class="pill d">Usulan awal</span></summary><p>10 stasiun perakitan smartphone, 3 model (Basic, Plus, Pro), 2 shift, ±3 bulan. Satu unit berarti satu produk jadi. Rework maksimal satu kali per unit. Dampak dihitung dalam jumlah produk, belum dalam rupiah.</p></details>
+<details><summary>Hal yang perlu diwaspadai <span class="pill d">Usulan awal</span></summary>
+<p><b>Stasiun inspeksi.</b> AOI Inspection dan Functional Test menemukan defect yang mungkin terjadi di stasiun sebelumnya. Karena itu kolom station_origin di rework_log mencatat asal defect, bukan tempat defect ditemukan.</p>
+<p><b>Pola belum tentu penyebab.</b> Jika shift 2 lebih banyak NG, itu baru pola. Penyebabnya perlu dicek di lapangan. Pengujian statistik dikerjakan di Project 29 (Root Cause Analysis).</p>
+<p><b>Volume kecil.</b> Persentase dari hari dengan input sedikit mudah melonjak. Tren memakai rata-rata 7 hari dan menampilkan jumlah input di sampingnya.</p></details></div></div>
+</main>
+
+<script>
+const $=id=>document.getElementById(id),f1=v=>(v*100).toFixed(1).replace('.',',')+'%',VOL=6000;
+const P=[["Solder Paste",.970],["Placement",.985],["Reflow",.955],["AOI Insp.",.990],["ICT Test",.980],["Screen Assy",.992],["Housing Assy",.975],["Final Insp.",.978],["Func. Test",.965],["Packaging",.998]];
+let sel=2;const rty=a=>a.reduce((p,x)=>p*x,1);
+function draw(){const x=$('sl').value/100,n=P.map((p,i)=>i==sel?1-(1-p[1])*(1-x):p[1]),r0=rty(P.map(p=>p[1])),r1=rty(n);
+$('slo').textContent=Math.round(x*100)+'%';
+$('bars').innerHTML=P.map((p,i)=>`<button type="button" class="row${i==sel?' sel':''}" data-i="${i}" aria-pressed="${i==sel}"><span class="n">${p[0]}</span><span class="tr"><span class="b" style="width:${(n[i]-.9)/.1*100}%"></span></span><span class="c">${f1(n[i])}</span></button>`).join('');
+$('r1').textContent=f1(r0);$('r2').textContent=f1(r1);$('r3').textContent='+'+Math.round((r1-r0)*VOL).toLocaleString('id-ID')+' unit';
+$('ins').innerHTML=`Rata-rata FPY 10 stasiun <b>${f1(P.reduce((s,p)=>s+p[1],0)/10)}</b>, tetapi hanya <b>${f1(r0)}</b> produk yang melewati semua stasiun tanpa pernah gagal. Mengurangi NG ${P[sel][0]} sebesar ${Math.round(x*100)}% menyelamatkan sekitar <b>${Math.round((r1-r0)*VOL).toLocaleString('id-ID')} unit per bulan</b> dari rework. Skala batang dimulai dari 90%.`}
+$('bars').onclick=e=>{const r=e.target.closest('.row');if(r){sel=+r.dataset.i;draw()}};$('sl').oninput=draw;draw();
+
+const G=[["yield","i","Persentase produk yang lolos dibanding produk yang masuk (input)."],["rework","i","Memperbaiki produk yang gagal pemeriksaan, lalu mengujinya ulang."],["scrap","i","Produk gagal yang tidak bisa diperbaiki dan dibuang."],["defect","i","Jenis kerusakan atau kegagalan pada produk, misalnya goresan atau redaman sinyal terlalu besar."],["FPY","","First Pass Yield: persentase produk yang langsung lolos pada percobaan pertama di satu stasiun, tanpa rework.\nRumus: FPY = OK percobaan pertama ÷ input.\nContoh: 100 produk masuk, 96 langsung lolos, FPY = 96%."],["RTY","","Rolled Throughput Yield: peluang satu produk melewati semua stasiun tanpa pernah gagal.\nRumus: RTY = FPY stasiun 1 × FPY stasiun 2 × … × FPY stasiun 10."],["final yield","i","Persentase produk yang akhirnya lolos, termasuk produk yang lolos setelah rework.\nRumus: final yield = (OK pertama + OK hasil rework) ÷ input."],["rework rate","i","Persentase produk yang harus diperbaiki.\nRumus: rework rate = unit masuk rework ÷ input."],["scrap rate","i","Persentase produk yang dibuang.\nRumus: scrap rate = unit scrap ÷ input."],["KPI","","Key Performance Indicator: angka kunci untuk menilai kinerja, misalnya yield."],["Pareto","i","Cara mengurutkan masalah dari yang paling sering. Biasanya sedikit jenis masalah menyumbang sebagian besar kejadian (aturan 80/20)."],["NG","","Not Good: produk yang gagal pemeriksaan."],["OK","","Produk yang lolos pemeriksaan."],["shift","i","Pembagian jam kerja, misalnya shift pagi dan shift malam."],["SQL","","Bahasa untuk meminta dan mengolah data dari tabel database."],["DuckDB","i","Database ringan dalam satu file, untuk menjalankan SQL tanpa server."],["dashboard","i","Halaman ringkasan interaktif berisi grafik dan angka kunci."],["Streamlit","i","Alat untuk membuat dashboard web memakai Python."],["view","i","Query SQL yang disimpan dengan nama, sehingga bisa dipanggil seperti tabel."],["ground truth","i","Fakta yang sengaja ditanam di data simulasi untuk memeriksa apakah analisis berhasil menemukannya."],["data simulasi","i","Data buatan komputer yang meniru kondisi nyata, bukan hasil pencatatan di pabrik."],["seed","i","Angka kunci pengacak. Dengan seed yang sama, data acak yang sama bisa dibuat ulang."],["lead time","i","Lama waktu dari produk masuk sampai keluar dari suatu proses."],["backlog","i","Tumpukan pekerjaan yang belum selesai, di sini produk yang masih antre di rework."],["recovery rate","i","Persentase produk NG yang berhasil diselamatkan lewat rework."],["solder bridge","i","Timah solder yang menyambung dua titik yang seharusnya terpisah, sehingga bisa terjadi korsleting."],["AOI","","Automated Optical Inspection: kamera otomatis yang memeriksa papan sirkuit untuk mencari komponen hilang, bergeser, atau solder yang salah."],["kamus data","i","Dokumen yang menjelaskan arti, satuan, dan contoh isi setiap kolom."],["README","","Dokumen penjelasan project yang dibaca pertama kali di repositori GitHub."],["rata-rata bergerak 7 hari","i","Rata-rata 7 hari terakhir yang dihitung ulang setiap hari, agar tren tidak terlalu naik-turun."]];
+const TERMS=G.map(([t,f,d])=>({t,d,re:new RegExp('(?<![\\w-])'+t.replace(/[.*+?^${}()|[\]\\-]/g,'\\$&')+'(?![\\w-])',f)}));
+const SK='svg,.fx,.fbar,.oh,.wb,table td:first-child,h1,h2,h3,nav,button,script,style,summary,.tm,.tag,.pri,.pill,.v,.l,.chip,.flow,th,#tip,.banner,.theme,.phase,.add,.tools b,b.t';
+function wrapT(n,seen){let b=null;for(const x of TERMS){if(seen.has(x.t))continue;const m=x.re.exec(n.data);if(m&&(!b||m.index<b.i||(m.index==b.i&&m[0].length>b.l)))b={x,i:m.index,l:m[0].length}}
+if(!b)return;seen.add(b.x.t);const r=n.splitText(b.i),a=r.splitText(b.l),s=document.createElement('span');s.className='tm';s.tabIndex=0;s.dataset.d=b.x.d;s.textContent=r.data;r.replaceWith(s);wrapT(a,seen)}
+function hl(root,seen){const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest(SK)?3:1}),ns=[];while(w.nextNode())ns.push(w.currentNode);ns.forEach(n=>wrapT(n,seen))}
+const tip=document.createElement('div');tip.id='tip';tip.setAttribute('role','tooltip');document.body.appendChild(tip);
+function showT(e){tip.textContent=e.dataset.d;tip.style.display='block';const r=e.getBoundingClientRect(),w=tip.offsetWidth,h=tip.offsetHeight;tip.style.left=Math.max(8,Math.min(innerWidth-w-8,r.left))+'px';tip.style.top=(r.bottom+h+12>innerHeight?r.top-h-6:r.bottom+6)+'px'}
+document.addEventListener('click',ev=>{const t=ev.target.closest('.tm');t?showT(t):tip.style.display='none'});
+document.addEventListener('mouseover',ev=>{const t=ev.target.closest('.tm');if(t)showT(t)});
+document.addEventListener('mouseout',ev=>{if(ev.target.closest&&ev.target.closest('.tm'))tip.style.display='none'});
+document.addEventListener('focusin',ev=>{const t=ev.target.closest&&ev.target.closest('.tm');if(t)showT(t)});
+addEventListener('scroll',()=>tip.style.display='none',{passive:true});
+const qg=$('qg');document.querySelector('.fbar').onclick=e=>{const b=e.target.closest('.fb');if(!b)return;const f=b.dataset.f;
+document.querySelectorAll('.fb').forEach(x=>x.classList.toggle('on',x==b));let th=null,vis=0;
+[...qg.children].forEach(el=>{if(el.classList.contains('theme')){if(th)th.hidden=!vis;th=el;vis=0}else{const show=f=='*'||el.dataset.p==f;el.hidden=!show;if(show)vis++}});if(th)th.hidden=!vis};
+let seen=new Set();[...document.querySelector('main').children].forEach(el=>{if(el.tagName=='H2')seen=new Set();hl(el,seen)});
+</script>
+
+</body></html>
