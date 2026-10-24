@@ -171,15 +171,32 @@ main>nav a{border-radius:10px;font-size:15px;padding:8px 14px}
 }
 @media (max-width:620px){.kpis,.res{grid-template-columns:1fr 1fr}.tools{grid-template-columns:1fr}.row .n{width:78px}.banner{padding:18px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.row .b{transition:none}}
+.tab{flex:none;font:inherit;font-size:15px;font-weight:800;cursor:pointer;background:var(--card);border:2px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 16px}
+.tab[data-t=design]{--c:var(--navy)}.tab[data-t=report]{--c:var(--teal)}
+.tab:hover{border-color:var(--c)}.tab.on{background:var(--c);border-color:var(--c);color:#fff}.tab:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.links{display:contents}.links[data-tab=design]{--ac:var(--navy)}.links[data-tab=report]{--ac:var(--teal)}
+.links a{font-size:13.5px;font-weight:600;color:var(--mut);padding:5px 12px}
+.pane code{font-size:.92em;background:var(--sub);border-radius:4px;padding:1px 5px;overflow-wrap:anywhere}
+.pane pre{background:var(--sub);border:1px solid var(--line);border-radius:12px;padding:12px 16px;overflow-x:auto;font-size:14px;line-height:1.5}.pane pre code{background:none;padding:0;overflow-wrap:normal}
+.pill.p{background:var(--amber);color:var(--amber-ink)}
+.callout a{color:inherit;font-weight:700;text-decoration:underline}
+@media (min-width:1280px){
+main>nav{gap:8px}
+.tab{border-radius:12px;font-size:16px;padding:12px 16px;text-align:left;border-left:8px solid var(--c)}
+.links{display:flex;flex-direction:column;gap:2px;margin:0 0 8px 12px;padding-left:12px;border-left:3px solid var(--ac)}
+main>nav .links a{background:none;border:0;border-radius:8px;font-size:14.5px;font-weight:600;color:var(--mut);padding:6px 10px}
+main>nav .links a:hover,main>nav .links a:focus-visible{background:var(--soft);color:var(--head)}
+}
 </style>
 
 <main>
-<nav aria-label="Section navigation"><a href="#s1">Background</a><a href="#s2">Business Questions</a><a href="#s3">NG Flow &amp; Yield</a><a href="#s4">Dataset</a><a href="#s5">Tools</a><a href="#s6">Work Plan</a><a href="#s7">Project Outputs</a><a href="#s8">Success Criteria</a><a href="#s9">Assumptions &amp; Limitations</a></nav>
+<nav aria-label="Project navigation"><button type="button" class="tab on" data-t="design" aria-expanded="true" aria-controls="design">Design Project</button><div class="links" data-tab="design"><a href="#s1">Background</a><a href="#s2">Business Questions</a><a href="#s3">NG Flow &amp; Yield</a><a href="#s4">Dataset</a><a href="#s5">Tools</a><a href="#s6">Work Plan</a><a href="#s7">Project Outputs</a><a href="#s8">Success Criteria</a><a href="#s9">Assumptions &amp; Limitations</a></div><button type="button" class="tab" data-t="report" aria-expanded="false" aria-controls="report">Report Project</button><div class="links" data-tab="report" hidden><a href="#rp1">Problem</a><a href="#rp2">Data</a><a href="#rp3">Analysis</a><a href="#rp4">Recommendation</a><a href="#rp5">Impact</a><a href="#rp6">Batasan</a></div></nav>
 
 <header class="banner"><h1>Project 3: Yield, Rework &amp; Defect Tracking System</h1>
 <p class="goal"><b>Tujuan project:</b> membangun sistem pemantauan harian yang menunjukkan stasiun, shift, dan jenis defect yang paling menurunkan yield dan menambah beban rework, sehingga perbaikan dapat difokuskan pada sumber masalah terbesar dan dampaknya dapat dipantau dari hari ke hari.</p>
 <div class="tags"><span class="tlab">Kategori:</span><span class="tag a">Rancangan project</span><span class="tag c1">Manufaktur smartphone</span><span class="tag c2">Data simulasi</span><span class="tag c3">SQL + dashboard</span></div></header>
 
+<div class="pane" id="design" data-tab="design">
 <section class="card intro">
 <h3>Project Introduction</h3>
 <p>Bayangkan dapur restoran yang memasak 100 piring nasi goreng sehari. Setiap piring melewati beberapa meja: memotong bahan, menggoreng, menata, lalu diperiksa kepala koki. Piring yang tidak lolos pemeriksaan dikembalikan untuk diperbaiki. Kadang bisa diselamatkan, kadang terpaksa dibuang.</p>
@@ -393,6 +410,41 @@ main>nav a{border-radius:10px;font-size:15px;padding:8px 14px}
 <p><b>Stasiun inspeksi.</b> AOI Inspection dan Functional Test menemukan defect yang mungkin terjadi di stasiun sebelumnya. Karena itu kolom station_origin di rework_log mencatat asal defect, bukan tempat defect ditemukan.</p>
 <p><b>Pola belum tentu penyebab.</b> Jika shift 2 lebih banyak NG, itu baru pola. Penyebabnya perlu dicek di lapangan. Pengujian statistik dikerjakan di Project 29 (Root Cause Analysis).</p>
 <p><b>Volume kecil.</b> Persentase dari hari dengan input sedikit mudah melonjak. Tren memakai rata-rata 7 hari dan menampilkan jumlah input di sampingnya.</p></details></div></div>
+</div>
+
+<div class="pane" id="report" data-tab="report" hidden>
+<div class="callout a"><h4>Status Report Project</h4><p>Laporan hasil diisi setelah analisis dikerjakan. Sudah ditulis: Problem, Batasan. Sebagian: Data, Analysis, Impact. Masih kosong: Recommendation. Rancangan lengkap ada di tab <a href="#design">Design Project</a>.</p></div>
+<div class="scroll"><table><tr><th>Bagian</th><th>Status</th></tr>
+<tr><td><b>Problem</b></td><td><span class="pill">Draft</span></td></tr>
+<tr><td><b>Data</b></td><td><span class="pill p">Sebagian</span></td></tr>
+<tr><td><b>Analysis</b></td><td><span class="pill p">Sebagian</span></td></tr>
+<tr><td><b>Recommendation</b></td><td><span class="pill d">Belum dikerjakan</span></td></tr>
+<tr><td><b>Impact</b></td><td><span class="pill p">Sebagian</span></td></tr>
+<tr><td><b>Batasan</b></td><td><span class="pill">Draft</span></td></tr>
+</table></div>
+
+<h2 id="rp1">1. Problem<small>Pertanyaan yang ingin dijawab</small></h2>
+<div class="card"><p>Pertanyaan utama: stasiun, shift, dan jenis defect mana yang paling menurunkan yield dan menambah rework, dan bagaimana trennya dari hari ke hari?</p>
+<p>Pertanyaan ini dipecah menjadi 14 pertanyaan (9 prioritas utama) dalam 6 tema: yield, defect, rework, tren, dampak, dan validitas data. Daftar lengkap ada di halaman rancangan.</p></div>
+
+<h2 id="rp2">2. Data<small>Sumber, ukuran, dan perlakuan awal</small></h2>
+<div class="card"><ul class="tight"><li>Sumber data: data simulasi buatan sendiri, dibuat oleh skrip <code>scripts/generate_data.py</code> (Versi: v1, rancangan; dibuat saat Tahap B dikerjakan). Tidak memakai dataset publik atau data perusahaan.</li><li>4 tabel: <code>production_daily</code>, <code>defect_log</code>, <code>rework_log</code>, <code>dim_defect</code>.</li><li>Ukuran perkiraan: ±4.500 baris produksi harian, ±6.000 baris defect, 1 baris per unit rework. Jumlah pasti diketahui setelah data dibuat.</li><li>Fakta yang sengaja ditanam (ground truth) dan 2–3% data kotor dipakai untuk menguji apakah analisis berhasil menemukannya.</li></ul>
+<p>Belum dikerjakan.</p></div>
+
+<h2 id="rp3">3. Analysis<small>Hasil perhitungan dari data</small></h2>
+<div class="card"><p>KPI yang dihitung: FPY, RTY, final yield, rework rate, dan scrap rate, ditambah Pareto defect, perbandingan shift dan model, keberhasilan rework, dan tren harian.</p>
+<p>Belum dikerjakan.</p></div>
+
+<h2 id="rp4">4. Recommendation<small>Tindakan yang disarankan dari temuan</small></h2>
+<div class="card"><p>Belum dikerjakan.</p></div>
+
+<h2 id="rp5">5. Impact<small>Seberapa besar manfaatnya</small></h2>
+<div class="card"><p>Estimasi unit terselamatkan = (rate lama − rate baru) × volume. Semua angka dampak akan diberi label <code>estimated</code> / <code>simulated</code>.</p>
+<p>Belum dikerjakan.</p></div>
+
+<h2 id="rp6">6. Batasan yang sudah diketahui<small>Hal yang perlu diwaspadai saat membaca hasil</small></h2>
+<div class="card"><ul class="tight"><li>Data simulasi: hasil akhir membuktikan metode, bukan kondisi pabrik sebenarnya.</li><li>Pola belum tentu penyebab. Perbedaan antar shift atau stasiun perlu dicek di lapangan.</li><li>Persentase dari hari dengan input sedikit mudah melonjak, sehingga tren memakai rata-rata 7 hari.</li></ul></div>
+</div>
 </main>
 
 <script>
@@ -422,7 +474,15 @@ addEventListener('scroll',()=>tip.style.display='none',{passive:true});
 const qg=$('qg');document.querySelector('.fbar').onclick=e=>{const b=e.target.closest('.fb');if(!b)return;const f=b.dataset.f;
 document.querySelectorAll('.fb').forEach(x=>x.classList.toggle('on',x==b));let th=null,vis=0;
 [...qg.children].forEach(el=>{if(el.classList.contains('theme')){if(th)th.hidden=!vis;th=el;vis=0}else{const show=f=='*'||el.dataset.p==f;el.hidden=!show;if(show)vis++}});if(th)th.hidden=!vis};
-let seen=new Set();[...document.querySelector('main').children].forEach(el=>{if(el.tagName=='H2')seen=new Set();hl(el,seen)});
+let seen=new Set();document.querySelectorAll('main>.pane>*').forEach(el=>{if(el.tagName=='H2')seen=new Set();hl(el,seen)});
+
+const TB=[...document.querySelectorAll('.tab')];
+function setTab(t){document.querySelectorAll('.pane,.links').forEach(e=>e.hidden=e.dataset.tab!==t);TB.forEach(x=>{const on=x.dataset.t===t;x.classList.toggle('on',on);x.setAttribute('aria-expanded',on)})}
+function route(){const h=decodeURIComponent(location.hash.slice(1)),el=h&&document.getElementById(h);
+if(h=='design'||h=='report'){setTab(h);scrollTo(0,0);return}
+if(el){const p=el.closest('.pane');if(p){setTab(p.dataset.tab);el.scrollIntoView()}}}
+TB.forEach(x=>x.onclick=()=>{location.hash=x.dataset.t});
+addEventListener('hashchange',route);route();
 </script>
 
 </body></html>
