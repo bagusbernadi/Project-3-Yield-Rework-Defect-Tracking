@@ -1,0 +1,10 @@
+pandas>=2.0
+numpy
+duckdb>=1.0
+openpyxl
+streamlit>=1.40
+plotly>=5.20
+matplotlib
+nbformat
+nbconvert
+ipykernel

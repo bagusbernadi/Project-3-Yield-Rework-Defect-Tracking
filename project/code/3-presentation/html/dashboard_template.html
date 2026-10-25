@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard Yield, Rework &amp; Defect (data simulasi)</title>
+<style>
+:root{color-scheme:light;--bg:#f6f6f4;--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--mut:#6d6c68;--line:#dcdbd6;--grid:#ebeae6;
+--c1:#2a78d6;--c2:#eb6834;--soft:#9ec5f4;--amber:#eda100;--bad:#b3261e}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme=light])){color-scheme:dark;--bg:#121211;--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--mut:#a3a29a;--line:#3a3a37;--grid:#2a2a28;--c1:#3987e5;--c2:#d95926;--soft:#1c5cab;--amber:#c98500;--bad:#f2b8b5}}
+:root[data-theme=dark]{color-scheme:dark;--bg:#121211;--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--mut:#a3a29a;--line:#3a3a37;--grid:#2a2a28;--c1:#3987e5;--c2:#d95926;--soft:#1c5cab;--amber:#c98500;--bad:#f2b8b5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "Source Sans 3",system-ui,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:4px 0}h2{font-size:17px;margin:0 0 4px}.sub{color:var(--ink2);margin:0 0 12px;font-size:14px}
+.flt{display:flex;flex-wrap:wrap;gap:10px;align-items:end;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:12px 0}
+.flt label{display:flex;flex-direction:column;font-size:12px;color:var(--ink2);gap:2px}
+select,button{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:5px 8px}
+button{cursor:pointer}button:hover{border-color:var(--c1)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}.tabs button{font-weight:700;border-radius:999px;padding:6px 16px}.tabs button.on{background:var(--c1);border-color:var(--c1);color:#fff}
+.note{font-size:12.5px;color:var(--mut)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px}.kpi b{display:block;font-size:26px;line-height:1.2}.kpi span{font-size:12.5px;color:var(--ink2)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px;min-width:0}
+.grid2{display:grid;gap:12px;grid-template-columns:1fr}.grid2>*{min-width:0}@media(min-width:900px){.grid2{grid-template-columns:1fr 1fr}}
+.insight{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--c1);border-radius:12px;padding:12px 14px;margin-bottom:12px;font-size:16px}
+svg{width:100%;height:auto;display:block;overflow:visible}svg text{fill:var(--ink2);font-size:11px}svg .g{stroke:var(--grid);stroke-width:1}svg .ax{stroke:var(--line)}
+.lg{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--ink2);margin:4px 0}.lg i{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:5px;border-radius:2px}.lg i.sq{height:10px;width:10px}
+table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:4px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th:first-child,td:first-child{text-align:left}th{color:var(--ink2);font-weight:600}
+.sc{overflow-x:auto}details{margin-top:6px}summary{cursor:pointer;color:var(--ink2);font-size:13px}
+.hm td{text-align:center;padding:6px 4px;border:2px solid var(--surface)}
+#tip{position:fixed;display:none;pointer-events:none;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 9px;font-size:12.5px;box-shadow:0 2px 8px rgba(0,0,0,.18);z-index:9;max-width:260px}
+#tip b{font-size:14px}#tip span{color:var(--ink2)}
+[data-tip]{cursor:default}[data-tip]:hover{filter:brightness(1.12)}[data-tip]:focus-visible{outline:2px solid var(--ink)}
+.foot{color:var(--mut);font-size:12.5px;margin:16px 0}
+</style></head><body><div class="wrap">
+<h1>Dashboard Yield, Rework &amp; Defect</h1>
+<p class="sub">Lini perakitan smartphone, 10 stasiun, 3 model, 2 shift. <b>Data simulasi buatan sendiri</b>: angka membuktikan metode, bukan kondisi pabrik sebenarnya.</p>
+<div class="flt" id="flt"></div>
+<div class="tabs" id="tabs"></div>
+<div id="view"></div>
+<p class="foot">Rumus: FPY = OK percobaan pertama ÷ input. RTY = hasil kali FPY semua stasiun terpilih. Final yield = hasil kali (OK pertama + OK rework) ÷ input. Rework rate = unit NG ÷ input stasiun pertama terpilih. Scrap rate = scrap ÷ input stasiun pertama terpilih. Recovery = rework OK ÷ (OK + scrap). rework_log tidak punya kolom shift, jadi saat filter Shift aktif, Final yield dan Scrap rate tidak dihitung ("-") dan bagian Rework tetap memakai semua shift. Semua KPI dihitung ulang di browser dari tabel harian.</p>
+</div><div id="tip" role="tooltip"></div>
+<script>
+const DATA=/*DATA*/;
+const {dates,stations,models,shifts,codes,names,codeStation,P,D,RI,RO,spikes}=DATA;
+const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const pct=(v,d=1)=>isFinite(v)?(v*100).toFixed(d).replace('.',',')+'%':'-',num=n=>Math.round(n).toLocaleString('id-ID');
+const SHORT=["Solder Paste","Placement","Reflow","AOI","ICT","Screen","Housing","Final Insp.","Func. Test","Packaging"];
+const S={d0:0,d1:dates.length-1,st:-1,md:-1,sh:-1,page:'ringkasan'};
+const PAGES=[['ringkasan','Ringkasan'],['yield','Yield per Stasiun'],['pareto','Pareto Defect'],['rework','Rework']];
+const selSt=()=>S.st<0?stations.map((_,i)=>i):[S.st];
+const inRange=r=>r[0]>=S.d0&&r[0]<=S.d1;
+const pf=()=>P.filter(r=>inRange(r)&&(S.sh<0||r[1]==S.sh)&&(S.st<0||r[2]==S.st)&&(S.md<0||r[3]==S.md));
+const df=()=>D.filter(r=>inRange(r)&&(S.sh<0||r[1]==S.sh)&&(S.st<0||r[2]==S.st)&&(S.md<0||r[3]==S.md));
+const rf=(arr,upTo)=>arr.filter(r=>(upTo?r[0]<=S.d1:inRange(r))&&(S.st<0||r[1]==S.st)&&(S.md<0||r[2]==S.md));
+
+function opt(list,sel,all){return (all?`<option value="-1">${all}</option>`:'')+list.map((t,i)=>`<option value="${i}"${i==sel?' selected':''}>${esc(t)}</option>`).join('')}
+function drawFilters(){const n=dates.length;
+$('flt').innerHTML=`<label>Dari<select id="f0">${opt(dates,S.d0)}</select></label><label>Sampai<select id="f1">${opt(dates,S.d1)}</select></label>
+<label>Preset<span><button data-p="0">Semua (${n} hari)</button> <button data-p="30">30 hari terakhir</button> <button data-p="14">14 hari terakhir</button></span></label>
+<label>Stasiun<select id="f2">${opt(stations,S.st,'Semua stasiun')}</select></label><label>Model<select id="f3">${opt(models,S.md,'Semua model')}</select></label><label>Shift<select id="f4">${opt(shifts,S.sh,'Semua shift')}</select></label>`;
+const on=()=>{S.d0=+$('f0').value;S.d1=+$('f1').value;if(S.d0>S.d1)[S.d0,S.d1]=[S.d1,S.d0];S.st=+$('f2').value;S.md=+$('f3').value;S.sh=+$('f4').value;drawFilters();render()};
+['f0','f1','f2','f3','f4'].forEach(i=>$(i).onchange=on);
+$('flt').querySelectorAll('button').forEach(b=>b.onclick=()=>{const k=+b.dataset.p;S.d0=k?Math.max(0,n-k):0;S.d1=n-1;drawFilters();render()})}
+function drawTabs(){$('tabs').innerHTML=PAGES.map(([k,t])=>`<button data-k="${k}" class="${k==S.page?'on':''}" aria-pressed="${k==S.page}">${t}</button>`).join('');
+$('tabs').querySelectorAll('button').forEach(b=>b.onclick=()=>{location.hash=b.dataset.k})}
+
+/* ---------- perhitungan KPI ---------- */
+function agg(){const rows=pf(),a=stations.map(()=>({in:0,ok:0,ng:0,rok:0,scrap:0,open:0,lead:0}));
+rows.forEach(r=>{const x=a[r[2]];x.in+=r[4];x.ok+=r[5];x.ng+=r[6]});
+rf(RI).forEach(r=>{const x=a[r[1]];x.rok+=r[4];x.scrap+=r[5];x.open+=r[6];x.lead+=r[7]});
+const ss=selSt();a.forEach(x=>{x.fpy=x.in?x.ok/x.in:NaN;x.fin=x.in&&S.sh<0?(x.ok+x.rok)/x.in:NaN;x.rec=(x.rok+x.scrap)?x.rok/(x.rok+x.scrap):NaN});
+const act=ss.filter(i=>a[i].in>0),den=act.length?a[act[0]].in:0;
+const L={rty:act.reduce((p,i)=>p*a[i].fpy,1),fin:act.reduce((p,i)=>p*a[i].fin,1),den,
+ng:act.reduce((s,i)=>s+a[i].ng,0),scrap:act.reduce((s,i)=>s+a[i].scrap,0),rok:act.reduce((s,i)=>s+a[i].rok,0),open:act.reduce((s,i)=>s+a[i].open,0)};
+L.rework=den?L.ng/den:NaN;L.scraprate=den&&S.sh<0?L.scrap/den:NaN;L.rec=(L.rok+L.scrap)?L.rok/(L.rok+L.scrap):NaN;L.rin=L.rok+L.scrap+L.open;
+return {a,L,act}}
+function daily(){const ss=selSt(),m=new Map();
+pf().forEach(r=>{let d=m.get(r[0]);if(!d){d={t:r[0],s:stations.map(()=>[0,0])};m.set(r[0],d)}d.s[r[2]][0]+=r[4];d.s[r[2]][1]+=r[5]});
+const out=[...m.values()].sort((x,y)=>x.t-y.t).map(d=>{const act=ss.filter(i=>d.s[i][0]>0);return {t:d.t,rty:act.reduce((p,i)=>p*d.s[i][1]/d.s[i][0],1),in:act.length?d.s[act[0]][0]:0}});
+out.forEach((d,i)=>{const w=out.slice(Math.max(0,i-6),i+1);d.ma=w.reduce((s,x)=>s+x.rty,0)/w.length});return out}
+function pareto(){const m=new Map();df().forEach(r=>m.set(r[4],(m.get(r[4])||0)+r[5]));
+const arr=[...m].map(([c,q])=>({c,q})).sort((x,y)=>y.q-x.q||codes[x.c].localeCompare(codes[y.c])),tot=arr.reduce((s,x)=>s+x.q,0);let cum=0;
+arr.forEach(x=>{x.prev=cum;cum+=x.q;x.share=x.q/tot;x.cum=cum/tot;x.vital=x.prev/tot<0.8});return {arr,tot}}
+function reworkByDefect(){const m=new Map();rf(RI).forEach(r=>{const x=m.get(r[3])||{c:r[3],ok:0,scrap:0,open:0,lead:0};x.ok+=r[4];x.scrap+=r[5];x.open+=r[6];x.lead+=r[7];m.set(r[3],x)});
+return [...m.values()].map(x=>({...x,n:x.ok+x.scrap+x.open,rec:(x.ok+x.scrap)?x.ok/(x.ok+x.scrap):NaN})).filter(x=>isFinite(x.rec)).sort((a,b)=>a.rec-b.rec)}
+function backlog(){const inn=new Array(dates.length).fill(0),out=new Array(dates.length).fill(0);
+rf(RI,1).forEach(r=>inn[r[0]]+=r[4]+r[5]+r[6]);rf(RO,1).forEach(r=>out[r[0]]+=r[4]);let b=0;const o=[];
+for(let i=0;i<=S.d1;i++){b+=inn[i]-out[i];if(i>=S.d0)o.push({t:i,v:b,in:inn[i],out:out[i]})}return o}
+
+/* ---------- komponen grafik ---------- */
+const tip=$('tip');
+function showTip(html,x,y){tip.innerHTML=html;tip.style.display='block';const w=tip.offsetWidth,h=tip.offsetHeight;tip.style.left=Math.max(6,Math.min(innerWidth-w-6,x+12))+'px';tip.style.top=Math.max(6,Math.min(innerHeight-h-6,y+12))+'px'}
+const tipHtml=t=>{const p=t.split('|');return `<b>${esc(p[0])}</b>`+p.slice(1).map(s=>`<br><span>${esc(s)}</span>`).join('')};
+document.addEventListener('pointermove',e=>{const t=e.target.closest&&e.target.closest('[data-tip]');if(t)showTip(tipHtml(t.dataset.tip),e.clientX,e.clientY);else if(!e.target.closest('.hit'))tip.style.display='none'});
+document.addEventListener('focusin',e=>{const t=e.target.closest&&e.target.closest('[data-tip]');if(t){const r=t.getBoundingClientRect();showTip(tipHtml(t.dataset.tip),r.left,r.bottom)}});
+document.addEventListener('focusout',()=>tip.style.display='none');
+const tbl=(h,rows)=>`<div class="sc"><table><tr>${h.map(x=>`<th>${esc(x)}</th>`).join('')}</tr>${rows.map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table></div>`;
+const det=(h,rows)=>`<details><summary>Tampilkan sebagai tabel</summary>${tbl(h,rows)}</details>`;
+const nice=(max)=>{const p=Math.pow(10,Math.floor(Math.log10(max))),f=max/p,n=f<=1?1:f<=2?2:f<=4?4:f<=8?8:10;return n*p};
+
+function vbars(items,{fmt,max,h=240,title}){ // items: {label,v,color,tip}
+const W=720,L=44,B=34,T=10,n=items.length,bw=(W-L)/n,m=max||nice(Math.max(...items.map(i=>i.v),1e-9)),ph=h-B-T;
+let g='';for(let k=0;k<=4;k++){const y=T+ph-ph*k/4;g+=`<line class="g" x1="${L}" x2="${W}" y1="${y}" y2="${y}"/><text x="${L-6}" y="${y+4}" text-anchor="end">${fmt(m*k/4)}</text>`}
+const bars=items.map((it,i)=>{const bh=ph*Math.min(it.v/m,1),x=L+i*bw+bw*.18,w=bw*.64,y=T+ph-bh,r=Math.min(4,w/2,bh);
+return `<g class="hit"><rect x="${L+i*bw}" y="${T}" width="${bw}" height="${ph}" fill="transparent" data-tip="${esc(it.tip)}" tabindex="0"/></g><path d="M${x},${T+ph}V${y+r}Q${x},${y} ${x+r},${y}H${x+w-r}Q${x+w},${y} ${x+w},${y+r}V${T+ph}Z" fill="${it.color}" pointer-events="none"/><text x="${x+w/2}" y="${h-B+14}" text-anchor="middle">${esc(it.label)}</text>`}).join('');
+return `<svg viewBox="0 0 ${W} ${h}" role="img" aria-label="${esc(title)}">${g}<line class="ax" x1="${L}" x2="${W}" y1="${T+ph}" y2="${T+ph}"/>${bars}</svg>`}
+
+function hbars(items,{fmt,max,title}){ // horizontal, label kiri, nilai di ujung
+const W=720,L=150,R=60,rh=24,h=items.length*rh+6,m=max||nice(Math.max(...items.map(i=>i.v),1e-9));
+const rows=items.map((it,i)=>{const y=i*rh+3,w=(W-L-R)*Math.min(it.v/m,1);
+return `<text x="${L-8}" y="${y+rh/2+1}" text-anchor="end">${esc(it.label)}</text><path d="M${L},${y+3}H${L+Math.max(w-4,0)}Q${L+w},${y+3} ${L+w},${y+7}V${y+rh-10}Q${L+w},${y+rh-6} ${L+Math.max(w-4,0)},${y+rh-6}H${L}Z" fill="${it.color}"/><text x="${L+w+6}" y="${y+rh/2+1}">${fmt(it.v)}</text><rect class="hit" x="0" y="${y}" width="${W}" height="${rh}" fill="transparent" data-tip="${esc(it.tip)}" tabindex="0"/>`}).join('');
+return `<svg viewBox="0 0 ${W} ${h}" role="img" aria-label="${esc(title)}"><line class="ax" x1="${L}" x2="${L}" y1="0" y2="${h}"/>${rows}</svg>`}
+
+let lineSeq=0;
+function lineChart({pts,series,fmt,h=250,zero,title,bands=[],tipFn}){ // pts: [{t,...}], series:[{key,color,w,dash}]
+const W=720,L=52,B=28,T=10,ph=h-B-T,n=pts.length;if(!n)return '<p class="note">Tidak ada data pada filter ini.</p>';
+const vals=pts.flatMap(p=>series.map(s=>p[s.key])).filter(isFinite);let lo=zero?0:Math.min(...vals),hi=Math.max(...vals);
+if(!zero){const pad=(hi-lo)*.1||.01;lo-=pad;hi+=pad}else hi=nice(hi*1.05);
+const X=i=>L+(n>1?i/(n-1):.5)*(W-L-10),Y=v=>T+ph-(v-lo)/(hi-lo)*ph,id='lc'+(++lineSeq);
+let g='';for(let k=0;k<=4;k++){const v=lo+(hi-lo)*k/4,y=Y(v);g+=`<line class="g" x1="${L}" x2="${W}" y1="${y}" y2="${y}"/><text x="${L-6}" y="${y+4}" text-anchor="end">${fmt(v)}</text>`}
+const step=Math.ceil(n/8);let xl='';pts.forEach((p,i)=>{if(i%step==0)xl+=`<text x="${X(i)}" y="${h-8}" text-anchor="middle">${dates[p.t].slice(5)}</text>`});
+const bd=bands.map(t=>{const i=pts.findIndex(p=>p.t==t);return i<0?'':`<rect x="${X(i)-(W-L)/n/2}" y="${T}" width="${(W-L)/n}" height="${ph}" fill="var(--amber)" opacity=".2"/>`}).join('');
+const paths=series.map(s=>`<path d="${pts.map((p,i)=>(i?'L':'M')+X(i).toFixed(1)+','+Y(p[s.key]).toFixed(1)).join('')}" fill="none" stroke="${s.color}" stroke-width="${s.w||2}" ${s.dash?'stroke-dasharray="4 3"':''} stroke-linejoin="round" stroke-linecap="round"/>`).join('');
+setTimeout(()=>{const svg=document.getElementById(id);if(!svg)return;const ov=svg.querySelector('.ov'),ch=svg.querySelector('.ch');
+const mv=e=>{const r=svg.getBoundingClientRect(),x=(e.clientX-r.left)/r.width*W,i=Math.max(0,Math.min(n-1,Math.round((x-L)/(W-L-10)*(n-1))));
+ch.setAttribute('x1',X(i));ch.setAttribute('x2',X(i));ch.style.display='';showTip(tipHtml(tipFn(pts[i])),e.clientX,e.clientY)};
+ov.addEventListener('pointermove',mv);ov.addEventListener('pointerleave',()=>{ch.style.display='none';tip.style.display='none'})},0);
+return `<svg id="${id}" viewBox="0 0 ${W} ${h}" role="img" aria-label="${esc(title)}">${g}${bd}<line class="ax" x1="${L}" x2="${W}" y1="${T+ph}" y2="${T+ph}"/>${xl}${paths}<line class="ch" y1="${T}" y2="${T+ph}" stroke="var(--ink2)" stroke-width="1" style="display:none"/><rect class="ov hit" x="${L}" y="${T}" width="${W-L}" height="${ph}" fill="transparent"/></svg>`}
+const legend=l=>`<div class="lg">${l.map(([c,t,sq])=>`<span><i class="${sq?'sq':''}" style="background:${c}"></i>${esc(t)}</span>`).join('')}</div>`;
+
+/* ---------- halaman ---------- */
+function kpiTiles(L){return `<div class="kpis"><div class="kpi"><b>${pct(L.rty)}</b><span>RTY (lolos semua stasiun tanpa rework)</span></div>
+<div class="kpi"><b>${pct(L.fin)}</b><span>Final yield (setelah rework)</span></div><div class="kpi"><b>${pct(L.rework)}</b><span>Rework rate</span></div>
+<div class="kpi"><b>${pct(L.scraprate,2)}</b><span>Scrap rate</span></div><div class="kpi"><b>${pct(L.rec)}</b><span>Recovery rate rework</span></div></div>`}
+
+function pageRingkasan(){const {a,L,act}=agg(),dly=daily(),par=pareto();if(!act.length)return '<p class="note">Tidak ada data pada filter ini.</p>';
+const worst=[...act].sort((x,y)=>a[x].fpy-a[y].fpy)[0],td=par.arr[0];
+const ins=`Stasiun yang paling banyak meloloskan NG: <b>${esc(stations[worst])}</b> (FPY ${pct(a[worst].fpy)}). Defect terbanyak: <b>${esc(names[td.c])}</b> (${codes[td.c]}), ${pct(td.share)} dari semua NG. Rata-rata FPY stasiun ${pct(act.reduce((s,i)=>s+a[i].fpy,0)/act.length)}, tetapi RTY hanya <b>${pct(L.rty)}</b>.`;
+const sp=spikes.filter(t=>t>=S.d0&&t<=S.d1&&dly.some(d=>d.t==t));
+const chart=lineChart({pts:dly,series:[{key:'rty',color:'var(--mut)',w:1.2},{key:'ma',color:'var(--c1)',w:2.5}],fmt:v=>pct(v,0),title:'Tren RTY harian dan rata-rata 7 hari',bands:sp,
+tipFn:d=>`${dates[d.t]}|RTY harian ${pct(d.rty)}|Rata-rata 7 hari ${pct(d.ma)}|Input stasiun pertama ${num(d.in)} unit`});
+return `<div class="insight">${ins}</div>${kpiTiles(L)}<div class="card"><h2>Tren RTY harian</h2><p class="sub">Garis tebal = rata-rata bergerak 7 hari. Jumlah input per hari ada di tooltip karena persentase dari hari sepi mudah melonjak.</p>
+${legend([['var(--mut)','RTY harian'],['var(--c1)','Rata-rata 7 hari'],...(sp.length?[['var(--amber)','Hari lonjakan NG di satu stasiun',1]]:[])])}${chart}
+${det(['Tanggal','RTY harian','Rata-rata 7 hari','Input'],dly.map(d=>[dates[d.t],pct(d.rty),pct(d.ma),num(d.in)]))}</div>`}
+
+function pageYield(){const {a,L,act}=agg();if(!act.length)return '<p class="note">Tidak ada data pada filter ini.</p>';
+const lowest=Math.min(...act.map(i=>a[i].ng/a[i].in)),items=stations.map((s,i)=>({label:SHORT[i],i,v:a[i].in?a[i].ng/a[i].in:0,color:(S.st>=0&&S.st!=i)?'var(--grid)':(a[i].ng/a[i].in==Math.max(...act.map(j=>a[j].ng/a[j].in))?'var(--c2)':'var(--c1)'),
+tip:`${s}|NG rate percobaan pertama ${pct(a[i].in?a[i].ng/a[i].in:NaN,2)}|FPY ${pct(a[i].fpy,2)}|${num(a[i].ng)} NG dari ${num(a[i].in)} input`}));
+// heatmap model x stasiun
+const hm={};P.forEach(r=>{if(inRange(r)&&(S.sh<0||r[1]==S.sh)){const k=r[3]*10+r[2];const x=hm[k]||(hm[k]=[0,0]);x[0]+=r[4];x[1]+=r[6]}});
+const rates=Object.values(hm).map(x=>x[1]/x[0]),mx=Math.max(...rates,1e-9);
+const hmRows=models.map((m,mi)=>`<tr><td>${m}</td>${stations.map((s,si)=>{const x=hm[mi*10+si],r=x?x[1]/x[0]:NaN,k=r/mx;
+return `<td data-tip="${esc(m+' | '+s+'|NG rate '+pct(r,2)+'|FPY '+pct(1-r,2))}" tabindex="0" style="background:color-mix(in srgb,var(--c1) ${Math.round(k*85)}%,var(--surface));color:${k>.55?'#fff':'var(--ink)'}">${pct(r,1)}</td>`}).join('')}</tr>`).join('');
+// shift per stasiun
+const sh=stations.map(()=>[[0,0],[0,0]]);P.forEach(r=>{if(inRange(r)&&(S.md<0||r[3]==S.md)){sh[r[2]][r[1]][0]+=r[4];sh[r[2]][r[1]][1]+=r[6]}});
+const sr=(i,k)=>sh[i][k][0]?sh[i][k][1]/sh[i][k][0]:0,mS=nice(Math.max(...stations.map((_,i)=>Math.max(sr(i,0),sr(i,1)))));
+const W=720,L0=44,B=34,T=10,ph=240-B-T,bw=(W-L0)/10;
+let g='';for(let k=0;k<=4;k++){const y=T+ph-ph*k/4;g+=`<line class="g" x1="${L0}" x2="${W}" y1="${y}" y2="${y}"/><text x="${L0-6}" y="${y+4}" text-anchor="end">${pct(mS*k/4,0)}</text>`}
+const gb=stations.map((s,i)=>[0,1].map(k=>{const v=sr(i,k),bh=ph*v/mS,x=L0+i*bw+bw*(.12+k*.38),w=bw*.34,y=T+ph-bh;
+return `<rect x="${x}" y="${y}" width="${w}" height="${bh}" rx="3" fill="${k?'var(--c2)':'var(--c1)'}" data-tip="${esc(s+' | '+shifts[k]+'|NG rate '+pct(v,2)+'|input '+num(sh[i][k][0]))}" tabindex="0"/>`}).join('')+`<text x="${L0+i*bw+bw/2}" y="${240-B+14}" text-anchor="middle">${SHORT[i]}</text>`).join('');
+return `${kpiTiles(L)}<div class="card"><h2>NG rate percobaan pertama per stasiun</h2><p class="sub">Batang dari nol. Oranye = stasiun dengan NG rate tertinggi. Filter stasiun menyorot satu stasiun.</p>
+${vbars(items,{fmt:v=>pct(v,1),title:'NG rate per stasiun'})}${det(['Stasiun','Input','NG','FPY','Final yield','Recovery'],stations.map((s,i)=>[s,num(a[i].in),num(a[i].ng),pct(a[i].fpy,2),pct(a[i].fin,2),pct(a[i].rec,1)]))}</div>
+<div class="grid2"><div class="card"><h2>NG rate: model × stasiun</h2><p class="sub">Makin gelap makin tinggi (filter stasiun dan model tidak berlaku di sini).</p><div class="sc"><table class="hm"><tr><th></th>${SHORT.map(s=>`<th>${s}</th>`).join('')}</tr>${hmRows}</table></div></div>
+<div class="card"><h2>NG rate per shift</h2>${legend([['var(--c1)','Shift 1',1],['var(--c2)','Shift 2',1]])}<svg viewBox="0 0 720 240" role="img" aria-label="NG rate per shift per stasiun">${g}<line class="ax" x1="${L0}" x2="${W}" y1="${T+ph}" y2="${T+ph}"/>${gb}</svg>
+${det(['Stasiun','Shift 1','Shift 2','Selisih (poin)'],stations.map((s,i)=>[s,pct(sr(i,0),2),pct(sr(i,1),2),((sr(i,1)-sr(i,0))*100).toFixed(2).replace('.',',')]))}</div></div>`}
+
+function pagePareto(){const {arr,tot}=pareto();if(!tot)return '<p class="note">Tidak ada data pada filter ini.</p>';
+const W=720,L0=44,B=34,T=10,h=270,ph=h-B-T,n=arr.length,bw=(W-L0-34)/n,mS=nice(arr[0].share*1.05);
+let g='';for(let k=0;k<=4;k++){const y=T+ph-ph*k/4;g+=`<line class="g" x1="${L0}" x2="${W-34}" y1="${y}" y2="${y}"/><text x="${L0-6}" y="${y+4}" text-anchor="end">${pct(mS*k/4,0)}</text><text x="${W-30}" y="${y+4}">${k*25}%</text>`}
+const bars=arr.map((x,i)=>{const bh=ph*x.share/mS,bx=L0+i*bw+bw*.15,w=bw*.7,y=T+ph-bh;
+return `<rect x="${bx}" y="${y}" width="${w}" height="${bh}" rx="3" fill="${x.vital?'var(--c1)':'var(--soft)'}" data-tip="${esc(codes[x.c]+' '+names[x.c]+'|'+stations[codeStation[x.c]]+'|'+num(x.q)+' NG ('+pct(x.share)+')|kumulatif '+pct(x.cum))}" tabindex="0"/><text x="${bx+w/2}" y="${h-B+14}" text-anchor="middle" transform="rotate(-35 ${bx+w/2} ${h-B+14})" style="text-anchor:end">${codes[x.c]}</text>`}).join('');
+const line=arr.map((x,i)=>(i?'L':'M')+(L0+i*bw+bw/2).toFixed(1)+','+(T+ph-ph*x.cum).toFixed(1)).join(''),y80=T+ph-ph*.8;
+const topSt=new Map();arr.forEach(x=>topSt.set(codeStation[x.c],(topSt.get(codeStation[x.c])||0)+x.q));
+const vit=arr.filter(x=>x.vital);
+const ins=`${vit.length} dari ${n} jenis defect menyumbang sekitar 80% dari ${num(tot)} NG. Teratas: <b>${esc(names[arr[0].c])}</b> (${pct(arr[0].share)}).`;
+// tabel silang defect x shift
+const ds=new Map();D.forEach(r=>{if(inRange(r)&&(S.st<0||r[2]==S.st)&&(S.md<0||r[3]==S.md)){const x=ds.get(r[4])||[0,0];x[r[1]]+=r[5];ds.set(r[4],x)}});
+const ip=[[0,0],[0,0]];const ist=stations.map(()=>[0,0]);P.forEach(r=>{if(inRange(r)&&(S.md<0||r[3]==S.md))ist[r[2]][r[1]]+=r[4]});
+const xs=[...ds].map(([c,x])=>({c,r0:x[0]/ist[codeStation[c]][0],r1:x[1]/ist[codeStation[c]][1],x})).sort((p,q)=>(q.r1/q.r0)-(p.r1/p.r0));
+return `<div class="insight">${ins}</div><div class="card"><h2>Pareto defect</h2><p class="sub">Batang = porsi dari semua NG (sumbu kiri), garis = kumulatif (sumbu kanan, 0 sampai 100%). Biru tua = kelompok yang membentuk 80% pertama.</p>
+${legend([['var(--c1)','Sampai 80% kumulatif',1],['var(--soft)','Sisanya',1],['var(--ink2)','Kumulatif']])}
+<svg viewBox="0 0 ${W} ${h}" role="img" aria-label="Pareto defect">${g}<line class="ax" x1="${L0}" x2="${W-34}" y1="${T+ph}" y2="${T+ph}"/><line x1="${L0}" x2="${W-34}" y1="${y80}" y2="${y80}" stroke="var(--mut)" stroke-dasharray="3 3"/>${bars}<path d="${line}" fill="none" stroke="var(--ink2)" stroke-width="2"/></svg>
+${det(['Defect','Nama','Stasiun','NG','Porsi','Kumulatif'],arr.map(x=>[codes[x.c],names[x.c],stations[codeStation[x.c]],num(x.q),pct(x.share),pct(x.cum)]))}</div>
+<div class="card"><h2>Defect × shift</h2><p class="sub">Defect rate = jumlah defect ÷ input stasiun asal pada shift itu. Diurutkan dari rasio Shift 2 ÷ Shift 1 terbesar (filter shift tidak berlaku).</p>
+${tbl(['Defect','Stasiun','Rate Shift 1','Rate Shift 2','Rasio S2/S1'],xs.map(o=>[codes[o.c]+' '+names[o.c],stations[codeStation[o.c]],pct(o.r0,2),pct(o.r1,2),(o.r1/o.r0).toFixed(2).replace('.',',')]))}</div>`}
+
+function pageRework(){const {L}=agg(),rd=reworkByDefect(),bl=backlog(),RDONE=L.rok+L.scrap;
+const items=rd.map(x=>({label:codes[x.c]+' '+names[x.c],v:x.rec,color:x===rd[0]?'var(--c2)':'var(--c1)',tip:`${codes[x.c]} ${names[x.c]}|Recovery ${pct(x.rec)}|${num(x.ok)} OK, ${num(x.scrap)} scrap|rata-rata menunggu ${(x.lead/(x.ok+x.scrap||1)).toFixed(2).replace('.',',')} hari kerja`}));
+const lead=rf(RI).reduce((s,r)=>s+r[7],0);
+const chart=lineChart({pts:bl,series:[{key:'v',color:'var(--c1)',w:2.5}],fmt:v=>num(v),zero:true,title:'Antrean rework harian',tipFn:d=>`${dates[d.t]}|Menunggu ${num(d.v)} unit|masuk ${num(d.in)}, selesai ${num(d.out)}`});
+return `<div class="kpis"><div class="kpi"><b>${num(L.rin)}</b><span>Unit masuk rework</span></div><div class="kpi"><b>${pct(L.rec)}</b><span>Recovery rate</span></div>
+<div class="kpi"><b>${num(L.scrap)}</b><span>Scrap (${pct(L.scraprate,2)} dari input)</span></div><div class="kpi"><b>${num(L.open)}</b><span>Masih menunggu di akhir periode</span></div>
+<div class="kpi"><b>${RDONE?(lead/RDONE).toFixed(2).replace('.',','):'-'}</b><span>Rata-rata hari kerja menunggu</span></div></div>
+<div class="card"><h2>Recovery rate per jenis defect</h2><p class="sub">Persentase unit NG yang berhasil diselamatkan. Oranye = paling sulit diperbaiki. Batang dari nol sampai 100%.</p>
+${hbars(items,{fmt:v=>pct(v,0),max:1,title:'Recovery rate per defect'})}${det(['Defect','Masuk','OK','Scrap','Recovery'],rd.map(x=>[codes[x.c]+' '+names[x.c],num(x.n),num(x.ok),num(x.scrap),pct(x.rec,1)]))}</div>
+<div class="card"><h2>Antrean rework harian</h2><p class="sub">Unit menunggu di akhir hari (kumulatif masuk dikurangi selesai sejak awal data). Filter shift tidak berlaku.</p>${chart}
+${det(['Tanggal','Masuk','Selesai','Menunggu'],bl.map(d=>[dates[d.t],num(d.in),num(d.out),num(d.v)]))}</div>`}
+
+function render(){drawTabs();const pg={ringkasan:pageRingkasan,yield:pageYield,pareto:pagePareto,rework:pageRework}[S.page];$('view').innerHTML=pg();tip.style.display='none'}
+function route(){const h=location.hash.slice(1);if(PAGES.some(p=>p[0]==h))S.page=h;render()}
+addEventListener('hashchange',route);drawFilters();route();
+</script></body></html>

@@ -1,0 +1,11 @@
+station,seq
+Solder Paste Printing,1
+Component Placement,2
+Reflow Soldering,3
+AOI Inspection,4
+Board Test (ICT),5
+Screen Assembly,6
+Housing Assembly,7
+Final Inspection,8
+Functional Test,9
+Packaging,10

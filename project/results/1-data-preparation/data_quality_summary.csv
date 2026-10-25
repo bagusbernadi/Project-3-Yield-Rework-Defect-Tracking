@@ -1,0 +1,6 @@
+table,issue,action,rows,injected,pct_of_table
+defect_log,defect_code_typo,diperbaiki,142,142,2.0
+production_daily,blank_shift,diperbaiki,27,27,0.6
+production_daily,duplicate,dibuang,35,35,0.77
+production_daily,negative_qty,diperbaiki,22,22,0.49
+production_daily,ok_ng_over_input,diperbaiki,28,28,0.62

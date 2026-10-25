@@ -1,0 +1,4 @@
+table,raw_rows,clean_rows,flagged_rows,flagged_pct
+production_daily,4535,4500,112,2.47
+defect_log,7100,7100,142,2.0
+rework_log,28566,28566,0,0.0

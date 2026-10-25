@@ -1,0 +1,55 @@
+{
+  "seed": 20260302,
+  "start_date": "2026-03-02",
+  "n_days": 75,
+  "facts": [
+    {
+      "id": 1,
+      "fact": "Stasiun paling sering NG",
+      "station": "Reflow Soldering",
+      "dominant_defect": "RFL-01",
+      "param": "base NG 0.040, solder bridge 68% dari NG stasiun"
+    },
+    {
+      "id": 2,
+      "fact": "Shift 2 lebih tinggi NG di satu stasiun",
+      "station": "Component Placement",
+      "shift": "Shift 2",
+      "param": "faktor 1.9"
+    },
+    {
+      "id": 3,
+      "fact": "Lonjakan defect selama satu minggu",
+      "station": "Screen Assembly",
+      "defect_code": "SCR-01",
+      "start": "2026-04-06",
+      "end": "2026-04-10",
+      "param": "tambahan peluang 0.025"
+    },
+    {
+      "id": 4,
+      "fact": "Defect sulit di-rework",
+      "defect_code": "SCR-02",
+      "param": "peluang berhasil 0.3"
+    },
+    {
+      "id": 5,
+      "fact": "Data kotor",
+      "production_rows_clean": 4500,
+      "injected": {
+        "duplicate": 35,
+        "negative_qty": 22,
+        "ok_ng_over_input": 28,
+        "blank_shift": 27,
+        "defect_code_typo": 142
+      },
+      "typo_styles": {
+        "lower": 36,
+        "nohyphen": 36,
+        "space": 35,
+        "letterO": 35
+      }
+    }
+  ],
+  "rework_capacity_per_day": 410
+}

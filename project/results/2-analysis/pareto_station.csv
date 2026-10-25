@@ -1,0 +1,18 @@
+seq,station,defect_code,defect_name,qty,share_in_station,rank_in_station
+1,Solder Paste Printing,SPP-01,Pasta solder kurang,2296,1,1
+2,Component Placement,CPL-01,Missing component,1774,0.5953020134,1
+2,Component Placement,CPL-02,Komponen terbalik,1206,0.4046979866,2
+3,Reflow Soldering,RFL-01,Solder bridge,5080,0.6817876795,1
+3,Reflow Soldering,RFL-02,Cold solder,2371,0.3182123205,2
+4,AOI Inspection,AOI-01,Komponen bergeser,1486,1,1
+5,Board Test (ICT),ICT-01,Short circuit,1359,0.5513184584,1
+5,Board Test (ICT),ICT-02,Open circuit,1106,0.4486815416,2
+6,Screen Assembly,SCR-01,Layar retak,1274,0.5614808286,1
+6,Screen Assembly,SCR-02,Dead pixel,995,0.4385191714,2
+7,Housing Assembly,HSG-01,Gores casing,1706,0.5981767181,1
+7,Housing Assembly,HSG-02,Celah casing,1146,0.4018232819,2
+8,Final Inspection,FIN-01,Cacat kosmetik,2289,1,1
+9,Functional Test,FCT-01,Kamera gagal tes,1531,0.3871049305,1
+9,Functional Test,FCT-02,Sensor gagal tes,1418,0.3585335019,2
+9,Functional Test,FCT-03,Baterai gagal tes,1006,0.2543615676,3
+10,Packaging,PKG-01,Label salah,523,1,1
