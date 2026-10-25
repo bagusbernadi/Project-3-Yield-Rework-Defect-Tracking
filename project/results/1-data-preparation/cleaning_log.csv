@@ -1,0 +1,255 @@
+table,csv_row,issue,action,before,after
+production_daily,42,duplicate,dibuang,baris ganda,
+production_daily,53,duplicate,dibuang,baris ganda,
+production_daily,58,duplicate,dibuang,baris ganda,
+production_daily,389,duplicate,dibuang,baris ganda,
+production_daily,458,duplicate,dibuang,baris ganda,
+production_daily,579,duplicate,dibuang,baris ganda,
+production_daily,642,duplicate,dibuang,baris ganda,
+production_daily,666,duplicate,dibuang,baris ganda,
+production_daily,883,duplicate,dibuang,baris ganda,
+production_daily,1108,duplicate,dibuang,baris ganda,
+production_daily,1149,duplicate,dibuang,baris ganda,
+production_daily,1186,duplicate,dibuang,baris ganda,
+production_daily,1456,duplicate,dibuang,baris ganda,
+production_daily,1829,duplicate,dibuang,baris ganda,
+production_daily,2230,duplicate,dibuang,baris ganda,
+production_daily,2366,duplicate,dibuang,baris ganda,
+production_daily,2502,duplicate,dibuang,baris ganda,
+production_daily,2651,duplicate,dibuang,baris ganda,
+production_daily,3044,duplicate,dibuang,baris ganda,
+production_daily,3103,duplicate,dibuang,baris ganda,
+production_daily,3155,duplicate,dibuang,baris ganda,
+production_daily,3276,duplicate,dibuang,baris ganda,
+production_daily,3288,duplicate,dibuang,baris ganda,
+production_daily,3293,duplicate,dibuang,baris ganda,
+production_daily,3318,duplicate,dibuang,baris ganda,
+production_daily,3431,duplicate,dibuang,baris ganda,
+production_daily,3564,duplicate,dibuang,baris ganda,
+production_daily,3648,duplicate,dibuang,baris ganda,
+production_daily,3651,duplicate,dibuang,baris ganda,
+production_daily,4033,duplicate,dibuang,baris ganda,
+production_daily,4077,duplicate,dibuang,baris ganda,
+production_daily,4092,duplicate,dibuang,baris ganda,
+production_daily,4212,duplicate,dibuang,baris ganda,
+production_daily,4216,duplicate,dibuang,baris ganda,
+production_daily,4534,duplicate,dibuang,baris ganda,
+production_daily,848,negative_qty,diperbaiki,ng_qty=-15,ng_qty=15
+production_daily,852,negative_qty,diperbaiki,ng_qty=-21,ng_qty=21
+production_daily,885,negative_qty,diperbaiki,ng_qty=-6,ng_qty=6
+production_daily,1399,negative_qty,diperbaiki,ng_qty=-4,ng_qty=4
+production_daily,1416,negative_qty,diperbaiki,ng_qty=-19,ng_qty=19
+production_daily,1610,negative_qty,diperbaiki,ng_qty=-17,ng_qty=17
+production_daily,1933,negative_qty,diperbaiki,ng_qty=-6,ng_qty=6
+production_daily,1979,negative_qty,diperbaiki,ng_qty=-3,ng_qty=3
+production_daily,2324,negative_qty,diperbaiki,ng_qty=-2,ng_qty=2
+production_daily,2937,negative_qty,diperbaiki,ng_qty=-3,ng_qty=3
+production_daily,3052,negative_qty,diperbaiki,ng_qty=-12,ng_qty=12
+production_daily,3305,negative_qty,diperbaiki,ng_qty=-2,ng_qty=2
+production_daily,3594,negative_qty,diperbaiki,ng_qty=-3,ng_qty=3
+production_daily,3658,negative_qty,diperbaiki,ng_qty=-3,ng_qty=3
+production_daily,3659,negative_qty,diperbaiki,ng_qty=-8,ng_qty=8
+production_daily,3805,negative_qty,diperbaiki,ng_qty=-4,ng_qty=4
+production_daily,3931,negative_qty,diperbaiki,ng_qty=-6,ng_qty=6
+production_daily,4160,negative_qty,diperbaiki,ng_qty=-11,ng_qty=11
+production_daily,4220,negative_qty,diperbaiki,ng_qty=-6,ng_qty=6
+production_daily,4334,negative_qty,diperbaiki,ng_qty=-12,ng_qty=12
+production_daily,4502,negative_qty,diperbaiki,ng_qty=-6,ng_qty=6
+production_daily,4514,negative_qty,diperbaiki,ng_qty=-8,ng_qty=8
+production_daily,442,ok_ng_over_input,diperbaiki,ok_first_pass=489,ok_first_pass=477
+production_daily,535,ok_ng_over_input,diperbaiki,ok_first_pass=335,ok_first_pass=321
+production_daily,554,ok_ng_over_input,diperbaiki,ok_first_pass=450,ok_first_pass=431
+production_daily,700,ok_ng_over_input,diperbaiki,ok_first_pass=399,ok_first_pass=394
+production_daily,860,ok_ng_over_input,diperbaiki,ok_first_pass=525,ok_first_pass=502
+production_daily,908,ok_ng_over_input,diperbaiki,ok_first_pass=340,ok_first_pass=329
+production_daily,1146,ok_ng_over_input,diperbaiki,ok_first_pass=342,ok_first_pass=330
+production_daily,1284,ok_ng_over_input,diperbaiki,ok_first_pass=475,ok_first_pass=462
+production_daily,1314,ok_ng_over_input,diperbaiki,ok_first_pass=387,ok_first_pass=369
+production_daily,1522,ok_ng_over_input,diperbaiki,ok_first_pass=425,ok_first_pass=419
+production_daily,1583,ok_ng_over_input,diperbaiki,ok_first_pass=506,ok_first_pass=487
+production_daily,1657,ok_ng_over_input,diperbaiki,ok_first_pass=388,ok_first_pass=382
+production_daily,1795,ok_ng_over_input,diperbaiki,ok_first_pass=376,ok_first_pass=350
+production_daily,1948,ok_ng_over_input,diperbaiki,ok_first_pass=469,ok_first_pass=447
+production_daily,2455,ok_ng_over_input,diperbaiki,ok_first_pass=414,ok_first_pass=387
+production_daily,2566,ok_ng_over_input,diperbaiki,ok_first_pass=472,ok_first_pass=457
+production_daily,2621,ok_ng_over_input,diperbaiki,ok_first_pass=415,ok_first_pass=409
+production_daily,2722,ok_ng_over_input,diperbaiki,ok_first_pass=431,ok_first_pass=424
+production_daily,2798,ok_ng_over_input,diperbaiki,ok_first_pass=411,ok_first_pass=385
+production_daily,3077,ok_ng_over_input,diperbaiki,ok_first_pass=358,ok_first_pass=344
+production_daily,3330,ok_ng_over_input,diperbaiki,ok_first_pass=447,ok_first_pass=439
+production_daily,3560,ok_ng_over_input,diperbaiki,ok_first_pass=364,ok_first_pass=350
+production_daily,3815,ok_ng_over_input,diperbaiki,ok_first_pass=448,ok_first_pass=441
+production_daily,3841,ok_ng_over_input,diperbaiki,ok_first_pass=470,ok_first_pass=449
+production_daily,3858,ok_ng_over_input,diperbaiki,ok_first_pass=333,ok_first_pass=318
+production_daily,3994,ok_ng_over_input,diperbaiki,ok_first_pass=505,ok_first_pass=476
+production_daily,4030,ok_ng_over_input,diperbaiki,ok_first_pass=419,ok_first_pass=411
+production_daily,4516,ok_ng_over_input,diperbaiki,ok_first_pass=377,ok_first_pass=364
+production_daily,72,blank_shift,diperbaiki,shift kosong,shift=Shift 1 (dari OP15)
+production_daily,82,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP16)
+production_daily,121,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP14)
+production_daily,122,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP16)
+production_daily,402,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP14)
+production_daily,411,blank_shift,diperbaiki,shift kosong,shift=Shift 1 (dari OP11)
+production_daily,809,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP20)
+production_daily,1041,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP02)
+production_daily,1086,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP12)
+production_daily,1490,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP12)
+production_daily,1704,blank_shift,diperbaiki,shift kosong,shift=Shift 1 (dari OP19)
+production_daily,1911,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP12)
+production_daily,1984,blank_shift,diperbaiki,shift kosong,shift=Shift 1 (dari OP17)
+production_daily,1988,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP06)
+production_daily,2357,blank_shift,diperbaiki,shift kosong,shift=Shift 1 (dari OP01)
+production_daily,2425,blank_shift,diperbaiki,shift kosong,shift=Shift 1 (dari OP15)
+production_daily,2608,blank_shift,diperbaiki,shift kosong,shift=Shift 1 (dari OP19)
+production_daily,3142,blank_shift,diperbaiki,shift kosong,shift=Shift 1 (dari OP01)
+production_daily,3180,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP16)
+production_daily,3236,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP08)
+production_daily,3619,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP02)
+production_daily,3627,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP18)
+production_daily,3709,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP18)
+production_daily,3899,blank_shift,diperbaiki,shift kosong,shift=Shift 1 (dari OP17)
+production_daily,3928,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP16)
+production_daily,4028,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP16)
+production_daily,4124,blank_shift,diperbaiki,shift kosong,shift=Shift 2 (dari OP02)
+defect_log,6,defect_code_typo,diperbaiki,'aoi-01',AOI-01
+defect_log,68,defect_code_typo,diperbaiki,'SCR01',SCR-01
+defect_log,108,defect_code_typo,diperbaiki,'SPP-01 ',SPP-01
+defect_log,128,defect_code_typo,diperbaiki,'AOI-O1',AOI-01
+defect_log,140,defect_code_typo,diperbaiki,'cpl-01',CPL-01
+defect_log,169,defect_code_typo,diperbaiki,'PKG01',PKG-01
+defect_log,189,defect_code_typo,diperbaiki,'ICT-01 ',ICT-01
+defect_log,199,defect_code_typo,diperbaiki,'CPL-O1',CPL-01
+defect_log,349,defect_code_typo,diperbaiki,'fin-01',FIN-01
+defect_log,390,defect_code_typo,diperbaiki,'ICT02',ICT-02
+defect_log,428,defect_code_typo,diperbaiki,'FCT-02 ',FCT-02
+defect_log,485,defect_code_typo,diperbaiki,'SCR-O1',SCR-01
+defect_log,521,defect_code_typo,diperbaiki,'fin-01',FIN-01
+defect_log,594,defect_code_typo,diperbaiki,'RFL02',RFL-02
+defect_log,608,defect_code_typo,diperbaiki,'CPL-01 ',CPL-01
+defect_log,682,defect_code_typo,diperbaiki,'FIN-O1',FIN-01
+defect_log,703,defect_code_typo,diperbaiki,'cpl-01',CPL-01
+defect_log,716,defect_code_typo,diperbaiki,'FCT02',FCT-02
+defect_log,744,defect_code_typo,diperbaiki,'HSG-01 ',HSG-01
+defect_log,830,defect_code_typo,diperbaiki,'SPP-O1',SPP-01
+defect_log,1001,defect_code_typo,diperbaiki,'spp-01',SPP-01
+defect_log,1014,defect_code_typo,diperbaiki,'FCT02',FCT-02
+defect_log,1144,defect_code_typo,diperbaiki,'SPP-01 ',SPP-01
+defect_log,1149,defect_code_typo,diperbaiki,'AOI-O1',AOI-01
+defect_log,1168,defect_code_typo,diperbaiki,'ict-02',ICT-02
+defect_log,1272,defect_code_typo,diperbaiki,'RFL01',RFL-01
+defect_log,1307,defect_code_typo,diperbaiki,'ICT-01 ',ICT-01
+defect_log,1323,defect_code_typo,diperbaiki,'AOI-O1',AOI-01
+defect_log,1386,defect_code_typo,diperbaiki,'ict-01',ICT-01
+defect_log,1414,defect_code_typo,diperbaiki,'RFL02',RFL-02
+defect_log,1435,defect_code_typo,diperbaiki,'SCR-01 ',SCR-01
+defect_log,1436,defect_code_typo,diperbaiki,'SCR-O2',SCR-02
+defect_log,1449,defect_code_typo,diperbaiki,'ict-02',ICT-02
+defect_log,1470,defect_code_typo,diperbaiki,'FIN01',FIN-01
+defect_log,1498,defect_code_typo,diperbaiki,'ICT-01 ',ICT-01
+defect_log,1507,defect_code_typo,diperbaiki,'PKG-O1',PKG-01
+defect_log,1511,defect_code_typo,diperbaiki,'rfl-02',RFL-02
+defect_log,1537,defect_code_typo,diperbaiki,'PKG01',PKG-01
+defect_log,1623,defect_code_typo,diperbaiki,'RFL-02 ',RFL-02
+defect_log,1641,defect_code_typo,diperbaiki,'ICT-O1',ICT-01
+defect_log,1732,defect_code_typo,diperbaiki,'spp-01',SPP-01
+defect_log,1768,defect_code_typo,diperbaiki,'RFL02',RFL-02
+defect_log,1769,defect_code_typo,diperbaiki,'AOI-01 ',AOI-01
+defect_log,1781,defect_code_typo,diperbaiki,'SPP-O1',SPP-01
+defect_log,1886,defect_code_typo,diperbaiki,'cpl-02',CPL-02
+defect_log,2002,defect_code_typo,diperbaiki,'SCR02',SCR-02
+defect_log,2081,defect_code_typo,diperbaiki,'SCR-02 ',SCR-02
+defect_log,2118,defect_code_typo,diperbaiki,'FCT-O3',FCT-03
+defect_log,2164,defect_code_typo,diperbaiki,'fct-02',FCT-02
+defect_log,2166,defect_code_typo,diperbaiki,'PKG01',PKG-01
+defect_log,2290,defect_code_typo,diperbaiki,'HSG-02 ',HSG-02
+defect_log,2357,defect_code_typo,diperbaiki,'FCT-O3',FCT-03
+defect_log,2372,defect_code_typo,diperbaiki,'pkg-01',PKG-01
+defect_log,2397,defect_code_typo,diperbaiki,'HSG02',HSG-02
+defect_log,2411,defect_code_typo,diperbaiki,'SCR-01 ',SCR-01
+defect_log,2470,defect_code_typo,diperbaiki,'ICT-O2',ICT-02
+defect_log,2486,defect_code_typo,diperbaiki,'scr-02',SCR-02
+defect_log,2549,defect_code_typo,diperbaiki,'SCR02',SCR-02
+defect_log,2575,defect_code_typo,diperbaiki,'RFL-01 ',RFL-01
+defect_log,2579,defect_code_typo,diperbaiki,'SCR-O1',SCR-01
+defect_log,2645,defect_code_typo,diperbaiki,'hsg-02',HSG-02
+defect_log,2695,defect_code_typo,diperbaiki,'SPP01',SPP-01
+defect_log,2907,defect_code_typo,diperbaiki,'AOI-01 ',AOI-01
+defect_log,2914,defect_code_typo,diperbaiki,'FIN-O1',FIN-01
+defect_log,2941,defect_code_typo,diperbaiki,'aoi-01',AOI-01
+defect_log,2985,defect_code_typo,diperbaiki,'AOI01',AOI-01
+defect_log,3015,defect_code_typo,diperbaiki,'AOI-01 ',AOI-01
+defect_log,3035,defect_code_typo,diperbaiki,'SCR-O2',SCR-02
+defect_log,3074,defect_code_typo,diperbaiki,'fct-03',FCT-03
+defect_log,3141,defect_code_typo,diperbaiki,'CPL01',CPL-01
+defect_log,3145,defect_code_typo,diperbaiki,'AOI-01 ',AOI-01
+defect_log,3328,defect_code_typo,diperbaiki,'AOI-O1',AOI-01
+defect_log,3361,defect_code_typo,diperbaiki,'ict-01',ICT-01
+defect_log,3456,defect_code_typo,diperbaiki,'RFL01',RFL-01
+defect_log,3470,defect_code_typo,diperbaiki,'SPP-01 ',SPP-01
+defect_log,3539,defect_code_typo,diperbaiki,'RFL-O2',RFL-02
+defect_log,3569,defect_code_typo,diperbaiki,'spp-01',SPP-01
+defect_log,3639,defect_code_typo,diperbaiki,'AOI01',AOI-01
+defect_log,3643,defect_code_typo,diperbaiki,'SCR-02 ',SCR-02
+defect_log,3653,defect_code_typo,diperbaiki,'CPL-O2',CPL-02
+defect_log,3687,defect_code_typo,diperbaiki,'rfl-01',RFL-01
+defect_log,3761,defect_code_typo,diperbaiki,'FCT02',FCT-02
+defect_log,3764,defect_code_typo,diperbaiki,'CPL-01 ',CPL-01
+defect_log,3862,defect_code_typo,diperbaiki,'RFL-O1',RFL-01
+defect_log,3952,defect_code_typo,diperbaiki,'fct-03',FCT-03
+defect_log,4038,defect_code_typo,diperbaiki,'SCR01',SCR-01
+defect_log,4047,defect_code_typo,diperbaiki,'CPL-01 ',CPL-01
+defect_log,4071,defect_code_typo,diperbaiki,'FIN-O1',FIN-01
+defect_log,4151,defect_code_typo,diperbaiki,'fct-02',FCT-02
+defect_log,4220,defect_code_typo,diperbaiki,'SCR02',SCR-02
+defect_log,4477,defect_code_typo,diperbaiki,'PKG-01 ',PKG-01
+defect_log,4523,defect_code_typo,diperbaiki,'FCT-O3',FCT-03
+defect_log,4564,defect_code_typo,diperbaiki,'hsg-02',HSG-02
+defect_log,4597,defect_code_typo,diperbaiki,'FCT01',FCT-01
+defect_log,4610,defect_code_typo,diperbaiki,'HSG-01 ',HSG-01
+defect_log,4623,defect_code_typo,diperbaiki,'ICT-O2',ICT-02
+defect_log,4652,defect_code_typo,diperbaiki,'ict-01',ICT-01
+defect_log,4746,defect_code_typo,diperbaiki,'RFL02',RFL-02
+defect_log,4829,defect_code_typo,diperbaiki,'SCR-01 ',SCR-01
+defect_log,4941,defect_code_typo,diperbaiki,'HSG-O2',HSG-02
+defect_log,5045,defect_code_typo,diperbaiki,'spp-01',SPP-01
+defect_log,5158,defect_code_typo,diperbaiki,'PKG01',PKG-01
+defect_log,5181,defect_code_typo,diperbaiki,'SCR-02 ',SCR-02
+defect_log,5235,defect_code_typo,diperbaiki,'PKG-O1',PKG-01
+defect_log,5283,defect_code_typo,diperbaiki,'spp-01',SPP-01
+defect_log,5362,defect_code_typo,diperbaiki,'PKG01',PKG-01
+defect_log,5427,defect_code_typo,diperbaiki,'CPL-01 ',CPL-01
+defect_log,5439,defect_code_typo,diperbaiki,'FCT-O1',FCT-01
+defect_log,5480,defect_code_typo,diperbaiki,'ict-02',ICT-02
+defect_log,5495,defect_code_typo,diperbaiki,'AOI01',AOI-01
+defect_log,5564,defect_code_typo,diperbaiki,'SCR-01 ',SCR-01
+defect_log,5738,defect_code_typo,diperbaiki,'RFL-O2',RFL-02
+defect_log,5779,defect_code_typo,diperbaiki,'fct-01',FCT-01
+defect_log,5893,defect_code_typo,diperbaiki,'FCT03',FCT-03
+defect_log,5929,defect_code_typo,diperbaiki,'AOI-01 ',AOI-01
+defect_log,6066,defect_code_typo,diperbaiki,'FCT-O2',FCT-02
+defect_log,6068,defect_code_typo,diperbaiki,'pkg-01',PKG-01
+defect_log,6100,defect_code_typo,diperbaiki,'SPP01',SPP-01
+defect_log,6112,defect_code_typo,diperbaiki,'FIN-01 ',FIN-01
+defect_log,6133,defect_code_typo,diperbaiki,'SPP-O1',SPP-01
+defect_log,6164,defect_code_typo,diperbaiki,'spp-01',SPP-01
+defect_log,6172,defect_code_typo,diperbaiki,'SCR01',SCR-01
+defect_log,6248,defect_code_typo,diperbaiki,'SCR-01 ',SCR-01
+defect_log,6358,defect_code_typo,diperbaiki,'AOI-O1',AOI-01
+defect_log,6432,defect_code_typo,diperbaiki,'rfl-01',RFL-01
+defect_log,6447,defect_code_typo,diperbaiki,'CPL01',CPL-01
+defect_log,6475,defect_code_typo,diperbaiki,'FCT-03 ',FCT-03
+defect_log,6484,defect_code_typo,diperbaiki,'ICT-O2',ICT-02
+defect_log,6534,defect_code_typo,diperbaiki,'scr-01',SCR-01
+defect_log,6559,defect_code_typo,diperbaiki,'CPL02',CPL-02
+defect_log,6612,defect_code_typo,diperbaiki,'ICT-01 ',ICT-01
+defect_log,6639,defect_code_typo,diperbaiki,'CPL-O1',CPL-01
+defect_log,6642,defect_code_typo,diperbaiki,'rfl-02',RFL-02
+defect_log,6719,defect_code_typo,diperbaiki,'SPP01',SPP-01
+defect_log,6729,defect_code_typo,diperbaiki,'HSG-01 ',HSG-01
+defect_log,6742,defect_code_typo,diperbaiki,'ICT-O1',ICT-01
+defect_log,6786,defect_code_typo,diperbaiki,'rfl-01',RFL-01
+defect_log,6842,defect_code_typo,diperbaiki,'FCT02',FCT-02
+defect_log,6901,defect_code_typo,diperbaiki,'SCR-01 ',SCR-01
+defect_log,6907,defect_code_typo,diperbaiki,'FCT-O2',FCT-02
+defect_log,6910,defect_code_typo,diperbaiki,'spp-01',SPP-01
+defect_log,6973,defect_code_typo,diperbaiki,'SPP01',SPP-01

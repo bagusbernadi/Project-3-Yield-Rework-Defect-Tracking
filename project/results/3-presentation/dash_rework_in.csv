@@ -1,0 +1,3779 @@
+date,station,model,defect_code,ok,scrap,open,lead_sum
+2026-03-02,AOI Inspection,Basic,AOI-01,5,0,0,0.0
+2026-03-02,AOI Inspection,Plus,AOI-01,11,1,0,0.0
+2026-03-02,AOI Inspection,Pro,AOI-01,8,1,0,0.0
+2026-03-02,Board Test (ICT),Basic,ICT-01,3,0,0,0.0
+2026-03-02,Board Test (ICT),Plus,ICT-01,3,1,0,0.0
+2026-03-02,Board Test (ICT),Plus,ICT-02,3,0,0,0.0
+2026-03-02,Board Test (ICT),Pro,ICT-01,2,0,0,0.0
+2026-03-02,Board Test (ICT),Pro,ICT-02,4,0,0,0.0
+2026-03-02,Component Placement,Basic,CPL-01,3,0,0,0.0
+2026-03-02,Component Placement,Basic,CPL-02,2,0,0,0.0
+2026-03-02,Component Placement,Plus,CPL-01,7,0,0,0.0
+2026-03-02,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-03-02,Component Placement,Pro,CPL-01,2,1,0,0.0
+2026-03-02,Component Placement,Pro,CPL-02,6,0,0,0.0
+2026-03-02,Final Inspection,Basic,FIN-01,13,0,0,0.0
+2026-03-02,Final Inspection,Plus,FIN-01,11,1,0,0.0
+2026-03-02,Final Inspection,Pro,FIN-01,15,0,0,0.0
+2026-03-02,Functional Test,Basic,FCT-01,5,1,0,0.0
+2026-03-02,Functional Test,Basic,FCT-02,5,0,0,0.0
+2026-03-02,Functional Test,Basic,FCT-03,2,1,0,0.0
+2026-03-02,Functional Test,Plus,FCT-01,8,1,0,0.0
+2026-03-02,Functional Test,Plus,FCT-02,8,3,0,0.0
+2026-03-02,Functional Test,Plus,FCT-03,10,1,0,0.0
+2026-03-02,Functional Test,Pro,FCT-01,6,3,0,0.0
+2026-03-02,Functional Test,Pro,FCT-02,7,1,0,0.0
+2026-03-02,Functional Test,Pro,FCT-03,5,0,0,0.0
+2026-03-02,Housing Assembly,Basic,HSG-01,5,1,0,0.0
+2026-03-02,Housing Assembly,Basic,HSG-02,4,0,0,0.0
+2026-03-02,Housing Assembly,Plus,HSG-01,7,0,0,0.0
+2026-03-02,Housing Assembly,Plus,HSG-02,4,0,0,0.0
+2026-03-02,Housing Assembly,Pro,HSG-01,8,0,0,0.0
+2026-03-02,Housing Assembly,Pro,HSG-02,5,0,0,0.0
+2026-03-02,Packaging,Basic,PKG-01,6,0,0,0.0
+2026-03-02,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-03-02,Packaging,Pro,PKG-01,3,0,0,0.0
+2026-03-02,Reflow Soldering,Basic,RFL-01,24,4,0,0.0
+2026-03-02,Reflow Soldering,Basic,RFL-02,5,0,0,0.0
+2026-03-02,Reflow Soldering,Plus,RFL-01,32,3,0,0.0
+2026-03-02,Reflow Soldering,Plus,RFL-02,9,0,0,0.0
+2026-03-02,Reflow Soldering,Pro,RFL-01,22,1,0,0.0
+2026-03-02,Reflow Soldering,Pro,RFL-02,9,0,0,0.0
+2026-03-02,Screen Assembly,Basic,SCR-01,5,0,0,0.0
+2026-03-02,Screen Assembly,Basic,SCR-02,0,4,0,0.0
+2026-03-02,Screen Assembly,Plus,SCR-01,3,0,0,0.0
+2026-03-02,Screen Assembly,Pro,SCR-01,5,2,0,0.0
+2026-03-02,Screen Assembly,Pro,SCR-02,1,5,0,0.0
+2026-03-02,Solder Paste Printing,Basic,SPP-01,9,0,0,0.0
+2026-03-02,Solder Paste Printing,Plus,SPP-01,8,0,0,0.0
+2026-03-02,Solder Paste Printing,Pro,SPP-01,14,0,0,0.0
+2026-03-03,AOI Inspection,Basic,AOI-01,7,0,0,0.0
+2026-03-03,AOI Inspection,Plus,AOI-01,1,0,0,0.0
+2026-03-03,AOI Inspection,Pro,AOI-01,5,0,0,0.0
+2026-03-03,Board Test (ICT),Basic,ICT-01,5,2,0,0.0
+2026-03-03,Board Test (ICT),Basic,ICT-02,6,1,0,0.0
+2026-03-03,Board Test (ICT),Plus,ICT-01,6,0,0,0.0
+2026-03-03,Board Test (ICT),Plus,ICT-02,1,2,0,0.0
+2026-03-03,Board Test (ICT),Pro,ICT-01,4,2,0,0.0
+2026-03-03,Board Test (ICT),Pro,ICT-02,7,1,0,0.0
+2026-03-03,Component Placement,Basic,CPL-01,8,0,0,0.0
+2026-03-03,Component Placement,Basic,CPL-02,7,0,0,0.0
+2026-03-03,Component Placement,Plus,CPL-01,12,2,0,0.0
+2026-03-03,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-03-03,Component Placement,Pro,CPL-01,4,1,0,0.0
+2026-03-03,Component Placement,Pro,CPL-02,8,0,0,0.0
+2026-03-03,Final Inspection,Basic,FIN-01,10,0,0,0.0
+2026-03-03,Final Inspection,Plus,FIN-01,14,0,0,0.0
+2026-03-03,Final Inspection,Pro,FIN-01,7,0,0,0.0
+2026-03-03,Functional Test,Basic,FCT-01,6,1,0,0.0
+2026-03-03,Functional Test,Basic,FCT-02,2,1,0,0.0
+2026-03-03,Functional Test,Basic,FCT-03,3,1,0,0.0
+2026-03-03,Functional Test,Plus,FCT-01,4,1,0,0.0
+2026-03-03,Functional Test,Plus,FCT-02,6,3,0,0.0
+2026-03-03,Functional Test,Plus,FCT-03,7,1,0,0.0
+2026-03-03,Functional Test,Pro,FCT-01,5,4,0,0.0
+2026-03-03,Functional Test,Pro,FCT-02,7,3,0,0.0
+2026-03-03,Functional Test,Pro,FCT-03,3,0,0,0.0
+2026-03-03,Housing Assembly,Basic,HSG-01,8,0,0,0.0
+2026-03-03,Housing Assembly,Basic,HSG-02,2,0,0,0.0
+2026-03-03,Housing Assembly,Plus,HSG-01,10,0,0,0.0
+2026-03-03,Housing Assembly,Plus,HSG-02,10,1,0,0.0
+2026-03-03,Housing Assembly,Pro,HSG-01,7,0,0,0.0
+2026-03-03,Housing Assembly,Pro,HSG-02,4,0,0,0.0
+2026-03-03,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-03-03,Packaging,Pro,PKG-01,5,0,0,0.0
+2026-03-03,Reflow Soldering,Basic,RFL-01,12,4,0,0.0
+2026-03-03,Reflow Soldering,Basic,RFL-02,8,0,0,0.0
+2026-03-03,Reflow Soldering,Plus,RFL-01,32,5,0,0.0
+2026-03-03,Reflow Soldering,Plus,RFL-02,9,2,0,0.0
+2026-03-03,Reflow Soldering,Pro,RFL-01,21,3,0,0.0
+2026-03-03,Reflow Soldering,Pro,RFL-02,15,0,0,0.0
+2026-03-03,Screen Assembly,Basic,SCR-01,2,1,0,0.0
+2026-03-03,Screen Assembly,Basic,SCR-02,2,2,0,0.0
+2026-03-03,Screen Assembly,Plus,SCR-01,3,0,0,0.0
+2026-03-03,Screen Assembly,Plus,SCR-02,0,1,0,0.0
+2026-03-03,Screen Assembly,Pro,SCR-01,3,0,0,0.0
+2026-03-03,Screen Assembly,Pro,SCR-02,0,3,0,0.0
+2026-03-03,Solder Paste Printing,Basic,SPP-01,8,0,0,0.0
+2026-03-03,Solder Paste Printing,Plus,SPP-01,6,0,0,0.0
+2026-03-03,Solder Paste Printing,Pro,SPP-01,10,0,0,0.0
+2026-03-04,AOI Inspection,Basic,AOI-01,1,0,0,0.0
+2026-03-04,AOI Inspection,Plus,AOI-01,2,0,0,0.0
+2026-03-04,AOI Inspection,Pro,AOI-01,6,0,0,0.0
+2026-03-04,Board Test (ICT),Basic,ICT-01,5,0,0,0.0
+2026-03-04,Board Test (ICT),Basic,ICT-02,5,0,0,0.0
+2026-03-04,Board Test (ICT),Plus,ICT-01,6,0,0,0.0
+2026-03-04,Board Test (ICT),Plus,ICT-02,3,0,0,0.0
+2026-03-04,Board Test (ICT),Pro,ICT-01,4,0,0,0.0
+2026-03-04,Board Test (ICT),Pro,ICT-02,3,0,0,0.0
+2026-03-04,Component Placement,Basic,CPL-01,5,0,0,0.0
+2026-03-04,Component Placement,Basic,CPL-02,8,1,0,0.0
+2026-03-04,Component Placement,Plus,CPL-01,7,2,0,0.0
+2026-03-04,Component Placement,Plus,CPL-02,8,1,0,0.0
+2026-03-04,Component Placement,Pro,CPL-01,6,1,0,0.0
+2026-03-04,Component Placement,Pro,CPL-02,5,0,0,0.0
+2026-03-04,Final Inspection,Basic,FIN-01,14,1,0,0.0
+2026-03-04,Final Inspection,Plus,FIN-01,15,0,0,0.0
+2026-03-04,Final Inspection,Pro,FIN-01,18,0,0,0.0
+2026-03-04,Functional Test,Basic,FCT-01,4,3,0,0.0
+2026-03-04,Functional Test,Basic,FCT-02,8,1,0,0.0
+2026-03-04,Functional Test,Basic,FCT-03,6,0,0,0.0
+2026-03-04,Functional Test,Plus,FCT-01,3,1,0,0.0
+2026-03-04,Functional Test,Plus,FCT-02,6,1,0,0.0
+2026-03-04,Functional Test,Plus,FCT-03,4,0,0,0.0
+2026-03-04,Functional Test,Pro,FCT-01,4,1,0,0.0
+2026-03-04,Functional Test,Pro,FCT-02,4,0,0,0.0
+2026-03-04,Functional Test,Pro,FCT-03,8,2,0,0.0
+2026-03-04,Housing Assembly,Basic,HSG-01,6,0,0,0.0
+2026-03-04,Housing Assembly,Basic,HSG-02,13,2,0,0.0
+2026-03-04,Housing Assembly,Plus,HSG-01,6,0,0,0.0
+2026-03-04,Housing Assembly,Plus,HSG-02,4,0,0,0.0
+2026-03-04,Housing Assembly,Pro,HSG-01,9,1,0,0.0
+2026-03-04,Housing Assembly,Pro,HSG-02,6,0,0,0.0
+2026-03-04,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-03-04,Packaging,Pro,PKG-01,1,0,0,0.0
+2026-03-04,Reflow Soldering,Basic,RFL-01,17,0,0,0.0
+2026-03-04,Reflow Soldering,Basic,RFL-02,5,1,0,0.0
+2026-03-04,Reflow Soldering,Plus,RFL-01,18,1,0,0.0
+2026-03-04,Reflow Soldering,Plus,RFL-02,7,1,0,0.0
+2026-03-04,Reflow Soldering,Pro,RFL-01,21,1,0,0.0
+2026-03-04,Reflow Soldering,Pro,RFL-02,13,0,0,0.0
+2026-03-04,Screen Assembly,Basic,SCR-01,4,0,0,0.0
+2026-03-04,Screen Assembly,Basic,SCR-02,0,1,0,0.0
+2026-03-04,Screen Assembly,Plus,SCR-01,3,0,0,0.0
+2026-03-04,Screen Assembly,Plus,SCR-02,1,0,0,0.0
+2026-03-04,Screen Assembly,Pro,SCR-01,4,1,0,0.0
+2026-03-04,Screen Assembly,Pro,SCR-02,1,1,0,0.0
+2026-03-04,Solder Paste Printing,Basic,SPP-01,9,0,0,0.0
+2026-03-04,Solder Paste Printing,Plus,SPP-01,8,0,0,0.0
+2026-03-04,Solder Paste Printing,Pro,SPP-01,9,0,0,0.0
+2026-03-05,AOI Inspection,Basic,AOI-01,9,0,0,0.0
+2026-03-05,AOI Inspection,Plus,AOI-01,8,0,0,0.0
+2026-03-05,AOI Inspection,Pro,AOI-01,4,0,0,0.0
+2026-03-05,Board Test (ICT),Basic,ICT-01,2,0,0,0.0
+2026-03-05,Board Test (ICT),Basic,ICT-02,5,1,0,0.0
+2026-03-05,Board Test (ICT),Plus,ICT-01,3,1,0,0.0
+2026-03-05,Board Test (ICT),Plus,ICT-02,4,0,0,0.0
+2026-03-05,Board Test (ICT),Pro,ICT-01,4,0,0,0.0
+2026-03-05,Board Test (ICT),Pro,ICT-02,8,0,0,0.0
+2026-03-05,Component Placement,Basic,CPL-01,6,0,0,0.0
+2026-03-05,Component Placement,Basic,CPL-02,5,0,0,0.0
+2026-03-05,Component Placement,Plus,CPL-01,7,2,0,0.0
+2026-03-05,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-03-05,Component Placement,Pro,CPL-01,9,0,0,0.0
+2026-03-05,Component Placement,Pro,CPL-02,3,0,0,0.0
+2026-03-05,Final Inspection,Basic,FIN-01,8,0,0,0.0
+2026-03-05,Final Inspection,Plus,FIN-01,7,1,0,0.0
+2026-03-05,Final Inspection,Pro,FIN-01,11,1,0,0.0
+2026-03-05,Functional Test,Basic,FCT-01,6,1,0,0.0
+2026-03-05,Functional Test,Basic,FCT-02,4,4,0,0.0
+2026-03-05,Functional Test,Basic,FCT-03,2,0,0,0.0
+2026-03-05,Functional Test,Plus,FCT-01,9,3,0,0.0
+2026-03-05,Functional Test,Plus,FCT-02,2,2,0,0.0
+2026-03-05,Functional Test,Plus,FCT-03,3,1,0,0.0
+2026-03-05,Functional Test,Pro,FCT-01,4,1,0,0.0
+2026-03-05,Functional Test,Pro,FCT-02,2,1,0,0.0
+2026-03-05,Functional Test,Pro,FCT-03,3,1,0,0.0
+2026-03-05,Housing Assembly,Basic,HSG-01,11,0,0,0.0
+2026-03-05,Housing Assembly,Basic,HSG-02,1,1,0,0.0
+2026-03-05,Housing Assembly,Plus,HSG-01,12,1,0,0.0
+2026-03-05,Housing Assembly,Plus,HSG-02,5,0,0,0.0
+2026-03-05,Housing Assembly,Pro,HSG-01,10,0,0,0.0
+2026-03-05,Housing Assembly,Pro,HSG-02,5,1,0,0.0
+2026-03-05,Packaging,Basic,PKG-01,3,1,0,0.0
+2026-03-05,Packaging,Pro,PKG-01,3,0,0,0.0
+2026-03-05,Reflow Soldering,Basic,RFL-01,22,1,0,0.0
+2026-03-05,Reflow Soldering,Basic,RFL-02,5,2,0,0.0
+2026-03-05,Reflow Soldering,Plus,RFL-01,27,5,0,0.0
+2026-03-05,Reflow Soldering,Plus,RFL-02,12,0,0,0.0
+2026-03-05,Reflow Soldering,Pro,RFL-01,25,3,0,0.0
+2026-03-05,Reflow Soldering,Pro,RFL-02,15,1,0,0.0
+2026-03-05,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-03-05,Screen Assembly,Basic,SCR-02,1,3,0,0.0
+2026-03-05,Screen Assembly,Plus,SCR-01,5,1,0,0.0
+2026-03-05,Screen Assembly,Plus,SCR-02,2,1,0,0.0
+2026-03-05,Screen Assembly,Pro,SCR-01,4,0,0,0.0
+2026-03-05,Screen Assembly,Pro,SCR-02,2,2,0,0.0
+2026-03-05,Solder Paste Printing,Basic,SPP-01,10,0,0,0.0
+2026-03-05,Solder Paste Printing,Plus,SPP-01,9,0,0,0.0
+2026-03-05,Solder Paste Printing,Pro,SPP-01,8,1,0,0.0
+2026-03-06,AOI Inspection,Basic,AOI-01,5,1,0,0.0
+2026-03-06,AOI Inspection,Plus,AOI-01,3,0,0,0.0
+2026-03-06,AOI Inspection,Pro,AOI-01,6,0,0,0.0
+2026-03-06,Board Test (ICT),Basic,ICT-01,5,0,0,0.0
+2026-03-06,Board Test (ICT),Basic,ICT-02,3,0,0,0.0
+2026-03-06,Board Test (ICT),Plus,ICT-01,5,3,0,0.0
+2026-03-06,Board Test (ICT),Plus,ICT-02,4,2,0,0.0
+2026-03-06,Board Test (ICT),Pro,ICT-01,9,1,0,0.0
+2026-03-06,Board Test (ICT),Pro,ICT-02,4,2,0,0.0
+2026-03-06,Component Placement,Basic,CPL-01,4,1,0,0.0
+2026-03-06,Component Placement,Basic,CPL-02,5,0,0,0.0
+2026-03-06,Component Placement,Plus,CPL-01,9,0,0,0.0
+2026-03-06,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-03-06,Component Placement,Pro,CPL-01,7,0,0,0.0
+2026-03-06,Component Placement,Pro,CPL-02,2,0,0,0.0
+2026-03-06,Final Inspection,Basic,FIN-01,13,2,0,0.0
+2026-03-06,Final Inspection,Plus,FIN-01,8,0,0,0.0
+2026-03-06,Final Inspection,Pro,FIN-01,18,1,0,0.0
+2026-03-06,Functional Test,Basic,FCT-01,3,0,0,0.0
+2026-03-06,Functional Test,Basic,FCT-02,3,3,0,0.0
+2026-03-06,Functional Test,Basic,FCT-03,2,0,0,0.0
+2026-03-06,Functional Test,Plus,FCT-01,9,2,0,0.0
+2026-03-06,Functional Test,Plus,FCT-02,1,2,0,0.0
+2026-03-06,Functional Test,Plus,FCT-03,4,0,0,0.0
+2026-03-06,Functional Test,Pro,FCT-01,5,1,0,0.0
+2026-03-06,Functional Test,Pro,FCT-02,9,2,0,0.0
+2026-03-06,Functional Test,Pro,FCT-03,3,1,0,0.0
+2026-03-06,Housing Assembly,Basic,HSG-01,9,0,0,0.0
+2026-03-06,Housing Assembly,Basic,HSG-02,4,0,0,0.0
+2026-03-06,Housing Assembly,Plus,HSG-01,4,0,0,0.0
+2026-03-06,Housing Assembly,Plus,HSG-02,3,1,0,0.0
+2026-03-06,Housing Assembly,Pro,HSG-01,7,2,0,0.0
+2026-03-06,Housing Assembly,Pro,HSG-02,2,0,0,0.0
+2026-03-06,Packaging,Basic,PKG-01,4,0,0,0.0
+2026-03-06,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-03-06,Packaging,Pro,PKG-01,3,0,0,0.0
+2026-03-06,Reflow Soldering,Basic,RFL-01,23,0,0,0.0
+2026-03-06,Reflow Soldering,Basic,RFL-02,17,2,0,0.0
+2026-03-06,Reflow Soldering,Plus,RFL-01,24,1,0,0.0
+2026-03-06,Reflow Soldering,Plus,RFL-02,13,2,0,0.0
+2026-03-06,Reflow Soldering,Pro,RFL-01,24,1,0,0.0
+2026-03-06,Reflow Soldering,Pro,RFL-02,12,3,0,0.0
+2026-03-06,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-03-06,Screen Assembly,Basic,SCR-02,1,1,0,0.0
+2026-03-06,Screen Assembly,Plus,SCR-01,2,0,0,0.0
+2026-03-06,Screen Assembly,Plus,SCR-02,1,4,0,0.0
+2026-03-06,Screen Assembly,Pro,SCR-01,3,0,0,0.0
+2026-03-06,Screen Assembly,Pro,SCR-02,3,3,0,0.0
+2026-03-06,Solder Paste Printing,Basic,SPP-01,9,2,0,0.0
+2026-03-06,Solder Paste Printing,Plus,SPP-01,15,0,0,0.0
+2026-03-06,Solder Paste Printing,Pro,SPP-01,10,0,0,0.0
+2026-03-09,AOI Inspection,Basic,AOI-01,5,0,0,0.0
+2026-03-09,AOI Inspection,Plus,AOI-01,3,0,0,0.0
+2026-03-09,AOI Inspection,Pro,AOI-01,13,0,0,0.0
+2026-03-09,Board Test (ICT),Basic,ICT-01,7,0,0,0.0
+2026-03-09,Board Test (ICT),Basic,ICT-02,2,1,0,0.0
+2026-03-09,Board Test (ICT),Plus,ICT-01,7,1,0,0.0
+2026-03-09,Board Test (ICT),Plus,ICT-02,4,0,0,0.0
+2026-03-09,Board Test (ICT),Pro,ICT-01,7,1,0,0.0
+2026-03-09,Board Test (ICT),Pro,ICT-02,5,0,0,0.0
+2026-03-09,Component Placement,Basic,CPL-01,10,0,0,0.0
+2026-03-09,Component Placement,Basic,CPL-02,3,1,0,0.0
+2026-03-09,Component Placement,Plus,CPL-01,9,0,0,0.0
+2026-03-09,Component Placement,Plus,CPL-02,4,0,0,0.0
+2026-03-09,Component Placement,Pro,CPL-01,10,0,0,0.0
+2026-03-09,Component Placement,Pro,CPL-02,3,0,0,0.0
+2026-03-09,Final Inspection,Basic,FIN-01,7,0,0,0.0
+2026-03-09,Final Inspection,Plus,FIN-01,7,1,0,0.0
+2026-03-09,Final Inspection,Pro,FIN-01,17,1,0,0.0
+2026-03-09,Functional Test,Basic,FCT-01,3,1,0,0.0
+2026-03-09,Functional Test,Basic,FCT-02,1,0,0,0.0
+2026-03-09,Functional Test,Basic,FCT-03,4,0,0,0.0
+2026-03-09,Functional Test,Plus,FCT-01,6,0,0,0.0
+2026-03-09,Functional Test,Plus,FCT-02,5,1,0,0.0
+2026-03-09,Functional Test,Plus,FCT-03,3,0,0,0.0
+2026-03-09,Functional Test,Pro,FCT-01,4,2,0,0.0
+2026-03-09,Functional Test,Pro,FCT-02,7,0,0,0.0
+2026-03-09,Functional Test,Pro,FCT-03,1,1,0,0.0
+2026-03-09,Housing Assembly,Basic,HSG-01,6,0,0,0.0
+2026-03-09,Housing Assembly,Basic,HSG-02,7,0,0,0.0
+2026-03-09,Housing Assembly,Plus,HSG-01,11,1,0,0.0
+2026-03-09,Housing Assembly,Plus,HSG-02,3,0,0,0.0
+2026-03-09,Housing Assembly,Pro,HSG-01,7,1,0,0.0
+2026-03-09,Housing Assembly,Pro,HSG-02,10,0,0,0.0
+2026-03-09,Packaging,Basic,PKG-01,4,0,0,0.0
+2026-03-09,Packaging,Plus,PKG-01,4,0,0,0.0
+2026-03-09,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-03-09,Reflow Soldering,Basic,RFL-01,10,3,0,0.0
+2026-03-09,Reflow Soldering,Basic,RFL-02,5,1,0,0.0
+2026-03-09,Reflow Soldering,Plus,RFL-01,25,3,0,0.0
+2026-03-09,Reflow Soldering,Plus,RFL-02,5,1,0,0.0
+2026-03-09,Reflow Soldering,Pro,RFL-01,12,0,0,0.0
+2026-03-09,Reflow Soldering,Pro,RFL-02,10,2,0,0.0
+2026-03-09,Screen Assembly,Basic,SCR-01,0,1,0,0.0
+2026-03-09,Screen Assembly,Basic,SCR-02,0,1,0,0.0
+2026-03-09,Screen Assembly,Plus,SCR-01,2,1,0,0.0
+2026-03-09,Screen Assembly,Plus,SCR-02,1,0,0,0.0
+2026-03-09,Screen Assembly,Pro,SCR-01,1,1,0,0.0
+2026-03-09,Screen Assembly,Pro,SCR-02,3,2,0,0.0
+2026-03-09,Solder Paste Printing,Basic,SPP-01,6,1,0,0.0
+2026-03-09,Solder Paste Printing,Plus,SPP-01,13,0,0,0.0
+2026-03-09,Solder Paste Printing,Pro,SPP-01,10,0,0,0.0
+2026-03-10,AOI Inspection,Basic,AOI-01,6,0,0,0.0
+2026-03-10,AOI Inspection,Plus,AOI-01,6,0,0,0.0
+2026-03-10,AOI Inspection,Pro,AOI-01,3,1,0,0.0
+2026-03-10,Board Test (ICT),Basic,ICT-01,4,1,0,0.0
+2026-03-10,Board Test (ICT),Basic,ICT-02,2,2,0,0.0
+2026-03-10,Board Test (ICT),Plus,ICT-01,0,1,0,0.0
+2026-03-10,Board Test (ICT),Plus,ICT-02,8,0,0,0.0
+2026-03-10,Board Test (ICT),Pro,ICT-01,8,0,0,0.0
+2026-03-10,Board Test (ICT),Pro,ICT-02,6,1,0,0.0
+2026-03-10,Component Placement,Basic,CPL-01,5,0,0,0.0
+2026-03-10,Component Placement,Basic,CPL-02,6,0,0,0.0
+2026-03-10,Component Placement,Plus,CPL-01,10,3,0,0.0
+2026-03-10,Component Placement,Plus,CPL-02,7,0,0,0.0
+2026-03-10,Component Placement,Pro,CPL-01,12,1,0,0.0
+2026-03-10,Component Placement,Pro,CPL-02,4,0,0,0.0
+2026-03-10,Final Inspection,Basic,FIN-01,3,0,0,0.0
+2026-03-10,Final Inspection,Plus,FIN-01,8,0,0,0.0
+2026-03-10,Final Inspection,Pro,FIN-01,10,0,0,0.0
+2026-03-10,Functional Test,Basic,FCT-01,2,2,0,0.0
+2026-03-10,Functional Test,Basic,FCT-02,2,1,0,0.0
+2026-03-10,Functional Test,Basic,FCT-03,2,1,0,0.0
+2026-03-10,Functional Test,Plus,FCT-01,3,0,0,0.0
+2026-03-10,Functional Test,Plus,FCT-02,5,0,0,0.0
+2026-03-10,Functional Test,Plus,FCT-03,1,0,0,0.0
+2026-03-10,Functional Test,Pro,FCT-01,5,1,0,0.0
+2026-03-10,Functional Test,Pro,FCT-02,7,2,0,0.0
+2026-03-10,Functional Test,Pro,FCT-03,1,1,0,0.0
+2026-03-10,Housing Assembly,Basic,HSG-01,6,1,0,0.0
+2026-03-10,Housing Assembly,Basic,HSG-02,3,0,0,0.0
+2026-03-10,Housing Assembly,Plus,HSG-01,5,0,0,0.0
+2026-03-10,Housing Assembly,Plus,HSG-02,4,0,0,0.0
+2026-03-10,Housing Assembly,Pro,HSG-01,5,0,0,0.0
+2026-03-10,Housing Assembly,Pro,HSG-02,5,0,0,0.0
+2026-03-10,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-03-10,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-03-10,Reflow Soldering,Basic,RFL-01,20,1,0,0.0
+2026-03-10,Reflow Soldering,Basic,RFL-02,7,0,0,0.0
+2026-03-10,Reflow Soldering,Plus,RFL-01,25,2,0,0.0
+2026-03-10,Reflow Soldering,Plus,RFL-02,12,1,0,0.0
+2026-03-10,Reflow Soldering,Pro,RFL-01,28,3,0,0.0
+2026-03-10,Reflow Soldering,Pro,RFL-02,7,1,0,0.0
+2026-03-10,Screen Assembly,Basic,SCR-01,6,0,0,0.0
+2026-03-10,Screen Assembly,Basic,SCR-02,0,5,0,0.0
+2026-03-10,Screen Assembly,Plus,SCR-01,6,1,0,0.0
+2026-03-10,Screen Assembly,Plus,SCR-02,2,8,0,0.0
+2026-03-10,Screen Assembly,Pro,SCR-01,5,1,0,0.0
+2026-03-10,Screen Assembly,Pro,SCR-02,3,3,0,0.0
+2026-03-10,Solder Paste Printing,Basic,SPP-01,10,1,0,0.0
+2026-03-10,Solder Paste Printing,Plus,SPP-01,16,1,0,0.0
+2026-03-10,Solder Paste Printing,Pro,SPP-01,16,0,0,0.0
+2026-03-11,AOI Inspection,Basic,AOI-01,7,0,0,0.0
+2026-03-11,AOI Inspection,Plus,AOI-01,9,1,0,0.0
+2026-03-11,AOI Inspection,Pro,AOI-01,11,0,0,0.0
+2026-03-11,Board Test (ICT),Basic,ICT-01,3,0,0,0.0
+2026-03-11,Board Test (ICT),Basic,ICT-02,3,0,0,0.0
+2026-03-11,Board Test (ICT),Plus,ICT-01,7,1,0,0.0
+2026-03-11,Board Test (ICT),Plus,ICT-02,4,0,0,0.0
+2026-03-11,Board Test (ICT),Pro,ICT-01,6,0,0,0.0
+2026-03-11,Board Test (ICT),Pro,ICT-02,6,1,0,0.0
+2026-03-11,Component Placement,Basic,CPL-01,4,0,0,0.0
+2026-03-11,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-03-11,Component Placement,Plus,CPL-01,3,0,0,0.0
+2026-03-11,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-03-11,Component Placement,Pro,CPL-01,5,3,0,0.0
+2026-03-11,Component Placement,Pro,CPL-02,4,0,0,0.0
+2026-03-11,Final Inspection,Basic,FIN-01,14,0,0,0.0
+2026-03-11,Final Inspection,Plus,FIN-01,10,3,0,0.0
+2026-03-11,Final Inspection,Pro,FIN-01,9,1,0,0.0
+2026-03-11,Functional Test,Basic,FCT-01,5,0,0,0.0
+2026-03-11,Functional Test,Basic,FCT-02,2,3,0,0.0
+2026-03-11,Functional Test,Basic,FCT-03,3,0,0,0.0
+2026-03-11,Functional Test,Plus,FCT-01,12,2,0,0.0
+2026-03-11,Functional Test,Plus,FCT-02,6,0,0,0.0
+2026-03-11,Functional Test,Plus,FCT-03,2,1,0,0.0
+2026-03-11,Functional Test,Pro,FCT-01,9,3,0,0.0
+2026-03-11,Functional Test,Pro,FCT-02,5,1,0,0.0
+2026-03-11,Functional Test,Pro,FCT-03,7,1,0,0.0
+2026-03-11,Housing Assembly,Basic,HSG-01,5,0,0,0.0
+2026-03-11,Housing Assembly,Basic,HSG-02,5,0,0,0.0
+2026-03-11,Housing Assembly,Plus,HSG-01,4,1,0,0.0
+2026-03-11,Housing Assembly,Plus,HSG-02,6,1,0,0.0
+2026-03-11,Housing Assembly,Pro,HSG-01,8,2,0,0.0
+2026-03-11,Housing Assembly,Pro,HSG-02,10,0,0,0.0
+2026-03-11,Packaging,Basic,PKG-01,3,0,0,0.0
+2026-03-11,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-03-11,Packaging,Pro,PKG-01,1,0,0,0.0
+2026-03-11,Reflow Soldering,Basic,RFL-01,25,2,0,0.0
+2026-03-11,Reflow Soldering,Basic,RFL-02,3,2,0,0.0
+2026-03-11,Reflow Soldering,Plus,RFL-01,17,3,0,0.0
+2026-03-11,Reflow Soldering,Plus,RFL-02,9,1,0,0.0
+2026-03-11,Reflow Soldering,Pro,RFL-01,31,1,0,0.0
+2026-03-11,Reflow Soldering,Pro,RFL-02,12,0,0,0.0
+2026-03-11,Screen Assembly,Basic,SCR-01,8,0,0,0.0
+2026-03-11,Screen Assembly,Basic,SCR-02,0,6,0,0.0
+2026-03-11,Screen Assembly,Plus,SCR-01,2,0,0,0.0
+2026-03-11,Screen Assembly,Plus,SCR-02,1,9,0,0.0
+2026-03-11,Screen Assembly,Pro,SCR-01,2,1,0,0.0
+2026-03-11,Screen Assembly,Pro,SCR-02,2,3,0,0.0
+2026-03-11,Solder Paste Printing,Basic,SPP-01,7,0,0,0.0
+2026-03-11,Solder Paste Printing,Plus,SPP-01,13,0,0,0.0
+2026-03-11,Solder Paste Printing,Pro,SPP-01,12,1,0,0.0
+2026-03-12,AOI Inspection,Basic,AOI-01,7,0,0,0.0
+2026-03-12,AOI Inspection,Plus,AOI-01,9,0,0,0.0
+2026-03-12,AOI Inspection,Pro,AOI-01,4,0,0,0.0
+2026-03-12,Board Test (ICT),Basic,ICT-01,4,1,0,0.0
+2026-03-12,Board Test (ICT),Basic,ICT-02,1,2,0,0.0
+2026-03-12,Board Test (ICT),Plus,ICT-01,6,1,0,0.0
+2026-03-12,Board Test (ICT),Plus,ICT-02,7,0,0,0.0
+2026-03-12,Board Test (ICT),Pro,ICT-01,7,0,0,0.0
+2026-03-12,Board Test (ICT),Pro,ICT-02,6,1,0,0.0
+2026-03-12,Component Placement,Basic,CPL-01,4,0,0,0.0
+2026-03-12,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-03-12,Component Placement,Plus,CPL-01,10,1,0,0.0
+2026-03-12,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-03-12,Component Placement,Pro,CPL-01,5,0,0,0.0
+2026-03-12,Component Placement,Pro,CPL-02,9,0,0,0.0
+2026-03-12,Final Inspection,Basic,FIN-01,4,1,0,0.0
+2026-03-12,Final Inspection,Plus,FIN-01,9,0,0,0.0
+2026-03-12,Final Inspection,Pro,FIN-01,10,0,0,0.0
+2026-03-12,Functional Test,Basic,FCT-01,4,2,0,0.0
+2026-03-12,Functional Test,Basic,FCT-02,5,0,0,0.0
+2026-03-12,Functional Test,Basic,FCT-03,2,0,0,0.0
+2026-03-12,Functional Test,Plus,FCT-01,7,0,0,0.0
+2026-03-12,Functional Test,Plus,FCT-02,6,1,0,0.0
+2026-03-12,Functional Test,Plus,FCT-03,2,1,0,0.0
+2026-03-12,Functional Test,Pro,FCT-01,6,1,0,0.0
+2026-03-12,Functional Test,Pro,FCT-02,7,1,0,0.0
+2026-03-12,Functional Test,Pro,FCT-03,5,2,0,0.0
+2026-03-12,Housing Assembly,Basic,HSG-01,15,0,0,0.0
+2026-03-12,Housing Assembly,Basic,HSG-02,2,1,0,0.0
+2026-03-12,Housing Assembly,Plus,HSG-01,11,0,0,0.0
+2026-03-12,Housing Assembly,Plus,HSG-02,6,2,0,0.0
+2026-03-12,Housing Assembly,Pro,HSG-01,11,2,0,0.0
+2026-03-12,Housing Assembly,Pro,HSG-02,3,1,0,0.0
+2026-03-12,Packaging,Basic,PKG-01,5,0,0,0.0
+2026-03-12,Packaging,Plus,PKG-01,4,0,0,0.0
+2026-03-12,Packaging,Pro,PKG-01,3,0,0,0.0
+2026-03-12,Reflow Soldering,Basic,RFL-01,21,1,0,0.0
+2026-03-12,Reflow Soldering,Basic,RFL-02,14,2,0,0.0
+2026-03-12,Reflow Soldering,Plus,RFL-01,21,0,0,0.0
+2026-03-12,Reflow Soldering,Plus,RFL-02,14,0,0,0.0
+2026-03-12,Reflow Soldering,Pro,RFL-01,26,1,0,0.0
+2026-03-12,Reflow Soldering,Pro,RFL-02,10,0,0,0.0
+2026-03-12,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-03-12,Screen Assembly,Basic,SCR-02,2,2,0,0.0
+2026-03-12,Screen Assembly,Plus,SCR-01,2,0,0,0.0
+2026-03-12,Screen Assembly,Plus,SCR-02,0,1,0,0.0
+2026-03-12,Screen Assembly,Pro,SCR-01,3,0,0,0.0
+2026-03-12,Screen Assembly,Pro,SCR-02,2,3,0,0.0
+2026-03-12,Solder Paste Printing,Basic,SPP-01,14,1,0,0.0
+2026-03-12,Solder Paste Printing,Plus,SPP-01,7,0,0,0.0
+2026-03-12,Solder Paste Printing,Pro,SPP-01,12,0,0,0.0
+2026-03-13,AOI Inspection,Basic,AOI-01,6,0,0,0.0
+2026-03-13,AOI Inspection,Plus,AOI-01,5,0,0,0.0
+2026-03-13,AOI Inspection,Pro,AOI-01,6,1,0,0.0
+2026-03-13,Board Test (ICT),Basic,ICT-01,4,0,0,0.0
+2026-03-13,Board Test (ICT),Basic,ICT-02,4,0,0,0.0
+2026-03-13,Board Test (ICT),Plus,ICT-01,7,0,0,0.0
+2026-03-13,Board Test (ICT),Plus,ICT-02,2,3,0,0.0
+2026-03-13,Board Test (ICT),Pro,ICT-02,4,0,0,0.0
+2026-03-13,Component Placement,Basic,CPL-01,9,0,0,0.0
+2026-03-13,Component Placement,Basic,CPL-02,6,0,0,0.0
+2026-03-13,Component Placement,Plus,CPL-01,8,2,0,0.0
+2026-03-13,Component Placement,Plus,CPL-02,9,0,0,0.0
+2026-03-13,Component Placement,Pro,CPL-01,6,3,0,0.0
+2026-03-13,Component Placement,Pro,CPL-02,11,1,0,0.0
+2026-03-13,Final Inspection,Basic,FIN-01,6,0,0,0.0
+2026-03-13,Final Inspection,Plus,FIN-01,9,0,0,0.0
+2026-03-13,Final Inspection,Pro,FIN-01,11,1,0,0.0
+2026-03-13,Functional Test,Basic,FCT-01,5,3,0,0.0
+2026-03-13,Functional Test,Basic,FCT-02,7,0,0,0.0
+2026-03-13,Functional Test,Basic,FCT-03,4,0,0,0.0
+2026-03-13,Functional Test,Plus,FCT-01,5,1,0,0.0
+2026-03-13,Functional Test,Plus,FCT-02,4,1,0,0.0
+2026-03-13,Functional Test,Plus,FCT-03,3,1,0,0.0
+2026-03-13,Functional Test,Pro,FCT-01,3,1,0,0.0
+2026-03-13,Functional Test,Pro,FCT-02,4,0,0,0.0
+2026-03-13,Functional Test,Pro,FCT-03,3,2,0,0.0
+2026-03-13,Housing Assembly,Basic,HSG-01,8,0,0,0.0
+2026-03-13,Housing Assembly,Basic,HSG-02,1,0,0,0.0
+2026-03-13,Housing Assembly,Plus,HSG-01,5,0,0,0.0
+2026-03-13,Housing Assembly,Plus,HSG-02,3,1,0,0.0
+2026-03-13,Housing Assembly,Pro,HSG-01,12,1,0,0.0
+2026-03-13,Housing Assembly,Pro,HSG-02,5,0,0,0.0
+2026-03-13,Packaging,Plus,PKG-01,2,1,0,0.0
+2026-03-13,Packaging,Pro,PKG-01,4,0,0,0.0
+2026-03-13,Reflow Soldering,Basic,RFL-01,14,1,0,0.0
+2026-03-13,Reflow Soldering,Basic,RFL-02,7,1,0,0.0
+2026-03-13,Reflow Soldering,Plus,RFL-01,21,2,0,0.0
+2026-03-13,Reflow Soldering,Plus,RFL-02,6,1,0,0.0
+2026-03-13,Reflow Soldering,Pro,RFL-01,22,2,0,0.0
+2026-03-13,Reflow Soldering,Pro,RFL-02,10,1,0,0.0
+2026-03-13,Screen Assembly,Basic,SCR-01,4,1,0,0.0
+2026-03-13,Screen Assembly,Basic,SCR-02,2,5,0,0.0
+2026-03-13,Screen Assembly,Plus,SCR-01,5,1,0,0.0
+2026-03-13,Screen Assembly,Plus,SCR-02,0,3,0,0.0
+2026-03-13,Screen Assembly,Pro,SCR-01,4,0,0,0.0
+2026-03-13,Screen Assembly,Pro,SCR-02,0,6,0,0.0
+2026-03-13,Solder Paste Printing,Basic,SPP-01,10,0,0,0.0
+2026-03-13,Solder Paste Printing,Plus,SPP-01,9,0,0,0.0
+2026-03-13,Solder Paste Printing,Pro,SPP-01,11,0,0,0.0
+2026-03-16,AOI Inspection,Basic,AOI-01,8,0,0,0.0
+2026-03-16,AOI Inspection,Plus,AOI-01,7,0,0,0.0
+2026-03-16,AOI Inspection,Pro,AOI-01,8,0,0,0.0
+2026-03-16,Board Test (ICT),Basic,ICT-01,9,1,0,0.0
+2026-03-16,Board Test (ICT),Basic,ICT-02,3,1,0,0.0
+2026-03-16,Board Test (ICT),Plus,ICT-01,10,0,0,0.0
+2026-03-16,Board Test (ICT),Plus,ICT-02,6,0,0,0.0
+2026-03-16,Board Test (ICT),Pro,ICT-01,7,2,0,0.0
+2026-03-16,Board Test (ICT),Pro,ICT-02,5,1,0,0.0
+2026-03-16,Component Placement,Basic,CPL-01,6,2,0,0.0
+2026-03-16,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-03-16,Component Placement,Plus,CPL-01,8,0,0,0.0
+2026-03-16,Component Placement,Plus,CPL-02,8,0,0,0.0
+2026-03-16,Component Placement,Pro,CPL-01,4,1,0,0.0
+2026-03-16,Component Placement,Pro,CPL-02,8,1,0,0.0
+2026-03-16,Final Inspection,Basic,FIN-01,8,0,0,0.0
+2026-03-16,Final Inspection,Plus,FIN-01,4,0,0,0.0
+2026-03-16,Final Inspection,Pro,FIN-01,13,1,0,0.0
+2026-03-16,Functional Test,Basic,FCT-01,10,1,0,0.0
+2026-03-16,Functional Test,Basic,FCT-02,5,0,0,0.0
+2026-03-16,Functional Test,Basic,FCT-03,2,0,0,0.0
+2026-03-16,Functional Test,Plus,FCT-01,3,4,0,0.0
+2026-03-16,Functional Test,Plus,FCT-02,3,0,0,0.0
+2026-03-16,Functional Test,Plus,FCT-03,4,0,0,0.0
+2026-03-16,Functional Test,Pro,FCT-01,1,3,0,0.0
+2026-03-16,Functional Test,Pro,FCT-02,4,1,0,0.0
+2026-03-16,Functional Test,Pro,FCT-03,6,0,0,5.0
+2026-03-16,Housing Assembly,Basic,HSG-01,10,0,0,0.0
+2026-03-16,Housing Assembly,Basic,HSG-02,4,0,0,0.0
+2026-03-16,Housing Assembly,Plus,HSG-01,8,0,0,0.0
+2026-03-16,Housing Assembly,Plus,HSG-02,4,0,0,0.0
+2026-03-16,Housing Assembly,Pro,HSG-01,9,1,0,0.0
+2026-03-16,Housing Assembly,Pro,HSG-02,6,1,0,0.0
+2026-03-16,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-03-16,Reflow Soldering,Basic,RFL-01,19,2,0,0.0
+2026-03-16,Reflow Soldering,Basic,RFL-02,12,0,0,0.0
+2026-03-16,Reflow Soldering,Plus,RFL-01,31,7,0,0.0
+2026-03-16,Reflow Soldering,Plus,RFL-02,13,0,0,0.0
+2026-03-16,Reflow Soldering,Pro,RFL-01,25,2,0,0.0
+2026-03-16,Reflow Soldering,Pro,RFL-02,13,1,0,0.0
+2026-03-16,Screen Assembly,Basic,SCR-01,6,0,0,0.0
+2026-03-16,Screen Assembly,Basic,SCR-02,1,3,0,0.0
+2026-03-16,Screen Assembly,Plus,SCR-01,3,1,0,0.0
+2026-03-16,Screen Assembly,Plus,SCR-02,4,3,0,0.0
+2026-03-16,Screen Assembly,Pro,SCR-01,4,1,0,0.0
+2026-03-16,Screen Assembly,Pro,SCR-02,1,1,0,0.0
+2026-03-16,Solder Paste Printing,Basic,SPP-01,6,0,0,0.0
+2026-03-16,Solder Paste Printing,Plus,SPP-01,14,2,0,0.0
+2026-03-16,Solder Paste Printing,Pro,SPP-01,14,0,0,0.0
+2026-03-17,AOI Inspection,Basic,AOI-01,5,0,0,0.0
+2026-03-17,AOI Inspection,Plus,AOI-01,4,0,0,0.0
+2026-03-17,AOI Inspection,Pro,AOI-01,5,0,0,0.0
+2026-03-17,Board Test (ICT),Basic,ICT-01,2,3,0,0.0
+2026-03-17,Board Test (ICT),Basic,ICT-02,1,1,0,0.0
+2026-03-17,Board Test (ICT),Plus,ICT-01,5,0,0,0.0
+2026-03-17,Board Test (ICT),Plus,ICT-02,2,2,0,0.0
+2026-03-17,Board Test (ICT),Pro,ICT-01,2,1,0,0.0
+2026-03-17,Board Test (ICT),Pro,ICT-02,5,0,0,0.0
+2026-03-17,Component Placement,Basic,CPL-01,10,0,0,0.0
+2026-03-17,Component Placement,Basic,CPL-02,2,0,0,0.0
+2026-03-17,Component Placement,Plus,CPL-01,11,0,0,0.0
+2026-03-17,Component Placement,Plus,CPL-02,2,0,0,0.0
+2026-03-17,Component Placement,Pro,CPL-01,13,1,0,0.0
+2026-03-17,Component Placement,Pro,CPL-02,6,0,0,0.0
+2026-03-17,Final Inspection,Basic,FIN-01,8,0,0,0.0
+2026-03-17,Final Inspection,Plus,FIN-01,8,0,0,0.0
+2026-03-17,Final Inspection,Pro,FIN-01,10,0,0,0.0
+2026-03-17,Functional Test,Basic,FCT-01,4,1,0,0.0
+2026-03-17,Functional Test,Basic,FCT-02,6,3,0,0.0
+2026-03-17,Functional Test,Basic,FCT-03,6,3,0,0.0
+2026-03-17,Functional Test,Plus,FCT-01,10,3,0,0.0
+2026-03-17,Functional Test,Plus,FCT-02,4,3,0,0.0
+2026-03-17,Functional Test,Plus,FCT-03,5,1,0,0.0
+2026-03-17,Functional Test,Pro,FCT-01,10,0,0,0.0
+2026-03-17,Functional Test,Pro,FCT-02,6,0,0,0.0
+2026-03-17,Functional Test,Pro,FCT-03,6,2,0,0.0
+2026-03-17,Housing Assembly,Basic,HSG-01,5,0,0,0.0
+2026-03-17,Housing Assembly,Basic,HSG-02,4,0,0,0.0
+2026-03-17,Housing Assembly,Plus,HSG-01,5,0,0,0.0
+2026-03-17,Housing Assembly,Plus,HSG-02,5,0,0,0.0
+2026-03-17,Housing Assembly,Pro,HSG-01,12,2,0,0.0
+2026-03-17,Housing Assembly,Pro,HSG-02,8,0,0,0.0
+2026-03-17,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-03-17,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-03-17,Packaging,Pro,PKG-01,6,0,0,0.0
+2026-03-17,Reflow Soldering,Basic,RFL-01,14,1,0,0.0
+2026-03-17,Reflow Soldering,Basic,RFL-02,8,0,0,0.0
+2026-03-17,Reflow Soldering,Plus,RFL-01,17,1,0,0.0
+2026-03-17,Reflow Soldering,Plus,RFL-02,10,0,0,0.0
+2026-03-17,Reflow Soldering,Pro,RFL-01,18,2,0,0.0
+2026-03-17,Reflow Soldering,Pro,RFL-02,11,0,0,0.0
+2026-03-17,Screen Assembly,Basic,SCR-01,4,2,0,0.0
+2026-03-17,Screen Assembly,Basic,SCR-02,2,4,0,0.0
+2026-03-17,Screen Assembly,Plus,SCR-01,1,1,0,0.0
+2026-03-17,Screen Assembly,Plus,SCR-02,1,5,0,0.0
+2026-03-17,Screen Assembly,Pro,SCR-01,3,1,0,0.0
+2026-03-17,Screen Assembly,Pro,SCR-02,2,5,0,0.0
+2026-03-17,Solder Paste Printing,Basic,SPP-01,7,0,0,0.0
+2026-03-17,Solder Paste Printing,Plus,SPP-01,7,1,0,0.0
+2026-03-17,Solder Paste Printing,Pro,SPP-01,2,0,0,0.0
+2026-03-18,AOI Inspection,Basic,AOI-01,6,0,0,0.0
+2026-03-18,AOI Inspection,Plus,AOI-01,3,0,0,0.0
+2026-03-18,AOI Inspection,Pro,AOI-01,6,0,0,0.0
+2026-03-18,Board Test (ICT),Basic,ICT-01,5,0,0,0.0
+2026-03-18,Board Test (ICT),Basic,ICT-02,4,0,0,0.0
+2026-03-18,Board Test (ICT),Plus,ICT-01,7,0,0,0.0
+2026-03-18,Board Test (ICT),Plus,ICT-02,5,0,0,0.0
+2026-03-18,Board Test (ICT),Pro,ICT-01,6,1,0,0.0
+2026-03-18,Board Test (ICT),Pro,ICT-02,2,1,0,0.0
+2026-03-18,Component Placement,Basic,CPL-01,5,0,0,0.0
+2026-03-18,Component Placement,Basic,CPL-02,6,0,0,0.0
+2026-03-18,Component Placement,Plus,CPL-01,4,0,0,0.0
+2026-03-18,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-03-18,Component Placement,Pro,CPL-01,10,1,0,0.0
+2026-03-18,Component Placement,Pro,CPL-02,3,0,0,0.0
+2026-03-18,Final Inspection,Basic,FIN-01,9,0,0,0.0
+2026-03-18,Final Inspection,Plus,FIN-01,8,0,0,0.0
+2026-03-18,Final Inspection,Pro,FIN-01,5,0,0,0.0
+2026-03-18,Functional Test,Basic,FCT-01,3,1,0,0.0
+2026-03-18,Functional Test,Basic,FCT-02,4,1,0,0.0
+2026-03-18,Functional Test,Basic,FCT-03,6,0,0,0.0
+2026-03-18,Functional Test,Plus,FCT-01,8,2,0,0.0
+2026-03-18,Functional Test,Plus,FCT-02,5,2,0,0.0
+2026-03-18,Functional Test,Plus,FCT-03,5,3,0,0.0
+2026-03-18,Functional Test,Pro,FCT-01,10,2,0,0.0
+2026-03-18,Functional Test,Pro,FCT-02,5,1,0,0.0
+2026-03-18,Functional Test,Pro,FCT-03,4,1,0,0.0
+2026-03-18,Housing Assembly,Basic,HSG-01,5,1,0,0.0
+2026-03-18,Housing Assembly,Basic,HSG-02,2,0,0,0.0
+2026-03-18,Housing Assembly,Plus,HSG-01,11,0,0,0.0
+2026-03-18,Housing Assembly,Plus,HSG-02,5,0,0,0.0
+2026-03-18,Housing Assembly,Pro,HSG-01,2,1,0,0.0
+2026-03-18,Housing Assembly,Pro,HSG-02,4,2,0,0.0
+2026-03-18,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-03-18,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-03-18,Reflow Soldering,Basic,RFL-01,22,4,0,0.0
+2026-03-18,Reflow Soldering,Basic,RFL-02,7,0,0,0.0
+2026-03-18,Reflow Soldering,Plus,RFL-01,29,4,0,0.0
+2026-03-18,Reflow Soldering,Plus,RFL-02,11,2,0,0.0
+2026-03-18,Reflow Soldering,Pro,RFL-01,26,0,0,0.0
+2026-03-18,Reflow Soldering,Pro,RFL-02,7,2,0,0.0
+2026-03-18,Screen Assembly,Basic,SCR-01,6,0,0,0.0
+2026-03-18,Screen Assembly,Basic,SCR-02,6,3,0,0.0
+2026-03-18,Screen Assembly,Plus,SCR-01,6,2,0,0.0
+2026-03-18,Screen Assembly,Plus,SCR-02,1,4,0,0.0
+2026-03-18,Screen Assembly,Pro,SCR-01,4,1,0,0.0
+2026-03-18,Screen Assembly,Pro,SCR-02,2,7,0,0.0
+2026-03-18,Solder Paste Printing,Basic,SPP-01,14,1,0,0.0
+2026-03-18,Solder Paste Printing,Plus,SPP-01,10,0,0,0.0
+2026-03-18,Solder Paste Printing,Pro,SPP-01,12,1,0,0.0
+2026-03-19,AOI Inspection,Basic,AOI-01,4,0,0,0.0
+2026-03-19,AOI Inspection,Plus,AOI-01,5,0,0,0.0
+2026-03-19,AOI Inspection,Pro,AOI-01,4,0,0,0.0
+2026-03-19,Board Test (ICT),Basic,ICT-01,4,0,0,0.0
+2026-03-19,Board Test (ICT),Plus,ICT-01,9,2,0,0.0
+2026-03-19,Board Test (ICT),Plus,ICT-02,6,0,0,0.0
+2026-03-19,Board Test (ICT),Pro,ICT-01,7,1,0,0.0
+2026-03-19,Board Test (ICT),Pro,ICT-02,6,3,0,0.0
+2026-03-19,Component Placement,Basic,CPL-01,6,0,0,0.0
+2026-03-19,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-03-19,Component Placement,Plus,CPL-01,2,0,0,0.0
+2026-03-19,Component Placement,Plus,CPL-02,4,0,0,0.0
+2026-03-19,Component Placement,Pro,CPL-01,10,0,0,0.0
+2026-03-19,Component Placement,Pro,CPL-02,4,0,0,0.0
+2026-03-19,Final Inspection,Basic,FIN-01,5,0,0,0.0
+2026-03-19,Final Inspection,Plus,FIN-01,6,0,0,0.0
+2026-03-19,Final Inspection,Pro,FIN-01,10,1,0,0.0
+2026-03-19,Functional Test,Basic,FCT-01,11,1,0,0.0
+2026-03-19,Functional Test,Basic,FCT-02,5,0,0,0.0
+2026-03-19,Functional Test,Basic,FCT-03,2,1,0,0.0
+2026-03-19,Functional Test,Plus,FCT-01,4,1,0,0.0
+2026-03-19,Functional Test,Plus,FCT-02,4,2,0,0.0
+2026-03-19,Functional Test,Plus,FCT-03,3,0,0,0.0
+2026-03-19,Functional Test,Pro,FCT-01,9,0,0,0.0
+2026-03-19,Functional Test,Pro,FCT-02,9,2,0,0.0
+2026-03-19,Functional Test,Pro,FCT-03,10,0,0,0.0
+2026-03-19,Housing Assembly,Basic,HSG-01,5,0,0,0.0
+2026-03-19,Housing Assembly,Basic,HSG-02,4,1,0,0.0
+2026-03-19,Housing Assembly,Plus,HSG-01,5,1,0,0.0
+2026-03-19,Housing Assembly,Pro,HSG-01,10,0,0,0.0
+2026-03-19,Housing Assembly,Pro,HSG-02,3,1,0,0.0
+2026-03-19,Packaging,Basic,PKG-01,5,0,0,0.0
+2026-03-19,Packaging,Plus,PKG-01,6,0,0,0.0
+2026-03-19,Packaging,Pro,PKG-01,4,0,0,0.0
+2026-03-19,Reflow Soldering,Basic,RFL-01,25,3,0,0.0
+2026-03-19,Reflow Soldering,Basic,RFL-02,10,2,0,0.0
+2026-03-19,Reflow Soldering,Plus,RFL-01,28,3,0,0.0
+2026-03-19,Reflow Soldering,Plus,RFL-02,11,2,0,0.0
+2026-03-19,Reflow Soldering,Pro,RFL-01,27,2,0,0.0
+2026-03-19,Reflow Soldering,Pro,RFL-02,9,3,0,0.0
+2026-03-19,Screen Assembly,Basic,SCR-01,1,0,0,0.0
+2026-03-19,Screen Assembly,Basic,SCR-02,3,2,0,0.0
+2026-03-19,Screen Assembly,Plus,SCR-01,6,2,0,0.0
+2026-03-19,Screen Assembly,Plus,SCR-02,0,3,0,0.0
+2026-03-19,Screen Assembly,Pro,SCR-01,8,0,0,0.0
+2026-03-19,Screen Assembly,Pro,SCR-02,0,6,0,0.0
+2026-03-19,Solder Paste Printing,Basic,SPP-01,9,1,0,0.0
+2026-03-19,Solder Paste Printing,Plus,SPP-01,8,0,0,0.0
+2026-03-19,Solder Paste Printing,Pro,SPP-01,7,0,0,0.0
+2026-03-20,AOI Inspection,Basic,AOI-01,4,0,0,0.0
+2026-03-20,AOI Inspection,Plus,AOI-01,6,0,0,0.0
+2026-03-20,AOI Inspection,Pro,AOI-01,11,0,0,0.0
+2026-03-20,Board Test (ICT),Basic,ICT-01,1,0,0,0.0
+2026-03-20,Board Test (ICT),Basic,ICT-02,3,0,0,0.0
+2026-03-20,Board Test (ICT),Plus,ICT-01,6,1,0,0.0
+2026-03-20,Board Test (ICT),Plus,ICT-02,5,2,0,0.0
+2026-03-20,Board Test (ICT),Pro,ICT-01,6,0,0,0.0
+2026-03-20,Board Test (ICT),Pro,ICT-02,9,0,0,0.0
+2026-03-20,Component Placement,Basic,CPL-01,9,1,0,0.0
+2026-03-20,Component Placement,Basic,CPL-02,7,0,0,0.0
+2026-03-20,Component Placement,Plus,CPL-01,11,0,0,0.0
+2026-03-20,Component Placement,Plus,CPL-02,4,0,0,0.0
+2026-03-20,Component Placement,Pro,CPL-01,14,0,0,0.0
+2026-03-20,Component Placement,Pro,CPL-02,12,1,0,0.0
+2026-03-20,Final Inspection,Basic,FIN-01,7,1,0,0.0
+2026-03-20,Final Inspection,Plus,FIN-01,7,1,0,0.0
+2026-03-20,Final Inspection,Pro,FIN-01,7,1,0,0.0
+2026-03-20,Functional Test,Basic,FCT-01,3,2,0,0.0
+2026-03-20,Functional Test,Basic,FCT-02,7,1,0,0.0
+2026-03-20,Functional Test,Basic,FCT-03,1,1,0,0.0
+2026-03-20,Functional Test,Plus,FCT-01,4,2,0,0.0
+2026-03-20,Functional Test,Plus,FCT-02,4,3,0,0.0
+2026-03-20,Functional Test,Plus,FCT-03,5,1,0,0.0
+2026-03-20,Functional Test,Pro,FCT-01,2,1,0,0.0
+2026-03-20,Functional Test,Pro,FCT-02,7,1,0,0.0
+2026-03-20,Functional Test,Pro,FCT-03,6,0,0,0.0
+2026-03-20,Housing Assembly,Basic,HSG-01,4,0,0,0.0
+2026-03-20,Housing Assembly,Basic,HSG-02,5,0,0,0.0
+2026-03-20,Housing Assembly,Plus,HSG-01,7,2,0,0.0
+2026-03-20,Housing Assembly,Plus,HSG-02,1,1,0,0.0
+2026-03-20,Housing Assembly,Pro,HSG-01,13,0,0,0.0
+2026-03-20,Housing Assembly,Pro,HSG-02,5,0,0,0.0
+2026-03-20,Packaging,Basic,PKG-01,5,0,0,0.0
+2026-03-20,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-03-20,Reflow Soldering,Basic,RFL-01,24,2,0,0.0
+2026-03-20,Reflow Soldering,Basic,RFL-02,12,3,0,0.0
+2026-03-20,Reflow Soldering,Plus,RFL-01,18,3,0,0.0
+2026-03-20,Reflow Soldering,Plus,RFL-02,9,1,0,0.0
+2026-03-20,Reflow Soldering,Pro,RFL-01,27,4,0,0.0
+2026-03-20,Reflow Soldering,Pro,RFL-02,9,0,0,0.0
+2026-03-20,Screen Assembly,Basic,SCR-01,2,0,0,0.0
+2026-03-20,Screen Assembly,Basic,SCR-02,3,3,0,0.0
+2026-03-20,Screen Assembly,Plus,SCR-01,3,2,0,0.0
+2026-03-20,Screen Assembly,Plus,SCR-02,1,8,0,0.0
+2026-03-20,Screen Assembly,Pro,SCR-01,2,2,0,0.0
+2026-03-20,Screen Assembly,Pro,SCR-02,1,2,0,0.0
+2026-03-20,Solder Paste Printing,Basic,SPP-01,7,0,0,0.0
+2026-03-20,Solder Paste Printing,Plus,SPP-01,6,0,0,0.0
+2026-03-20,Solder Paste Printing,Pro,SPP-01,6,1,0,0.0
+2026-03-23,AOI Inspection,Basic,AOI-01,6,1,0,0.0
+2026-03-23,AOI Inspection,Plus,AOI-01,5,0,0,0.0
+2026-03-23,AOI Inspection,Pro,AOI-01,9,1,0,0.0
+2026-03-23,Board Test (ICT),Basic,ICT-01,7,0,0,0.0
+2026-03-23,Board Test (ICT),Basic,ICT-02,4,0,0,0.0
+2026-03-23,Board Test (ICT),Plus,ICT-01,3,0,0,0.0
+2026-03-23,Board Test (ICT),Plus,ICT-02,6,1,0,0.0
+2026-03-23,Board Test (ICT),Pro,ICT-01,6,1,0,0.0
+2026-03-23,Board Test (ICT),Pro,ICT-02,2,0,0,0.0
+2026-03-23,Component Placement,Basic,CPL-01,4,0,0,0.0
+2026-03-23,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-03-23,Component Placement,Plus,CPL-01,2,0,0,0.0
+2026-03-23,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-03-23,Component Placement,Pro,CPL-01,10,0,0,0.0
+2026-03-23,Component Placement,Pro,CPL-02,4,0,0,0.0
+2026-03-23,Final Inspection,Basic,FIN-01,6,1,0,0.0
+2026-03-23,Final Inspection,Plus,FIN-01,13,3,0,0.0
+2026-03-23,Final Inspection,Pro,FIN-01,6,2,0,0.0
+2026-03-23,Functional Test,Basic,FCT-01,4,3,0,0.0
+2026-03-23,Functional Test,Basic,FCT-02,7,1,0,0.0
+2026-03-23,Functional Test,Basic,FCT-03,3,1,0,0.0
+2026-03-23,Functional Test,Plus,FCT-01,8,2,0,0.0
+2026-03-23,Functional Test,Plus,FCT-02,13,1,0,0.0
+2026-03-23,Functional Test,Plus,FCT-03,5,2,0,0.0
+2026-03-23,Functional Test,Pro,FCT-01,9,4,0,0.0
+2026-03-23,Functional Test,Pro,FCT-02,6,3,0,0.0
+2026-03-23,Functional Test,Pro,FCT-03,4,1,0,0.0
+2026-03-23,Housing Assembly,Basic,HSG-01,12,0,0,0.0
+2026-03-23,Housing Assembly,Basic,HSG-02,5,0,0,0.0
+2026-03-23,Housing Assembly,Plus,HSG-01,6,0,0,0.0
+2026-03-23,Housing Assembly,Plus,HSG-02,5,0,0,0.0
+2026-03-23,Housing Assembly,Pro,HSG-01,7,0,0,0.0
+2026-03-23,Housing Assembly,Pro,HSG-02,3,0,0,0.0
+2026-03-23,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-03-23,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-03-23,Packaging,Pro,PKG-01,3,0,0,0.0
+2026-03-23,Reflow Soldering,Basic,RFL-01,13,0,0,0.0
+2026-03-23,Reflow Soldering,Basic,RFL-02,7,2,0,0.0
+2026-03-23,Reflow Soldering,Plus,RFL-01,24,3,0,0.0
+2026-03-23,Reflow Soldering,Plus,RFL-02,5,2,0,0.0
+2026-03-23,Reflow Soldering,Pro,RFL-01,16,2,0,0.0
+2026-03-23,Reflow Soldering,Pro,RFL-02,6,1,0,0.0
+2026-03-23,Screen Assembly,Basic,SCR-01,4,0,0,0.0
+2026-03-23,Screen Assembly,Basic,SCR-02,1,1,0,0.0
+2026-03-23,Screen Assembly,Plus,SCR-01,7,1,0,0.0
+2026-03-23,Screen Assembly,Plus,SCR-02,2,3,0,0.0
+2026-03-23,Screen Assembly,Pro,SCR-01,2,0,0,0.0
+2026-03-23,Screen Assembly,Pro,SCR-02,1,9,0,0.0
+2026-03-23,Solder Paste Printing,Basic,SPP-01,3,1,0,0.0
+2026-03-23,Solder Paste Printing,Plus,SPP-01,11,0,0,0.0
+2026-03-23,Solder Paste Printing,Pro,SPP-01,10,0,0,0.0
+2026-03-24,AOI Inspection,Basic,AOI-01,5,0,0,0.0
+2026-03-24,AOI Inspection,Plus,AOI-01,4,0,0,0.0
+2026-03-24,AOI Inspection,Pro,AOI-01,7,1,0,0.0
+2026-03-24,Board Test (ICT),Basic,ICT-01,8,2,0,0.0
+2026-03-24,Board Test (ICT),Basic,ICT-02,5,0,0,0.0
+2026-03-24,Board Test (ICT),Plus,ICT-01,10,0,0,0.0
+2026-03-24,Board Test (ICT),Plus,ICT-02,3,0,0,0.0
+2026-03-24,Board Test (ICT),Pro,ICT-01,10,2,0,0.0
+2026-03-24,Board Test (ICT),Pro,ICT-02,8,2,0,0.0
+2026-03-24,Component Placement,Basic,CPL-01,7,0,0,0.0
+2026-03-24,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-03-24,Component Placement,Plus,CPL-01,7,0,0,0.0
+2026-03-24,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-03-24,Component Placement,Pro,CPL-01,8,1,0,0.0
+2026-03-24,Component Placement,Pro,CPL-02,6,0,0,0.0
+2026-03-24,Final Inspection,Basic,FIN-01,17,0,0,0.0
+2026-03-24,Final Inspection,Plus,FIN-01,13,1,0,0.0
+2026-03-24,Final Inspection,Pro,FIN-01,21,0,0,0.0
+2026-03-24,Functional Test,Basic,FCT-01,5,2,0,0.0
+2026-03-24,Functional Test,Basic,FCT-02,5,0,0,0.0
+2026-03-24,Functional Test,Basic,FCT-03,4,0,0,0.0
+2026-03-24,Functional Test,Plus,FCT-01,10,2,0,0.0
+2026-03-24,Functional Test,Plus,FCT-02,5,1,0,0.0
+2026-03-24,Functional Test,Plus,FCT-03,4,1,0,0.0
+2026-03-24,Functional Test,Pro,FCT-01,4,2,0,0.0
+2026-03-24,Functional Test,Pro,FCT-02,8,0,0,0.0
+2026-03-24,Functional Test,Pro,FCT-03,9,1,0,0.0
+2026-03-24,Housing Assembly,Basic,HSG-01,3,0,0,0.0
+2026-03-24,Housing Assembly,Basic,HSG-02,6,1,0,0.0
+2026-03-24,Housing Assembly,Plus,HSG-01,9,0,0,0.0
+2026-03-24,Housing Assembly,Plus,HSG-02,6,0,0,0.0
+2026-03-24,Housing Assembly,Pro,HSG-01,6,0,0,0.0
+2026-03-24,Housing Assembly,Pro,HSG-02,6,0,0,0.0
+2026-03-24,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-03-24,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-03-24,Packaging,Pro,PKG-01,3,0,0,0.0
+2026-03-24,Reflow Soldering,Basic,RFL-01,26,1,0,0.0
+2026-03-24,Reflow Soldering,Basic,RFL-02,7,2,0,0.0
+2026-03-24,Reflow Soldering,Plus,RFL-01,20,1,0,0.0
+2026-03-24,Reflow Soldering,Plus,RFL-02,10,2,0,0.0
+2026-03-24,Reflow Soldering,Pro,RFL-01,21,4,0,0.0
+2026-03-24,Reflow Soldering,Pro,RFL-02,7,0,0,0.0
+2026-03-24,Screen Assembly,Basic,SCR-01,2,0,0,0.0
+2026-03-24,Screen Assembly,Basic,SCR-02,1,0,0,0.0
+2026-03-24,Screen Assembly,Plus,SCR-01,3,0,0,0.0
+2026-03-24,Screen Assembly,Plus,SCR-02,2,5,0,0.0
+2026-03-24,Screen Assembly,Pro,SCR-01,3,0,0,0.0
+2026-03-24,Screen Assembly,Pro,SCR-02,2,1,0,0.0
+2026-03-24,Solder Paste Printing,Basic,SPP-01,9,0,0,0.0
+2026-03-24,Solder Paste Printing,Plus,SPP-01,13,1,0,0.0
+2026-03-24,Solder Paste Printing,Pro,SPP-01,6,0,0,0.0
+2026-03-25,AOI Inspection,Basic,AOI-01,8,0,0,0.0
+2026-03-25,AOI Inspection,Plus,AOI-01,7,0,0,0.0
+2026-03-25,AOI Inspection,Pro,AOI-01,9,0,0,0.0
+2026-03-25,Board Test (ICT),Basic,ICT-01,9,3,0,0.0
+2026-03-25,Board Test (ICT),Basic,ICT-02,7,1,0,0.0
+2026-03-25,Board Test (ICT),Plus,ICT-01,3,1,0,0.0
+2026-03-25,Board Test (ICT),Plus,ICT-02,9,1,0,0.0
+2026-03-25,Board Test (ICT),Pro,ICT-01,7,0,0,0.0
+2026-03-25,Board Test (ICT),Pro,ICT-02,8,0,0,0.0
+2026-03-25,Component Placement,Basic,CPL-01,9,1,0,0.0
+2026-03-25,Component Placement,Basic,CPL-02,5,0,0,0.0
+2026-03-25,Component Placement,Plus,CPL-01,9,0,0,0.0
+2026-03-25,Component Placement,Plus,CPL-02,8,0,0,0.0
+2026-03-25,Component Placement,Pro,CPL-01,11,0,0,0.0
+2026-03-25,Component Placement,Pro,CPL-02,5,0,0,0.0
+2026-03-25,Final Inspection,Basic,FIN-01,17,0,0,0.0
+2026-03-25,Final Inspection,Plus,FIN-01,11,0,0,0.0
+2026-03-25,Final Inspection,Pro,FIN-01,11,0,0,0.0
+2026-03-25,Functional Test,Basic,FCT-01,5,1,0,0.0
+2026-03-25,Functional Test,Basic,FCT-02,2,0,0,0.0
+2026-03-25,Functional Test,Basic,FCT-03,1,0,0,0.0
+2026-03-25,Functional Test,Plus,FCT-01,1,2,0,0.0
+2026-03-25,Functional Test,Plus,FCT-02,2,2,0,0.0
+2026-03-25,Functional Test,Plus,FCT-03,3,0,0,0.0
+2026-03-25,Functional Test,Pro,FCT-01,6,0,0,0.0
+2026-03-25,Functional Test,Pro,FCT-02,4,2,0,0.0
+2026-03-25,Functional Test,Pro,FCT-03,3,0,0,0.0
+2026-03-25,Housing Assembly,Basic,HSG-01,2,1,0,0.0
+2026-03-25,Housing Assembly,Basic,HSG-02,5,1,0,0.0
+2026-03-25,Housing Assembly,Plus,HSG-01,5,0,0,0.0
+2026-03-25,Housing Assembly,Plus,HSG-02,3,0,0,0.0
+2026-03-25,Housing Assembly,Pro,HSG-01,6,0,0,0.0
+2026-03-25,Housing Assembly,Pro,HSG-02,5,1,0,0.0
+2026-03-25,Packaging,Basic,PKG-01,3,0,0,0.0
+2026-03-25,Packaging,Plus,PKG-01,5,0,0,0.0
+2026-03-25,Packaging,Pro,PKG-01,3,0,0,0.0
+2026-03-25,Reflow Soldering,Basic,RFL-01,16,4,0,0.0
+2026-03-25,Reflow Soldering,Basic,RFL-02,4,1,0,0.0
+2026-03-25,Reflow Soldering,Plus,RFL-01,25,2,0,0.0
+2026-03-25,Reflow Soldering,Plus,RFL-02,9,2,0,0.0
+2026-03-25,Reflow Soldering,Pro,RFL-01,17,1,0,0.0
+2026-03-25,Reflow Soldering,Pro,RFL-02,10,0,0,0.0
+2026-03-25,Screen Assembly,Basic,SCR-01,5,2,0,0.0
+2026-03-25,Screen Assembly,Basic,SCR-02,1,3,0,0.0
+2026-03-25,Screen Assembly,Plus,SCR-01,3,0,0,0.0
+2026-03-25,Screen Assembly,Plus,SCR-02,1,2,0,0.0
+2026-03-25,Screen Assembly,Pro,SCR-01,2,0,0,0.0
+2026-03-25,Screen Assembly,Pro,SCR-02,2,5,0,0.0
+2026-03-25,Solder Paste Printing,Basic,SPP-01,10,1,0,0.0
+2026-03-25,Solder Paste Printing,Plus,SPP-01,11,1,0,0.0
+2026-03-25,Solder Paste Printing,Pro,SPP-01,14,0,0,0.0
+2026-03-26,AOI Inspection,Basic,AOI-01,15,0,0,0.0
+2026-03-26,AOI Inspection,Plus,AOI-01,10,1,0,0.0
+2026-03-26,AOI Inspection,Pro,AOI-01,11,0,0,0.0
+2026-03-26,Board Test (ICT),Basic,ICT-01,2,1,0,0.0
+2026-03-26,Board Test (ICT),Basic,ICT-02,5,1,0,0.0
+2026-03-26,Board Test (ICT),Plus,ICT-01,5,1,0,0.0
+2026-03-26,Board Test (ICT),Plus,ICT-02,4,1,0,0.0
+2026-03-26,Board Test (ICT),Pro,ICT-01,10,2,0,0.0
+2026-03-26,Board Test (ICT),Pro,ICT-02,9,0,0,0.0
+2026-03-26,Component Placement,Basic,CPL-01,7,0,0,0.0
+2026-03-26,Component Placement,Basic,CPL-02,6,0,0,0.0
+2026-03-26,Component Placement,Plus,CPL-01,10,0,0,0.0
+2026-03-26,Component Placement,Plus,CPL-02,6,0,0,0.0
+2026-03-26,Component Placement,Pro,CPL-01,14,0,0,0.0
+2026-03-26,Component Placement,Pro,CPL-02,7,0,0,0.0
+2026-03-26,Final Inspection,Basic,FIN-01,11,0,0,0.0
+2026-03-26,Final Inspection,Plus,FIN-01,9,1,0,0.0
+2026-03-26,Final Inspection,Pro,FIN-01,11,0,0,0.0
+2026-03-26,Functional Test,Basic,FCT-01,7,1,0,0.0
+2026-03-26,Functional Test,Basic,FCT-02,6,0,0,0.0
+2026-03-26,Functional Test,Basic,FCT-03,2,1,0,0.0
+2026-03-26,Functional Test,Plus,FCT-01,5,1,0,0.0
+2026-03-26,Functional Test,Plus,FCT-02,5,1,0,0.0
+2026-03-26,Functional Test,Plus,FCT-03,2,0,0,0.0
+2026-03-26,Functional Test,Pro,FCT-01,2,1,0,0.0
+2026-03-26,Functional Test,Pro,FCT-02,5,1,0,0.0
+2026-03-26,Functional Test,Pro,FCT-03,4,1,0,0.0
+2026-03-26,Housing Assembly,Basic,HSG-01,2,1,0,0.0
+2026-03-26,Housing Assembly,Basic,HSG-02,3,0,0,0.0
+2026-03-26,Housing Assembly,Plus,HSG-01,5,1,0,0.0
+2026-03-26,Housing Assembly,Plus,HSG-02,5,0,0,0.0
+2026-03-26,Housing Assembly,Pro,HSG-01,7,1,0,0.0
+2026-03-26,Housing Assembly,Pro,HSG-02,3,0,0,0.0
+2026-03-26,Packaging,Basic,PKG-01,3,0,0,0.0
+2026-03-26,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-03-26,Packaging,Pro,PKG-01,3,0,0,0.0
+2026-03-26,Reflow Soldering,Basic,RFL-01,14,2,0,0.0
+2026-03-26,Reflow Soldering,Basic,RFL-02,6,1,0,0.0
+2026-03-26,Reflow Soldering,Plus,RFL-01,11,3,0,0.0
+2026-03-26,Reflow Soldering,Plus,RFL-02,8,1,0,0.0
+2026-03-26,Reflow Soldering,Pro,RFL-01,22,2,0,0.0
+2026-03-26,Reflow Soldering,Pro,RFL-02,8,0,0,0.0
+2026-03-26,Screen Assembly,Basic,SCR-01,2,0,0,0.0
+2026-03-26,Screen Assembly,Basic,SCR-02,2,6,0,0.0
+2026-03-26,Screen Assembly,Plus,SCR-01,4,0,0,0.0
+2026-03-26,Screen Assembly,Plus,SCR-02,2,3,0,0.0
+2026-03-26,Screen Assembly,Pro,SCR-01,3,2,0,0.0
+2026-03-26,Screen Assembly,Pro,SCR-02,1,3,0,0.0
+2026-03-26,Solder Paste Printing,Basic,SPP-01,7,0,0,0.0
+2026-03-26,Solder Paste Printing,Plus,SPP-01,13,0,0,0.0
+2026-03-26,Solder Paste Printing,Pro,SPP-01,14,0,0,0.0
+2026-03-27,AOI Inspection,Basic,AOI-01,5,0,0,0.0
+2026-03-27,AOI Inspection,Plus,AOI-01,3,0,0,0.0
+2026-03-27,AOI Inspection,Pro,AOI-01,10,0,0,0.0
+2026-03-27,Board Test (ICT),Basic,ICT-01,3,1,0,0.0
+2026-03-27,Board Test (ICT),Basic,ICT-02,5,0,0,0.0
+2026-03-27,Board Test (ICT),Plus,ICT-01,4,1,0,0.0
+2026-03-27,Board Test (ICT),Plus,ICT-02,4,0,0,0.0
+2026-03-27,Board Test (ICT),Pro,ICT-01,3,0,0,0.0
+2026-03-27,Board Test (ICT),Pro,ICT-02,6,1,0,0.0
+2026-03-27,Component Placement,Basic,CPL-01,9,0,0,0.0
+2026-03-27,Component Placement,Basic,CPL-02,9,0,0,0.0
+2026-03-27,Component Placement,Plus,CPL-01,5,0,0,0.0
+2026-03-27,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-03-27,Component Placement,Pro,CPL-01,7,1,0,0.0
+2026-03-27,Component Placement,Pro,CPL-02,9,0,0,0.0
+2026-03-27,Final Inspection,Basic,FIN-01,6,0,0,0.0
+2026-03-27,Final Inspection,Plus,FIN-01,5,0,0,0.0
+2026-03-27,Final Inspection,Pro,FIN-01,10,0,0,0.0
+2026-03-27,Functional Test,Basic,FCT-01,5,2,0,0.0
+2026-03-27,Functional Test,Basic,FCT-02,5,3,0,0.0
+2026-03-27,Functional Test,Basic,FCT-03,7,0,0,0.0
+2026-03-27,Functional Test,Plus,FCT-01,8,1,0,0.0
+2026-03-27,Functional Test,Plus,FCT-02,7,1,0,0.0
+2026-03-27,Functional Test,Plus,FCT-03,3,1,0,0.0
+2026-03-27,Functional Test,Pro,FCT-01,6,2,0,0.0
+2026-03-27,Functional Test,Pro,FCT-02,6,0,0,0.0
+2026-03-27,Functional Test,Pro,FCT-03,3,3,0,0.0
+2026-03-27,Housing Assembly,Basic,HSG-01,5,0,0,0.0
+2026-03-27,Housing Assembly,Basic,HSG-02,5,0,0,0.0
+2026-03-27,Housing Assembly,Plus,HSG-01,2,0,0,0.0
+2026-03-27,Housing Assembly,Plus,HSG-02,3,0,0,0.0
+2026-03-27,Housing Assembly,Pro,HSG-01,8,1,0,0.0
+2026-03-27,Housing Assembly,Pro,HSG-02,5,1,0,0.0
+2026-03-27,Reflow Soldering,Basic,RFL-01,18,0,0,0.0
+2026-03-27,Reflow Soldering,Basic,RFL-02,9,3,0,0.0
+2026-03-27,Reflow Soldering,Plus,RFL-01,17,1,0,0.0
+2026-03-27,Reflow Soldering,Plus,RFL-02,9,0,0,0.0
+2026-03-27,Reflow Soldering,Pro,RFL-01,22,2,0,0.0
+2026-03-27,Reflow Soldering,Pro,RFL-02,13,3,0,0.0
+2026-03-27,Screen Assembly,Basic,SCR-01,2,0,0,0.0
+2026-03-27,Screen Assembly,Basic,SCR-02,3,4,0,0.0
+2026-03-27,Screen Assembly,Plus,SCR-01,1,1,0,0.0
+2026-03-27,Screen Assembly,Plus,SCR-02,0,2,0,0.0
+2026-03-27,Screen Assembly,Pro,SCR-01,3,3,0,0.0
+2026-03-27,Screen Assembly,Pro,SCR-02,0,7,0,0.0
+2026-03-27,Solder Paste Printing,Basic,SPP-01,13,0,0,0.0
+2026-03-27,Solder Paste Printing,Plus,SPP-01,11,0,0,0.0
+2026-03-27,Solder Paste Printing,Pro,SPP-01,9,0,0,0.0
+2026-03-30,AOI Inspection,Basic,AOI-01,4,0,0,0.0
+2026-03-30,AOI Inspection,Plus,AOI-01,4,0,0,0.0
+2026-03-30,AOI Inspection,Pro,AOI-01,6,0,0,0.0
+2026-03-30,Board Test (ICT),Basic,ICT-01,9,0,0,0.0
+2026-03-30,Board Test (ICT),Basic,ICT-02,4,1,0,0.0
+2026-03-30,Board Test (ICT),Plus,ICT-01,3,1,0,0.0
+2026-03-30,Board Test (ICT),Plus,ICT-02,1,2,0,0.0
+2026-03-30,Board Test (ICT),Pro,ICT-01,6,1,0,0.0
+2026-03-30,Board Test (ICT),Pro,ICT-02,2,1,0,0.0
+2026-03-30,Component Placement,Basic,CPL-01,3,0,0,0.0
+2026-03-30,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-03-30,Component Placement,Plus,CPL-01,5,0,0,0.0
+2026-03-30,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-03-30,Component Placement,Pro,CPL-01,5,0,0,0.0
+2026-03-30,Component Placement,Pro,CPL-02,4,0,0,0.0
+2026-03-30,Final Inspection,Basic,FIN-01,10,0,0,0.0
+2026-03-30,Final Inspection,Plus,FIN-01,7,0,0,0.0
+2026-03-30,Final Inspection,Pro,FIN-01,18,0,0,0.0
+2026-03-30,Functional Test,Basic,FCT-01,6,1,0,0.0
+2026-03-30,Functional Test,Basic,FCT-02,7,1,0,0.0
+2026-03-30,Functional Test,Basic,FCT-03,7,1,0,0.0
+2026-03-30,Functional Test,Plus,FCT-01,3,2,0,0.0
+2026-03-30,Functional Test,Plus,FCT-02,5,2,0,0.0
+2026-03-30,Functional Test,Plus,FCT-03,4,0,0,0.0
+2026-03-30,Functional Test,Pro,FCT-01,4,5,0,0.0
+2026-03-30,Functional Test,Pro,FCT-02,4,1,0,0.0
+2026-03-30,Functional Test,Pro,FCT-03,5,0,0,0.0
+2026-03-30,Housing Assembly,Basic,HSG-01,7,1,0,0.0
+2026-03-30,Housing Assembly,Basic,HSG-02,5,2,0,0.0
+2026-03-30,Housing Assembly,Plus,HSG-01,5,3,0,0.0
+2026-03-30,Housing Assembly,Plus,HSG-02,3,0,0,0.0
+2026-03-30,Housing Assembly,Pro,HSG-01,8,2,0,0.0
+2026-03-30,Housing Assembly,Pro,HSG-02,3,0,0,0.0
+2026-03-30,Packaging,Basic,PKG-01,4,0,0,0.0
+2026-03-30,Packaging,Plus,PKG-01,3,0,0,0.0
+2026-03-30,Packaging,Pro,PKG-01,3,0,0,0.0
+2026-03-30,Reflow Soldering,Basic,RFL-01,25,1,0,0.0
+2026-03-30,Reflow Soldering,Basic,RFL-02,5,2,0,0.0
+2026-03-30,Reflow Soldering,Plus,RFL-01,19,5,0,0.0
+2026-03-30,Reflow Soldering,Plus,RFL-02,13,1,0,0.0
+2026-03-30,Reflow Soldering,Pro,RFL-01,22,2,0,0.0
+2026-03-30,Reflow Soldering,Pro,RFL-02,13,2,0,0.0
+2026-03-30,Screen Assembly,Basic,SCR-01,7,0,0,0.0
+2026-03-30,Screen Assembly,Basic,SCR-02,1,6,0,0.0
+2026-03-30,Screen Assembly,Plus,SCR-01,3,0,0,0.0
+2026-03-30,Screen Assembly,Plus,SCR-02,2,4,0,0.0
+2026-03-30,Screen Assembly,Pro,SCR-01,6,0,0,0.0
+2026-03-30,Screen Assembly,Pro,SCR-02,0,1,0,0.0
+2026-03-30,Solder Paste Printing,Basic,SPP-01,8,0,0,0.0
+2026-03-30,Solder Paste Printing,Plus,SPP-01,12,0,0,0.0
+2026-03-30,Solder Paste Printing,Pro,SPP-01,6,2,0,0.0
+2026-03-31,AOI Inspection,Basic,AOI-01,2,1,0,0.0
+2026-03-31,AOI Inspection,Plus,AOI-01,5,0,0,0.0
+2026-03-31,AOI Inspection,Pro,AOI-01,6,1,0,0.0
+2026-03-31,Board Test (ICT),Basic,ICT-01,6,0,0,0.0
+2026-03-31,Board Test (ICT),Basic,ICT-02,3,1,0,0.0
+2026-03-31,Board Test (ICT),Plus,ICT-01,4,0,0,0.0
+2026-03-31,Board Test (ICT),Plus,ICT-02,2,1,0,0.0
+2026-03-31,Board Test (ICT),Pro,ICT-01,7,0,0,0.0
+2026-03-31,Board Test (ICT),Pro,ICT-02,3,2,0,0.0
+2026-03-31,Component Placement,Basic,CPL-01,8,0,0,0.0
+2026-03-31,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-03-31,Component Placement,Plus,CPL-01,5,2,0,0.0
+2026-03-31,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-03-31,Component Placement,Pro,CPL-01,12,1,0,0.0
+2026-03-31,Component Placement,Pro,CPL-02,4,1,0,0.0
+2026-03-31,Final Inspection,Basic,FIN-01,8,1,0,0.0
+2026-03-31,Final Inspection,Plus,FIN-01,10,0,0,0.0
+2026-03-31,Final Inspection,Pro,FIN-01,12,0,0,0.0
+2026-03-31,Functional Test,Basic,FCT-01,2,1,0,0.0
+2026-03-31,Functional Test,Basic,FCT-02,5,1,0,0.0
+2026-03-31,Functional Test,Basic,FCT-03,2,0,0,0.0
+2026-03-31,Functional Test,Plus,FCT-01,2,1,0,0.0
+2026-03-31,Functional Test,Plus,FCT-02,4,1,0,0.0
+2026-03-31,Functional Test,Plus,FCT-03,2,1,0,0.0
+2026-03-31,Functional Test,Pro,FCT-01,5,2,0,0.0
+2026-03-31,Functional Test,Pro,FCT-02,4,2,0,0.0
+2026-03-31,Functional Test,Pro,FCT-03,1,1,0,0.0
+2026-03-31,Housing Assembly,Basic,HSG-01,3,0,0,0.0
+2026-03-31,Housing Assembly,Basic,HSG-02,7,2,0,0.0
+2026-03-31,Housing Assembly,Plus,HSG-01,15,1,0,0.0
+2026-03-31,Housing Assembly,Plus,HSG-02,4,0,0,0.0
+2026-03-31,Housing Assembly,Pro,HSG-01,8,0,0,0.0
+2026-03-31,Housing Assembly,Pro,HSG-02,4,1,0,0.0
+2026-03-31,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-03-31,Packaging,Plus,PKG-01,4,0,0,0.0
+2026-03-31,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-03-31,Reflow Soldering,Basic,RFL-01,23,2,0,0.0
+2026-03-31,Reflow Soldering,Basic,RFL-02,7,2,0,0.0
+2026-03-31,Reflow Soldering,Plus,RFL-01,20,2,0,0.0
+2026-03-31,Reflow Soldering,Plus,RFL-02,11,3,0,0.0
+2026-03-31,Reflow Soldering,Pro,RFL-01,30,4,0,0.0
+2026-03-31,Reflow Soldering,Pro,RFL-02,4,1,0,0.0
+2026-03-31,Screen Assembly,Basic,SCR-01,4,1,0,0.0
+2026-03-31,Screen Assembly,Basic,SCR-02,0,4,0,0.0
+2026-03-31,Screen Assembly,Plus,SCR-01,6,0,0,0.0
+2026-03-31,Screen Assembly,Plus,SCR-02,4,2,0,0.0
+2026-03-31,Screen Assembly,Pro,SCR-01,4,1,0,0.0
+2026-03-31,Screen Assembly,Pro,SCR-02,4,3,0,0.0
+2026-03-31,Solder Paste Printing,Basic,SPP-01,7,0,0,0.0
+2026-03-31,Solder Paste Printing,Plus,SPP-01,10,0,0,0.0
+2026-03-31,Solder Paste Printing,Pro,SPP-01,13,0,0,0.0
+2026-04-01,AOI Inspection,Basic,AOI-01,12,0,0,0.0
+2026-04-01,AOI Inspection,Plus,AOI-01,6,0,0,0.0
+2026-04-01,AOI Inspection,Pro,AOI-01,5,0,0,0.0
+2026-04-01,Board Test (ICT),Basic,ICT-01,3,0,0,0.0
+2026-04-01,Board Test (ICT),Basic,ICT-02,6,1,0,0.0
+2026-04-01,Board Test (ICT),Plus,ICT-01,4,0,0,0.0
+2026-04-01,Board Test (ICT),Plus,ICT-02,4,0,0,0.0
+2026-04-01,Board Test (ICT),Pro,ICT-01,6,1,0,0.0
+2026-04-01,Board Test (ICT),Pro,ICT-02,9,1,0,0.0
+2026-04-01,Component Placement,Basic,CPL-01,7,1,0,0.0
+2026-04-01,Component Placement,Basic,CPL-02,1,0,0,0.0
+2026-04-01,Component Placement,Plus,CPL-01,7,0,0,0.0
+2026-04-01,Component Placement,Plus,CPL-02,8,0,0,0.0
+2026-04-01,Component Placement,Pro,CPL-01,11,1,0,0.0
+2026-04-01,Component Placement,Pro,CPL-02,9,0,0,0.0
+2026-04-01,Final Inspection,Basic,FIN-01,9,0,0,0.0
+2026-04-01,Final Inspection,Plus,FIN-01,18,2,0,0.0
+2026-04-01,Final Inspection,Pro,FIN-01,14,2,0,0.0
+2026-04-01,Functional Test,Basic,FCT-01,5,1,0,0.0
+2026-04-01,Functional Test,Basic,FCT-02,4,0,0,0.0
+2026-04-01,Functional Test,Basic,FCT-03,5,0,0,0.0
+2026-04-01,Functional Test,Plus,FCT-01,5,3,0,0.0
+2026-04-01,Functional Test,Plus,FCT-02,3,0,0,0.0
+2026-04-01,Functional Test,Plus,FCT-03,7,1,0,0.0
+2026-04-01,Functional Test,Pro,FCT-01,3,0,0,0.0
+2026-04-01,Functional Test,Pro,FCT-02,6,2,0,0.0
+2026-04-01,Functional Test,Pro,FCT-03,4,1,0,0.0
+2026-04-01,Housing Assembly,Basic,HSG-01,7,0,0,0.0
+2026-04-01,Housing Assembly,Basic,HSG-02,3,2,0,0.0
+2026-04-01,Housing Assembly,Plus,HSG-01,8,0,0,0.0
+2026-04-01,Housing Assembly,Plus,HSG-02,1,2,0,0.0
+2026-04-01,Housing Assembly,Pro,HSG-01,4,1,0,0.0
+2026-04-01,Housing Assembly,Pro,HSG-02,5,1,0,0.0
+2026-04-01,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-04-01,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-04-01,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-04-01,Reflow Soldering,Basic,RFL-01,17,4,0,0.0
+2026-04-01,Reflow Soldering,Basic,RFL-02,10,1,0,0.0
+2026-04-01,Reflow Soldering,Plus,RFL-01,17,1,0,0.0
+2026-04-01,Reflow Soldering,Plus,RFL-02,7,2,0,0.0
+2026-04-01,Reflow Soldering,Pro,RFL-01,21,1,0,0.0
+2026-04-01,Reflow Soldering,Pro,RFL-02,11,1,0,0.0
+2026-04-01,Screen Assembly,Basic,SCR-01,4,1,0,0.0
+2026-04-01,Screen Assembly,Basic,SCR-02,1,4,0,0.0
+2026-04-01,Screen Assembly,Plus,SCR-01,4,0,0,0.0
+2026-04-01,Screen Assembly,Plus,SCR-02,3,3,0,0.0
+2026-04-01,Screen Assembly,Pro,SCR-01,5,0,0,0.0
+2026-04-01,Screen Assembly,Pro,SCR-02,1,6,0,0.0
+2026-04-01,Solder Paste Printing,Basic,SPP-01,8,0,0,0.0
+2026-04-01,Solder Paste Printing,Plus,SPP-01,3,0,0,0.0
+2026-04-01,Solder Paste Printing,Pro,SPP-01,4,0,0,0.0
+2026-04-02,AOI Inspection,Basic,AOI-01,7,0,0,0.0
+2026-04-02,AOI Inspection,Plus,AOI-01,5,1,0,0.0
+2026-04-02,AOI Inspection,Pro,AOI-01,9,0,0,8.0
+2026-04-02,Board Test (ICT),Basic,ICT-01,7,0,0,0.0
+2026-04-02,Board Test (ICT),Basic,ICT-02,5,1,0,0.0
+2026-04-02,Board Test (ICT),Plus,ICT-01,7,0,0,0.0
+2026-04-02,Board Test (ICT),Plus,ICT-02,3,2,0,0.0
+2026-04-02,Board Test (ICT),Pro,ICT-01,7,0,0,3.0
+2026-04-02,Board Test (ICT),Pro,ICT-02,2,1,0,2.0
+2026-04-02,Component Placement,Basic,CPL-01,6,0,0,0.0
+2026-04-02,Component Placement,Basic,CPL-02,4,1,0,0.0
+2026-04-02,Component Placement,Plus,CPL-01,14,0,0,0.0
+2026-04-02,Component Placement,Plus,CPL-02,7,1,0,0.0
+2026-04-02,Component Placement,Pro,CPL-01,8,1,0,0.0
+2026-04-02,Component Placement,Pro,CPL-02,9,1,0,0.0
+2026-04-02,Final Inspection,Basic,FIN-01,12,0,0,0.0
+2026-04-02,Final Inspection,Plus,FIN-01,9,0,0,0.0
+2026-04-02,Final Inspection,Pro,FIN-01,13,0,0,5.0
+2026-04-02,Functional Test,Basic,FCT-01,5,2,0,0.0
+2026-04-02,Functional Test,Basic,FCT-02,2,2,0,0.0
+2026-04-02,Functional Test,Basic,FCT-03,9,0,0,0.0
+2026-04-02,Functional Test,Plus,FCT-01,6,2,0,0.0
+2026-04-02,Functional Test,Plus,FCT-02,4,0,0,0.0
+2026-04-02,Functional Test,Plus,FCT-03,5,0,0,0.0
+2026-04-02,Functional Test,Pro,FCT-01,5,1,0,3.0
+2026-04-02,Functional Test,Pro,FCT-02,3,2,0,1.0
+2026-04-02,Functional Test,Pro,FCT-03,7,1,0,3.0
+2026-04-02,Housing Assembly,Basic,HSG-01,6,0,0,0.0
+2026-04-02,Housing Assembly,Basic,HSG-02,8,3,0,0.0
+2026-04-02,Housing Assembly,Plus,HSG-01,3,0,0,0.0
+2026-04-02,Housing Assembly,Plus,HSG-02,6,0,0,0.0
+2026-04-02,Housing Assembly,Pro,HSG-01,9,0,0,6.0
+2026-04-02,Housing Assembly,Pro,HSG-02,4,1,0,2.0
+2026-04-02,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-04-02,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-04-02,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-04-02,Reflow Soldering,Basic,RFL-01,27,2,0,0.0
+2026-04-02,Reflow Soldering,Basic,RFL-02,12,1,0,0.0
+2026-04-02,Reflow Soldering,Plus,RFL-01,23,3,0,0.0
+2026-04-02,Reflow Soldering,Plus,RFL-02,18,0,0,0.0
+2026-04-02,Reflow Soldering,Pro,RFL-01,32,1,0,0.0
+2026-04-02,Reflow Soldering,Pro,RFL-02,14,4,0,4.0
+2026-04-02,Screen Assembly,Basic,SCR-01,6,0,0,0.0
+2026-04-02,Screen Assembly,Basic,SCR-02,0,2,0,0.0
+2026-04-02,Screen Assembly,Plus,SCR-01,6,2,0,0.0
+2026-04-02,Screen Assembly,Plus,SCR-02,2,3,0,0.0
+2026-04-02,Screen Assembly,Pro,SCR-01,4,0,0,2.0
+2026-04-02,Screen Assembly,Pro,SCR-02,3,4,0,3.0
+2026-04-02,Solder Paste Printing,Basic,SPP-01,14,0,0,0.0
+2026-04-02,Solder Paste Printing,Plus,SPP-01,11,0,0,0.0
+2026-04-02,Solder Paste Printing,Pro,SPP-01,13,1,0,0.0
+2026-04-03,AOI Inspection,Basic,AOI-01,4,0,0,0.0
+2026-04-03,AOI Inspection,Plus,AOI-01,4,0,0,0.0
+2026-04-03,AOI Inspection,Pro,AOI-01,4,0,0,0.0
+2026-04-03,Board Test (ICT),Basic,ICT-01,3,0,0,0.0
+2026-04-03,Board Test (ICT),Basic,ICT-02,4,1,0,0.0
+2026-04-03,Board Test (ICT),Plus,ICT-01,5,0,0,0.0
+2026-04-03,Board Test (ICT),Plus,ICT-02,2,2,0,0.0
+2026-04-03,Board Test (ICT),Pro,ICT-01,4,0,0,0.0
+2026-04-03,Board Test (ICT),Pro,ICT-02,6,0,0,0.0
+2026-04-03,Component Placement,Basic,CPL-01,9,1,0,0.0
+2026-04-03,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-04-03,Component Placement,Plus,CPL-01,7,0,0,0.0
+2026-04-03,Component Placement,Plus,CPL-02,4,0,0,0.0
+2026-04-03,Component Placement,Pro,CPL-01,9,0,0,0.0
+2026-04-03,Component Placement,Pro,CPL-02,5,0,0,0.0
+2026-04-03,Final Inspection,Basic,FIN-01,11,1,0,0.0
+2026-04-03,Final Inspection,Plus,FIN-01,10,2,0,0.0
+2026-04-03,Final Inspection,Pro,FIN-01,7,0,0,0.0
+2026-04-03,Functional Test,Basic,FCT-01,4,4,0,0.0
+2026-04-03,Functional Test,Basic,FCT-02,8,1,0,0.0
+2026-04-03,Functional Test,Basic,FCT-03,2,0,0,0.0
+2026-04-03,Functional Test,Plus,FCT-01,8,1,0,0.0
+2026-04-03,Functional Test,Plus,FCT-02,5,0,0,0.0
+2026-04-03,Functional Test,Plus,FCT-03,3,0,0,0.0
+2026-04-03,Functional Test,Pro,FCT-01,10,0,0,0.0
+2026-04-03,Functional Test,Pro,FCT-02,6,1,0,0.0
+2026-04-03,Functional Test,Pro,FCT-03,9,0,0,0.0
+2026-04-03,Housing Assembly,Basic,HSG-01,4,1,0,0.0
+2026-04-03,Housing Assembly,Basic,HSG-02,5,0,0,0.0
+2026-04-03,Housing Assembly,Plus,HSG-01,6,1,0,0.0
+2026-04-03,Housing Assembly,Plus,HSG-02,4,0,0,0.0
+2026-04-03,Housing Assembly,Pro,HSG-01,11,0,0,0.0
+2026-04-03,Housing Assembly,Pro,HSG-02,7,2,0,0.0
+2026-04-03,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-04-03,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-04-03,Reflow Soldering,Basic,RFL-01,17,1,0,0.0
+2026-04-03,Reflow Soldering,Basic,RFL-02,7,5,0,0.0
+2026-04-03,Reflow Soldering,Plus,RFL-01,12,4,0,0.0
+2026-04-03,Reflow Soldering,Plus,RFL-02,7,5,0,0.0
+2026-04-03,Reflow Soldering,Pro,RFL-01,22,1,0,0.0
+2026-04-03,Reflow Soldering,Pro,RFL-02,11,1,0,0.0
+2026-04-03,Screen Assembly,Basic,SCR-01,3,1,0,0.0
+2026-04-03,Screen Assembly,Basic,SCR-02,2,1,0,0.0
+2026-04-03,Screen Assembly,Plus,SCR-01,1,1,0,0.0
+2026-04-03,Screen Assembly,Plus,SCR-02,2,6,0,0.0
+2026-04-03,Screen Assembly,Pro,SCR-01,3,0,0,0.0
+2026-04-03,Screen Assembly,Pro,SCR-02,0,4,0,0.0
+2026-04-03,Solder Paste Printing,Basic,SPP-01,6,0,0,0.0
+2026-04-03,Solder Paste Printing,Plus,SPP-01,11,0,0,0.0
+2026-04-03,Solder Paste Printing,Pro,SPP-01,9,0,0,0.0
+2026-04-06,AOI Inspection,Basic,AOI-01,5,0,0,0.0
+2026-04-06,AOI Inspection,Plus,AOI-01,9,0,0,0.0
+2026-04-06,AOI Inspection,Pro,AOI-01,11,0,0,0.0
+2026-04-06,Board Test (ICT),Basic,ICT-01,2,2,0,0.0
+2026-04-06,Board Test (ICT),Basic,ICT-02,2,0,0,0.0
+2026-04-06,Board Test (ICT),Plus,ICT-01,4,2,0,0.0
+2026-04-06,Board Test (ICT),Plus,ICT-02,6,1,0,0.0
+2026-04-06,Board Test (ICT),Pro,ICT-01,6,2,0,0.0
+2026-04-06,Board Test (ICT),Pro,ICT-02,6,1,0,0.0
+2026-04-06,Component Placement,Basic,CPL-01,2,1,0,0.0
+2026-04-06,Component Placement,Basic,CPL-02,4,0,0,0.0
+2026-04-06,Component Placement,Plus,CPL-01,7,1,0,0.0
+2026-04-06,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-04-06,Component Placement,Pro,CPL-01,14,0,0,0.0
+2026-04-06,Component Placement,Pro,CPL-02,5,0,0,0.0
+2026-04-06,Final Inspection,Basic,FIN-01,9,0,0,0.0
+2026-04-06,Final Inspection,Plus,FIN-01,9,0,0,0.0
+2026-04-06,Final Inspection,Pro,FIN-01,5,0,0,2.0
+2026-04-06,Functional Test,Basic,FCT-01,1,0,0,0.0
+2026-04-06,Functional Test,Basic,FCT-02,8,2,0,0.0
+2026-04-06,Functional Test,Basic,FCT-03,5,0,0,0.0
+2026-04-06,Functional Test,Plus,FCT-01,6,0,0,0.0
+2026-04-06,Functional Test,Plus,FCT-02,9,0,0,0.0
+2026-04-06,Functional Test,Plus,FCT-03,2,1,0,0.0
+2026-04-06,Functional Test,Pro,FCT-01,6,0,0,3.0
+2026-04-06,Functional Test,Pro,FCT-02,10,1,0,6.0
+2026-04-06,Functional Test,Pro,FCT-03,5,0,0,5.0
+2026-04-06,Housing Assembly,Basic,HSG-01,6,0,0,0.0
+2026-04-06,Housing Assembly,Basic,HSG-02,3,0,0,0.0
+2026-04-06,Housing Assembly,Plus,HSG-01,9,0,0,0.0
+2026-04-06,Housing Assembly,Plus,HSG-02,4,0,0,0.0
+2026-04-06,Housing Assembly,Pro,HSG-01,6,1,0,3.0
+2026-04-06,Housing Assembly,Pro,HSG-02,3,1,0,0.0
+2026-04-06,Packaging,Basic,PKG-01,3,0,0,0.0
+2026-04-06,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-04-06,Packaging,Pro,PKG-01,4,0,0,1.0
+2026-04-06,Reflow Soldering,Basic,RFL-01,26,4,0,0.0
+2026-04-06,Reflow Soldering,Basic,RFL-02,9,2,0,0.0
+2026-04-06,Reflow Soldering,Plus,RFL-01,24,4,0,0.0
+2026-04-06,Reflow Soldering,Plus,RFL-02,8,5,0,0.0
+2026-04-06,Reflow Soldering,Pro,RFL-01,24,1,0,0.0
+2026-04-06,Reflow Soldering,Pro,RFL-02,3,0,0,0.0
+2026-04-06,Screen Assembly,Basic,SCR-01,20,0,0,0.0
+2026-04-06,Screen Assembly,Basic,SCR-02,1,2,0,0.0
+2026-04-06,Screen Assembly,Plus,SCR-01,24,3,0,0.0
+2026-04-06,Screen Assembly,Plus,SCR-02,3,1,0,0.0
+2026-04-06,Screen Assembly,Pro,SCR-01,17,2,0,10.0
+2026-04-06,Screen Assembly,Pro,SCR-02,2,3,0,3.0
+2026-04-06,Solder Paste Printing,Basic,SPP-01,15,0,0,0.0
+2026-04-06,Solder Paste Printing,Plus,SPP-01,9,0,0,0.0
+2026-04-06,Solder Paste Printing,Pro,SPP-01,11,2,0,0.0
+2026-04-07,AOI Inspection,Basic,AOI-01,1,0,0,0.0
+2026-04-07,AOI Inspection,Plus,AOI-01,3,0,0,0.0
+2026-04-07,AOI Inspection,Pro,AOI-01,8,0,0,0.0
+2026-04-07,Board Test (ICT),Basic,ICT-01,1,1,0,0.0
+2026-04-07,Board Test (ICT),Basic,ICT-02,4,1,0,0.0
+2026-04-07,Board Test (ICT),Plus,ICT-01,5,1,0,0.0
+2026-04-07,Board Test (ICT),Plus,ICT-02,1,0,0,0.0
+2026-04-07,Board Test (ICT),Pro,ICT-01,2,0,0,0.0
+2026-04-07,Board Test (ICT),Pro,ICT-02,2,0,0,0.0
+2026-04-07,Component Placement,Basic,CPL-01,7,0,0,0.0
+2026-04-07,Component Placement,Basic,CPL-02,5,1,0,0.0
+2026-04-07,Component Placement,Plus,CPL-01,8,0,0,0.0
+2026-04-07,Component Placement,Plus,CPL-02,8,0,0,0.0
+2026-04-07,Component Placement,Pro,CPL-01,9,0,0,0.0
+2026-04-07,Component Placement,Pro,CPL-02,5,0,0,0.0
+2026-04-07,Final Inspection,Basic,FIN-01,5,0,0,0.0
+2026-04-07,Final Inspection,Plus,FIN-01,6,0,0,0.0
+2026-04-07,Final Inspection,Pro,FIN-01,8,0,0,0.0
+2026-04-07,Functional Test,Basic,FCT-02,2,1,0,0.0
+2026-04-07,Functional Test,Basic,FCT-03,2,0,0,0.0
+2026-04-07,Functional Test,Plus,FCT-01,5,1,0,0.0
+2026-04-07,Functional Test,Plus,FCT-02,4,1,0,0.0
+2026-04-07,Functional Test,Pro,FCT-01,4,2,0,0.0
+2026-04-07,Functional Test,Pro,FCT-02,1,2,0,0.0
+2026-04-07,Functional Test,Pro,FCT-03,3,0,0,0.0
+2026-04-07,Housing Assembly,Basic,HSG-01,8,1,0,0.0
+2026-04-07,Housing Assembly,Basic,HSG-02,2,1,0,0.0
+2026-04-07,Housing Assembly,Plus,HSG-01,6,0,0,0.0
+2026-04-07,Housing Assembly,Plus,HSG-02,2,0,0,0.0
+2026-04-07,Housing Assembly,Pro,HSG-01,12,0,0,0.0
+2026-04-07,Housing Assembly,Pro,HSG-02,6,0,0,0.0
+2026-04-07,Packaging,Basic,PKG-01,4,0,0,0.0
+2026-04-07,Packaging,Plus,PKG-01,4,0,0,0.0
+2026-04-07,Reflow Soldering,Basic,RFL-01,12,2,0,0.0
+2026-04-07,Reflow Soldering,Basic,RFL-02,5,0,0,0.0
+2026-04-07,Reflow Soldering,Plus,RFL-01,11,0,0,0.0
+2026-04-07,Reflow Soldering,Plus,RFL-02,12,1,0,0.0
+2026-04-07,Reflow Soldering,Pro,RFL-01,25,1,0,0.0
+2026-04-07,Reflow Soldering,Pro,RFL-02,7,0,0,0.0
+2026-04-07,Screen Assembly,Basic,SCR-01,30,2,0,0.0
+2026-04-07,Screen Assembly,Basic,SCR-02,2,3,0,0.0
+2026-04-07,Screen Assembly,Plus,SCR-01,26,1,0,0.0
+2026-04-07,Screen Assembly,Plus,SCR-02,2,2,0,0.0
+2026-04-07,Screen Assembly,Pro,SCR-01,27,2,0,0.0
+2026-04-07,Screen Assembly,Pro,SCR-02,1,4,0,0.0
+2026-04-07,Solder Paste Printing,Basic,SPP-01,7,0,0,0.0
+2026-04-07,Solder Paste Printing,Plus,SPP-01,10,0,0,0.0
+2026-04-07,Solder Paste Printing,Pro,SPP-01,12,0,0,0.0
+2026-04-08,AOI Inspection,Basic,AOI-01,7,0,0,0.0
+2026-04-08,AOI Inspection,Plus,AOI-01,4,0,0,0.0
+2026-04-08,AOI Inspection,Pro,AOI-01,10,1,0,0.0
+2026-04-08,Board Test (ICT),Basic,ICT-01,5,0,0,0.0
+2026-04-08,Board Test (ICT),Basic,ICT-02,7,0,0,0.0
+2026-04-08,Board Test (ICT),Plus,ICT-01,1,0,0,0.0
+2026-04-08,Board Test (ICT),Plus,ICT-02,4,2,0,0.0
+2026-04-08,Board Test (ICT),Pro,ICT-01,6,2,0,0.0
+2026-04-08,Board Test (ICT),Pro,ICT-02,7,0,0,0.0
+2026-04-08,Component Placement,Basic,CPL-01,13,1,0,0.0
+2026-04-08,Component Placement,Basic,CPL-02,4,0,0,0.0
+2026-04-08,Component Placement,Plus,CPL-01,5,0,0,0.0
+2026-04-08,Component Placement,Plus,CPL-02,1,0,0,0.0
+2026-04-08,Component Placement,Pro,CPL-01,5,0,0,0.0
+2026-04-08,Component Placement,Pro,CPL-02,6,0,0,0.0
+2026-04-08,Final Inspection,Basic,FIN-01,12,0,0,0.0
+2026-04-08,Final Inspection,Plus,FIN-01,7,1,0,0.0
+2026-04-08,Final Inspection,Pro,FIN-01,11,0,0,5.0
+2026-04-08,Functional Test,Basic,FCT-01,8,3,0,0.0
+2026-04-08,Functional Test,Basic,FCT-02,4,1,0,0.0
+2026-04-08,Functional Test,Basic,FCT-03,4,0,0,0.0
+2026-04-08,Functional Test,Plus,FCT-01,5,1,0,0.0
+2026-04-08,Functional Test,Plus,FCT-02,5,0,0,0.0
+2026-04-08,Functional Test,Plus,FCT-03,2,1,0,0.0
+2026-04-08,Functional Test,Pro,FCT-01,4,1,0,3.0
+2026-04-08,Functional Test,Pro,FCT-02,4,2,0,3.0
+2026-04-08,Functional Test,Pro,FCT-03,4,1,0,2.0
+2026-04-08,Housing Assembly,Basic,HSG-01,10,1,0,0.0
+2026-04-08,Housing Assembly,Basic,HSG-02,3,0,0,0.0
+2026-04-08,Housing Assembly,Plus,HSG-01,5,0,0,0.0
+2026-04-08,Housing Assembly,Plus,HSG-02,5,1,0,0.0
+2026-04-08,Housing Assembly,Pro,HSG-01,11,0,0,4.0
+2026-04-08,Housing Assembly,Pro,HSG-02,4,0,0,3.0
+2026-04-08,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-04-08,Packaging,Plus,PKG-01,3,0,0,0.0
+2026-04-08,Packaging,Pro,PKG-01,1,0,0,0.0
+2026-04-08,Reflow Soldering,Basic,RFL-01,25,1,0,0.0
+2026-04-08,Reflow Soldering,Basic,RFL-02,10,0,0,0.0
+2026-04-08,Reflow Soldering,Plus,RFL-01,16,4,0,0.0
+2026-04-08,Reflow Soldering,Plus,RFL-02,7,0,0,0.0
+2026-04-08,Reflow Soldering,Pro,RFL-01,22,4,0,0.0
+2026-04-08,Reflow Soldering,Pro,RFL-02,21,2,0,0.0
+2026-04-08,Screen Assembly,Basic,SCR-01,17,5,0,0.0
+2026-04-08,Screen Assembly,Basic,SCR-02,3,4,0,0.0
+2026-04-08,Screen Assembly,Plus,SCR-01,22,3,0,0.0
+2026-04-08,Screen Assembly,Plus,SCR-02,3,2,0,0.0
+2026-04-08,Screen Assembly,Pro,SCR-01,23,2,0,10.0
+2026-04-08,Screen Assembly,Pro,SCR-02,3,3,0,2.0
+2026-04-08,Solder Paste Printing,Basic,SPP-01,7,0,0,0.0
+2026-04-08,Solder Paste Printing,Plus,SPP-01,9,1,0,0.0
+2026-04-08,Solder Paste Printing,Pro,SPP-01,5,0,0,0.0
+2026-04-09,AOI Inspection,Basic,AOI-01,7,0,0,0.0
+2026-04-09,AOI Inspection,Plus,AOI-01,7,0,0,0.0
+2026-04-09,AOI Inspection,Pro,AOI-01,3,0,0,1.0
+2026-04-09,Board Test (ICT),Basic,ICT-01,4,0,0,0.0
+2026-04-09,Board Test (ICT),Basic,ICT-02,3,0,0,0.0
+2026-04-09,Board Test (ICT),Plus,ICT-01,2,0,0,0.0
+2026-04-09,Board Test (ICT),Pro,ICT-01,4,2,0,4.0
+2026-04-09,Board Test (ICT),Pro,ICT-02,1,0,0,1.0
+2026-04-09,Component Placement,Basic,CPL-01,14,0,0,0.0
+2026-04-09,Component Placement,Basic,CPL-02,1,0,0,0.0
+2026-04-09,Component Placement,Plus,CPL-01,8,1,0,0.0
+2026-04-09,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-04-09,Component Placement,Pro,CPL-01,8,0,0,0.0
+2026-04-09,Component Placement,Pro,CPL-02,5,0,0,0.0
+2026-04-09,Final Inspection,Basic,FIN-01,10,1,0,0.0
+2026-04-09,Final Inspection,Plus,FIN-01,10,0,0,0.0
+2026-04-09,Final Inspection,Pro,FIN-01,7,0,0,2.0
+2026-04-09,Functional Test,Basic,FCT-01,1,1,0,0.0
+2026-04-09,Functional Test,Basic,FCT-02,2,1,0,0.0
+2026-04-09,Functional Test,Basic,FCT-03,1,0,0,0.0
+2026-04-09,Functional Test,Plus,FCT-01,8,1,0,0.0
+2026-04-09,Functional Test,Plus,FCT-02,5,0,0,0.0
+2026-04-09,Functional Test,Plus,FCT-03,4,0,0,0.0
+2026-04-09,Functional Test,Pro,FCT-01,6,2,0,5.0
+2026-04-09,Functional Test,Pro,FCT-02,9,2,0,4.0
+2026-04-09,Functional Test,Pro,FCT-03,10,0,0,4.0
+2026-04-09,Housing Assembly,Basic,HSG-01,6,0,0,0.0
+2026-04-09,Housing Assembly,Basic,HSG-02,5,1,0,0.0
+2026-04-09,Housing Assembly,Plus,HSG-01,4,1,0,0.0
+2026-04-09,Housing Assembly,Plus,HSG-02,8,2,0,0.0
+2026-04-09,Housing Assembly,Pro,HSG-01,7,1,0,7.0
+2026-04-09,Housing Assembly,Pro,HSG-02,4,0,0,0.0
+2026-04-09,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-04-09,Packaging,Pro,PKG-01,2,0,0,2.0
+2026-04-09,Reflow Soldering,Basic,RFL-01,18,1,0,0.0
+2026-04-09,Reflow Soldering,Basic,RFL-02,8,0,0,0.0
+2026-04-09,Reflow Soldering,Plus,RFL-01,18,3,0,0.0
+2026-04-09,Reflow Soldering,Plus,RFL-02,5,0,0,0.0
+2026-04-09,Reflow Soldering,Pro,RFL-01,18,2,0,0.0
+2026-04-09,Reflow Soldering,Pro,RFL-02,9,2,0,0.0
+2026-04-09,Screen Assembly,Basic,SCR-01,30,3,0,0.0
+2026-04-09,Screen Assembly,Basic,SCR-02,0,5,0,0.0
+2026-04-09,Screen Assembly,Plus,SCR-01,25,4,0,0.0
+2026-04-09,Screen Assembly,Plus,SCR-02,2,3,0,0.0
+2026-04-09,Screen Assembly,Pro,SCR-01,25,2,0,11.0
+2026-04-09,Screen Assembly,Pro,SCR-02,3,2,0,1.0
+2026-04-09,Solder Paste Printing,Basic,SPP-01,11,2,0,0.0
+2026-04-09,Solder Paste Printing,Plus,SPP-01,8,0,0,0.0
+2026-04-09,Solder Paste Printing,Pro,SPP-01,14,0,0,0.0
+2026-04-10,AOI Inspection,Basic,AOI-01,6,0,0,0.0
+2026-04-10,AOI Inspection,Plus,AOI-01,7,1,0,0.0
+2026-04-10,AOI Inspection,Pro,AOI-01,5,1,0,2.0
+2026-04-10,Board Test (ICT),Basic,ICT-01,5,0,0,0.0
+2026-04-10,Board Test (ICT),Basic,ICT-02,3,0,0,0.0
+2026-04-10,Board Test (ICT),Plus,ICT-01,4,0,0,0.0
+2026-04-10,Board Test (ICT),Plus,ICT-02,5,0,0,0.0
+2026-04-10,Board Test (ICT),Pro,ICT-01,6,0,0,3.0
+2026-04-10,Board Test (ICT),Pro,ICT-02,2,1,0,2.0
+2026-04-10,Component Placement,Basic,CPL-01,6,0,0,0.0
+2026-04-10,Component Placement,Basic,CPL-02,5,0,0,0.0
+2026-04-10,Component Placement,Plus,CPL-01,6,0,0,0.0
+2026-04-10,Component Placement,Plus,CPL-02,8,0,0,0.0
+2026-04-10,Component Placement,Pro,CPL-01,4,0,0,1.0
+2026-04-10,Component Placement,Pro,CPL-02,1,1,0,2.0
+2026-04-10,Final Inspection,Basic,FIN-01,7,0,0,0.0
+2026-04-10,Final Inspection,Plus,FIN-01,5,1,0,0.0
+2026-04-10,Final Inspection,Pro,FIN-01,6,0,0,1.0
+2026-04-10,Functional Test,Basic,FCT-01,11,2,0,0.0
+2026-04-10,Functional Test,Basic,FCT-02,11,0,0,0.0
+2026-04-10,Functional Test,Basic,FCT-03,7,0,0,0.0
+2026-04-10,Functional Test,Plus,FCT-01,6,2,0,0.0
+2026-04-10,Functional Test,Plus,FCT-02,11,2,0,0.0
+2026-04-10,Functional Test,Plus,FCT-03,5,1,0,0.0
+2026-04-10,Functional Test,Pro,FCT-01,6,1,0,4.0
+2026-04-10,Functional Test,Pro,FCT-02,5,2,0,7.0
+2026-04-10,Functional Test,Pro,FCT-03,6,0,0,6.0
+2026-04-10,Housing Assembly,Basic,HSG-01,12,1,0,0.0
+2026-04-10,Housing Assembly,Basic,HSG-02,7,0,0,0.0
+2026-04-10,Housing Assembly,Plus,HSG-01,8,0,0,0.0
+2026-04-10,Housing Assembly,Plus,HSG-02,2,0,0,0.0
+2026-04-10,Housing Assembly,Pro,HSG-01,7,0,0,3.0
+2026-04-10,Housing Assembly,Pro,HSG-02,8,0,0,6.0
+2026-04-10,Packaging,Basic,PKG-01,3,0,0,0.0
+2026-04-10,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-04-10,Packaging,Pro,PKG-01,1,0,0,1.0
+2026-04-10,Reflow Soldering,Basic,RFL-01,24,3,0,0.0
+2026-04-10,Reflow Soldering,Basic,RFL-02,6,0,0,0.0
+2026-04-10,Reflow Soldering,Plus,RFL-01,14,0,0,0.0
+2026-04-10,Reflow Soldering,Plus,RFL-02,13,0,0,0.0
+2026-04-10,Reflow Soldering,Pro,RFL-01,20,4,0,13.0
+2026-04-10,Reflow Soldering,Pro,RFL-02,13,1,0,10.0
+2026-04-10,Screen Assembly,Basic,SCR-01,28,4,0,0.0
+2026-04-10,Screen Assembly,Basic,SCR-02,1,1,0,0.0
+2026-04-10,Screen Assembly,Plus,SCR-01,20,2,0,0.0
+2026-04-10,Screen Assembly,Plus,SCR-02,0,2,0,0.0
+2026-04-10,Screen Assembly,Pro,SCR-01,29,1,0,13.0
+2026-04-10,Screen Assembly,Pro,SCR-02,1,3,0,1.0
+2026-04-10,Solder Paste Printing,Basic,SPP-01,8,0,0,0.0
+2026-04-10,Solder Paste Printing,Plus,SPP-01,13,0,0,0.0
+2026-04-10,Solder Paste Printing,Pro,SPP-01,10,0,0,3.0
+2026-04-13,AOI Inspection,Basic,AOI-01,2,0,0,0.0
+2026-04-13,AOI Inspection,Plus,AOI-01,4,0,0,0.0
+2026-04-13,AOI Inspection,Pro,AOI-01,8,0,0,5.0
+2026-04-13,Board Test (ICT),Basic,ICT-01,6,0,0,0.0
+2026-04-13,Board Test (ICT),Basic,ICT-02,5,0,0,0.0
+2026-04-13,Board Test (ICT),Plus,ICT-01,7,0,0,0.0
+2026-04-13,Board Test (ICT),Plus,ICT-02,9,0,0,0.0
+2026-04-13,Board Test (ICT),Pro,ICT-01,9,0,0,3.0
+2026-04-13,Board Test (ICT),Pro,ICT-02,5,0,0,1.0
+2026-04-13,Component Placement,Basic,CPL-01,7,0,0,0.0
+2026-04-13,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-04-13,Component Placement,Plus,CPL-01,5,0,0,0.0
+2026-04-13,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-04-13,Component Placement,Pro,CPL-01,9,0,0,6.0
+2026-04-13,Component Placement,Pro,CPL-02,5,0,0,5.0
+2026-04-13,Final Inspection,Basic,FIN-01,10,0,0,0.0
+2026-04-13,Final Inspection,Plus,FIN-01,16,0,0,0.0
+2026-04-13,Final Inspection,Pro,FIN-01,17,0,0,5.0
+2026-04-13,Functional Test,Basic,FCT-01,4,1,0,0.0
+2026-04-13,Functional Test,Basic,FCT-02,4,2,0,0.0
+2026-04-13,Functional Test,Basic,FCT-03,2,0,0,0.0
+2026-04-13,Functional Test,Plus,FCT-01,5,1,0,0.0
+2026-04-13,Functional Test,Plus,FCT-02,4,3,0,0.0
+2026-04-13,Functional Test,Plus,FCT-03,3,1,0,0.0
+2026-04-13,Functional Test,Pro,FCT-01,2,2,0,4.0
+2026-04-13,Functional Test,Pro,FCT-02,6,1,0,3.0
+2026-04-13,Functional Test,Pro,FCT-03,1,2,0,1.0
+2026-04-13,Housing Assembly,Basic,HSG-01,7,0,0,0.0
+2026-04-13,Housing Assembly,Basic,HSG-02,1,0,0,0.0
+2026-04-13,Housing Assembly,Plus,HSG-01,12,1,0,0.0
+2026-04-13,Housing Assembly,Plus,HSG-02,4,1,0,0.0
+2026-04-13,Housing Assembly,Pro,HSG-01,8,1,0,4.0
+2026-04-13,Housing Assembly,Pro,HSG-02,7,0,0,5.0
+2026-04-13,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-04-13,Packaging,Plus,PKG-01,4,0,0,0.0
+2026-04-13,Packaging,Pro,PKG-01,5,0,0,3.0
+2026-04-13,Reflow Soldering,Basic,RFL-01,21,1,0,0.0
+2026-04-13,Reflow Soldering,Basic,RFL-02,9,4,0,0.0
+2026-04-13,Reflow Soldering,Plus,RFL-01,22,3,0,0.0
+2026-04-13,Reflow Soldering,Plus,RFL-02,14,1,0,0.0
+2026-04-13,Reflow Soldering,Pro,RFL-01,24,7,0,10.0
+2026-04-13,Reflow Soldering,Pro,RFL-02,10,1,0,3.0
+2026-04-13,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-04-13,Screen Assembly,Basic,SCR-02,2,4,0,0.0
+2026-04-13,Screen Assembly,Plus,SCR-01,5,2,0,0.0
+2026-04-13,Screen Assembly,Plus,SCR-02,1,4,0,0.0
+2026-04-13,Screen Assembly,Pro,SCR-01,2,0,0,1.0
+2026-04-13,Screen Assembly,Pro,SCR-02,0,4,0,1.0
+2026-04-13,Solder Paste Printing,Basic,SPP-01,8,0,0,0.0
+2026-04-13,Solder Paste Printing,Plus,SPP-01,7,0,0,0.0
+2026-04-13,Solder Paste Printing,Pro,SPP-01,6,0,0,0.0
+2026-04-14,AOI Inspection,Basic,AOI-01,7,0,0,0.0
+2026-04-14,AOI Inspection,Plus,AOI-01,13,0,0,0.0
+2026-04-14,AOI Inspection,Pro,AOI-01,13,1,0,0.0
+2026-04-14,Board Test (ICT),Basic,ICT-01,3,0,0,0.0
+2026-04-14,Board Test (ICT),Basic,ICT-02,2,0,0,0.0
+2026-04-14,Board Test (ICT),Plus,ICT-01,1,1,0,0.0
+2026-04-14,Board Test (ICT),Plus,ICT-02,6,0,0,0.0
+2026-04-14,Board Test (ICT),Pro,ICT-01,4,0,0,0.0
+2026-04-14,Board Test (ICT),Pro,ICT-02,5,1,0,0.0
+2026-04-14,Component Placement,Basic,CPL-01,6,1,0,0.0
+2026-04-14,Component Placement,Basic,CPL-02,4,0,0,0.0
+2026-04-14,Component Placement,Plus,CPL-01,7,1,0,0.0
+2026-04-14,Component Placement,Plus,CPL-02,3,1,0,0.0
+2026-04-14,Component Placement,Pro,CPL-01,7,1,0,0.0
+2026-04-14,Component Placement,Pro,CPL-02,4,0,0,0.0
+2026-04-14,Final Inspection,Basic,FIN-01,10,3,0,0.0
+2026-04-14,Final Inspection,Plus,FIN-01,10,0,0,0.0
+2026-04-14,Final Inspection,Pro,FIN-01,11,0,0,0.0
+2026-04-14,Functional Test,Basic,FCT-01,7,2,0,0.0
+2026-04-14,Functional Test,Basic,FCT-02,4,1,0,0.0
+2026-04-14,Functional Test,Basic,FCT-03,3,0,0,0.0
+2026-04-14,Functional Test,Plus,FCT-01,6,3,0,0.0
+2026-04-14,Functional Test,Plus,FCT-02,3,0,0,0.0
+2026-04-14,Functional Test,Plus,FCT-03,1,1,0,0.0
+2026-04-14,Functional Test,Pro,FCT-01,5,2,0,3.0
+2026-04-14,Functional Test,Pro,FCT-02,3,0,0,3.0
+2026-04-14,Functional Test,Pro,FCT-03,3,1,0,2.0
+2026-04-14,Housing Assembly,Basic,HSG-01,3,0,0,0.0
+2026-04-14,Housing Assembly,Basic,HSG-02,2,0,0,0.0
+2026-04-14,Housing Assembly,Plus,HSG-01,10,0,0,0.0
+2026-04-14,Housing Assembly,Plus,HSG-02,4,2,0,0.0
+2026-04-14,Housing Assembly,Pro,HSG-01,13,1,0,0.0
+2026-04-14,Housing Assembly,Pro,HSG-02,1,1,0,0.0
+2026-04-14,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-04-14,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-04-14,Reflow Soldering,Basic,RFL-01,19,0,0,0.0
+2026-04-14,Reflow Soldering,Basic,RFL-02,10,0,0,0.0
+2026-04-14,Reflow Soldering,Plus,RFL-01,18,5,0,0.0
+2026-04-14,Reflow Soldering,Plus,RFL-02,7,2,0,0.0
+2026-04-14,Reflow Soldering,Pro,RFL-01,19,3,0,0.0
+2026-04-14,Reflow Soldering,Pro,RFL-02,9,0,0,0.0
+2026-04-14,Screen Assembly,Basic,SCR-01,6,0,0,0.0
+2026-04-14,Screen Assembly,Basic,SCR-02,1,1,0,0.0
+2026-04-14,Screen Assembly,Plus,SCR-01,1,1,0,0.0
+2026-04-14,Screen Assembly,Plus,SCR-02,4,7,0,0.0
+2026-04-14,Screen Assembly,Pro,SCR-01,6,1,0,0.0
+2026-04-14,Screen Assembly,Pro,SCR-02,2,3,0,0.0
+2026-04-14,Solder Paste Printing,Basic,SPP-01,11,0,0,0.0
+2026-04-14,Solder Paste Printing,Plus,SPP-01,4,0,0,0.0
+2026-04-14,Solder Paste Printing,Pro,SPP-01,6,0,0,0.0
+2026-04-15,AOI Inspection,Basic,AOI-01,5,0,0,0.0
+2026-04-15,AOI Inspection,Plus,AOI-01,8,0,0,0.0
+2026-04-15,AOI Inspection,Pro,AOI-01,8,0,0,0.0
+2026-04-15,Board Test (ICT),Basic,ICT-01,10,0,0,0.0
+2026-04-15,Board Test (ICT),Basic,ICT-02,8,0,0,0.0
+2026-04-15,Board Test (ICT),Plus,ICT-01,5,1,0,0.0
+2026-04-15,Board Test (ICT),Plus,ICT-02,8,0,0,0.0
+2026-04-15,Board Test (ICT),Pro,ICT-01,14,1,0,0.0
+2026-04-15,Board Test (ICT),Pro,ICT-02,5,0,0,0.0
+2026-04-15,Component Placement,Basic,CPL-01,7,0,0,0.0
+2026-04-15,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-04-15,Component Placement,Plus,CPL-01,5,1,0,0.0
+2026-04-15,Component Placement,Plus,CPL-02,6,1,0,0.0
+2026-04-15,Component Placement,Pro,CPL-01,8,0,0,0.0
+2026-04-15,Component Placement,Pro,CPL-02,6,0,0,0.0
+2026-04-15,Final Inspection,Basic,FIN-01,10,0,0,0.0
+2026-04-15,Final Inspection,Plus,FIN-01,13,0,0,0.0
+2026-04-15,Final Inspection,Pro,FIN-01,8,0,0,0.0
+2026-04-15,Functional Test,Basic,FCT-01,4,4,0,0.0
+2026-04-15,Functional Test,Basic,FCT-02,6,0,0,0.0
+2026-04-15,Functional Test,Basic,FCT-03,3,0,0,0.0
+2026-04-15,Functional Test,Plus,FCT-01,3,3,0,0.0
+2026-04-15,Functional Test,Plus,FCT-02,3,1,0,0.0
+2026-04-15,Functional Test,Plus,FCT-03,2,2,0,0.0
+2026-04-15,Functional Test,Pro,FCT-01,4,1,0,0.0
+2026-04-15,Functional Test,Pro,FCT-02,9,2,0,0.0
+2026-04-15,Functional Test,Pro,FCT-03,3,0,0,0.0
+2026-04-15,Housing Assembly,Basic,HSG-01,2,1,0,0.0
+2026-04-15,Housing Assembly,Basic,HSG-02,6,0,0,0.0
+2026-04-15,Housing Assembly,Plus,HSG-01,9,0,0,0.0
+2026-04-15,Housing Assembly,Plus,HSG-02,6,0,0,0.0
+2026-04-15,Housing Assembly,Pro,HSG-01,11,0,0,0.0
+2026-04-15,Housing Assembly,Pro,HSG-02,4,0,0,0.0
+2026-04-15,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-04-15,Packaging,Plus,PKG-01,3,0,0,0.0
+2026-04-15,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-04-15,Reflow Soldering,Basic,RFL-01,12,2,0,0.0
+2026-04-15,Reflow Soldering,Basic,RFL-02,7,1,0,0.0
+2026-04-15,Reflow Soldering,Plus,RFL-01,16,1,0,0.0
+2026-04-15,Reflow Soldering,Plus,RFL-02,10,0,0,0.0
+2026-04-15,Reflow Soldering,Pro,RFL-01,12,0,0,0.0
+2026-04-15,Reflow Soldering,Pro,RFL-02,9,0,0,0.0
+2026-04-15,Screen Assembly,Basic,SCR-01,4,1,0,0.0
+2026-04-15,Screen Assembly,Basic,SCR-02,2,3,0,0.0
+2026-04-15,Screen Assembly,Plus,SCR-01,5,1,0,0.0
+2026-04-15,Screen Assembly,Plus,SCR-02,0,3,0,0.0
+2026-04-15,Screen Assembly,Pro,SCR-01,6,3,0,0.0
+2026-04-15,Screen Assembly,Pro,SCR-02,1,4,0,0.0
+2026-04-15,Solder Paste Printing,Basic,SPP-01,6,0,0,0.0
+2026-04-15,Solder Paste Printing,Plus,SPP-01,9,0,0,0.0
+2026-04-15,Solder Paste Printing,Pro,SPP-01,11,0,0,0.0
+2026-04-16,AOI Inspection,Basic,AOI-01,10,0,0,0.0
+2026-04-16,AOI Inspection,Plus,AOI-01,7,0,0,0.0
+2026-04-16,AOI Inspection,Pro,AOI-01,8,0,0,0.0
+2026-04-16,Board Test (ICT),Basic,ICT-01,2,1,0,0.0
+2026-04-16,Board Test (ICT),Basic,ICT-02,5,1,0,0.0
+2026-04-16,Board Test (ICT),Plus,ICT-01,7,2,0,0.0
+2026-04-16,Board Test (ICT),Plus,ICT-02,3,2,0,0.0
+2026-04-16,Board Test (ICT),Pro,ICT-01,12,2,0,0.0
+2026-04-16,Board Test (ICT),Pro,ICT-02,4,0,0,0.0
+2026-04-16,Component Placement,Basic,CPL-01,4,0,0,0.0
+2026-04-16,Component Placement,Basic,CPL-02,2,1,0,0.0
+2026-04-16,Component Placement,Plus,CPL-01,8,0,0,0.0
+2026-04-16,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-04-16,Component Placement,Pro,CPL-01,11,0,0,0.0
+2026-04-16,Component Placement,Pro,CPL-02,4,0,0,0.0
+2026-04-16,Final Inspection,Basic,FIN-01,8,0,0,0.0
+2026-04-16,Final Inspection,Plus,FIN-01,9,0,0,0.0
+2026-04-16,Final Inspection,Pro,FIN-01,13,0,0,0.0
+2026-04-16,Functional Test,Basic,FCT-01,5,2,0,0.0
+2026-04-16,Functional Test,Basic,FCT-02,4,0,0,0.0
+2026-04-16,Functional Test,Basic,FCT-03,2,1,0,0.0
+2026-04-16,Functional Test,Plus,FCT-01,4,1,0,0.0
+2026-04-16,Functional Test,Plus,FCT-02,1,2,0,0.0
+2026-04-16,Functional Test,Plus,FCT-03,7,1,0,0.0
+2026-04-16,Functional Test,Pro,FCT-01,4,0,0,0.0
+2026-04-16,Functional Test,Pro,FCT-02,3,2,0,0.0
+2026-04-16,Functional Test,Pro,FCT-03,5,2,0,0.0
+2026-04-16,Housing Assembly,Basic,HSG-01,14,0,0,0.0
+2026-04-16,Housing Assembly,Basic,HSG-02,8,0,0,0.0
+2026-04-16,Housing Assembly,Plus,HSG-01,5,2,0,0.0
+2026-04-16,Housing Assembly,Plus,HSG-02,2,0,0,0.0
+2026-04-16,Housing Assembly,Pro,HSG-01,7,2,0,0.0
+2026-04-16,Housing Assembly,Pro,HSG-02,10,0,0,0.0
+2026-04-16,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-04-16,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-04-16,Packaging,Pro,PKG-01,1,0,0,0.0
+2026-04-16,Reflow Soldering,Basic,RFL-01,19,4,0,0.0
+2026-04-16,Reflow Soldering,Basic,RFL-02,8,1,0,0.0
+2026-04-16,Reflow Soldering,Plus,RFL-01,20,3,0,0.0
+2026-04-16,Reflow Soldering,Plus,RFL-02,10,1,0,0.0
+2026-04-16,Reflow Soldering,Pro,RFL-01,18,3,0,0.0
+2026-04-16,Reflow Soldering,Pro,RFL-02,5,1,0,0.0
+2026-04-16,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-04-16,Screen Assembly,Basic,SCR-02,1,4,0,0.0
+2026-04-16,Screen Assembly,Plus,SCR-01,10,0,0,0.0
+2026-04-16,Screen Assembly,Plus,SCR-02,1,3,0,0.0
+2026-04-16,Screen Assembly,Pro,SCR-01,8,0,0,0.0
+2026-04-16,Screen Assembly,Pro,SCR-02,1,6,0,0.0
+2026-04-16,Solder Paste Printing,Basic,SPP-01,9,0,0,0.0
+2026-04-16,Solder Paste Printing,Plus,SPP-01,11,0,0,0.0
+2026-04-16,Solder Paste Printing,Pro,SPP-01,6,1,0,0.0
+2026-04-17,AOI Inspection,Basic,AOI-01,9,0,0,0.0
+2026-04-17,AOI Inspection,Plus,AOI-01,7,2,0,0.0
+2026-04-17,AOI Inspection,Pro,AOI-01,7,0,0,0.0
+2026-04-17,Board Test (ICT),Basic,ICT-01,1,0,0,0.0
+2026-04-17,Board Test (ICT),Basic,ICT-02,4,0,0,0.0
+2026-04-17,Board Test (ICT),Plus,ICT-01,4,1,0,0.0
+2026-04-17,Board Test (ICT),Plus,ICT-02,5,1,0,0.0
+2026-04-17,Board Test (ICT),Pro,ICT-01,5,0,0,0.0
+2026-04-17,Board Test (ICT),Pro,ICT-02,5,0,0,0.0
+2026-04-17,Component Placement,Basic,CPL-01,9,0,0,0.0
+2026-04-17,Component Placement,Basic,CPL-02,1,0,0,0.0
+2026-04-17,Component Placement,Plus,CPL-01,9,0,0,0.0
+2026-04-17,Component Placement,Plus,CPL-02,9,0,0,0.0
+2026-04-17,Component Placement,Pro,CPL-01,11,0,0,0.0
+2026-04-17,Component Placement,Pro,CPL-02,6,0,0,0.0
+2026-04-17,Final Inspection,Basic,FIN-01,10,0,0,0.0
+2026-04-17,Final Inspection,Plus,FIN-01,11,0,0,0.0
+2026-04-17,Final Inspection,Pro,FIN-01,24,0,0,0.0
+2026-04-17,Functional Test,Basic,FCT-01,8,2,0,0.0
+2026-04-17,Functional Test,Basic,FCT-02,4,1,0,0.0
+2026-04-17,Functional Test,Plus,FCT-01,6,2,0,0.0
+2026-04-17,Functional Test,Plus,FCT-02,5,2,0,0.0
+2026-04-17,Functional Test,Plus,FCT-03,2,0,0,0.0
+2026-04-17,Functional Test,Pro,FCT-01,7,0,0,0.0
+2026-04-17,Functional Test,Pro,FCT-02,3,1,0,0.0
+2026-04-17,Functional Test,Pro,FCT-03,1,0,0,0.0
+2026-04-17,Housing Assembly,Basic,HSG-01,3,0,0,0.0
+2026-04-17,Housing Assembly,Basic,HSG-02,1,0,0,0.0
+2026-04-17,Housing Assembly,Plus,HSG-01,7,0,0,0.0
+2026-04-17,Housing Assembly,Pro,HSG-01,11,0,0,0.0
+2026-04-17,Housing Assembly,Pro,HSG-02,2,0,0,0.0
+2026-04-17,Packaging,Basic,PKG-01,3,0,0,0.0
+2026-04-17,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-04-17,Packaging,Pro,PKG-01,1,0,0,0.0
+2026-04-17,Reflow Soldering,Basic,RFL-01,13,3,0,0.0
+2026-04-17,Reflow Soldering,Basic,RFL-02,12,1,0,0.0
+2026-04-17,Reflow Soldering,Plus,RFL-01,22,1,0,0.0
+2026-04-17,Reflow Soldering,Plus,RFL-02,8,0,0,0.0
+2026-04-17,Reflow Soldering,Pro,RFL-01,37,5,0,0.0
+2026-04-17,Reflow Soldering,Pro,RFL-02,12,1,0,0.0
+2026-04-17,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-04-17,Screen Assembly,Basic,SCR-02,2,5,0,0.0
+2026-04-17,Screen Assembly,Plus,SCR-01,2,0,0,0.0
+2026-04-17,Screen Assembly,Plus,SCR-02,0,7,0,0.0
+2026-04-17,Screen Assembly,Pro,SCR-01,5,0,0,0.0
+2026-04-17,Screen Assembly,Pro,SCR-02,6,4,0,0.0
+2026-04-17,Solder Paste Printing,Basic,SPP-01,15,0,0,0.0
+2026-04-17,Solder Paste Printing,Plus,SPP-01,9,0,0,0.0
+2026-04-17,Solder Paste Printing,Pro,SPP-01,20,1,0,0.0
+2026-04-20,AOI Inspection,Basic,AOI-01,8,0,0,0.0
+2026-04-20,AOI Inspection,Plus,AOI-01,4,0,0,0.0
+2026-04-20,AOI Inspection,Pro,AOI-01,6,0,0,0.0
+2026-04-20,Board Test (ICT),Basic,ICT-01,8,0,0,0.0
+2026-04-20,Board Test (ICT),Basic,ICT-02,5,0,0,0.0
+2026-04-20,Board Test (ICT),Plus,ICT-01,4,3,0,0.0
+2026-04-20,Board Test (ICT),Plus,ICT-02,5,0,0,0.0
+2026-04-20,Board Test (ICT),Pro,ICT-01,4,1,0,0.0
+2026-04-20,Board Test (ICT),Pro,ICT-02,6,1,0,0.0
+2026-04-20,Component Placement,Basic,CPL-01,10,0,0,0.0
+2026-04-20,Component Placement,Basic,CPL-02,6,0,0,0.0
+2026-04-20,Component Placement,Plus,CPL-01,4,0,0,0.0
+2026-04-20,Component Placement,Plus,CPL-02,4,1,0,0.0
+2026-04-20,Component Placement,Pro,CPL-01,7,0,0,0.0
+2026-04-20,Component Placement,Pro,CPL-02,4,1,0,0.0
+2026-04-20,Final Inspection,Basic,FIN-01,11,0,0,0.0
+2026-04-20,Final Inspection,Plus,FIN-01,2,0,0,0.0
+2026-04-20,Final Inspection,Pro,FIN-01,14,0,0,0.0
+2026-04-20,Functional Test,Basic,FCT-01,0,1,0,0.0
+2026-04-20,Functional Test,Basic,FCT-02,7,0,0,0.0
+2026-04-20,Functional Test,Basic,FCT-03,0,1,0,0.0
+2026-04-20,Functional Test,Plus,FCT-01,6,1,0,0.0
+2026-04-20,Functional Test,Plus,FCT-02,3,0,0,0.0
+2026-04-20,Functional Test,Plus,FCT-03,1,2,0,0.0
+2026-04-20,Functional Test,Pro,FCT-01,6,0,0,0.0
+2026-04-20,Functional Test,Pro,FCT-02,4,2,0,0.0
+2026-04-20,Functional Test,Pro,FCT-03,2,0,0,0.0
+2026-04-20,Housing Assembly,Basic,HSG-01,5,2,0,0.0
+2026-04-20,Housing Assembly,Basic,HSG-02,5,0,0,0.0
+2026-04-20,Housing Assembly,Plus,HSG-01,3,0,0,0.0
+2026-04-20,Housing Assembly,Plus,HSG-02,5,0,0,0.0
+2026-04-20,Housing Assembly,Pro,HSG-01,3,0,0,0.0
+2026-04-20,Housing Assembly,Pro,HSG-02,7,0,0,0.0
+2026-04-20,Packaging,Basic,PKG-01,3,0,0,0.0
+2026-04-20,Packaging,Plus,PKG-01,4,0,0,0.0
+2026-04-20,Packaging,Pro,PKG-01,1,0,0,0.0
+2026-04-20,Reflow Soldering,Basic,RFL-01,15,0,0,0.0
+2026-04-20,Reflow Soldering,Basic,RFL-02,8,2,0,0.0
+2026-04-20,Reflow Soldering,Plus,RFL-01,10,7,0,0.0
+2026-04-20,Reflow Soldering,Plus,RFL-02,11,0,0,0.0
+2026-04-20,Reflow Soldering,Pro,RFL-01,19,0,0,0.0
+2026-04-20,Reflow Soldering,Pro,RFL-02,6,1,0,0.0
+2026-04-20,Screen Assembly,Basic,SCR-02,0,2,0,0.0
+2026-04-20,Screen Assembly,Plus,SCR-01,4,1,0,0.0
+2026-04-20,Screen Assembly,Plus,SCR-02,0,3,0,0.0
+2026-04-20,Screen Assembly,Pro,SCR-01,6,1,0,0.0
+2026-04-20,Screen Assembly,Pro,SCR-02,1,3,0,0.0
+2026-04-20,Solder Paste Printing,Basic,SPP-01,13,0,0,0.0
+2026-04-20,Solder Paste Printing,Plus,SPP-01,7,0,0,0.0
+2026-04-20,Solder Paste Printing,Pro,SPP-01,11,0,0,0.0
+2026-04-21,AOI Inspection,Basic,AOI-01,4,0,0,0.0
+2026-04-21,AOI Inspection,Plus,AOI-01,1,0,0,0.0
+2026-04-21,AOI Inspection,Pro,AOI-01,8,1,0,0.0
+2026-04-21,Board Test (ICT),Basic,ICT-01,8,0,0,0.0
+2026-04-21,Board Test (ICT),Basic,ICT-02,2,0,0,0.0
+2026-04-21,Board Test (ICT),Plus,ICT-01,2,2,0,0.0
+2026-04-21,Board Test (ICT),Plus,ICT-02,6,2,0,0.0
+2026-04-21,Board Test (ICT),Pro,ICT-01,5,0,0,0.0
+2026-04-21,Board Test (ICT),Pro,ICT-02,5,1,0,0.0
+2026-04-21,Component Placement,Basic,CPL-01,6,0,0,0.0
+2026-04-21,Component Placement,Basic,CPL-02,4,0,0,0.0
+2026-04-21,Component Placement,Plus,CPL-01,3,2,0,0.0
+2026-04-21,Component Placement,Plus,CPL-02,4,0,0,0.0
+2026-04-21,Component Placement,Pro,CPL-01,8,0,0,0.0
+2026-04-21,Component Placement,Pro,CPL-02,3,0,0,0.0
+2026-04-21,Final Inspection,Basic,FIN-01,10,1,0,0.0
+2026-04-21,Final Inspection,Plus,FIN-01,12,1,0,0.0
+2026-04-21,Final Inspection,Pro,FIN-01,11,1,0,0.0
+2026-04-21,Functional Test,Basic,FCT-01,6,1,0,0.0
+2026-04-21,Functional Test,Basic,FCT-02,4,2,0,0.0
+2026-04-21,Functional Test,Basic,FCT-03,2,0,0,0.0
+2026-04-21,Functional Test,Plus,FCT-01,4,0,0,0.0
+2026-04-21,Functional Test,Plus,FCT-02,7,0,0,0.0
+2026-04-21,Functional Test,Plus,FCT-03,6,0,0,0.0
+2026-04-21,Functional Test,Pro,FCT-01,9,3,0,0.0
+2026-04-21,Functional Test,Pro,FCT-02,4,1,0,0.0
+2026-04-21,Functional Test,Pro,FCT-03,6,2,0,0.0
+2026-04-21,Housing Assembly,Basic,HSG-01,8,1,0,0.0
+2026-04-21,Housing Assembly,Basic,HSG-02,2,1,0,0.0
+2026-04-21,Housing Assembly,Plus,HSG-01,6,0,0,0.0
+2026-04-21,Housing Assembly,Plus,HSG-02,7,1,0,0.0
+2026-04-21,Housing Assembly,Pro,HSG-01,11,1,0,0.0
+2026-04-21,Housing Assembly,Pro,HSG-02,8,0,0,0.0
+2026-04-21,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-04-21,Packaging,Plus,PKG-01,4,0,0,0.0
+2026-04-21,Packaging,Pro,PKG-01,4,0,0,0.0
+2026-04-21,Reflow Soldering,Basic,RFL-01,16,4,0,0.0
+2026-04-21,Reflow Soldering,Basic,RFL-02,7,2,0,0.0
+2026-04-21,Reflow Soldering,Plus,RFL-01,16,1,0,0.0
+2026-04-21,Reflow Soldering,Plus,RFL-02,10,1,0,0.0
+2026-04-21,Reflow Soldering,Pro,RFL-01,14,2,0,0.0
+2026-04-21,Reflow Soldering,Pro,RFL-02,11,1,0,0.0
+2026-04-21,Screen Assembly,Basic,SCR-01,6,0,0,0.0
+2026-04-21,Screen Assembly,Basic,SCR-02,2,4,0,0.0
+2026-04-21,Screen Assembly,Plus,SCR-01,6,0,0,0.0
+2026-04-21,Screen Assembly,Plus,SCR-02,1,6,0,0.0
+2026-04-21,Screen Assembly,Pro,SCR-01,2,0,0,0.0
+2026-04-21,Screen Assembly,Pro,SCR-02,1,6,0,0.0
+2026-04-21,Solder Paste Printing,Basic,SPP-01,14,1,0,0.0
+2026-04-21,Solder Paste Printing,Plus,SPP-01,3,0,0,0.0
+2026-04-21,Solder Paste Printing,Pro,SPP-01,11,1,0,0.0
+2026-04-22,AOI Inspection,Basic,AOI-01,8,0,0,0.0
+2026-04-22,AOI Inspection,Plus,AOI-01,3,0,0,0.0
+2026-04-22,AOI Inspection,Pro,AOI-01,4,0,0,0.0
+2026-04-22,Board Test (ICT),Basic,ICT-01,6,2,0,0.0
+2026-04-22,Board Test (ICT),Basic,ICT-02,5,0,0,0.0
+2026-04-22,Board Test (ICT),Plus,ICT-01,9,1,0,0.0
+2026-04-22,Board Test (ICT),Plus,ICT-02,7,0,0,0.0
+2026-04-22,Board Test (ICT),Pro,ICT-01,9,1,0,0.0
+2026-04-22,Board Test (ICT),Pro,ICT-02,9,0,0,0.0
+2026-04-22,Component Placement,Basic,CPL-01,9,1,0,0.0
+2026-04-22,Component Placement,Basic,CPL-02,5,0,0,0.0
+2026-04-22,Component Placement,Plus,CPL-01,4,0,0,0.0
+2026-04-22,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-04-22,Component Placement,Pro,CPL-01,7,1,0,0.0
+2026-04-22,Component Placement,Pro,CPL-02,5,1,0,0.0
+2026-04-22,Final Inspection,Basic,FIN-01,5,0,0,0.0
+2026-04-22,Final Inspection,Plus,FIN-01,14,0,0,0.0
+2026-04-22,Final Inspection,Pro,FIN-01,8,1,0,0.0
+2026-04-22,Functional Test,Basic,FCT-01,11,1,0,0.0
+2026-04-22,Functional Test,Basic,FCT-02,4,1,0,0.0
+2026-04-22,Functional Test,Basic,FCT-03,2,0,0,0.0
+2026-04-22,Functional Test,Plus,FCT-01,5,0,0,0.0
+2026-04-22,Functional Test,Plus,FCT-02,5,0,0,0.0
+2026-04-22,Functional Test,Plus,FCT-03,4,0,0,0.0
+2026-04-22,Functional Test,Pro,FCT-01,3,1,0,0.0
+2026-04-22,Functional Test,Pro,FCT-02,4,1,0,0.0
+2026-04-22,Functional Test,Pro,FCT-03,8,0,0,0.0
+2026-04-22,Housing Assembly,Basic,HSG-01,7,0,0,0.0
+2026-04-22,Housing Assembly,Basic,HSG-02,6,0,0,0.0
+2026-04-22,Housing Assembly,Plus,HSG-01,7,2,0,0.0
+2026-04-22,Housing Assembly,Plus,HSG-02,7,1,0,0.0
+2026-04-22,Housing Assembly,Pro,HSG-01,3,0,0,0.0
+2026-04-22,Housing Assembly,Pro,HSG-02,9,0,0,0.0
+2026-04-22,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-04-22,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-04-22,Packaging,Pro,PKG-01,1,0,0,0.0
+2026-04-22,Reflow Soldering,Basic,RFL-01,20,0,0,0.0
+2026-04-22,Reflow Soldering,Basic,RFL-02,8,1,0,0.0
+2026-04-22,Reflow Soldering,Plus,RFL-01,20,0,0,0.0
+2026-04-22,Reflow Soldering,Plus,RFL-02,7,2,0,0.0
+2026-04-22,Reflow Soldering,Pro,RFL-01,17,3,0,0.0
+2026-04-22,Reflow Soldering,Pro,RFL-02,13,2,0,0.0
+2026-04-22,Screen Assembly,Basic,SCR-01,5,0,0,0.0
+2026-04-22,Screen Assembly,Basic,SCR-02,2,3,0,0.0
+2026-04-22,Screen Assembly,Plus,SCR-01,8,0,0,0.0
+2026-04-22,Screen Assembly,Plus,SCR-02,2,2,0,0.0
+2026-04-22,Screen Assembly,Pro,SCR-01,4,0,0,0.0
+2026-04-22,Screen Assembly,Pro,SCR-02,2,2,0,0.0
+2026-04-22,Solder Paste Printing,Basic,SPP-01,10,0,0,0.0
+2026-04-22,Solder Paste Printing,Plus,SPP-01,11,1,0,0.0
+2026-04-22,Solder Paste Printing,Pro,SPP-01,10,0,0,0.0
+2026-04-23,AOI Inspection,Basic,AOI-01,8,0,0,0.0
+2026-04-23,AOI Inspection,Plus,AOI-01,8,0,0,0.0
+2026-04-23,AOI Inspection,Pro,AOI-01,11,0,0,0.0
+2026-04-23,Board Test (ICT),Basic,ICT-01,5,0,0,0.0
+2026-04-23,Board Test (ICT),Basic,ICT-02,5,0,0,0.0
+2026-04-23,Board Test (ICT),Plus,ICT-01,13,2,0,0.0
+2026-04-23,Board Test (ICT),Plus,ICT-02,7,0,0,0.0
+2026-04-23,Board Test (ICT),Pro,ICT-01,6,3,0,0.0
+2026-04-23,Board Test (ICT),Pro,ICT-02,5,0,0,0.0
+2026-04-23,Component Placement,Basic,CPL-01,9,0,0,0.0
+2026-04-23,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-04-23,Component Placement,Plus,CPL-01,9,0,0,0.0
+2026-04-23,Component Placement,Plus,CPL-02,2,0,0,0.0
+2026-04-23,Component Placement,Pro,CPL-01,4,0,0,0.0
+2026-04-23,Component Placement,Pro,CPL-02,6,0,0,0.0
+2026-04-23,Final Inspection,Basic,FIN-01,12,0,0,0.0
+2026-04-23,Final Inspection,Plus,FIN-01,5,0,0,0.0
+2026-04-23,Final Inspection,Pro,FIN-01,10,0,0,0.0
+2026-04-23,Functional Test,Basic,FCT-01,3,0,0,0.0
+2026-04-23,Functional Test,Basic,FCT-02,9,0,0,0.0
+2026-04-23,Functional Test,Basic,FCT-03,1,0,0,0.0
+2026-04-23,Functional Test,Plus,FCT-01,6,1,0,0.0
+2026-04-23,Functional Test,Plus,FCT-02,5,2,0,0.0
+2026-04-23,Functional Test,Plus,FCT-03,6,1,0,0.0
+2026-04-23,Functional Test,Pro,FCT-01,7,1,0,0.0
+2026-04-23,Functional Test,Pro,FCT-02,3,2,0,0.0
+2026-04-23,Functional Test,Pro,FCT-03,7,2,0,0.0
+2026-04-23,Housing Assembly,Basic,HSG-01,9,0,0,0.0
+2026-04-23,Housing Assembly,Basic,HSG-02,9,0,0,0.0
+2026-04-23,Housing Assembly,Plus,HSG-01,9,0,0,0.0
+2026-04-23,Housing Assembly,Plus,HSG-02,4,1,0,0.0
+2026-04-23,Housing Assembly,Pro,HSG-01,7,1,0,0.0
+2026-04-23,Housing Assembly,Pro,HSG-02,6,0,0,0.0
+2026-04-23,Packaging,Basic,PKG-01,5,0,0,0.0
+2026-04-23,Packaging,Plus,PKG-01,4,0,0,0.0
+2026-04-23,Packaging,Pro,PKG-01,1,0,0,0.0
+2026-04-23,Reflow Soldering,Basic,RFL-01,21,2,0,0.0
+2026-04-23,Reflow Soldering,Basic,RFL-02,14,1,0,0.0
+2026-04-23,Reflow Soldering,Plus,RFL-01,10,2,0,0.0
+2026-04-23,Reflow Soldering,Plus,RFL-02,15,2,0,0.0
+2026-04-23,Reflow Soldering,Pro,RFL-01,21,4,0,0.0
+2026-04-23,Reflow Soldering,Pro,RFL-02,10,1,0,0.0
+2026-04-23,Screen Assembly,Basic,SCR-01,2,1,0,0.0
+2026-04-23,Screen Assembly,Basic,SCR-02,1,3,0,0.0
+2026-04-23,Screen Assembly,Plus,SCR-01,3,0,0,0.0
+2026-04-23,Screen Assembly,Plus,SCR-02,0,1,0,0.0
+2026-04-23,Screen Assembly,Pro,SCR-01,3,0,0,0.0
+2026-04-23,Screen Assembly,Pro,SCR-02,3,4,0,0.0
+2026-04-23,Solder Paste Printing,Basic,SPP-01,9,1,0,0.0
+2026-04-23,Solder Paste Printing,Plus,SPP-01,7,1,0,0.0
+2026-04-23,Solder Paste Printing,Pro,SPP-01,18,0,0,0.0
+2026-04-24,AOI Inspection,Basic,AOI-01,9,0,0,0.0
+2026-04-24,AOI Inspection,Plus,AOI-01,6,1,0,0.0
+2026-04-24,AOI Inspection,Pro,AOI-01,11,0,0,0.0
+2026-04-24,Board Test (ICT),Basic,ICT-01,5,2,0,0.0
+2026-04-24,Board Test (ICT),Basic,ICT-02,3,0,0,0.0
+2026-04-24,Board Test (ICT),Plus,ICT-01,9,1,0,0.0
+2026-04-24,Board Test (ICT),Plus,ICT-02,3,0,0,0.0
+2026-04-24,Board Test (ICT),Pro,ICT-01,2,0,0,0.0
+2026-04-24,Board Test (ICT),Pro,ICT-02,5,1,0,0.0
+2026-04-24,Component Placement,Basic,CPL-01,12,0,0,0.0
+2026-04-24,Component Placement,Basic,CPL-02,10,0,0,0.0
+2026-04-24,Component Placement,Plus,CPL-01,8,0,0,0.0
+2026-04-24,Component Placement,Plus,CPL-02,7,0,0,0.0
+2026-04-24,Component Placement,Pro,CPL-01,9,1,0,0.0
+2026-04-24,Component Placement,Pro,CPL-02,7,0,0,0.0
+2026-04-24,Final Inspection,Basic,FIN-01,6,0,0,0.0
+2026-04-24,Final Inspection,Plus,FIN-01,9,0,0,0.0
+2026-04-24,Final Inspection,Pro,FIN-01,15,0,0,7.0
+2026-04-24,Functional Test,Basic,FCT-01,7,1,0,0.0
+2026-04-24,Functional Test,Basic,FCT-02,7,2,0,0.0
+2026-04-24,Functional Test,Basic,FCT-03,6,1,0,0.0
+2026-04-24,Functional Test,Plus,FCT-01,4,2,0,0.0
+2026-04-24,Functional Test,Plus,FCT-02,9,0,0,0.0
+2026-04-24,Functional Test,Plus,FCT-03,4,0,0,0.0
+2026-04-24,Functional Test,Pro,FCT-01,4,0,0,3.0
+2026-04-24,Functional Test,Pro,FCT-02,5,1,0,4.0
+2026-04-24,Functional Test,Pro,FCT-03,1,0,0,1.0
+2026-04-24,Housing Assembly,Basic,HSG-01,10,1,0,0.0
+2026-04-24,Housing Assembly,Basic,HSG-02,7,1,0,0.0
+2026-04-24,Housing Assembly,Plus,HSG-01,5,1,0,0.0
+2026-04-24,Housing Assembly,Plus,HSG-02,3,1,0,0.0
+2026-04-24,Housing Assembly,Pro,HSG-01,9,0,0,4.0
+2026-04-24,Housing Assembly,Pro,HSG-02,5,1,0,2.0
+2026-04-24,Packaging,Plus,PKG-01,5,0,0,0.0
+2026-04-24,Packaging,Pro,PKG-01,2,0,0,1.0
+2026-04-24,Reflow Soldering,Basic,RFL-01,20,2,0,0.0
+2026-04-24,Reflow Soldering,Basic,RFL-02,7,1,0,0.0
+2026-04-24,Reflow Soldering,Plus,RFL-01,27,2,0,0.0
+2026-04-24,Reflow Soldering,Plus,RFL-02,12,1,0,0.0
+2026-04-24,Reflow Soldering,Pro,RFL-01,20,3,0,0.0
+2026-04-24,Reflow Soldering,Pro,RFL-02,6,2,0,0.0
+2026-04-24,Screen Assembly,Basic,SCR-01,4,0,0,0.0
+2026-04-24,Screen Assembly,Basic,SCR-02,4,6,0,0.0
+2026-04-24,Screen Assembly,Plus,SCR-01,6,0,0,0.0
+2026-04-24,Screen Assembly,Plus,SCR-02,1,4,0,0.0
+2026-04-24,Screen Assembly,Pro,SCR-01,6,1,0,0.0
+2026-04-24,Screen Assembly,Pro,SCR-02,3,5,0,0.0
+2026-04-24,Solder Paste Printing,Basic,SPP-01,10,0,0,0.0
+2026-04-24,Solder Paste Printing,Plus,SPP-01,18,0,0,0.0
+2026-04-24,Solder Paste Printing,Pro,SPP-01,14,0,0,0.0
+2026-04-27,AOI Inspection,Basic,AOI-01,8,0,0,0.0
+2026-04-27,AOI Inspection,Plus,AOI-01,10,0,0,0.0
+2026-04-27,AOI Inspection,Pro,AOI-01,8,0,0,0.0
+2026-04-27,Board Test (ICT),Basic,ICT-01,5,0,0,0.0
+2026-04-27,Board Test (ICT),Basic,ICT-02,3,3,0,0.0
+2026-04-27,Board Test (ICT),Plus,ICT-01,3,0,0,0.0
+2026-04-27,Board Test (ICT),Plus,ICT-02,9,0,0,0.0
+2026-04-27,Board Test (ICT),Pro,ICT-01,6,1,0,0.0
+2026-04-27,Board Test (ICT),Pro,ICT-02,4,0,0,0.0
+2026-04-27,Component Placement,Basic,CPL-01,6,0,0,0.0
+2026-04-27,Component Placement,Basic,CPL-02,5,0,0,0.0
+2026-04-27,Component Placement,Plus,CPL-01,7,0,0,0.0
+2026-04-27,Component Placement,Plus,CPL-02,11,0,0,0.0
+2026-04-27,Component Placement,Pro,CPL-01,12,1,0,0.0
+2026-04-27,Component Placement,Pro,CPL-02,11,1,0,0.0
+2026-04-27,Final Inspection,Basic,FIN-01,5,0,0,0.0
+2026-04-27,Final Inspection,Plus,FIN-01,9,0,0,0.0
+2026-04-27,Final Inspection,Pro,FIN-01,14,0,0,0.0
+2026-04-27,Functional Test,Basic,FCT-01,10,2,0,0.0
+2026-04-27,Functional Test,Basic,FCT-02,7,2,0,0.0
+2026-04-27,Functional Test,Basic,FCT-03,2,0,0,0.0
+2026-04-27,Functional Test,Plus,FCT-01,6,3,0,0.0
+2026-04-27,Functional Test,Plus,FCT-02,3,1,0,0.0
+2026-04-27,Functional Test,Plus,FCT-03,5,1,0,0.0
+2026-04-27,Functional Test,Pro,FCT-01,3,2,0,0.0
+2026-04-27,Functional Test,Pro,FCT-02,7,1,0,0.0
+2026-04-27,Functional Test,Pro,FCT-03,4,0,0,0.0
+2026-04-27,Housing Assembly,Basic,HSG-01,5,0,0,0.0
+2026-04-27,Housing Assembly,Basic,HSG-02,2,0,0,0.0
+2026-04-27,Housing Assembly,Plus,HSG-01,5,1,0,0.0
+2026-04-27,Housing Assembly,Plus,HSG-02,8,0,0,0.0
+2026-04-27,Housing Assembly,Pro,HSG-01,12,0,0,0.0
+2026-04-27,Housing Assembly,Pro,HSG-02,7,1,0,0.0
+2026-04-27,Packaging,Basic,PKG-01,5,0,0,0.0
+2026-04-27,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-04-27,Reflow Soldering,Basic,RFL-01,13,2,0,0.0
+2026-04-27,Reflow Soldering,Basic,RFL-02,7,1,0,0.0
+2026-04-27,Reflow Soldering,Plus,RFL-01,10,2,0,0.0
+2026-04-27,Reflow Soldering,Plus,RFL-02,9,1,0,0.0
+2026-04-27,Reflow Soldering,Pro,RFL-01,10,3,0,0.0
+2026-04-27,Reflow Soldering,Pro,RFL-02,11,5,0,0.0
+2026-04-27,Screen Assembly,Basic,SCR-01,4,0,0,0.0
+2026-04-27,Screen Assembly,Basic,SCR-02,1,3,0,0.0
+2026-04-27,Screen Assembly,Plus,SCR-01,1,0,0,0.0
+2026-04-27,Screen Assembly,Plus,SCR-02,0,1,0,0.0
+2026-04-27,Screen Assembly,Pro,SCR-01,2,0,0,0.0
+2026-04-27,Screen Assembly,Pro,SCR-02,3,1,0,0.0
+2026-04-27,Solder Paste Printing,Basic,SPP-01,6,0,0,0.0
+2026-04-27,Solder Paste Printing,Plus,SPP-01,9,2,0,0.0
+2026-04-27,Solder Paste Printing,Pro,SPP-01,12,0,0,0.0
+2026-04-28,AOI Inspection,Basic,AOI-01,5,0,0,0.0
+2026-04-28,AOI Inspection,Plus,AOI-01,10,0,0,0.0
+2026-04-28,AOI Inspection,Pro,AOI-01,7,0,0,0.0
+2026-04-28,Board Test (ICT),Basic,ICT-01,6,1,0,0.0
+2026-04-28,Board Test (ICT),Basic,ICT-02,3,0,0,0.0
+2026-04-28,Board Test (ICT),Plus,ICT-01,6,0,0,0.0
+2026-04-28,Board Test (ICT),Plus,ICT-02,5,1,0,0.0
+2026-04-28,Board Test (ICT),Pro,ICT-01,8,1,0,0.0
+2026-04-28,Board Test (ICT),Pro,ICT-02,4,2,0,0.0
+2026-04-28,Component Placement,Basic,CPL-01,10,0,0,0.0
+2026-04-28,Component Placement,Basic,CPL-02,5,0,0,0.0
+2026-04-28,Component Placement,Plus,CPL-01,9,1,0,0.0
+2026-04-28,Component Placement,Plus,CPL-02,4,0,0,0.0
+2026-04-28,Component Placement,Pro,CPL-01,4,0,0,0.0
+2026-04-28,Component Placement,Pro,CPL-02,7,1,0,0.0
+2026-04-28,Final Inspection,Basic,FIN-01,9,0,0,0.0
+2026-04-28,Final Inspection,Plus,FIN-01,11,1,0,0.0
+2026-04-28,Final Inspection,Pro,FIN-01,8,1,0,0.0
+2026-04-28,Functional Test,Basic,FCT-01,6,0,0,0.0
+2026-04-28,Functional Test,Basic,FCT-02,5,1,0,0.0
+2026-04-28,Functional Test,Basic,FCT-03,4,1,0,0.0
+2026-04-28,Functional Test,Plus,FCT-01,8,1,0,0.0
+2026-04-28,Functional Test,Plus,FCT-02,3,1,0,0.0
+2026-04-28,Functional Test,Plus,FCT-03,7,0,0,0.0
+2026-04-28,Functional Test,Pro,FCT-01,7,4,0,0.0
+2026-04-28,Functional Test,Pro,FCT-02,5,1,0,0.0
+2026-04-28,Functional Test,Pro,FCT-03,2,4,0,0.0
+2026-04-28,Housing Assembly,Basic,HSG-01,4,0,0,0.0
+2026-04-28,Housing Assembly,Basic,HSG-02,10,0,0,0.0
+2026-04-28,Housing Assembly,Plus,HSG-01,1,0,0,0.0
+2026-04-28,Housing Assembly,Plus,HSG-02,11,0,0,0.0
+2026-04-28,Housing Assembly,Pro,HSG-01,11,1,0,0.0
+2026-04-28,Housing Assembly,Pro,HSG-02,10,0,0,0.0
+2026-04-28,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-04-28,Packaging,Plus,PKG-01,3,0,0,0.0
+2026-04-28,Packaging,Pro,PKG-01,3,1,0,1.0
+2026-04-28,Reflow Soldering,Basic,RFL-01,23,2,0,0.0
+2026-04-28,Reflow Soldering,Basic,RFL-02,8,2,0,0.0
+2026-04-28,Reflow Soldering,Plus,RFL-01,14,0,0,0.0
+2026-04-28,Reflow Soldering,Plus,RFL-02,15,1,0,0.0
+2026-04-28,Reflow Soldering,Pro,RFL-01,21,2,0,0.0
+2026-04-28,Reflow Soldering,Pro,RFL-02,9,4,0,0.0
+2026-04-28,Screen Assembly,Basic,SCR-01,2,0,0,0.0
+2026-04-28,Screen Assembly,Basic,SCR-02,1,1,0,0.0
+2026-04-28,Screen Assembly,Plus,SCR-01,4,0,0,0.0
+2026-04-28,Screen Assembly,Plus,SCR-02,1,3,0,0.0
+2026-04-28,Screen Assembly,Pro,SCR-01,1,1,0,0.0
+2026-04-28,Screen Assembly,Pro,SCR-02,1,0,0,0.0
+2026-04-28,Solder Paste Printing,Basic,SPP-01,18,0,0,0.0
+2026-04-28,Solder Paste Printing,Plus,SPP-01,15,2,0,0.0
+2026-04-28,Solder Paste Printing,Pro,SPP-01,13,0,0,0.0
+2026-04-29,AOI Inspection,Basic,AOI-01,5,1,0,0.0
+2026-04-29,AOI Inspection,Plus,AOI-01,10,0,0,0.0
+2026-04-29,AOI Inspection,Pro,AOI-01,7,0,0,0.0
+2026-04-29,Board Test (ICT),Basic,ICT-01,2,1,0,0.0
+2026-04-29,Board Test (ICT),Basic,ICT-02,3,1,0,0.0
+2026-04-29,Board Test (ICT),Plus,ICT-01,5,0,0,0.0
+2026-04-29,Board Test (ICT),Plus,ICT-02,3,0,0,0.0
+2026-04-29,Board Test (ICT),Pro,ICT-01,1,0,0,0.0
+2026-04-29,Board Test (ICT),Pro,ICT-02,5,3,0,0.0
+2026-04-29,Component Placement,Basic,CPL-01,7,2,0,0.0
+2026-04-29,Component Placement,Basic,CPL-02,5,1,0,0.0
+2026-04-29,Component Placement,Plus,CPL-01,7,0,0,0.0
+2026-04-29,Component Placement,Plus,CPL-02,9,0,0,0.0
+2026-04-29,Component Placement,Pro,CPL-01,7,0,0,0.0
+2026-04-29,Component Placement,Pro,CPL-02,6,0,0,0.0
+2026-04-29,Final Inspection,Basic,FIN-01,6,1,0,0.0
+2026-04-29,Final Inspection,Plus,FIN-01,13,0,0,0.0
+2026-04-29,Final Inspection,Pro,FIN-01,11,0,0,0.0
+2026-04-29,Functional Test,Basic,FCT-01,6,0,0,0.0
+2026-04-29,Functional Test,Basic,FCT-02,5,1,0,0.0
+2026-04-29,Functional Test,Basic,FCT-03,6,0,0,0.0
+2026-04-29,Functional Test,Plus,FCT-01,4,0,0,0.0
+2026-04-29,Functional Test,Plus,FCT-02,6,0,0,0.0
+2026-04-29,Functional Test,Plus,FCT-03,2,0,0,0.0
+2026-04-29,Functional Test,Pro,FCT-01,8,0,0,0.0
+2026-04-29,Functional Test,Pro,FCT-02,5,0,0,0.0
+2026-04-29,Functional Test,Pro,FCT-03,2,0,0,0.0
+2026-04-29,Housing Assembly,Basic,HSG-01,5,1,0,0.0
+2026-04-29,Housing Assembly,Basic,HSG-02,4,0,0,0.0
+2026-04-29,Housing Assembly,Plus,HSG-01,8,1,0,0.0
+2026-04-29,Housing Assembly,Plus,HSG-02,4,1,0,0.0
+2026-04-29,Housing Assembly,Pro,HSG-01,15,0,0,0.0
+2026-04-29,Housing Assembly,Pro,HSG-02,7,0,0,0.0
+2026-04-29,Packaging,Basic,PKG-01,3,0,0,0.0
+2026-04-29,Packaging,Plus,PKG-01,3,0,0,0.0
+2026-04-29,Reflow Soldering,Basic,RFL-01,25,1,0,0.0
+2026-04-29,Reflow Soldering,Basic,RFL-02,8,1,0,0.0
+2026-04-29,Reflow Soldering,Plus,RFL-01,17,2,0,0.0
+2026-04-29,Reflow Soldering,Plus,RFL-02,11,1,0,0.0
+2026-04-29,Reflow Soldering,Pro,RFL-01,22,4,0,0.0
+2026-04-29,Reflow Soldering,Pro,RFL-02,8,1,0,0.0
+2026-04-29,Screen Assembly,Basic,SCR-01,2,0,0,0.0
+2026-04-29,Screen Assembly,Basic,SCR-02,1,4,0,0.0
+2026-04-29,Screen Assembly,Plus,SCR-01,2,0,0,0.0
+2026-04-29,Screen Assembly,Plus,SCR-02,1,3,0,0.0
+2026-04-29,Screen Assembly,Pro,SCR-01,5,0,0,0.0
+2026-04-29,Screen Assembly,Pro,SCR-02,2,4,0,0.0
+2026-04-29,Solder Paste Printing,Basic,SPP-01,9,0,0,0.0
+2026-04-29,Solder Paste Printing,Plus,SPP-01,12,0,0,0.0
+2026-04-29,Solder Paste Printing,Pro,SPP-01,15,0,0,0.0
+2026-04-30,AOI Inspection,Basic,AOI-01,9,0,0,0.0
+2026-04-30,AOI Inspection,Plus,AOI-01,6,0,0,0.0
+2026-04-30,AOI Inspection,Pro,AOI-01,9,0,0,0.0
+2026-04-30,Board Test (ICT),Basic,ICT-01,7,2,0,0.0
+2026-04-30,Board Test (ICT),Basic,ICT-02,5,0,0,0.0
+2026-04-30,Board Test (ICT),Plus,ICT-01,6,1,0,0.0
+2026-04-30,Board Test (ICT),Plus,ICT-02,5,0,0,0.0
+2026-04-30,Board Test (ICT),Pro,ICT-01,7,1,0,0.0
+2026-04-30,Board Test (ICT),Pro,ICT-02,4,1,0,0.0
+2026-04-30,Component Placement,Basic,CPL-01,5,0,0,0.0
+2026-04-30,Component Placement,Basic,CPL-02,7,0,0,0.0
+2026-04-30,Component Placement,Plus,CPL-01,2,1,0,0.0
+2026-04-30,Component Placement,Plus,CPL-02,2,0,0,0.0
+2026-04-30,Component Placement,Pro,CPL-01,3,0,0,0.0
+2026-04-30,Component Placement,Pro,CPL-02,2,1,0,0.0
+2026-04-30,Final Inspection,Basic,FIN-01,5,0,0,0.0
+2026-04-30,Final Inspection,Plus,FIN-01,5,0,0,0.0
+2026-04-30,Final Inspection,Pro,FIN-01,15,0,0,0.0
+2026-04-30,Functional Test,Basic,FCT-01,5,0,0,0.0
+2026-04-30,Functional Test,Basic,FCT-02,1,1,0,0.0
+2026-04-30,Functional Test,Basic,FCT-03,5,0,0,0.0
+2026-04-30,Functional Test,Plus,FCT-01,3,4,0,0.0
+2026-04-30,Functional Test,Plus,FCT-02,8,2,0,0.0
+2026-04-30,Functional Test,Pro,FCT-01,7,4,0,0.0
+2026-04-30,Functional Test,Pro,FCT-02,7,1,0,0.0
+2026-04-30,Functional Test,Pro,FCT-03,3,0,0,0.0
+2026-04-30,Housing Assembly,Basic,HSG-01,8,1,0,0.0
+2026-04-30,Housing Assembly,Basic,HSG-02,5,0,0,0.0
+2026-04-30,Housing Assembly,Plus,HSG-01,11,1,0,0.0
+2026-04-30,Housing Assembly,Plus,HSG-02,3,0,0,0.0
+2026-04-30,Housing Assembly,Pro,HSG-01,6,0,0,0.0
+2026-04-30,Housing Assembly,Pro,HSG-02,5,1,0,0.0
+2026-04-30,Packaging,Basic,PKG-01,3,0,0,0.0
+2026-04-30,Packaging,Plus,PKG-01,1,1,0,0.0
+2026-04-30,Packaging,Pro,PKG-01,1,0,0,0.0
+2026-04-30,Reflow Soldering,Basic,RFL-01,17,1,0,0.0
+2026-04-30,Reflow Soldering,Basic,RFL-02,6,2,0,0.0
+2026-04-30,Reflow Soldering,Plus,RFL-01,10,0,0,0.0
+2026-04-30,Reflow Soldering,Plus,RFL-02,7,1,0,0.0
+2026-04-30,Reflow Soldering,Pro,RFL-01,17,1,0,0.0
+2026-04-30,Reflow Soldering,Pro,RFL-02,7,0,0,0.0
+2026-04-30,Screen Assembly,Basic,SCR-01,5,1,0,0.0
+2026-04-30,Screen Assembly,Basic,SCR-02,1,4,0,0.0
+2026-04-30,Screen Assembly,Plus,SCR-01,5,0,0,0.0
+2026-04-30,Screen Assembly,Plus,SCR-02,1,2,0,0.0
+2026-04-30,Screen Assembly,Pro,SCR-01,6,0,0,0.0
+2026-04-30,Screen Assembly,Pro,SCR-02,1,1,0,0.0
+2026-04-30,Solder Paste Printing,Basic,SPP-01,10,0,0,0.0
+2026-04-30,Solder Paste Printing,Plus,SPP-01,8,0,0,0.0
+2026-04-30,Solder Paste Printing,Pro,SPP-01,17,0,0,0.0
+2026-05-01,AOI Inspection,Basic,AOI-01,6,1,0,0.0
+2026-05-01,AOI Inspection,Plus,AOI-01,7,0,0,0.0
+2026-05-01,AOI Inspection,Pro,AOI-01,5,0,0,0.0
+2026-05-01,Board Test (ICT),Basic,ICT-02,2,0,0,0.0
+2026-05-01,Board Test (ICT),Plus,ICT-01,4,2,0,0.0
+2026-05-01,Board Test (ICT),Plus,ICT-02,3,0,0,0.0
+2026-05-01,Board Test (ICT),Pro,ICT-01,8,0,0,0.0
+2026-05-01,Board Test (ICT),Pro,ICT-02,4,0,0,0.0
+2026-05-01,Component Placement,Basic,CPL-01,4,0,0,0.0
+2026-05-01,Component Placement,Basic,CPL-02,6,1,0,0.0
+2026-05-01,Component Placement,Plus,CPL-01,7,0,0,0.0
+2026-05-01,Component Placement,Plus,CPL-02,2,0,0,0.0
+2026-05-01,Component Placement,Pro,CPL-01,6,1,0,0.0
+2026-05-01,Final Inspection,Basic,FIN-01,14,0,0,0.0
+2026-05-01,Final Inspection,Plus,FIN-01,9,0,0,0.0
+2026-05-01,Final Inspection,Pro,FIN-01,20,0,0,0.0
+2026-05-01,Functional Test,Basic,FCT-01,4,4,0,0.0
+2026-05-01,Functional Test,Basic,FCT-02,8,0,0,0.0
+2026-05-01,Functional Test,Basic,FCT-03,5,0,0,0.0
+2026-05-01,Functional Test,Plus,FCT-01,6,2,0,0.0
+2026-05-01,Functional Test,Plus,FCT-02,6,0,0,0.0
+2026-05-01,Functional Test,Plus,FCT-03,3,1,0,0.0
+2026-05-01,Functional Test,Pro,FCT-01,4,1,0,0.0
+2026-05-01,Functional Test,Pro,FCT-02,5,1,0,0.0
+2026-05-01,Functional Test,Pro,FCT-03,4,2,0,0.0
+2026-05-01,Housing Assembly,Basic,HSG-01,9,0,0,0.0
+2026-05-01,Housing Assembly,Basic,HSG-02,4,1,0,0.0
+2026-05-01,Housing Assembly,Plus,HSG-01,5,1,0,0.0
+2026-05-01,Housing Assembly,Plus,HSG-02,2,0,0,0.0
+2026-05-01,Housing Assembly,Pro,HSG-01,8,0,0,0.0
+2026-05-01,Housing Assembly,Pro,HSG-02,2,0,0,0.0
+2026-05-01,Packaging,Basic,PKG-01,3,0,0,0.0
+2026-05-01,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-05-01,Packaging,Pro,PKG-01,3,0,0,0.0
+2026-05-01,Reflow Soldering,Basic,RFL-01,19,1,0,0.0
+2026-05-01,Reflow Soldering,Basic,RFL-02,6,0,0,0.0
+2026-05-01,Reflow Soldering,Plus,RFL-01,17,1,0,0.0
+2026-05-01,Reflow Soldering,Plus,RFL-02,3,2,0,0.0
+2026-05-01,Reflow Soldering,Pro,RFL-01,24,0,0,0.0
+2026-05-01,Reflow Soldering,Pro,RFL-02,7,1,0,0.0
+2026-05-01,Screen Assembly,Basic,SCR-01,4,0,0,0.0
+2026-05-01,Screen Assembly,Plus,SCR-01,1,1,0,0.0
+2026-05-01,Screen Assembly,Pro,SCR-01,3,0,0,0.0
+2026-05-01,Screen Assembly,Pro,SCR-02,2,3,0,0.0
+2026-05-01,Solder Paste Printing,Basic,SPP-01,10,0,0,0.0
+2026-05-01,Solder Paste Printing,Plus,SPP-01,9,0,0,0.0
+2026-05-01,Solder Paste Printing,Pro,SPP-01,6,0,0,0.0
+2026-05-04,AOI Inspection,Basic,AOI-01,8,2,0,0.0
+2026-05-04,AOI Inspection,Plus,AOI-01,12,0,0,0.0
+2026-05-04,AOI Inspection,Pro,AOI-01,8,0,0,0.0
+2026-05-04,Board Test (ICT),Basic,ICT-01,4,0,0,0.0
+2026-05-04,Board Test (ICT),Basic,ICT-02,3,0,0,0.0
+2026-05-04,Board Test (ICT),Plus,ICT-01,4,0,0,0.0
+2026-05-04,Board Test (ICT),Plus,ICT-02,1,0,0,0.0
+2026-05-04,Board Test (ICT),Pro,ICT-01,1,1,0,0.0
+2026-05-04,Board Test (ICT),Pro,ICT-02,5,0,0,0.0
+2026-05-04,Component Placement,Basic,CPL-01,3,0,0,0.0
+2026-05-04,Component Placement,Basic,CPL-02,2,0,0,0.0
+2026-05-04,Component Placement,Plus,CPL-01,8,0,0,0.0
+2026-05-04,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-05-04,Component Placement,Pro,CPL-01,5,0,0,0.0
+2026-05-04,Component Placement,Pro,CPL-02,5,0,0,0.0
+2026-05-04,Final Inspection,Basic,FIN-01,8,0,0,0.0
+2026-05-04,Final Inspection,Plus,FIN-01,5,0,0,0.0
+2026-05-04,Final Inspection,Pro,FIN-01,14,0,0,0.0
+2026-05-04,Functional Test,Basic,FCT-01,7,0,0,0.0
+2026-05-04,Functional Test,Basic,FCT-02,4,1,0,0.0
+2026-05-04,Functional Test,Basic,FCT-03,3,0,0,0.0
+2026-05-04,Functional Test,Plus,FCT-01,7,3,0,0.0
+2026-05-04,Functional Test,Plus,FCT-02,6,1,0,0.0
+2026-05-04,Functional Test,Plus,FCT-03,3,0,0,0.0
+2026-05-04,Functional Test,Pro,FCT-01,6,1,0,0.0
+2026-05-04,Functional Test,Pro,FCT-02,6,2,0,0.0
+2026-05-04,Functional Test,Pro,FCT-03,7,0,0,0.0
+2026-05-04,Housing Assembly,Basic,HSG-01,6,2,0,0.0
+2026-05-04,Housing Assembly,Basic,HSG-02,4,0,0,0.0
+2026-05-04,Housing Assembly,Plus,HSG-01,9,0,0,0.0
+2026-05-04,Housing Assembly,Plus,HSG-02,1,1,0,0.0
+2026-05-04,Housing Assembly,Pro,HSG-01,6,1,0,0.0
+2026-05-04,Housing Assembly,Pro,HSG-02,6,1,0,0.0
+2026-05-04,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-05-04,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-05-04,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-05-04,Reflow Soldering,Basic,RFL-01,18,0,0,0.0
+2026-05-04,Reflow Soldering,Basic,RFL-02,10,1,0,0.0
+2026-05-04,Reflow Soldering,Plus,RFL-01,23,1,0,0.0
+2026-05-04,Reflow Soldering,Plus,RFL-02,9,0,0,0.0
+2026-05-04,Reflow Soldering,Pro,RFL-01,16,2,0,0.0
+2026-05-04,Reflow Soldering,Pro,RFL-02,11,2,0,0.0
+2026-05-04,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-05-04,Screen Assembly,Basic,SCR-02,0,4,0,0.0
+2026-05-04,Screen Assembly,Plus,SCR-01,2,0,0,0.0
+2026-05-04,Screen Assembly,Plus,SCR-02,0,5,0,0.0
+2026-05-04,Screen Assembly,Pro,SCR-01,6,1,0,0.0
+2026-05-04,Screen Assembly,Pro,SCR-02,0,7,0,0.0
+2026-05-04,Solder Paste Printing,Basic,SPP-01,7,0,0,0.0
+2026-05-04,Solder Paste Printing,Plus,SPP-01,6,1,0,0.0
+2026-05-04,Solder Paste Printing,Pro,SPP-01,11,1,0,0.0
+2026-05-05,AOI Inspection,Basic,AOI-01,6,0,0,0.0
+2026-05-05,AOI Inspection,Plus,AOI-01,12,0,0,0.0
+2026-05-05,AOI Inspection,Pro,AOI-01,6,0,0,0.0
+2026-05-05,Board Test (ICT),Basic,ICT-01,7,1,0,0.0
+2026-05-05,Board Test (ICT),Basic,ICT-02,4,1,0,0.0
+2026-05-05,Board Test (ICT),Plus,ICT-01,6,2,0,0.0
+2026-05-05,Board Test (ICT),Plus,ICT-02,3,1,0,0.0
+2026-05-05,Board Test (ICT),Pro,ICT-01,12,1,0,0.0
+2026-05-05,Board Test (ICT),Pro,ICT-02,7,0,0,0.0
+2026-05-05,Component Placement,Basic,CPL-01,10,0,0,0.0
+2026-05-05,Component Placement,Basic,CPL-02,6,0,0,0.0
+2026-05-05,Component Placement,Plus,CPL-01,14,2,0,0.0
+2026-05-05,Component Placement,Plus,CPL-02,5,1,0,0.0
+2026-05-05,Component Placement,Pro,CPL-01,3,2,0,0.0
+2026-05-05,Component Placement,Pro,CPL-02,7,0,0,0.0
+2026-05-05,Final Inspection,Basic,FIN-01,1,0,0,0.0
+2026-05-05,Final Inspection,Plus,FIN-01,12,2,0,0.0
+2026-05-05,Final Inspection,Pro,FIN-01,11,0,0,0.0
+2026-05-05,Functional Test,Basic,FCT-01,5,0,0,0.0
+2026-05-05,Functional Test,Basic,FCT-02,4,1,0,0.0
+2026-05-05,Functional Test,Basic,FCT-03,2,2,0,0.0
+2026-05-05,Functional Test,Plus,FCT-01,4,1,0,0.0
+2026-05-05,Functional Test,Plus,FCT-02,2,0,0,0.0
+2026-05-05,Functional Test,Plus,FCT-03,2,0,0,0.0
+2026-05-05,Functional Test,Pro,FCT-01,6,3,0,0.0
+2026-05-05,Functional Test,Pro,FCT-02,3,0,0,0.0
+2026-05-05,Functional Test,Pro,FCT-03,4,0,0,0.0
+2026-05-05,Housing Assembly,Basic,HSG-01,6,0,0,0.0
+2026-05-05,Housing Assembly,Basic,HSG-02,5,2,0,0.0
+2026-05-05,Housing Assembly,Plus,HSG-01,6,1,0,0.0
+2026-05-05,Housing Assembly,Plus,HSG-02,3,1,0,0.0
+2026-05-05,Housing Assembly,Pro,HSG-01,3,0,0,0.0
+2026-05-05,Housing Assembly,Pro,HSG-02,4,1,0,0.0
+2026-05-05,Packaging,Basic,PKG-01,5,0,0,0.0
+2026-05-05,Packaging,Plus,PKG-01,3,0,0,0.0
+2026-05-05,Packaging,Pro,PKG-01,1,0,0,0.0
+2026-05-05,Reflow Soldering,Basic,RFL-01,14,2,0,0.0
+2026-05-05,Reflow Soldering,Basic,RFL-02,10,1,0,0.0
+2026-05-05,Reflow Soldering,Plus,RFL-01,16,2,0,0.0
+2026-05-05,Reflow Soldering,Plus,RFL-02,9,2,0,0.0
+2026-05-05,Reflow Soldering,Pro,RFL-01,23,1,0,0.0
+2026-05-05,Reflow Soldering,Pro,RFL-02,4,2,0,0.0
+2026-05-05,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-05-05,Screen Assembly,Basic,SCR-02,1,2,0,0.0
+2026-05-05,Screen Assembly,Plus,SCR-01,4,0,0,0.0
+2026-05-05,Screen Assembly,Plus,SCR-02,0,2,0,0.0
+2026-05-05,Screen Assembly,Pro,SCR-01,2,0,0,0.0
+2026-05-05,Screen Assembly,Pro,SCR-02,2,2,0,0.0
+2026-05-05,Solder Paste Printing,Basic,SPP-01,15,0,0,0.0
+2026-05-05,Solder Paste Printing,Plus,SPP-01,11,0,0,0.0
+2026-05-05,Solder Paste Printing,Pro,SPP-01,20,0,0,0.0
+2026-05-06,AOI Inspection,Basic,AOI-01,11,0,0,0.0
+2026-05-06,AOI Inspection,Plus,AOI-01,2,0,0,0.0
+2026-05-06,AOI Inspection,Pro,AOI-01,8,0,0,0.0
+2026-05-06,Board Test (ICT),Basic,ICT-01,6,1,0,0.0
+2026-05-06,Board Test (ICT),Basic,ICT-02,7,0,0,0.0
+2026-05-06,Board Test (ICT),Plus,ICT-01,9,1,0,0.0
+2026-05-06,Board Test (ICT),Plus,ICT-02,5,0,0,0.0
+2026-05-06,Board Test (ICT),Pro,ICT-01,7,0,0,0.0
+2026-05-06,Board Test (ICT),Pro,ICT-02,5,0,0,0.0
+2026-05-06,Component Placement,Basic,CPL-01,6,1,0,0.0
+2026-05-06,Component Placement,Basic,CPL-02,7,0,0,0.0
+2026-05-06,Component Placement,Plus,CPL-01,6,0,0,0.0
+2026-05-06,Component Placement,Plus,CPL-02,8,0,0,0.0
+2026-05-06,Component Placement,Pro,CPL-01,5,0,0,0.0
+2026-05-06,Component Placement,Pro,CPL-02,3,0,0,0.0
+2026-05-06,Final Inspection,Basic,FIN-01,10,0,0,0.0
+2026-05-06,Final Inspection,Plus,FIN-01,8,1,0,0.0
+2026-05-06,Final Inspection,Pro,FIN-01,14,1,0,0.0
+2026-05-06,Functional Test,Basic,FCT-01,6,2,0,0.0
+2026-05-06,Functional Test,Basic,FCT-02,5,0,0,0.0
+2026-05-06,Functional Test,Basic,FCT-03,5,0,0,0.0
+2026-05-06,Functional Test,Plus,FCT-01,3,1,0,0.0
+2026-05-06,Functional Test,Plus,FCT-02,5,3,0,0.0
+2026-05-06,Functional Test,Plus,FCT-03,5,0,0,0.0
+2026-05-06,Functional Test,Pro,FCT-01,7,0,0,0.0
+2026-05-06,Functional Test,Pro,FCT-02,7,1,0,0.0
+2026-05-06,Functional Test,Pro,FCT-03,2,1,0,0.0
+2026-05-06,Housing Assembly,Basic,HSG-01,4,1,0,0.0
+2026-05-06,Housing Assembly,Basic,HSG-02,3,1,0,0.0
+2026-05-06,Housing Assembly,Plus,HSG-01,4,0,0,0.0
+2026-05-06,Housing Assembly,Plus,HSG-02,5,0,0,0.0
+2026-05-06,Housing Assembly,Pro,HSG-01,5,0,0,0.0
+2026-05-06,Housing Assembly,Pro,HSG-02,5,0,0,0.0
+2026-05-06,Packaging,Plus,PKG-01,3,0,0,0.0
+2026-05-06,Reflow Soldering,Basic,RFL-01,20,0,0,0.0
+2026-05-06,Reflow Soldering,Basic,RFL-02,5,3,0,0.0
+2026-05-06,Reflow Soldering,Plus,RFL-01,19,6,0,0.0
+2026-05-06,Reflow Soldering,Plus,RFL-02,6,0,0,0.0
+2026-05-06,Reflow Soldering,Pro,RFL-01,19,2,0,0.0
+2026-05-06,Reflow Soldering,Pro,RFL-02,16,0,0,0.0
+2026-05-06,Screen Assembly,Basic,SCR-01,5,0,0,0.0
+2026-05-06,Screen Assembly,Basic,SCR-02,0,3,0,0.0
+2026-05-06,Screen Assembly,Plus,SCR-01,4,0,0,0.0
+2026-05-06,Screen Assembly,Plus,SCR-02,0,3,0,0.0
+2026-05-06,Screen Assembly,Pro,SCR-01,6,0,0,0.0
+2026-05-06,Screen Assembly,Pro,SCR-02,1,1,0,0.0
+2026-05-06,Solder Paste Printing,Basic,SPP-01,7,0,0,0.0
+2026-05-06,Solder Paste Printing,Plus,SPP-01,19,1,0,0.0
+2026-05-06,Solder Paste Printing,Pro,SPP-01,10,0,0,0.0
+2026-05-07,AOI Inspection,Basic,AOI-01,7,0,0,0.0
+2026-05-07,AOI Inspection,Plus,AOI-01,2,0,0,0.0
+2026-05-07,AOI Inspection,Pro,AOI-01,4,0,0,0.0
+2026-05-07,Board Test (ICT),Basic,ICT-01,4,2,0,0.0
+2026-05-07,Board Test (ICT),Basic,ICT-02,3,0,0,0.0
+2026-05-07,Board Test (ICT),Plus,ICT-01,4,1,0,0.0
+2026-05-07,Board Test (ICT),Plus,ICT-02,4,0,0,0.0
+2026-05-07,Board Test (ICT),Pro,ICT-01,6,2,0,0.0
+2026-05-07,Board Test (ICT),Pro,ICT-02,6,1,0,0.0
+2026-05-07,Component Placement,Basic,CPL-01,7,1,0,0.0
+2026-05-07,Component Placement,Basic,CPL-02,5,0,0,0.0
+2026-05-07,Component Placement,Plus,CPL-01,8,0,0,0.0
+2026-05-07,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-05-07,Component Placement,Pro,CPL-01,8,0,0,0.0
+2026-05-07,Component Placement,Pro,CPL-02,7,0,0,0.0
+2026-05-07,Final Inspection,Basic,FIN-01,7,0,0,0.0
+2026-05-07,Final Inspection,Plus,FIN-01,15,0,0,0.0
+2026-05-07,Final Inspection,Pro,FIN-01,14,0,0,0.0
+2026-05-07,Functional Test,Basic,FCT-01,4,0,0,0.0
+2026-05-07,Functional Test,Basic,FCT-02,8,1,0,0.0
+2026-05-07,Functional Test,Basic,FCT-03,7,1,0,0.0
+2026-05-07,Functional Test,Plus,FCT-01,5,1,0,0.0
+2026-05-07,Functional Test,Plus,FCT-02,5,6,0,0.0
+2026-05-07,Functional Test,Plus,FCT-03,3,1,0,0.0
+2026-05-07,Functional Test,Pro,FCT-01,9,1,0,0.0
+2026-05-07,Functional Test,Pro,FCT-02,9,0,0,0.0
+2026-05-07,Functional Test,Pro,FCT-03,1,2,0,0.0
+2026-05-07,Housing Assembly,Basic,HSG-01,7,0,0,0.0
+2026-05-07,Housing Assembly,Basic,HSG-02,3,0,0,0.0
+2026-05-07,Housing Assembly,Plus,HSG-01,7,0,0,0.0
+2026-05-07,Housing Assembly,Plus,HSG-02,8,1,0,0.0
+2026-05-07,Housing Assembly,Pro,HSG-01,6,3,0,0.0
+2026-05-07,Housing Assembly,Pro,HSG-02,3,1,0,0.0
+2026-05-07,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-05-07,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-05-07,Reflow Soldering,Basic,RFL-01,21,2,0,0.0
+2026-05-07,Reflow Soldering,Basic,RFL-02,6,0,0,0.0
+2026-05-07,Reflow Soldering,Plus,RFL-01,17,3,0,0.0
+2026-05-07,Reflow Soldering,Plus,RFL-02,9,0,0,0.0
+2026-05-07,Reflow Soldering,Pro,RFL-01,21,1,0,0.0
+2026-05-07,Reflow Soldering,Pro,RFL-02,8,1,0,0.0
+2026-05-07,Screen Assembly,Basic,SCR-01,2,2,0,0.0
+2026-05-07,Screen Assembly,Basic,SCR-02,0,3,0,0.0
+2026-05-07,Screen Assembly,Plus,SCR-01,5,1,0,0.0
+2026-05-07,Screen Assembly,Plus,SCR-02,1,4,0,0.0
+2026-05-07,Screen Assembly,Pro,SCR-01,2,0,0,0.0
+2026-05-07,Screen Assembly,Pro,SCR-02,0,1,0,0.0
+2026-05-07,Solder Paste Printing,Basic,SPP-01,10,1,0,0.0
+2026-05-07,Solder Paste Printing,Plus,SPP-01,10,0,0,0.0
+2026-05-07,Solder Paste Printing,Pro,SPP-01,7,1,0,0.0
+2026-05-08,AOI Inspection,Basic,AOI-01,5,0,0,0.0
+2026-05-08,AOI Inspection,Plus,AOI-01,7,0,0,0.0
+2026-05-08,AOI Inspection,Pro,AOI-01,7,1,0,0.0
+2026-05-08,Board Test (ICT),Basic,ICT-01,7,0,0,0.0
+2026-05-08,Board Test (ICT),Basic,ICT-02,4,1,0,0.0
+2026-05-08,Board Test (ICT),Plus,ICT-01,6,0,0,0.0
+2026-05-08,Board Test (ICT),Plus,ICT-02,7,1,0,0.0
+2026-05-08,Board Test (ICT),Pro,ICT-01,3,0,0,0.0
+2026-05-08,Board Test (ICT),Pro,ICT-02,11,1,0,0.0
+2026-05-08,Component Placement,Basic,CPL-01,7,0,0,0.0
+2026-05-08,Component Placement,Basic,CPL-02,1,0,0,0.0
+2026-05-08,Component Placement,Plus,CPL-01,6,0,0,0.0
+2026-05-08,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-05-08,Component Placement,Pro,CPL-01,12,0,0,0.0
+2026-05-08,Component Placement,Pro,CPL-02,2,1,0,0.0
+2026-05-08,Final Inspection,Basic,FIN-01,6,0,0,0.0
+2026-05-08,Final Inspection,Plus,FIN-01,8,0,0,0.0
+2026-05-08,Final Inspection,Pro,FIN-01,6,2,0,0.0
+2026-05-08,Functional Test,Basic,FCT-01,8,0,0,0.0
+2026-05-08,Functional Test,Basic,FCT-02,6,1,0,0.0
+2026-05-08,Functional Test,Basic,FCT-03,5,0,0,0.0
+2026-05-08,Functional Test,Plus,FCT-01,7,3,0,0.0
+2026-05-08,Functional Test,Plus,FCT-02,4,0,0,0.0
+2026-05-08,Functional Test,Plus,FCT-03,4,1,0,0.0
+2026-05-08,Functional Test,Pro,FCT-01,8,1,0,0.0
+2026-05-08,Functional Test,Pro,FCT-02,5,1,0,0.0
+2026-05-08,Functional Test,Pro,FCT-03,6,1,0,0.0
+2026-05-08,Housing Assembly,Basic,HSG-01,5,0,0,0.0
+2026-05-08,Housing Assembly,Basic,HSG-02,8,1,0,0.0
+2026-05-08,Housing Assembly,Plus,HSG-01,12,1,0,0.0
+2026-05-08,Housing Assembly,Plus,HSG-02,6,1,0,0.0
+2026-05-08,Housing Assembly,Pro,HSG-01,14,0,0,0.0
+2026-05-08,Housing Assembly,Pro,HSG-02,4,0,0,0.0
+2026-05-08,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-05-08,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-05-08,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-05-08,Reflow Soldering,Basic,RFL-01,16,2,0,0.0
+2026-05-08,Reflow Soldering,Basic,RFL-02,11,1,0,0.0
+2026-05-08,Reflow Soldering,Plus,RFL-01,12,2,0,0.0
+2026-05-08,Reflow Soldering,Plus,RFL-02,3,1,0,0.0
+2026-05-08,Reflow Soldering,Pro,RFL-01,20,1,0,0.0
+2026-05-08,Reflow Soldering,Pro,RFL-02,7,1,0,0.0
+2026-05-08,Screen Assembly,Basic,SCR-01,1,1,0,0.0
+2026-05-08,Screen Assembly,Basic,SCR-02,2,0,0,0.0
+2026-05-08,Screen Assembly,Plus,SCR-02,2,0,0,0.0
+2026-05-08,Screen Assembly,Pro,SCR-01,4,1,0,0.0
+2026-05-08,Screen Assembly,Pro,SCR-02,0,4,0,0.0
+2026-05-08,Solder Paste Printing,Basic,SPP-01,10,1,0,0.0
+2026-05-08,Solder Paste Printing,Plus,SPP-01,9,0,0,0.0
+2026-05-08,Solder Paste Printing,Pro,SPP-01,7,1,0,0.0
+2026-05-11,AOI Inspection,Basic,AOI-01,3,1,0,0.0
+2026-05-11,AOI Inspection,Plus,AOI-01,3,0,0,0.0
+2026-05-11,AOI Inspection,Pro,AOI-01,4,0,0,0.0
+2026-05-11,Board Test (ICT),Basic,ICT-01,10,3,0,0.0
+2026-05-11,Board Test (ICT),Basic,ICT-02,4,0,0,0.0
+2026-05-11,Board Test (ICT),Plus,ICT-01,1,2,0,0.0
+2026-05-11,Board Test (ICT),Plus,ICT-02,4,0,0,0.0
+2026-05-11,Board Test (ICT),Pro,ICT-01,4,0,0,0.0
+2026-05-11,Board Test (ICT),Pro,ICT-02,4,0,0,0.0
+2026-05-11,Component Placement,Basic,CPL-01,4,2,0,0.0
+2026-05-11,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-05-11,Component Placement,Plus,CPL-01,9,0,0,0.0
+2026-05-11,Component Placement,Plus,CPL-02,10,0,0,0.0
+2026-05-11,Component Placement,Pro,CPL-01,8,1,0,0.0
+2026-05-11,Component Placement,Pro,CPL-02,7,0,0,0.0
+2026-05-11,Final Inspection,Basic,FIN-01,10,2,0,0.0
+2026-05-11,Final Inspection,Plus,FIN-01,10,0,0,0.0
+2026-05-11,Final Inspection,Pro,FIN-01,7,1,0,0.0
+2026-05-11,Functional Test,Basic,FCT-01,7,2,0,0.0
+2026-05-11,Functional Test,Basic,FCT-02,5,2,0,0.0
+2026-05-11,Functional Test,Basic,FCT-03,5,1,0,0.0
+2026-05-11,Functional Test,Plus,FCT-01,11,0,0,0.0
+2026-05-11,Functional Test,Plus,FCT-02,5,2,0,0.0
+2026-05-11,Functional Test,Plus,FCT-03,4,0,0,0.0
+2026-05-11,Functional Test,Pro,FCT-01,9,1,0,0.0
+2026-05-11,Functional Test,Pro,FCT-02,5,2,0,0.0
+2026-05-11,Functional Test,Pro,FCT-03,3,1,0,0.0
+2026-05-11,Housing Assembly,Basic,HSG-01,5,0,0,0.0
+2026-05-11,Housing Assembly,Basic,HSG-02,3,0,0,0.0
+2026-05-11,Housing Assembly,Plus,HSG-01,5,0,0,0.0
+2026-05-11,Housing Assembly,Plus,HSG-02,7,0,0,0.0
+2026-05-11,Housing Assembly,Pro,HSG-01,6,1,0,0.0
+2026-05-11,Housing Assembly,Pro,HSG-02,4,0,0,0.0
+2026-05-11,Packaging,Basic,PKG-01,6,0,0,0.0
+2026-05-11,Packaging,Plus,PKG-01,3,0,0,0.0
+2026-05-11,Reflow Soldering,Basic,RFL-01,23,1,0,0.0
+2026-05-11,Reflow Soldering,Basic,RFL-02,9,2,0,0.0
+2026-05-11,Reflow Soldering,Plus,RFL-01,16,3,0,0.0
+2026-05-11,Reflow Soldering,Plus,RFL-02,10,0,0,0.0
+2026-05-11,Reflow Soldering,Pro,RFL-01,28,1,0,0.0
+2026-05-11,Reflow Soldering,Pro,RFL-02,14,0,0,0.0
+2026-05-11,Screen Assembly,Basic,SCR-01,6,1,0,0.0
+2026-05-11,Screen Assembly,Basic,SCR-02,0,5,0,0.0
+2026-05-11,Screen Assembly,Plus,SCR-01,4,0,0,0.0
+2026-05-11,Screen Assembly,Plus,SCR-02,2,5,0,0.0
+2026-05-11,Screen Assembly,Pro,SCR-01,4,0,0,0.0
+2026-05-11,Screen Assembly,Pro,SCR-02,0,4,0,0.0
+2026-05-11,Solder Paste Printing,Basic,SPP-01,8,0,0,0.0
+2026-05-11,Solder Paste Printing,Plus,SPP-01,10,1,0,0.0
+2026-05-11,Solder Paste Printing,Pro,SPP-01,10,0,0,0.0
+2026-05-12,AOI Inspection,Basic,AOI-01,4,0,0,0.0
+2026-05-12,AOI Inspection,Plus,AOI-01,5,0,0,0.0
+2026-05-12,AOI Inspection,Pro,AOI-01,10,0,0,0.0
+2026-05-12,Board Test (ICT),Basic,ICT-01,7,2,0,0.0
+2026-05-12,Board Test (ICT),Basic,ICT-02,3,1,0,0.0
+2026-05-12,Board Test (ICT),Plus,ICT-01,10,3,0,0.0
+2026-05-12,Board Test (ICT),Plus,ICT-02,2,1,0,0.0
+2026-05-12,Board Test (ICT),Pro,ICT-01,5,4,0,0.0
+2026-05-12,Board Test (ICT),Pro,ICT-02,6,1,0,0.0
+2026-05-12,Component Placement,Basic,CPL-01,0,1,0,0.0
+2026-05-12,Component Placement,Basic,CPL-02,7,0,0,0.0
+2026-05-12,Component Placement,Plus,CPL-01,8,2,0,0.0
+2026-05-12,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-05-12,Component Placement,Pro,CPL-01,9,0,0,0.0
+2026-05-12,Component Placement,Pro,CPL-02,8,1,0,0.0
+2026-05-12,Final Inspection,Basic,FIN-01,5,0,0,0.0
+2026-05-12,Final Inspection,Plus,FIN-01,6,0,0,0.0
+2026-05-12,Final Inspection,Pro,FIN-01,8,0,0,0.0
+2026-05-12,Functional Test,Basic,FCT-01,1,2,0,0.0
+2026-05-12,Functional Test,Basic,FCT-02,6,0,0,0.0
+2026-05-12,Functional Test,Basic,FCT-03,2,1,0,0.0
+2026-05-12,Functional Test,Plus,FCT-01,7,0,0,0.0
+2026-05-12,Functional Test,Plus,FCT-02,5,1,0,0.0
+2026-05-12,Functional Test,Plus,FCT-03,6,2,0,0.0
+2026-05-12,Functional Test,Pro,FCT-01,4,2,0,0.0
+2026-05-12,Functional Test,Pro,FCT-02,2,0,0,0.0
+2026-05-12,Functional Test,Pro,FCT-03,6,0,0,0.0
+2026-05-12,Housing Assembly,Basic,HSG-01,9,0,0,0.0
+2026-05-12,Housing Assembly,Basic,HSG-02,3,0,0,0.0
+2026-05-12,Housing Assembly,Plus,HSG-01,4,2,0,0.0
+2026-05-12,Housing Assembly,Plus,HSG-02,8,1,0,0.0
+2026-05-12,Housing Assembly,Pro,HSG-01,7,2,0,0.0
+2026-05-12,Housing Assembly,Pro,HSG-02,1,1,0,0.0
+2026-05-12,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-05-12,Packaging,Plus,PKG-01,1,1,0,0.0
+2026-05-12,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-05-12,Reflow Soldering,Basic,RFL-01,29,1,0,0.0
+2026-05-12,Reflow Soldering,Basic,RFL-02,14,0,0,0.0
+2026-05-12,Reflow Soldering,Plus,RFL-01,29,3,0,0.0
+2026-05-12,Reflow Soldering,Plus,RFL-02,11,1,0,0.0
+2026-05-12,Reflow Soldering,Pro,RFL-01,33,2,0,0.0
+2026-05-12,Reflow Soldering,Pro,RFL-02,10,1,0,0.0
+2026-05-12,Screen Assembly,Basic,SCR-01,2,1,0,0.0
+2026-05-12,Screen Assembly,Basic,SCR-02,0,4,0,0.0
+2026-05-12,Screen Assembly,Plus,SCR-01,1,0,0,0.0
+2026-05-12,Screen Assembly,Plus,SCR-02,0,1,0,0.0
+2026-05-12,Screen Assembly,Pro,SCR-01,4,0,0,0.0
+2026-05-12,Screen Assembly,Pro,SCR-02,1,4,0,0.0
+2026-05-12,Solder Paste Printing,Basic,SPP-01,8,0,0,0.0
+2026-05-12,Solder Paste Printing,Plus,SPP-01,10,2,0,0.0
+2026-05-12,Solder Paste Printing,Pro,SPP-01,11,0,0,0.0
+2026-05-13,AOI Inspection,Basic,AOI-01,6,1,0,0.0
+2026-05-13,AOI Inspection,Plus,AOI-01,3,1,0,0.0
+2026-05-13,AOI Inspection,Pro,AOI-01,8,0,0,0.0
+2026-05-13,Board Test (ICT),Basic,ICT-01,6,0,0,0.0
+2026-05-13,Board Test (ICT),Basic,ICT-02,7,1,0,0.0
+2026-05-13,Board Test (ICT),Plus,ICT-01,4,1,0,0.0
+2026-05-13,Board Test (ICT),Plus,ICT-02,4,0,0,0.0
+2026-05-13,Board Test (ICT),Pro,ICT-01,7,1,0,0.0
+2026-05-13,Board Test (ICT),Pro,ICT-02,4,0,0,0.0
+2026-05-13,Component Placement,Basic,CPL-01,7,0,0,0.0
+2026-05-13,Component Placement,Basic,CPL-02,2,0,0,0.0
+2026-05-13,Component Placement,Plus,CPL-01,2,0,0,0.0
+2026-05-13,Component Placement,Plus,CPL-02,8,1,0,0.0
+2026-05-13,Component Placement,Pro,CPL-01,4,1,0,0.0
+2026-05-13,Component Placement,Pro,CPL-02,4,0,0,0.0
+2026-05-13,Final Inspection,Basic,FIN-01,9,0,0,0.0
+2026-05-13,Final Inspection,Plus,FIN-01,9,1,0,0.0
+2026-05-13,Final Inspection,Pro,FIN-01,13,1,0,0.0
+2026-05-13,Functional Test,Basic,FCT-01,1,2,0,0.0
+2026-05-13,Functional Test,Basic,FCT-02,8,3,0,0.0
+2026-05-13,Functional Test,Basic,FCT-03,5,0,0,0.0
+2026-05-13,Functional Test,Plus,FCT-01,5,1,0,0.0
+2026-05-13,Functional Test,Plus,FCT-02,7,0,0,0.0
+2026-05-13,Functional Test,Plus,FCT-03,6,2,0,0.0
+2026-05-13,Functional Test,Pro,FCT-01,3,2,0,0.0
+2026-05-13,Functional Test,Pro,FCT-02,4,2,0,0.0
+2026-05-13,Functional Test,Pro,FCT-03,3,0,0,0.0
+2026-05-13,Housing Assembly,Basic,HSG-01,5,0,0,0.0
+2026-05-13,Housing Assembly,Basic,HSG-02,2,0,0,0.0
+2026-05-13,Housing Assembly,Plus,HSG-01,6,0,0,0.0
+2026-05-13,Housing Assembly,Plus,HSG-02,5,0,0,0.0
+2026-05-13,Housing Assembly,Pro,HSG-01,8,1,0,0.0
+2026-05-13,Housing Assembly,Pro,HSG-02,3,0,0,0.0
+2026-05-13,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-05-13,Packaging,Plus,PKG-01,4,0,0,0.0
+2026-05-13,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-05-13,Reflow Soldering,Basic,RFL-01,17,2,0,0.0
+2026-05-13,Reflow Soldering,Basic,RFL-02,5,0,0,0.0
+2026-05-13,Reflow Soldering,Plus,RFL-01,15,1,0,0.0
+2026-05-13,Reflow Soldering,Plus,RFL-02,8,0,0,0.0
+2026-05-13,Reflow Soldering,Pro,RFL-01,22,0,0,0.0
+2026-05-13,Reflow Soldering,Pro,RFL-02,4,0,0,0.0
+2026-05-13,Screen Assembly,Basic,SCR-01,6,1,0,0.0
+2026-05-13,Screen Assembly,Basic,SCR-02,0,3,0,0.0
+2026-05-13,Screen Assembly,Plus,SCR-01,3,1,0,0.0
+2026-05-13,Screen Assembly,Plus,SCR-02,1,1,0,0.0
+2026-05-13,Screen Assembly,Pro,SCR-01,7,0,0,0.0
+2026-05-13,Screen Assembly,Pro,SCR-02,2,5,0,0.0
+2026-05-13,Solder Paste Printing,Basic,SPP-01,7,0,0,0.0
+2026-05-13,Solder Paste Printing,Plus,SPP-01,9,1,0,0.0
+2026-05-13,Solder Paste Printing,Pro,SPP-01,15,1,0,0.0
+2026-05-14,AOI Inspection,Basic,AOI-01,8,0,0,0.0
+2026-05-14,AOI Inspection,Plus,AOI-01,2,0,0,0.0
+2026-05-14,AOI Inspection,Pro,AOI-01,5,0,0,0.0
+2026-05-14,Board Test (ICT),Basic,ICT-01,6,2,0,0.0
+2026-05-14,Board Test (ICT),Basic,ICT-02,6,1,0,0.0
+2026-05-14,Board Test (ICT),Plus,ICT-01,6,1,0,0.0
+2026-05-14,Board Test (ICT),Plus,ICT-02,5,1,0,0.0
+2026-05-14,Board Test (ICT),Pro,ICT-01,4,0,0,0.0
+2026-05-14,Board Test (ICT),Pro,ICT-02,6,3,0,0.0
+2026-05-14,Component Placement,Basic,CPL-01,6,0,0,0.0
+2026-05-14,Component Placement,Basic,CPL-02,6,0,0,0.0
+2026-05-14,Component Placement,Plus,CPL-01,5,0,0,0.0
+2026-05-14,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-05-14,Component Placement,Pro,CPL-01,8,0,0,0.0
+2026-05-14,Component Placement,Pro,CPL-02,2,0,0,0.0
+2026-05-14,Final Inspection,Basic,FIN-01,8,0,0,0.0
+2026-05-14,Final Inspection,Plus,FIN-01,9,0,0,0.0
+2026-05-14,Final Inspection,Pro,FIN-01,8,1,0,0.0
+2026-05-14,Functional Test,Basic,FCT-01,5,0,0,0.0
+2026-05-14,Functional Test,Basic,FCT-02,4,1,0,0.0
+2026-05-14,Functional Test,Basic,FCT-03,5,1,0,0.0
+2026-05-14,Functional Test,Plus,FCT-01,4,1,0,0.0
+2026-05-14,Functional Test,Plus,FCT-02,5,1,0,0.0
+2026-05-14,Functional Test,Plus,FCT-03,2,0,0,0.0
+2026-05-14,Functional Test,Pro,FCT-01,6,4,0,0.0
+2026-05-14,Functional Test,Pro,FCT-02,6,1,0,0.0
+2026-05-14,Functional Test,Pro,FCT-03,1,1,0,0.0
+2026-05-14,Housing Assembly,Basic,HSG-01,3,3,0,0.0
+2026-05-14,Housing Assembly,Basic,HSG-02,1,0,0,0.0
+2026-05-14,Housing Assembly,Plus,HSG-01,9,0,0,0.0
+2026-05-14,Housing Assembly,Plus,HSG-02,2,1,0,0.0
+2026-05-14,Housing Assembly,Pro,HSG-01,7,1,0,0.0
+2026-05-14,Housing Assembly,Pro,HSG-02,3,0,0,0.0
+2026-05-14,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-05-14,Packaging,Plus,PKG-01,4,0,0,0.0
+2026-05-14,Packaging,Pro,PKG-01,7,0,0,0.0
+2026-05-14,Reflow Soldering,Basic,RFL-01,21,5,0,0.0
+2026-05-14,Reflow Soldering,Basic,RFL-02,10,0,0,0.0
+2026-05-14,Reflow Soldering,Plus,RFL-01,24,1,0,0.0
+2026-05-14,Reflow Soldering,Plus,RFL-02,15,1,0,0.0
+2026-05-14,Reflow Soldering,Pro,RFL-01,31,5,0,0.0
+2026-05-14,Reflow Soldering,Pro,RFL-02,12,2,0,0.0
+2026-05-14,Screen Assembly,Basic,SCR-01,2,0,0,0.0
+2026-05-14,Screen Assembly,Basic,SCR-02,2,0,0,0.0
+2026-05-14,Screen Assembly,Plus,SCR-01,4,0,0,0.0
+2026-05-14,Screen Assembly,Plus,SCR-02,0,3,0,0.0
+2026-05-14,Screen Assembly,Pro,SCR-01,5,0,0,0.0
+2026-05-14,Screen Assembly,Pro,SCR-02,1,4,0,0.0
+2026-05-14,Solder Paste Printing,Basic,SPP-01,11,0,0,0.0
+2026-05-14,Solder Paste Printing,Plus,SPP-01,11,0,0,0.0
+2026-05-14,Solder Paste Printing,Pro,SPP-01,5,0,0,0.0
+2026-05-15,AOI Inspection,Basic,AOI-01,9,0,0,0.0
+2026-05-15,AOI Inspection,Plus,AOI-01,4,0,0,0.0
+2026-05-15,AOI Inspection,Pro,AOI-01,4,0,0,0.0
+2026-05-15,Board Test (ICT),Basic,ICT-01,5,0,0,0.0
+2026-05-15,Board Test (ICT),Basic,ICT-02,1,0,0,0.0
+2026-05-15,Board Test (ICT),Plus,ICT-01,6,0,0,0.0
+2026-05-15,Board Test (ICT),Plus,ICT-02,3,0,0,0.0
+2026-05-15,Board Test (ICT),Pro,ICT-01,7,0,0,0.0
+2026-05-15,Board Test (ICT),Pro,ICT-02,2,0,0,0.0
+2026-05-15,Component Placement,Basic,CPL-01,7,0,0,0.0
+2026-05-15,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-05-15,Component Placement,Plus,CPL-01,7,0,0,0.0
+2026-05-15,Component Placement,Plus,CPL-02,9,0,0,0.0
+2026-05-15,Component Placement,Pro,CPL-01,9,0,0,0.0
+2026-05-15,Component Placement,Pro,CPL-02,6,0,0,0.0
+2026-05-15,Final Inspection,Basic,FIN-01,11,0,0,0.0
+2026-05-15,Final Inspection,Plus,FIN-01,16,0,0,0.0
+2026-05-15,Final Inspection,Pro,FIN-01,11,2,0,0.0
+2026-05-15,Functional Test,Basic,FCT-01,8,3,0,0.0
+2026-05-15,Functional Test,Basic,FCT-02,3,0,0,0.0
+2026-05-15,Functional Test,Basic,FCT-03,5,0,0,0.0
+2026-05-15,Functional Test,Plus,FCT-01,4,0,0,0.0
+2026-05-15,Functional Test,Plus,FCT-02,8,1,0,0.0
+2026-05-15,Functional Test,Plus,FCT-03,4,1,0,0.0
+2026-05-15,Functional Test,Pro,FCT-01,6,3,0,0.0
+2026-05-15,Functional Test,Pro,FCT-02,4,2,0,0.0
+2026-05-15,Functional Test,Pro,FCT-03,1,1,0,0.0
+2026-05-15,Housing Assembly,Basic,HSG-01,6,0,0,0.0
+2026-05-15,Housing Assembly,Basic,HSG-02,5,0,0,0.0
+2026-05-15,Housing Assembly,Plus,HSG-01,10,0,0,0.0
+2026-05-15,Housing Assembly,Plus,HSG-02,9,0,0,0.0
+2026-05-15,Housing Assembly,Pro,HSG-01,8,0,0,0.0
+2026-05-15,Housing Assembly,Pro,HSG-02,5,2,0,0.0
+2026-05-15,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-05-15,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-05-15,Packaging,Pro,PKG-01,3,0,0,0.0
+2026-05-15,Reflow Soldering,Basic,RFL-01,12,0,0,0.0
+2026-05-15,Reflow Soldering,Basic,RFL-02,5,0,0,0.0
+2026-05-15,Reflow Soldering,Plus,RFL-01,24,1,0,0.0
+2026-05-15,Reflow Soldering,Plus,RFL-02,9,0,0,0.0
+2026-05-15,Reflow Soldering,Pro,RFL-01,19,0,0,0.0
+2026-05-15,Reflow Soldering,Pro,RFL-02,7,3,0,0.0
+2026-05-15,Screen Assembly,Basic,SCR-01,2,3,0,0.0
+2026-05-15,Screen Assembly,Basic,SCR-02,2,2,0,0.0
+2026-05-15,Screen Assembly,Plus,SCR-01,4,3,0,0.0
+2026-05-15,Screen Assembly,Plus,SCR-02,0,2,0,0.0
+2026-05-15,Screen Assembly,Pro,SCR-02,2,2,0,0.0
+2026-05-15,Solder Paste Printing,Basic,SPP-01,6,0,0,0.0
+2026-05-15,Solder Paste Printing,Plus,SPP-01,16,0,0,0.0
+2026-05-15,Solder Paste Printing,Pro,SPP-01,10,0,0,0.0
+2026-05-18,AOI Inspection,Basic,AOI-01,5,0,0,0.0
+2026-05-18,AOI Inspection,Plus,AOI-01,3,1,0,0.0
+2026-05-18,AOI Inspection,Pro,AOI-01,5,0,0,0.0
+2026-05-18,Board Test (ICT),Basic,ICT-01,5,1,0,0.0
+2026-05-18,Board Test (ICT),Basic,ICT-02,3,0,0,0.0
+2026-05-18,Board Test (ICT),Plus,ICT-01,6,0,0,0.0
+2026-05-18,Board Test (ICT),Plus,ICT-02,4,1,0,0.0
+2026-05-18,Board Test (ICT),Pro,ICT-01,0,1,0,0.0
+2026-05-18,Board Test (ICT),Pro,ICT-02,5,0,0,0.0
+2026-05-18,Component Placement,Basic,CPL-01,6,0,0,0.0
+2026-05-18,Component Placement,Basic,CPL-02,7,0,0,0.0
+2026-05-18,Component Placement,Plus,CPL-01,12,2,0,0.0
+2026-05-18,Component Placement,Plus,CPL-02,8,0,0,0.0
+2026-05-18,Component Placement,Pro,CPL-01,9,2,0,0.0
+2026-05-18,Component Placement,Pro,CPL-02,7,0,0,0.0
+2026-05-18,Final Inspection,Basic,FIN-01,8,1,0,0.0
+2026-05-18,Final Inspection,Plus,FIN-01,13,0,0,0.0
+2026-05-18,Final Inspection,Pro,FIN-01,10,0,0,0.0
+2026-05-18,Functional Test,Basic,FCT-01,5,1,0,0.0
+2026-05-18,Functional Test,Basic,FCT-02,5,2,0,0.0
+2026-05-18,Functional Test,Basic,FCT-03,5,0,0,0.0
+2026-05-18,Functional Test,Plus,FCT-01,4,1,0,0.0
+2026-05-18,Functional Test,Plus,FCT-02,2,1,0,0.0
+2026-05-18,Functional Test,Plus,FCT-03,6,0,0,0.0
+2026-05-18,Functional Test,Pro,FCT-01,5,4,0,0.0
+2026-05-18,Functional Test,Pro,FCT-02,6,0,0,0.0
+2026-05-18,Functional Test,Pro,FCT-03,6,0,0,0.0
+2026-05-18,Housing Assembly,Basic,HSG-01,6,1,0,0.0
+2026-05-18,Housing Assembly,Basic,HSG-02,3,0,0,0.0
+2026-05-18,Housing Assembly,Plus,HSG-01,10,0,0,0.0
+2026-05-18,Housing Assembly,Plus,HSG-02,3,1,0,0.0
+2026-05-18,Housing Assembly,Pro,HSG-01,7,0,0,0.0
+2026-05-18,Housing Assembly,Pro,HSG-02,9,1,0,0.0
+2026-05-18,Packaging,Basic,PKG-01,0,1,0,0.0
+2026-05-18,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-05-18,Packaging,Pro,PKG-01,7,0,0,2.0
+2026-05-18,Reflow Soldering,Basic,RFL-01,28,3,0,0.0
+2026-05-18,Reflow Soldering,Basic,RFL-02,9,0,0,0.0
+2026-05-18,Reflow Soldering,Plus,RFL-01,33,6,0,0.0
+2026-05-18,Reflow Soldering,Plus,RFL-02,11,1,0,0.0
+2026-05-18,Reflow Soldering,Pro,RFL-01,24,2,0,0.0
+2026-05-18,Reflow Soldering,Pro,RFL-02,14,1,0,0.0
+2026-05-18,Screen Assembly,Basic,SCR-01,1,0,0,0.0
+2026-05-18,Screen Assembly,Basic,SCR-02,0,2,0,0.0
+2026-05-18,Screen Assembly,Plus,SCR-01,3,0,0,0.0
+2026-05-18,Screen Assembly,Plus,SCR-02,2,0,0,0.0
+2026-05-18,Screen Assembly,Pro,SCR-01,3,2,0,0.0
+2026-05-18,Screen Assembly,Pro,SCR-02,0,3,0,0.0
+2026-05-18,Solder Paste Printing,Basic,SPP-01,10,0,0,0.0
+2026-05-18,Solder Paste Printing,Plus,SPP-01,16,1,0,0.0
+2026-05-18,Solder Paste Printing,Pro,SPP-01,9,0,0,0.0
+2026-05-19,AOI Inspection,Basic,AOI-01,7,0,0,0.0
+2026-05-19,AOI Inspection,Plus,AOI-01,8,0,0,0.0
+2026-05-19,AOI Inspection,Pro,AOI-01,5,0,0,0.0
+2026-05-19,Board Test (ICT),Basic,ICT-01,3,1,0,0.0
+2026-05-19,Board Test (ICT),Basic,ICT-02,2,0,0,0.0
+2026-05-19,Board Test (ICT),Plus,ICT-01,2,0,0,0.0
+2026-05-19,Board Test (ICT),Plus,ICT-02,7,2,0,0.0
+2026-05-19,Board Test (ICT),Pro,ICT-01,6,1,0,0.0
+2026-05-19,Board Test (ICT),Pro,ICT-02,5,1,0,0.0
+2026-05-19,Component Placement,Basic,CPL-01,6,1,0,0.0
+2026-05-19,Component Placement,Basic,CPL-02,5,0,0,0.0
+2026-05-19,Component Placement,Plus,CPL-01,13,0,0,0.0
+2026-05-19,Component Placement,Plus,CPL-02,4,0,0,0.0
+2026-05-19,Component Placement,Pro,CPL-01,10,0,0,0.0
+2026-05-19,Component Placement,Pro,CPL-02,8,1,0,0.0
+2026-05-19,Final Inspection,Basic,FIN-01,13,2,0,0.0
+2026-05-19,Final Inspection,Plus,FIN-01,8,0,0,0.0
+2026-05-19,Final Inspection,Pro,FIN-01,15,0,0,0.0
+2026-05-19,Functional Test,Basic,FCT-01,3,1,0,0.0
+2026-05-19,Functional Test,Basic,FCT-02,7,2,0,0.0
+2026-05-19,Functional Test,Basic,FCT-03,6,1,0,0.0
+2026-05-19,Functional Test,Plus,FCT-01,4,1,0,0.0
+2026-05-19,Functional Test,Plus,FCT-02,8,2,0,0.0
+2026-05-19,Functional Test,Plus,FCT-03,5,0,0,0.0
+2026-05-19,Functional Test,Pro,FCT-01,11,1,0,0.0
+2026-05-19,Functional Test,Pro,FCT-02,6,1,0,0.0
+2026-05-19,Functional Test,Pro,FCT-03,6,2,0,1.0
+2026-05-19,Housing Assembly,Basic,HSG-01,6,1,0,0.0
+2026-05-19,Housing Assembly,Basic,HSG-02,2,0,0,0.0
+2026-05-19,Housing Assembly,Plus,HSG-01,4,0,0,0.0
+2026-05-19,Housing Assembly,Plus,HSG-02,1,0,0,0.0
+2026-05-19,Housing Assembly,Pro,HSG-01,8,0,0,0.0
+2026-05-19,Housing Assembly,Pro,HSG-02,6,0,0,0.0
+2026-05-19,Packaging,Basic,PKG-01,6,0,0,0.0
+2026-05-19,Packaging,Plus,PKG-01,4,0,0,0.0
+2026-05-19,Packaging,Pro,PKG-01,6,0,0,3.0
+2026-05-19,Reflow Soldering,Basic,RFL-01,24,4,0,0.0
+2026-05-19,Reflow Soldering,Basic,RFL-02,9,4,0,0.0
+2026-05-19,Reflow Soldering,Plus,RFL-01,18,4,0,0.0
+2026-05-19,Reflow Soldering,Plus,RFL-02,6,2,0,0.0
+2026-05-19,Reflow Soldering,Pro,RFL-01,10,5,0,0.0
+2026-05-19,Reflow Soldering,Pro,RFL-02,7,1,0,0.0
+2026-05-19,Screen Assembly,Basic,SCR-01,2,0,0,0.0
+2026-05-19,Screen Assembly,Basic,SCR-02,0,8,0,0.0
+2026-05-19,Screen Assembly,Plus,SCR-01,5,1,0,0.0
+2026-05-19,Screen Assembly,Plus,SCR-02,0,1,0,0.0
+2026-05-19,Screen Assembly,Pro,SCR-01,2,0,0,0.0
+2026-05-19,Screen Assembly,Pro,SCR-02,2,6,0,0.0
+2026-05-19,Solder Paste Printing,Basic,SPP-01,12,1,0,0.0
+2026-05-19,Solder Paste Printing,Plus,SPP-01,14,0,0,0.0
+2026-05-19,Solder Paste Printing,Pro,SPP-01,16,1,0,0.0
+2026-05-20,AOI Inspection,Basic,AOI-01,10,1,0,0.0
+2026-05-20,AOI Inspection,Plus,AOI-01,2,0,0,0.0
+2026-05-20,AOI Inspection,Pro,AOI-01,5,0,0,0.0
+2026-05-20,Board Test (ICT),Basic,ICT-01,3,0,0,0.0
+2026-05-20,Board Test (ICT),Basic,ICT-02,4,1,0,0.0
+2026-05-20,Board Test (ICT),Plus,ICT-01,3,2,0,0.0
+2026-05-20,Board Test (ICT),Plus,ICT-02,3,0,0,0.0
+2026-05-20,Board Test (ICT),Pro,ICT-01,8,2,0,0.0
+2026-05-20,Board Test (ICT),Pro,ICT-02,7,0,0,0.0
+2026-05-20,Component Placement,Basic,CPL-01,7,1,0,0.0
+2026-05-20,Component Placement,Basic,CPL-02,4,1,0,0.0
+2026-05-20,Component Placement,Plus,CPL-01,8,0,0,0.0
+2026-05-20,Component Placement,Plus,CPL-02,6,0,0,0.0
+2026-05-20,Component Placement,Pro,CPL-01,11,0,0,0.0
+2026-05-20,Component Placement,Pro,CPL-02,7,0,0,0.0
+2026-05-20,Final Inspection,Basic,FIN-01,6,2,0,0.0
+2026-05-20,Final Inspection,Plus,FIN-01,9,0,0,0.0
+2026-05-20,Final Inspection,Pro,FIN-01,8,0,0,0.0
+2026-05-20,Functional Test,Basic,FCT-01,6,1,0,0.0
+2026-05-20,Functional Test,Basic,FCT-02,6,3,0,0.0
+2026-05-20,Functional Test,Basic,FCT-03,4,0,0,0.0
+2026-05-20,Functional Test,Plus,FCT-01,2,3,0,0.0
+2026-05-20,Functional Test,Plus,FCT-02,2,1,0,0.0
+2026-05-20,Functional Test,Plus,FCT-03,4,1,0,0.0
+2026-05-20,Functional Test,Pro,FCT-01,9,1,0,0.0
+2026-05-20,Functional Test,Pro,FCT-02,9,2,0,0.0
+2026-05-20,Functional Test,Pro,FCT-03,1,0,0,0.0
+2026-05-20,Housing Assembly,Basic,HSG-01,10,1,0,0.0
+2026-05-20,Housing Assembly,Basic,HSG-02,5,0,0,0.0
+2026-05-20,Housing Assembly,Plus,HSG-01,5,0,0,0.0
+2026-05-20,Housing Assembly,Plus,HSG-02,6,2,0,0.0
+2026-05-20,Housing Assembly,Pro,HSG-01,6,0,0,0.0
+2026-05-20,Housing Assembly,Pro,HSG-02,6,2,0,0.0
+2026-05-20,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-05-20,Packaging,Plus,PKG-01,3,0,0,0.0
+2026-05-20,Packaging,Pro,PKG-01,3,0,0,0.0
+2026-05-20,Reflow Soldering,Basic,RFL-01,17,0,0,0.0
+2026-05-20,Reflow Soldering,Basic,RFL-02,6,1,0,0.0
+2026-05-20,Reflow Soldering,Plus,RFL-01,19,1,0,0.0
+2026-05-20,Reflow Soldering,Plus,RFL-02,9,0,0,0.0
+2026-05-20,Reflow Soldering,Pro,RFL-01,20,5,0,0.0
+2026-05-20,Reflow Soldering,Pro,RFL-02,7,0,0,0.0
+2026-05-20,Screen Assembly,Basic,SCR-01,1,2,0,0.0
+2026-05-20,Screen Assembly,Basic,SCR-02,1,2,0,0.0
+2026-05-20,Screen Assembly,Plus,SCR-01,6,2,0,0.0
+2026-05-20,Screen Assembly,Plus,SCR-02,1,3,0,0.0
+2026-05-20,Screen Assembly,Pro,SCR-01,4,0,0,0.0
+2026-05-20,Screen Assembly,Pro,SCR-02,1,3,0,0.0
+2026-05-20,Solder Paste Printing,Basic,SPP-01,12,1,0,0.0
+2026-05-20,Solder Paste Printing,Plus,SPP-01,7,0,0,0.0
+2026-05-20,Solder Paste Printing,Pro,SPP-01,11,0,0,0.0
+2026-05-21,AOI Inspection,Basic,AOI-01,6,0,0,0.0
+2026-05-21,AOI Inspection,Plus,AOI-01,6,0,0,0.0
+2026-05-21,AOI Inspection,Pro,AOI-01,7,1,0,0.0
+2026-05-21,Board Test (ICT),Basic,ICT-01,3,1,0,0.0
+2026-05-21,Board Test (ICT),Basic,ICT-02,5,2,0,0.0
+2026-05-21,Board Test (ICT),Plus,ICT-01,6,0,0,0.0
+2026-05-21,Board Test (ICT),Plus,ICT-02,2,1,0,0.0
+2026-05-21,Board Test (ICT),Pro,ICT-01,5,0,0,0.0
+2026-05-21,Board Test (ICT),Pro,ICT-02,3,2,0,0.0
+2026-05-21,Component Placement,Basic,CPL-01,2,0,0,0.0
+2026-05-21,Component Placement,Basic,CPL-02,9,0,0,0.0
+2026-05-21,Component Placement,Plus,CPL-01,9,0,0,0.0
+2026-05-21,Component Placement,Plus,CPL-02,7,2,0,0.0
+2026-05-21,Component Placement,Pro,CPL-01,4,2,0,0.0
+2026-05-21,Component Placement,Pro,CPL-02,3,1,0,0.0
+2026-05-21,Final Inspection,Basic,FIN-01,15,1,0,0.0
+2026-05-21,Final Inspection,Plus,FIN-01,10,2,0,0.0
+2026-05-21,Final Inspection,Pro,FIN-01,14,2,0,9.0
+2026-05-21,Functional Test,Basic,FCT-01,5,1,0,0.0
+2026-05-21,Functional Test,Basic,FCT-02,9,0,0,0.0
+2026-05-21,Functional Test,Basic,FCT-03,4,1,0,0.0
+2026-05-21,Functional Test,Plus,FCT-01,7,0,0,0.0
+2026-05-21,Functional Test,Plus,FCT-02,7,0,0,0.0
+2026-05-21,Functional Test,Plus,FCT-03,3,0,0,0.0
+2026-05-21,Functional Test,Pro,FCT-01,8,2,0,6.0
+2026-05-21,Functional Test,Pro,FCT-02,8,1,0,2.0
+2026-05-21,Functional Test,Pro,FCT-03,3,2,0,4.0
+2026-05-21,Housing Assembly,Basic,HSG-01,6,1,0,0.0
+2026-05-21,Housing Assembly,Basic,HSG-02,2,1,0,0.0
+2026-05-21,Housing Assembly,Plus,HSG-01,7,0,0,0.0
+2026-05-21,Housing Assembly,Plus,HSG-02,2,0,0,0.0
+2026-05-21,Housing Assembly,Pro,HSG-01,9,1,0,0.0
+2026-05-21,Housing Assembly,Pro,HSG-02,7,0,0,2.0
+2026-05-21,Packaging,Basic,PKG-01,5,0,0,0.0
+2026-05-21,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-05-21,Packaging,Pro,PKG-01,3,0,0,1.0
+2026-05-21,Reflow Soldering,Basic,RFL-01,24,2,0,0.0
+2026-05-21,Reflow Soldering,Basic,RFL-02,15,0,0,0.0
+2026-05-21,Reflow Soldering,Plus,RFL-01,21,2,0,0.0
+2026-05-21,Reflow Soldering,Plus,RFL-02,12,0,0,0.0
+2026-05-21,Reflow Soldering,Pro,RFL-01,24,2,0,0.0
+2026-05-21,Reflow Soldering,Pro,RFL-02,18,1,0,0.0
+2026-05-21,Screen Assembly,Basic,SCR-01,8,0,0,0.0
+2026-05-21,Screen Assembly,Basic,SCR-02,1,4,0,0.0
+2026-05-21,Screen Assembly,Plus,SCR-01,4,0,0,0.0
+2026-05-21,Screen Assembly,Plus,SCR-02,0,3,0,0.0
+2026-05-21,Screen Assembly,Pro,SCR-01,4,0,0,0.0
+2026-05-21,Screen Assembly,Pro,SCR-02,0,5,0,0.0
+2026-05-21,Solder Paste Printing,Basic,SPP-01,18,1,0,0.0
+2026-05-21,Solder Paste Printing,Plus,SPP-01,14,0,0,0.0
+2026-05-21,Solder Paste Printing,Pro,SPP-01,10,1,0,0.0
+2026-05-22,AOI Inspection,Basic,AOI-01,4,0,0,0.0
+2026-05-22,AOI Inspection,Plus,AOI-01,11,1,0,0.0
+2026-05-22,AOI Inspection,Pro,AOI-01,7,0,0,0.0
+2026-05-22,Board Test (ICT),Basic,ICT-01,9,2,0,0.0
+2026-05-22,Board Test (ICT),Basic,ICT-02,6,0,0,0.0
+2026-05-22,Board Test (ICT),Plus,ICT-01,2,0,0,0.0
+2026-05-22,Board Test (ICT),Plus,ICT-02,9,1,0,0.0
+2026-05-22,Board Test (ICT),Pro,ICT-01,10,1,0,0.0
+2026-05-22,Board Test (ICT),Pro,ICT-02,3,0,0,0.0
+2026-05-22,Component Placement,Basic,CPL-01,4,0,0,0.0
+2026-05-22,Component Placement,Basic,CPL-02,5,0,0,0.0
+2026-05-22,Component Placement,Plus,CPL-01,10,0,0,0.0
+2026-05-22,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-05-22,Component Placement,Pro,CPL-01,7,1,0,0.0
+2026-05-22,Component Placement,Pro,CPL-02,7,0,0,0.0
+2026-05-22,Final Inspection,Basic,FIN-01,6,1,0,0.0
+2026-05-22,Final Inspection,Plus,FIN-01,5,1,0,0.0
+2026-05-22,Final Inspection,Pro,FIN-01,7,1,0,0.0
+2026-05-22,Functional Test,Basic,FCT-01,3,0,0,0.0
+2026-05-22,Functional Test,Basic,FCT-02,4,1,0,0.0
+2026-05-22,Functional Test,Basic,FCT-03,4,2,0,0.0
+2026-05-22,Functional Test,Plus,FCT-01,5,1,0,0.0
+2026-05-22,Functional Test,Plus,FCT-02,5,2,0,0.0
+2026-05-22,Functional Test,Plus,FCT-03,3,0,0,0.0
+2026-05-22,Functional Test,Pro,FCT-01,6,1,0,0.0
+2026-05-22,Functional Test,Pro,FCT-02,2,1,0,0.0
+2026-05-22,Functional Test,Pro,FCT-03,5,1,0,0.0
+2026-05-22,Housing Assembly,Basic,HSG-01,6,2,0,0.0
+2026-05-22,Housing Assembly,Basic,HSG-02,2,1,0,0.0
+2026-05-22,Housing Assembly,Plus,HSG-01,4,0,0,0.0
+2026-05-22,Housing Assembly,Plus,HSG-02,4,0,0,0.0
+2026-05-22,Housing Assembly,Pro,HSG-01,14,2,0,0.0
+2026-05-22,Housing Assembly,Pro,HSG-02,5,1,0,0.0
+2026-05-22,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-05-22,Packaging,Plus,PKG-01,2,0,0,0.0
+2026-05-22,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-05-22,Reflow Soldering,Basic,RFL-01,18,1,0,0.0
+2026-05-22,Reflow Soldering,Basic,RFL-02,7,0,0,0.0
+2026-05-22,Reflow Soldering,Plus,RFL-01,13,4,0,0.0
+2026-05-22,Reflow Soldering,Plus,RFL-02,10,0,0,0.0
+2026-05-22,Reflow Soldering,Pro,RFL-01,18,1,0,0.0
+2026-05-22,Reflow Soldering,Pro,RFL-02,8,4,0,0.0
+2026-05-22,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-05-22,Screen Assembly,Basic,SCR-02,3,5,0,0.0
+2026-05-22,Screen Assembly,Plus,SCR-01,6,1,0,0.0
+2026-05-22,Screen Assembly,Plus,SCR-02,1,2,0,0.0
+2026-05-22,Screen Assembly,Pro,SCR-01,7,0,0,0.0
+2026-05-22,Screen Assembly,Pro,SCR-02,0,6,0,0.0
+2026-05-22,Solder Paste Printing,Basic,SPP-01,4,0,0,0.0
+2026-05-22,Solder Paste Printing,Plus,SPP-01,6,0,0,0.0
+2026-05-22,Solder Paste Printing,Pro,SPP-01,7,0,0,0.0
+2026-05-25,AOI Inspection,Basic,AOI-01,2,0,0,0.0
+2026-05-25,AOI Inspection,Plus,AOI-01,7,0,0,0.0
+2026-05-25,AOI Inspection,Pro,AOI-01,3,0,0,0.0
+2026-05-25,Board Test (ICT),Basic,ICT-01,4,0,0,0.0
+2026-05-25,Board Test (ICT),Basic,ICT-02,4,1,0,0.0
+2026-05-25,Board Test (ICT),Plus,ICT-01,4,0,0,0.0
+2026-05-25,Board Test (ICT),Plus,ICT-02,3,1,0,0.0
+2026-05-25,Board Test (ICT),Pro,ICT-01,2,2,0,0.0
+2026-05-25,Board Test (ICT),Pro,ICT-02,0,2,0,0.0
+2026-05-25,Component Placement,Basic,CPL-01,12,0,0,0.0
+2026-05-25,Component Placement,Basic,CPL-02,8,0,0,0.0
+2026-05-25,Component Placement,Plus,CPL-01,10,0,0,0.0
+2026-05-25,Component Placement,Plus,CPL-02,6,0,0,0.0
+2026-05-25,Component Placement,Pro,CPL-01,11,0,0,0.0
+2026-05-25,Component Placement,Pro,CPL-02,7,0,0,0.0
+2026-05-25,Final Inspection,Basic,FIN-01,9,0,0,0.0
+2026-05-25,Final Inspection,Plus,FIN-01,6,1,0,0.0
+2026-05-25,Final Inspection,Pro,FIN-01,14,0,0,0.0
+2026-05-25,Functional Test,Basic,FCT-01,5,0,0,0.0
+2026-05-25,Functional Test,Basic,FCT-02,1,2,0,0.0
+2026-05-25,Functional Test,Basic,FCT-03,8,0,0,0.0
+2026-05-25,Functional Test,Plus,FCT-01,7,1,0,0.0
+2026-05-25,Functional Test,Plus,FCT-02,5,3,0,0.0
+2026-05-25,Functional Test,Plus,FCT-03,6,0,0,0.0
+2026-05-25,Functional Test,Pro,FCT-01,6,0,0,0.0
+2026-05-25,Functional Test,Pro,FCT-02,10,1,0,0.0
+2026-05-25,Functional Test,Pro,FCT-03,3,0,0,0.0
+2026-05-25,Housing Assembly,Basic,HSG-01,9,0,0,0.0
+2026-05-25,Housing Assembly,Basic,HSG-02,3,1,0,0.0
+2026-05-25,Housing Assembly,Plus,HSG-01,9,2,0,0.0
+2026-05-25,Housing Assembly,Plus,HSG-02,4,1,0,0.0
+2026-05-25,Housing Assembly,Pro,HSG-01,13,0,0,0.0
+2026-05-25,Housing Assembly,Pro,HSG-02,6,1,0,0.0
+2026-05-25,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-05-25,Packaging,Pro,PKG-01,7,0,0,0.0
+2026-05-25,Reflow Soldering,Basic,RFL-01,12,6,0,0.0
+2026-05-25,Reflow Soldering,Basic,RFL-02,8,0,0,0.0
+2026-05-25,Reflow Soldering,Plus,RFL-01,31,5,0,0.0
+2026-05-25,Reflow Soldering,Plus,RFL-02,6,0,0,0.0
+2026-05-25,Reflow Soldering,Pro,RFL-01,23,1,0,0.0
+2026-05-25,Reflow Soldering,Pro,RFL-02,12,1,0,0.0
+2026-05-25,Screen Assembly,Basic,SCR-01,1,0,0,0.0
+2026-05-25,Screen Assembly,Basic,SCR-02,0,2,0,0.0
+2026-05-25,Screen Assembly,Plus,SCR-01,6,0,0,0.0
+2026-05-25,Screen Assembly,Plus,SCR-02,1,0,0,0.0
+2026-05-25,Screen Assembly,Pro,SCR-01,2,1,0,0.0
+2026-05-25,Screen Assembly,Pro,SCR-02,2,7,0,0.0
+2026-05-25,Solder Paste Printing,Basic,SPP-01,7,0,0,0.0
+2026-05-25,Solder Paste Printing,Plus,SPP-01,9,0,0,0.0
+2026-05-25,Solder Paste Printing,Pro,SPP-01,6,0,0,0.0
+2026-05-26,AOI Inspection,Basic,AOI-01,9,0,0,0.0
+2026-05-26,AOI Inspection,Plus,AOI-01,5,0,0,0.0
+2026-05-26,AOI Inspection,Pro,AOI-01,3,0,0,0.0
+2026-05-26,Board Test (ICT),Basic,ICT-01,3,2,0,0.0
+2026-05-26,Board Test (ICT),Basic,ICT-02,3,0,0,0.0
+2026-05-26,Board Test (ICT),Plus,ICT-01,7,1,0,0.0
+2026-05-26,Board Test (ICT),Plus,ICT-02,3,0,0,0.0
+2026-05-26,Board Test (ICT),Pro,ICT-01,4,1,0,0.0
+2026-05-26,Board Test (ICT),Pro,ICT-02,4,1,0,0.0
+2026-05-26,Component Placement,Basic,CPL-01,6,1,0,0.0
+2026-05-26,Component Placement,Basic,CPL-02,7,1,0,0.0
+2026-05-26,Component Placement,Plus,CPL-01,8,1,0,0.0
+2026-05-26,Component Placement,Plus,CPL-02,4,0,0,0.0
+2026-05-26,Component Placement,Pro,CPL-01,9,2,0,0.0
+2026-05-26,Component Placement,Pro,CPL-02,6,0,0,0.0
+2026-05-26,Final Inspection,Basic,FIN-01,20,3,0,0.0
+2026-05-26,Final Inspection,Plus,FIN-01,10,1,0,0.0
+2026-05-26,Final Inspection,Pro,FIN-01,16,1,0,0.0
+2026-05-26,Functional Test,Basic,FCT-01,7,1,0,0.0
+2026-05-26,Functional Test,Basic,FCT-02,5,2,0,0.0
+2026-05-26,Functional Test,Basic,FCT-03,3,0,0,0.0
+2026-05-26,Functional Test,Plus,FCT-01,4,1,0,0.0
+2026-05-26,Functional Test,Plus,FCT-02,3,0,0,0.0
+2026-05-26,Functional Test,Plus,FCT-03,4,0,0,0.0
+2026-05-26,Functional Test,Pro,FCT-01,7,2,0,0.0
+2026-05-26,Functional Test,Pro,FCT-02,5,0,0,0.0
+2026-05-26,Functional Test,Pro,FCT-03,6,1,0,0.0
+2026-05-26,Housing Assembly,Basic,HSG-01,1,0,0,0.0
+2026-05-26,Housing Assembly,Basic,HSG-02,2,0,0,0.0
+2026-05-26,Housing Assembly,Plus,HSG-01,4,0,0,0.0
+2026-05-26,Housing Assembly,Plus,HSG-02,5,2,0,0.0
+2026-05-26,Housing Assembly,Pro,HSG-01,5,2,0,0.0
+2026-05-26,Housing Assembly,Pro,HSG-02,4,0,0,0.0
+2026-05-26,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-05-26,Packaging,Plus,PKG-01,5,0,0,0.0
+2026-05-26,Packaging,Pro,PKG-01,2,1,0,0.0
+2026-05-26,Reflow Soldering,Basic,RFL-01,25,2,0,0.0
+2026-05-26,Reflow Soldering,Basic,RFL-02,12,0,0,0.0
+2026-05-26,Reflow Soldering,Plus,RFL-01,15,1,0,0.0
+2026-05-26,Reflow Soldering,Plus,RFL-02,12,1,0,0.0
+2026-05-26,Reflow Soldering,Pro,RFL-01,28,1,0,0.0
+2026-05-26,Reflow Soldering,Pro,RFL-02,11,2,0,0.0
+2026-05-26,Screen Assembly,Basic,SCR-01,5,0,0,0.0
+2026-05-26,Screen Assembly,Basic,SCR-02,0,1,0,0.0
+2026-05-26,Screen Assembly,Plus,SCR-01,6,0,0,0.0
+2026-05-26,Screen Assembly,Plus,SCR-02,3,2,0,0.0
+2026-05-26,Screen Assembly,Pro,SCR-01,6,1,0,0.0
+2026-05-26,Screen Assembly,Pro,SCR-02,1,0,0,0.0
+2026-05-26,Solder Paste Printing,Basic,SPP-01,9,0,0,0.0
+2026-05-26,Solder Paste Printing,Plus,SPP-01,12,0,0,0.0
+2026-05-26,Solder Paste Printing,Pro,SPP-01,8,2,0,0.0
+2026-05-27,AOI Inspection,Basic,AOI-01,7,0,0,0.0
+2026-05-27,AOI Inspection,Plus,AOI-01,7,1,0,0.0
+2026-05-27,AOI Inspection,Pro,AOI-01,7,0,0,0.0
+2026-05-27,Board Test (ICT),Basic,ICT-01,4,1,0,0.0
+2026-05-27,Board Test (ICT),Basic,ICT-02,3,1,0,0.0
+2026-05-27,Board Test (ICT),Plus,ICT-01,3,0,0,0.0
+2026-05-27,Board Test (ICT),Plus,ICT-02,7,0,0,0.0
+2026-05-27,Board Test (ICT),Pro,ICT-01,4,1,0,0.0
+2026-05-27,Board Test (ICT),Pro,ICT-02,4,0,0,0.0
+2026-05-27,Component Placement,Basic,CPL-01,2,0,0,0.0
+2026-05-27,Component Placement,Basic,CPL-02,5,0,0,0.0
+2026-05-27,Component Placement,Plus,CPL-01,4,0,0,0.0
+2026-05-27,Component Placement,Plus,CPL-02,7,0,0,0.0
+2026-05-27,Component Placement,Pro,CPL-01,6,1,0,0.0
+2026-05-27,Component Placement,Pro,CPL-02,5,1,0,0.0
+2026-05-27,Final Inspection,Basic,FIN-01,12,0,0,0.0
+2026-05-27,Final Inspection,Plus,FIN-01,11,0,0,0.0
+2026-05-27,Final Inspection,Pro,FIN-01,9,0,0,0.0
+2026-05-27,Functional Test,Basic,FCT-01,2,1,0,0.0
+2026-05-27,Functional Test,Basic,FCT-02,6,3,0,0.0
+2026-05-27,Functional Test,Basic,FCT-03,2,0,0,0.0
+2026-05-27,Functional Test,Plus,FCT-01,8,1,0,0.0
+2026-05-27,Functional Test,Plus,FCT-02,5,2,0,0.0
+2026-05-27,Functional Test,Plus,FCT-03,1,0,0,0.0
+2026-05-27,Functional Test,Pro,FCT-01,3,0,0,0.0
+2026-05-27,Functional Test,Pro,FCT-02,6,0,0,0.0
+2026-05-27,Functional Test,Pro,FCT-03,4,0,0,0.0
+2026-05-27,Housing Assembly,Basic,HSG-01,7,0,0,0.0
+2026-05-27,Housing Assembly,Basic,HSG-02,4,0,0,0.0
+2026-05-27,Housing Assembly,Plus,HSG-01,7,0,0,0.0
+2026-05-27,Housing Assembly,Plus,HSG-02,3,2,0,0.0
+2026-05-27,Housing Assembly,Pro,HSG-01,7,2,0,0.0
+2026-05-27,Housing Assembly,Pro,HSG-02,6,0,0,0.0
+2026-05-27,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-05-27,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-05-27,Reflow Soldering,Basic,RFL-01,15,0,0,0.0
+2026-05-27,Reflow Soldering,Basic,RFL-02,3,1,0,0.0
+2026-05-27,Reflow Soldering,Plus,RFL-01,12,0,0,0.0
+2026-05-27,Reflow Soldering,Plus,RFL-02,10,0,0,0.0
+2026-05-27,Reflow Soldering,Pro,RFL-01,15,0,0,0.0
+2026-05-27,Reflow Soldering,Pro,RFL-02,8,0,0,0.0
+2026-05-27,Screen Assembly,Basic,SCR-01,5,0,0,0.0
+2026-05-27,Screen Assembly,Basic,SCR-02,4,5,0,0.0
+2026-05-27,Screen Assembly,Plus,SCR-01,1,0,0,0.0
+2026-05-27,Screen Assembly,Plus,SCR-02,2,4,0,0.0
+2026-05-27,Screen Assembly,Pro,SCR-01,7,0,0,0.0
+2026-05-27,Screen Assembly,Pro,SCR-02,1,3,0,0.0
+2026-05-27,Solder Paste Printing,Basic,SPP-01,5,0,0,0.0
+2026-05-27,Solder Paste Printing,Plus,SPP-01,9,0,0,0.0
+2026-05-27,Solder Paste Printing,Pro,SPP-01,6,0,0,0.0
+2026-05-28,AOI Inspection,Basic,AOI-01,7,0,0,0.0
+2026-05-28,AOI Inspection,Plus,AOI-01,5,0,0,0.0
+2026-05-28,AOI Inspection,Pro,AOI-01,8,0,0,0.0
+2026-05-28,Board Test (ICT),Basic,ICT-01,6,1,0,0.0
+2026-05-28,Board Test (ICT),Basic,ICT-02,5,0,0,0.0
+2026-05-28,Board Test (ICT),Plus,ICT-01,6,0,0,0.0
+2026-05-28,Board Test (ICT),Plus,ICT-02,5,2,0,0.0
+2026-05-28,Board Test (ICT),Pro,ICT-01,2,0,0,0.0
+2026-05-28,Board Test (ICT),Pro,ICT-02,5,1,0,0.0
+2026-05-28,Component Placement,Basic,CPL-01,7,2,0,0.0
+2026-05-28,Component Placement,Basic,CPL-02,4,0,0,0.0
+2026-05-28,Component Placement,Plus,CPL-01,15,0,0,0.0
+2026-05-28,Component Placement,Plus,CPL-02,6,1,0,0.0
+2026-05-28,Component Placement,Pro,CPL-01,6,0,0,0.0
+2026-05-28,Component Placement,Pro,CPL-02,9,0,0,0.0
+2026-05-28,Final Inspection,Basic,FIN-01,10,0,0,0.0
+2026-05-28,Final Inspection,Plus,FIN-01,9,0,0,0.0
+2026-05-28,Final Inspection,Pro,FIN-01,9,0,0,0.0
+2026-05-28,Functional Test,Basic,FCT-01,3,1,0,0.0
+2026-05-28,Functional Test,Basic,FCT-02,4,0,0,0.0
+2026-05-28,Functional Test,Basic,FCT-03,6,0,0,0.0
+2026-05-28,Functional Test,Plus,FCT-01,7,2,0,0.0
+2026-05-28,Functional Test,Plus,FCT-02,5,2,0,0.0
+2026-05-28,Functional Test,Plus,FCT-03,4,1,0,0.0
+2026-05-28,Functional Test,Pro,FCT-01,6,1,0,0.0
+2026-05-28,Functional Test,Pro,FCT-02,5,0,0,0.0
+2026-05-28,Functional Test,Pro,FCT-03,5,1,0,0.0
+2026-05-28,Housing Assembly,Basic,HSG-01,3,0,0,0.0
+2026-05-28,Housing Assembly,Basic,HSG-02,2,1,0,0.0
+2026-05-28,Housing Assembly,Plus,HSG-01,3,2,0,0.0
+2026-05-28,Housing Assembly,Plus,HSG-02,4,1,0,0.0
+2026-05-28,Housing Assembly,Pro,HSG-01,5,2,0,0.0
+2026-05-28,Housing Assembly,Pro,HSG-02,3,0,0,0.0
+2026-05-28,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-05-28,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-05-28,Packaging,Pro,PKG-01,1,0,0,0.0
+2026-05-28,Reflow Soldering,Basic,RFL-01,7,2,0,0.0
+2026-05-28,Reflow Soldering,Basic,RFL-02,8,2,0,0.0
+2026-05-28,Reflow Soldering,Plus,RFL-01,19,5,0,0.0
+2026-05-28,Reflow Soldering,Plus,RFL-02,13,0,0,0.0
+2026-05-28,Reflow Soldering,Pro,RFL-01,14,3,0,0.0
+2026-05-28,Reflow Soldering,Pro,RFL-02,5,2,0,0.0
+2026-05-28,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-05-28,Screen Assembly,Basic,SCR-02,3,2,0,0.0
+2026-05-28,Screen Assembly,Plus,SCR-01,9,1,0,0.0
+2026-05-28,Screen Assembly,Plus,SCR-02,1,1,0,0.0
+2026-05-28,Screen Assembly,Pro,SCR-01,2,2,0,0.0
+2026-05-28,Screen Assembly,Pro,SCR-02,0,4,0,0.0
+2026-05-28,Solder Paste Printing,Basic,SPP-01,11,0,0,0.0
+2026-05-28,Solder Paste Printing,Plus,SPP-01,13,1,0,0.0
+2026-05-28,Solder Paste Printing,Pro,SPP-01,9,0,0,0.0
+2026-05-29,AOI Inspection,Basic,AOI-01,10,0,0,0.0
+2026-05-29,AOI Inspection,Plus,AOI-01,8,0,0,0.0
+2026-05-29,AOI Inspection,Pro,AOI-01,5,0,0,0.0
+2026-05-29,Board Test (ICT),Basic,ICT-01,8,0,0,0.0
+2026-05-29,Board Test (ICT),Basic,ICT-02,4,1,0,0.0
+2026-05-29,Board Test (ICT),Plus,ICT-01,5,0,0,0.0
+2026-05-29,Board Test (ICT),Plus,ICT-02,6,0,0,0.0
+2026-05-29,Board Test (ICT),Pro,ICT-01,5,1,0,0.0
+2026-05-29,Board Test (ICT),Pro,ICT-02,3,0,0,0.0
+2026-05-29,Component Placement,Basic,CPL-01,5,2,0,0.0
+2026-05-29,Component Placement,Basic,CPL-02,3,0,0,0.0
+2026-05-29,Component Placement,Plus,CPL-01,10,0,0,0.0
+2026-05-29,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-05-29,Component Placement,Pro,CPL-01,9,0,0,0.0
+2026-05-29,Component Placement,Pro,CPL-02,5,0,0,0.0
+2026-05-29,Final Inspection,Basic,FIN-01,5,0,0,0.0
+2026-05-29,Final Inspection,Plus,FIN-01,12,1,0,0.0
+2026-05-29,Final Inspection,Pro,FIN-01,8,1,0,0.0
+2026-05-29,Functional Test,Basic,FCT-01,4,1,0,0.0
+2026-05-29,Functional Test,Basic,FCT-02,9,0,0,0.0
+2026-05-29,Functional Test,Basic,FCT-03,4,0,0,0.0
+2026-05-29,Functional Test,Plus,FCT-01,5,0,0,0.0
+2026-05-29,Functional Test,Plus,FCT-02,1,2,0,0.0
+2026-05-29,Functional Test,Plus,FCT-03,4,1,0,0.0
+2026-05-29,Functional Test,Pro,FCT-01,8,1,0,0.0
+2026-05-29,Functional Test,Pro,FCT-02,7,3,0,0.0
+2026-05-29,Functional Test,Pro,FCT-03,2,2,0,0.0
+2026-05-29,Housing Assembly,Basic,HSG-01,11,0,0,0.0
+2026-05-29,Housing Assembly,Basic,HSG-02,3,0,0,0.0
+2026-05-29,Housing Assembly,Plus,HSG-01,10,0,0,0.0
+2026-05-29,Housing Assembly,Plus,HSG-02,4,0,0,0.0
+2026-05-29,Housing Assembly,Pro,HSG-01,4,1,0,0.0
+2026-05-29,Housing Assembly,Pro,HSG-02,9,0,0,0.0
+2026-05-29,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-05-29,Packaging,Plus,PKG-01,3,0,0,0.0
+2026-05-29,Packaging,Pro,PKG-01,1,0,0,0.0
+2026-05-29,Reflow Soldering,Basic,RFL-01,27,6,0,0.0
+2026-05-29,Reflow Soldering,Basic,RFL-02,11,3,0,0.0
+2026-05-29,Reflow Soldering,Plus,RFL-01,21,4,0,0.0
+2026-05-29,Reflow Soldering,Plus,RFL-02,12,1,0,0.0
+2026-05-29,Reflow Soldering,Pro,RFL-01,28,4,0,0.0
+2026-05-29,Reflow Soldering,Pro,RFL-02,12,0,0,0.0
+2026-05-29,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-05-29,Screen Assembly,Basic,SCR-02,0,5,0,0.0
+2026-05-29,Screen Assembly,Plus,SCR-01,5,0,0,0.0
+2026-05-29,Screen Assembly,Plus,SCR-02,0,7,0,0.0
+2026-05-29,Screen Assembly,Pro,SCR-01,3,0,0,0.0
+2026-05-29,Screen Assembly,Pro,SCR-02,1,1,0,0.0
+2026-05-29,Solder Paste Printing,Basic,SPP-01,9,1,0,0.0
+2026-05-29,Solder Paste Printing,Plus,SPP-01,8,0,0,0.0
+2026-05-29,Solder Paste Printing,Pro,SPP-01,8,0,0,0.0
+2026-06-01,AOI Inspection,Basic,AOI-01,9,0,0,0.0
+2026-06-01,AOI Inspection,Plus,AOI-01,7,1,0,0.0
+2026-06-01,AOI Inspection,Pro,AOI-01,8,0,0,0.0
+2026-06-01,Board Test (ICT),Basic,ICT-01,10,3,0,0.0
+2026-06-01,Board Test (ICT),Basic,ICT-02,5,1,0,0.0
+2026-06-01,Board Test (ICT),Plus,ICT-01,4,0,0,0.0
+2026-06-01,Board Test (ICT),Plus,ICT-02,4,1,0,0.0
+2026-06-01,Board Test (ICT),Pro,ICT-01,3,1,0,0.0
+2026-06-01,Board Test (ICT),Pro,ICT-02,1,0,0,0.0
+2026-06-01,Component Placement,Basic,CPL-01,14,1,0,0.0
+2026-06-01,Component Placement,Basic,CPL-02,4,0,0,0.0
+2026-06-01,Component Placement,Plus,CPL-01,7,0,0,0.0
+2026-06-01,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-06-01,Component Placement,Pro,CPL-01,10,0,0,0.0
+2026-06-01,Component Placement,Pro,CPL-02,12,0,0,0.0
+2026-06-01,Final Inspection,Basic,FIN-01,6,0,0,0.0
+2026-06-01,Final Inspection,Plus,FIN-01,8,1,0,0.0
+2026-06-01,Final Inspection,Pro,FIN-01,8,0,0,0.0
+2026-06-01,Functional Test,Basic,FCT-01,1,2,0,0.0
+2026-06-01,Functional Test,Basic,FCT-02,3,1,0,0.0
+2026-06-01,Functional Test,Basic,FCT-03,5,2,0,0.0
+2026-06-01,Functional Test,Plus,FCT-01,6,0,0,0.0
+2026-06-01,Functional Test,Plus,FCT-02,3,3,0,0.0
+2026-06-01,Functional Test,Plus,FCT-03,7,0,0,0.0
+2026-06-01,Functional Test,Pro,FCT-01,6,3,0,0.0
+2026-06-01,Functional Test,Pro,FCT-02,5,2,0,0.0
+2026-06-01,Functional Test,Pro,FCT-03,4,2,0,0.0
+2026-06-01,Housing Assembly,Basic,HSG-01,1,0,0,0.0
+2026-06-01,Housing Assembly,Basic,HSG-02,7,2,0,0.0
+2026-06-01,Housing Assembly,Plus,HSG-01,3,0,0,0.0
+2026-06-01,Housing Assembly,Plus,HSG-02,11,0,0,0.0
+2026-06-01,Housing Assembly,Pro,HSG-01,6,0,0,0.0
+2026-06-01,Housing Assembly,Pro,HSG-02,1,0,0,0.0
+2026-06-01,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-06-01,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-06-01,Packaging,Pro,PKG-01,3,0,0,0.0
+2026-06-01,Reflow Soldering,Basic,RFL-01,20,1,0,0.0
+2026-06-01,Reflow Soldering,Basic,RFL-02,13,1,0,0.0
+2026-06-01,Reflow Soldering,Plus,RFL-01,21,1,0,0.0
+2026-06-01,Reflow Soldering,Plus,RFL-02,12,1,0,0.0
+2026-06-01,Reflow Soldering,Pro,RFL-01,17,4,0,0.0
+2026-06-01,Reflow Soldering,Pro,RFL-02,13,0,0,0.0
+2026-06-01,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-06-01,Screen Assembly,Basic,SCR-02,1,2,0,0.0
+2026-06-01,Screen Assembly,Plus,SCR-01,3,0,0,0.0
+2026-06-01,Screen Assembly,Plus,SCR-02,2,3,0,0.0
+2026-06-01,Screen Assembly,Pro,SCR-01,2,0,0,0.0
+2026-06-01,Screen Assembly,Pro,SCR-02,1,5,0,0.0
+2026-06-01,Solder Paste Printing,Basic,SPP-01,10,2,0,0.0
+2026-06-01,Solder Paste Printing,Plus,SPP-01,13,0,0,0.0
+2026-06-01,Solder Paste Printing,Pro,SPP-01,13,1,0,0.0
+2026-06-02,AOI Inspection,Basic,AOI-01,4,0,0,0.0
+2026-06-02,AOI Inspection,Plus,AOI-01,8,0,0,0.0
+2026-06-02,AOI Inspection,Pro,AOI-01,4,1,0,0.0
+2026-06-02,Board Test (ICT),Basic,ICT-01,5,0,0,0.0
+2026-06-02,Board Test (ICT),Basic,ICT-02,2,1,0,0.0
+2026-06-02,Board Test (ICT),Plus,ICT-01,5,0,0,0.0
+2026-06-02,Board Test (ICT),Plus,ICT-02,4,1,0,0.0
+2026-06-02,Board Test (ICT),Pro,ICT-01,6,0,0,0.0
+2026-06-02,Board Test (ICT),Pro,ICT-02,2,2,0,0.0
+2026-06-02,Component Placement,Basic,CPL-01,7,0,0,0.0
+2026-06-02,Component Placement,Basic,CPL-02,5,0,0,0.0
+2026-06-02,Component Placement,Plus,CPL-01,7,1,0,0.0
+2026-06-02,Component Placement,Plus,CPL-02,3,1,0,0.0
+2026-06-02,Component Placement,Pro,CPL-01,15,0,0,0.0
+2026-06-02,Component Placement,Pro,CPL-02,6,0,0,0.0
+2026-06-02,Final Inspection,Basic,FIN-01,8,0,0,0.0
+2026-06-02,Final Inspection,Plus,FIN-01,10,0,0,0.0
+2026-06-02,Final Inspection,Pro,FIN-01,16,1,0,0.0
+2026-06-02,Functional Test,Basic,FCT-01,2,2,0,0.0
+2026-06-02,Functional Test,Basic,FCT-02,4,1,0,0.0
+2026-06-02,Functional Test,Basic,FCT-03,2,1,0,0.0
+2026-06-02,Functional Test,Plus,FCT-01,3,0,0,0.0
+2026-06-02,Functional Test,Plus,FCT-02,4,0,0,0.0
+2026-06-02,Functional Test,Plus,FCT-03,4,0,0,0.0
+2026-06-02,Functional Test,Pro,FCT-01,6,0,0,0.0
+2026-06-02,Functional Test,Pro,FCT-02,5,2,0,0.0
+2026-06-02,Functional Test,Pro,FCT-03,2,0,0,0.0
+2026-06-02,Housing Assembly,Basic,HSG-01,8,0,0,0.0
+2026-06-02,Housing Assembly,Basic,HSG-02,3,1,0,0.0
+2026-06-02,Housing Assembly,Plus,HSG-01,3,0,0,0.0
+2026-06-02,Housing Assembly,Plus,HSG-02,2,0,0,0.0
+2026-06-02,Housing Assembly,Pro,HSG-01,8,1,0,0.0
+2026-06-02,Housing Assembly,Pro,HSG-02,4,0,0,0.0
+2026-06-02,Packaging,Basic,PKG-01,2,0,0,0.0
+2026-06-02,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-06-02,Packaging,Pro,PKG-01,0,1,0,0.0
+2026-06-02,Reflow Soldering,Basic,RFL-01,16,2,0,0.0
+2026-06-02,Reflow Soldering,Basic,RFL-02,6,2,0,0.0
+2026-06-02,Reflow Soldering,Plus,RFL-01,18,2,0,0.0
+2026-06-02,Reflow Soldering,Plus,RFL-02,12,1,0,0.0
+2026-06-02,Reflow Soldering,Pro,RFL-01,19,2,0,0.0
+2026-06-02,Reflow Soldering,Pro,RFL-02,7,1,0,0.0
+2026-06-02,Screen Assembly,Basic,SCR-01,3,1,0,0.0
+2026-06-02,Screen Assembly,Basic,SCR-02,3,2,0,0.0
+2026-06-02,Screen Assembly,Plus,SCR-01,7,0,0,0.0
+2026-06-02,Screen Assembly,Plus,SCR-02,2,3,0,0.0
+2026-06-02,Screen Assembly,Pro,SCR-01,4,1,0,0.0
+2026-06-02,Screen Assembly,Pro,SCR-02,2,3,0,0.0
+2026-06-02,Solder Paste Printing,Basic,SPP-01,11,0,0,0.0
+2026-06-02,Solder Paste Printing,Plus,SPP-01,6,0,0,0.0
+2026-06-02,Solder Paste Printing,Pro,SPP-01,11,0,0,0.0
+2026-06-03,AOI Inspection,Basic,AOI-01,8,0,0,0.0
+2026-06-03,AOI Inspection,Plus,AOI-01,8,0,0,0.0
+2026-06-03,AOI Inspection,Pro,AOI-01,10,1,0,0.0
+2026-06-03,Board Test (ICT),Basic,ICT-01,7,0,0,0.0
+2026-06-03,Board Test (ICT),Basic,ICT-02,2,2,0,0.0
+2026-06-03,Board Test (ICT),Plus,ICT-01,5,2,0,0.0
+2026-06-03,Board Test (ICT),Plus,ICT-02,3,1,0,0.0
+2026-06-03,Board Test (ICT),Pro,ICT-01,6,4,0,0.0
+2026-06-03,Board Test (ICT),Pro,ICT-02,2,1,0,0.0
+2026-06-03,Component Placement,Basic,CPL-01,6,0,0,0.0
+2026-06-03,Component Placement,Basic,CPL-02,6,0,0,0.0
+2026-06-03,Component Placement,Plus,CPL-01,9,0,0,0.0
+2026-06-03,Component Placement,Plus,CPL-02,6,0,0,0.0
+2026-06-03,Component Placement,Pro,CPL-01,5,1,0,0.0
+2026-06-03,Component Placement,Pro,CPL-02,1,1,0,0.0
+2026-06-03,Final Inspection,Basic,FIN-01,6,0,0,0.0
+2026-06-03,Final Inspection,Plus,FIN-01,4,0,0,0.0
+2026-06-03,Final Inspection,Pro,FIN-01,4,0,0,0.0
+2026-06-03,Functional Test,Basic,FCT-01,4,0,0,0.0
+2026-06-03,Functional Test,Basic,FCT-02,4,2,0,0.0
+2026-06-03,Functional Test,Plus,FCT-01,3,2,0,0.0
+2026-06-03,Functional Test,Plus,FCT-02,7,2,0,0.0
+2026-06-03,Functional Test,Plus,FCT-03,8,2,0,0.0
+2026-06-03,Functional Test,Pro,FCT-01,6,1,0,0.0
+2026-06-03,Functional Test,Pro,FCT-02,6,1,0,0.0
+2026-06-03,Functional Test,Pro,FCT-03,0,1,0,0.0
+2026-06-03,Housing Assembly,Basic,HSG-01,8,0,0,0.0
+2026-06-03,Housing Assembly,Basic,HSG-02,5,2,0,0.0
+2026-06-03,Housing Assembly,Plus,HSG-01,3,1,0,0.0
+2026-06-03,Housing Assembly,Plus,HSG-02,6,2,0,0.0
+2026-06-03,Housing Assembly,Pro,HSG-01,8,0,0,0.0
+2026-06-03,Housing Assembly,Pro,HSG-02,5,0,0,0.0
+2026-06-03,Packaging,Basic,PKG-01,5,0,0,0.0
+2026-06-03,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-06-03,Packaging,Pro,PKG-01,5,0,0,0.0
+2026-06-03,Reflow Soldering,Basic,RFL-01,14,2,0,0.0
+2026-06-03,Reflow Soldering,Basic,RFL-02,4,0,0,0.0
+2026-06-03,Reflow Soldering,Plus,RFL-01,18,0,0,0.0
+2026-06-03,Reflow Soldering,Plus,RFL-02,4,1,0,0.0
+2026-06-03,Reflow Soldering,Pro,RFL-01,11,4,0,0.0
+2026-06-03,Reflow Soldering,Pro,RFL-02,6,3,0,0.0
+2026-06-03,Screen Assembly,Basic,SCR-01,2,0,0,0.0
+2026-06-03,Screen Assembly,Basic,SCR-02,1,2,0,0.0
+2026-06-03,Screen Assembly,Plus,SCR-01,1,1,0,0.0
+2026-06-03,Screen Assembly,Plus,SCR-02,1,2,0,0.0
+2026-06-03,Screen Assembly,Pro,SCR-01,2,0,0,0.0
+2026-06-03,Screen Assembly,Pro,SCR-02,0,4,0,0.0
+2026-06-03,Solder Paste Printing,Basic,SPP-01,9,3,0,0.0
+2026-06-03,Solder Paste Printing,Plus,SPP-01,7,0,0,0.0
+2026-06-03,Solder Paste Printing,Pro,SPP-01,6,0,0,0.0
+2026-06-04,AOI Inspection,Basic,AOI-01,2,1,0,0.0
+2026-06-04,AOI Inspection,Plus,AOI-01,5,1,0,0.0
+2026-06-04,AOI Inspection,Pro,AOI-01,6,0,0,0.0
+2026-06-04,Board Test (ICT),Basic,ICT-01,6,2,0,0.0
+2026-06-04,Board Test (ICT),Basic,ICT-02,2,0,0,0.0
+2026-06-04,Board Test (ICT),Plus,ICT-01,5,0,0,0.0
+2026-06-04,Board Test (ICT),Plus,ICT-02,4,0,0,0.0
+2026-06-04,Board Test (ICT),Pro,ICT-01,6,1,0,0.0
+2026-06-04,Board Test (ICT),Pro,ICT-02,4,1,0,0.0
+2026-06-04,Component Placement,Basic,CPL-01,5,1,0,0.0
+2026-06-04,Component Placement,Basic,CPL-02,6,0,0,0.0
+2026-06-04,Component Placement,Plus,CPL-01,7,0,0,0.0
+2026-06-04,Component Placement,Plus,CPL-02,9,0,0,0.0
+2026-06-04,Component Placement,Pro,CPL-01,7,0,0,0.0
+2026-06-04,Component Placement,Pro,CPL-02,9,0,0,0.0
+2026-06-04,Final Inspection,Basic,FIN-01,10,0,0,0.0
+2026-06-04,Final Inspection,Plus,FIN-01,8,1,0,0.0
+2026-06-04,Final Inspection,Pro,FIN-01,13,1,0,0.0
+2026-06-04,Functional Test,Basic,FCT-01,4,1,0,0.0
+2026-06-04,Functional Test,Basic,FCT-02,5,0,0,0.0
+2026-06-04,Functional Test,Basic,FCT-03,4,0,0,0.0
+2026-06-04,Functional Test,Plus,FCT-01,3,0,0,0.0
+2026-06-04,Functional Test,Plus,FCT-02,3,0,0,0.0
+2026-06-04,Functional Test,Plus,FCT-03,1,1,0,0.0
+2026-06-04,Functional Test,Pro,FCT-01,3,2,0,0.0
+2026-06-04,Functional Test,Pro,FCT-02,5,1,0,0.0
+2026-06-04,Functional Test,Pro,FCT-03,3,0,0,0.0
+2026-06-04,Housing Assembly,Basic,HSG-01,4,1,0,0.0
+2026-06-04,Housing Assembly,Basic,HSG-02,8,0,0,0.0
+2026-06-04,Housing Assembly,Plus,HSG-01,5,0,0,0.0
+2026-06-04,Housing Assembly,Plus,HSG-02,5,0,0,0.0
+2026-06-04,Housing Assembly,Pro,HSG-01,12,0,0,0.0
+2026-06-04,Housing Assembly,Pro,HSG-02,7,0,0,0.0
+2026-06-04,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-06-04,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-06-04,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-06-04,Reflow Soldering,Basic,RFL-01,30,4,0,0.0
+2026-06-04,Reflow Soldering,Basic,RFL-02,10,1,0,0.0
+2026-06-04,Reflow Soldering,Plus,RFL-01,20,6,0,0.0
+2026-06-04,Reflow Soldering,Plus,RFL-02,15,1,0,0.0
+2026-06-04,Reflow Soldering,Pro,RFL-01,20,5,0,0.0
+2026-06-04,Reflow Soldering,Pro,RFL-02,11,1,0,0.0
+2026-06-04,Screen Assembly,Basic,SCR-01,2,1,0,0.0
+2026-06-04,Screen Assembly,Basic,SCR-02,5,2,0,0.0
+2026-06-04,Screen Assembly,Plus,SCR-01,8,1,0,0.0
+2026-06-04,Screen Assembly,Plus,SCR-02,1,3,0,0.0
+2026-06-04,Screen Assembly,Pro,SCR-01,2,0,0,0.0
+2026-06-04,Screen Assembly,Pro,SCR-02,1,3,0,0.0
+2026-06-04,Solder Paste Printing,Basic,SPP-01,6,0,0,0.0
+2026-06-04,Solder Paste Printing,Plus,SPP-01,15,0,0,0.0
+2026-06-04,Solder Paste Printing,Pro,SPP-01,13,0,0,0.0
+2026-06-05,AOI Inspection,Basic,AOI-01,3,0,0,0.0
+2026-06-05,AOI Inspection,Plus,AOI-01,8,1,0,0.0
+2026-06-05,AOI Inspection,Pro,AOI-01,7,1,0,0.0
+2026-06-05,Board Test (ICT),Basic,ICT-01,7,0,0,0.0
+2026-06-05,Board Test (ICT),Basic,ICT-02,7,1,0,0.0
+2026-06-05,Board Test (ICT),Plus,ICT-01,7,0,0,0.0
+2026-06-05,Board Test (ICT),Plus,ICT-02,4,0,0,0.0
+2026-06-05,Board Test (ICT),Pro,ICT-01,3,2,0,0.0
+2026-06-05,Board Test (ICT),Pro,ICT-02,5,1,0,0.0
+2026-06-05,Component Placement,Basic,CPL-01,5,0,0,0.0
+2026-06-05,Component Placement,Basic,CPL-02,6,0,0,0.0
+2026-06-05,Component Placement,Plus,CPL-01,13,1,0,0.0
+2026-06-05,Component Placement,Plus,CPL-02,12,0,0,0.0
+2026-06-05,Component Placement,Pro,CPL-01,13,0,0,0.0
+2026-06-05,Component Placement,Pro,CPL-02,5,0,0,0.0
+2026-06-05,Final Inspection,Basic,FIN-01,9,0,0,0.0
+2026-06-05,Final Inspection,Plus,FIN-01,6,0,0,0.0
+2026-06-05,Final Inspection,Pro,FIN-01,10,1,0,0.0
+2026-06-05,Functional Test,Basic,FCT-01,4,0,0,0.0
+2026-06-05,Functional Test,Basic,FCT-02,1,0,0,0.0
+2026-06-05,Functional Test,Basic,FCT-03,3,0,0,0.0
+2026-06-05,Functional Test,Plus,FCT-01,5,0,0,0.0
+2026-06-05,Functional Test,Plus,FCT-02,6,0,0,0.0
+2026-06-05,Functional Test,Plus,FCT-03,2,0,0,0.0
+2026-06-05,Functional Test,Pro,FCT-01,6,0,0,0.0
+2026-06-05,Functional Test,Pro,FCT-02,8,1,0,2.0
+2026-06-05,Functional Test,Pro,FCT-03,5,0,0,3.0
+2026-06-05,Housing Assembly,Basic,HSG-01,7,0,0,0.0
+2026-06-05,Housing Assembly,Basic,HSG-02,3,2,0,0.0
+2026-06-05,Housing Assembly,Plus,HSG-01,5,0,0,0.0
+2026-06-05,Housing Assembly,Plus,HSG-02,3,0,0,0.0
+2026-06-05,Housing Assembly,Pro,HSG-01,10,2,0,0.0
+2026-06-05,Housing Assembly,Pro,HSG-02,4,0,0,0.0
+2026-06-05,Packaging,Plus,PKG-01,4,0,0,0.0
+2026-06-05,Packaging,Pro,PKG-01,3,0,0,3.0
+2026-06-05,Reflow Soldering,Basic,RFL-01,26,2,0,0.0
+2026-06-05,Reflow Soldering,Basic,RFL-02,17,2,0,0.0
+2026-06-05,Reflow Soldering,Plus,RFL-01,26,1,0,0.0
+2026-06-05,Reflow Soldering,Plus,RFL-02,13,2,0,0.0
+2026-06-05,Reflow Soldering,Pro,RFL-01,34,2,0,0.0
+2026-06-05,Reflow Soldering,Pro,RFL-02,20,4,0,0.0
+2026-06-05,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-06-05,Screen Assembly,Basic,SCR-02,0,2,0,0.0
+2026-06-05,Screen Assembly,Plus,SCR-01,1,1,0,0.0
+2026-06-05,Screen Assembly,Plus,SCR-02,2,1,0,0.0
+2026-06-05,Screen Assembly,Pro,SCR-01,1,0,0,0.0
+2026-06-05,Screen Assembly,Pro,SCR-02,0,6,0,0.0
+2026-06-05,Solder Paste Printing,Basic,SPP-01,8,0,0,0.0
+2026-06-05,Solder Paste Printing,Plus,SPP-01,12,0,0,0.0
+2026-06-05,Solder Paste Printing,Pro,SPP-01,10,0,0,0.0
+2026-06-08,AOI Inspection,Basic,AOI-01,9,0,0,0.0
+2026-06-08,AOI Inspection,Plus,AOI-01,13,0,0,0.0
+2026-06-08,AOI Inspection,Pro,AOI-01,6,1,0,0.0
+2026-06-08,Board Test (ICT),Basic,ICT-01,11,0,0,0.0
+2026-06-08,Board Test (ICT),Basic,ICT-02,1,0,0,0.0
+2026-06-08,Board Test (ICT),Plus,ICT-01,6,2,0,0.0
+2026-06-08,Board Test (ICT),Plus,ICT-02,7,1,0,0.0
+2026-06-08,Board Test (ICT),Pro,ICT-01,4,0,0,0.0
+2026-06-08,Board Test (ICT),Pro,ICT-02,6,1,0,0.0
+2026-06-08,Component Placement,Basic,CPL-01,5,0,0,0.0
+2026-06-08,Component Placement,Basic,CPL-02,6,0,0,0.0
+2026-06-08,Component Placement,Plus,CPL-01,3,0,0,0.0
+2026-06-08,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-06-08,Component Placement,Pro,CPL-01,4,0,0,0.0
+2026-06-08,Component Placement,Pro,CPL-02,3,1,0,0.0
+2026-06-08,Final Inspection,Basic,FIN-01,5,0,0,0.0
+2026-06-08,Final Inspection,Plus,FIN-01,5,0,0,0.0
+2026-06-08,Final Inspection,Pro,FIN-01,9,0,0,0.0
+2026-06-08,Functional Test,Basic,FCT-01,4,2,0,0.0
+2026-06-08,Functional Test,Basic,FCT-02,5,2,0,0.0
+2026-06-08,Functional Test,Basic,FCT-03,5,0,0,0.0
+2026-06-08,Functional Test,Plus,FCT-01,6,4,0,0.0
+2026-06-08,Functional Test,Plus,FCT-02,5,2,0,0.0
+2026-06-08,Functional Test,Plus,FCT-03,5,0,0,0.0
+2026-06-08,Functional Test,Pro,FCT-01,10,0,0,0.0
+2026-06-08,Functional Test,Pro,FCT-02,4,3,0,0.0
+2026-06-08,Functional Test,Pro,FCT-03,4,0,0,0.0
+2026-06-08,Housing Assembly,Basic,HSG-01,5,1,0,0.0
+2026-06-08,Housing Assembly,Basic,HSG-02,6,1,0,0.0
+2026-06-08,Housing Assembly,Plus,HSG-01,8,0,0,0.0
+2026-06-08,Housing Assembly,Plus,HSG-02,1,0,0,0.0
+2026-06-08,Housing Assembly,Pro,HSG-01,5,0,0,0.0
+2026-06-08,Housing Assembly,Pro,HSG-02,10,0,0,0.0
+2026-06-08,Packaging,Basic,PKG-01,3,0,0,0.0
+2026-06-08,Packaging,Plus,PKG-01,3,0,0,0.0
+2026-06-08,Packaging,Pro,PKG-01,4,0,0,0.0
+2026-06-08,Reflow Soldering,Basic,RFL-01,23,0,0,0.0
+2026-06-08,Reflow Soldering,Basic,RFL-02,8,2,0,0.0
+2026-06-08,Reflow Soldering,Plus,RFL-01,28,1,0,0.0
+2026-06-08,Reflow Soldering,Plus,RFL-02,11,2,0,0.0
+2026-06-08,Reflow Soldering,Pro,RFL-01,37,3,0,0.0
+2026-06-08,Reflow Soldering,Pro,RFL-02,9,1,0,0.0
+2026-06-08,Screen Assembly,Basic,SCR-01,1,0,0,0.0
+2026-06-08,Screen Assembly,Basic,SCR-02,1,1,0,0.0
+2026-06-08,Screen Assembly,Plus,SCR-01,5,0,0,0.0
+2026-06-08,Screen Assembly,Plus,SCR-02,2,1,0,0.0
+2026-06-08,Screen Assembly,Pro,SCR-01,3,1,0,0.0
+2026-06-08,Screen Assembly,Pro,SCR-02,0,2,0,0.0
+2026-06-08,Solder Paste Printing,Basic,SPP-01,14,0,0,0.0
+2026-06-08,Solder Paste Printing,Plus,SPP-01,10,0,0,0.0
+2026-06-08,Solder Paste Printing,Pro,SPP-01,10,1,0,0.0
+2026-06-09,AOI Inspection,Basic,AOI-01,5,0,0,0.0
+2026-06-09,AOI Inspection,Plus,AOI-01,7,0,0,0.0
+2026-06-09,AOI Inspection,Pro,AOI-01,6,0,0,0.0
+2026-06-09,Board Test (ICT),Basic,ICT-01,4,1,0,0.0
+2026-06-09,Board Test (ICT),Basic,ICT-02,4,0,0,0.0
+2026-06-09,Board Test (ICT),Plus,ICT-01,3,0,0,0.0
+2026-06-09,Board Test (ICT),Plus,ICT-02,1,1,0,0.0
+2026-06-09,Board Test (ICT),Pro,ICT-01,10,1,0,0.0
+2026-06-09,Board Test (ICT),Pro,ICT-02,10,0,0,0.0
+2026-06-09,Component Placement,Basic,CPL-01,7,0,0,0.0
+2026-06-09,Component Placement,Basic,CPL-02,2,1,0,0.0
+2026-06-09,Component Placement,Plus,CPL-01,7,0,0,0.0
+2026-06-09,Component Placement,Plus,CPL-02,6,0,0,0.0
+2026-06-09,Component Placement,Pro,CPL-01,7,0,0,0.0
+2026-06-09,Component Placement,Pro,CPL-02,1,0,0,0.0
+2026-06-09,Final Inspection,Basic,FIN-01,12,0,0,0.0
+2026-06-09,Final Inspection,Plus,FIN-01,8,2,0,0.0
+2026-06-09,Final Inspection,Pro,FIN-01,8,1,0,0.0
+2026-06-09,Functional Test,Basic,FCT-01,3,2,0,0.0
+2026-06-09,Functional Test,Basic,FCT-02,4,1,0,0.0
+2026-06-09,Functional Test,Basic,FCT-03,5,2,0,0.0
+2026-06-09,Functional Test,Plus,FCT-01,6,2,0,0.0
+2026-06-09,Functional Test,Plus,FCT-02,8,0,0,0.0
+2026-06-09,Functional Test,Plus,FCT-03,5,1,0,0.0
+2026-06-09,Functional Test,Pro,FCT-01,7,3,0,0.0
+2026-06-09,Functional Test,Pro,FCT-02,6,0,0,0.0
+2026-06-09,Functional Test,Pro,FCT-03,3,0,0,0.0
+2026-06-09,Housing Assembly,Basic,HSG-01,8,1,0,0.0
+2026-06-09,Housing Assembly,Basic,HSG-02,1,0,0,0.0
+2026-06-09,Housing Assembly,Plus,HSG-01,9,1,0,0.0
+2026-06-09,Housing Assembly,Plus,HSG-02,6,1,0,0.0
+2026-06-09,Housing Assembly,Pro,HSG-01,9,2,0,0.0
+2026-06-09,Housing Assembly,Pro,HSG-02,6,1,0,0.0
+2026-06-09,Packaging,Basic,PKG-01,6,0,0,0.0
+2026-06-09,Packaging,Plus,PKG-01,3,0,0,0.0
+2026-06-09,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-06-09,Reflow Soldering,Basic,RFL-01,13,0,0,0.0
+2026-06-09,Reflow Soldering,Basic,RFL-02,12,0,0,0.0
+2026-06-09,Reflow Soldering,Plus,RFL-01,21,1,0,0.0
+2026-06-09,Reflow Soldering,Plus,RFL-02,9,3,0,0.0
+2026-06-09,Reflow Soldering,Pro,RFL-01,22,0,0,0.0
+2026-06-09,Reflow Soldering,Pro,RFL-02,8,2,0,0.0
+2026-06-09,Screen Assembly,Basic,SCR-01,5,0,0,0.0
+2026-06-09,Screen Assembly,Basic,SCR-02,0,3,0,0.0
+2026-06-09,Screen Assembly,Plus,SCR-01,4,1,0,0.0
+2026-06-09,Screen Assembly,Plus,SCR-02,0,5,0,0.0
+2026-06-09,Screen Assembly,Pro,SCR-01,1,0,0,0.0
+2026-06-09,Screen Assembly,Pro,SCR-02,3,3,0,0.0
+2026-06-09,Solder Paste Printing,Basic,SPP-01,5,0,0,0.0
+2026-06-09,Solder Paste Printing,Plus,SPP-01,12,0,0,0.0
+2026-06-09,Solder Paste Printing,Pro,SPP-01,9,0,0,0.0
+2026-06-10,AOI Inspection,Basic,AOI-01,8,0,0,0.0
+2026-06-10,AOI Inspection,Plus,AOI-01,2,1,0,0.0
+2026-06-10,AOI Inspection,Pro,AOI-01,7,0,0,0.0
+2026-06-10,Board Test (ICT),Basic,ICT-01,2,1,0,0.0
+2026-06-10,Board Test (ICT),Basic,ICT-02,6,0,0,0.0
+2026-06-10,Board Test (ICT),Plus,ICT-01,2,2,0,0.0
+2026-06-10,Board Test (ICT),Plus,ICT-02,1,1,0,0.0
+2026-06-10,Board Test (ICT),Pro,ICT-01,1,1,0,0.0
+2026-06-10,Board Test (ICT),Pro,ICT-02,4,0,0,0.0
+2026-06-10,Component Placement,Basic,CPL-01,3,0,0,0.0
+2026-06-10,Component Placement,Basic,CPL-02,3,1,0,0.0
+2026-06-10,Component Placement,Plus,CPL-01,3,2,0,0.0
+2026-06-10,Component Placement,Plus,CPL-02,7,0,0,0.0
+2026-06-10,Component Placement,Pro,CPL-01,10,0,0,0.0
+2026-06-10,Component Placement,Pro,CPL-02,7,1,0,0.0
+2026-06-10,Final Inspection,Basic,FIN-01,6,0,0,0.0
+2026-06-10,Final Inspection,Plus,FIN-01,12,0,0,0.0
+2026-06-10,Final Inspection,Pro,FIN-01,6,1,0,0.0
+2026-06-10,Functional Test,Basic,FCT-01,5,2,0,0.0
+2026-06-10,Functional Test,Basic,FCT-02,6,1,0,0.0
+2026-06-10,Functional Test,Basic,FCT-03,5,0,0,0.0
+2026-06-10,Functional Test,Plus,FCT-01,2,2,0,0.0
+2026-06-10,Functional Test,Plus,FCT-02,4,0,0,0.0
+2026-06-10,Functional Test,Plus,FCT-03,3,0,0,0.0
+2026-06-10,Functional Test,Pro,FCT-01,7,1,0,0.0
+2026-06-10,Functional Test,Pro,FCT-02,5,2,0,0.0
+2026-06-10,Functional Test,Pro,FCT-03,5,1,0,0.0
+2026-06-10,Housing Assembly,Basic,HSG-01,8,1,0,0.0
+2026-06-10,Housing Assembly,Basic,HSG-02,3,1,0,0.0
+2026-06-10,Housing Assembly,Plus,HSG-01,8,0,0,0.0
+2026-06-10,Housing Assembly,Plus,HSG-02,4,0,0,0.0
+2026-06-10,Housing Assembly,Pro,HSG-01,8,1,0,0.0
+2026-06-10,Housing Assembly,Pro,HSG-02,3,0,0,0.0
+2026-06-10,Packaging,Basic,PKG-01,4,0,0,0.0
+2026-06-10,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-06-10,Packaging,Pro,PKG-01,2,0,0,0.0
+2026-06-10,Reflow Soldering,Basic,RFL-01,22,0,0,0.0
+2026-06-10,Reflow Soldering,Basic,RFL-02,9,0,0,0.0
+2026-06-10,Reflow Soldering,Plus,RFL-01,15,1,0,0.0
+2026-06-10,Reflow Soldering,Plus,RFL-02,8,1,0,0.0
+2026-06-10,Reflow Soldering,Pro,RFL-01,16,0,0,0.0
+2026-06-10,Reflow Soldering,Pro,RFL-02,12,0,0,0.0
+2026-06-10,Screen Assembly,Basic,SCR-02,3,3,0,0.0
+2026-06-10,Screen Assembly,Plus,SCR-01,1,0,0,0.0
+2026-06-10,Screen Assembly,Plus,SCR-02,1,1,0,0.0
+2026-06-10,Screen Assembly,Pro,SCR-01,5,1,0,0.0
+2026-06-10,Screen Assembly,Pro,SCR-02,0,7,0,0.0
+2026-06-10,Solder Paste Printing,Basic,SPP-01,2,0,0,0.0
+2026-06-10,Solder Paste Printing,Plus,SPP-01,5,0,0,0.0
+2026-06-10,Solder Paste Printing,Pro,SPP-01,6,0,0,0.0
+2026-06-11,AOI Inspection,Basic,AOI-01,5,0,0,0.0
+2026-06-11,AOI Inspection,Plus,AOI-01,5,0,0,0.0
+2026-06-11,AOI Inspection,Pro,AOI-01,3,0,0,0.0
+2026-06-11,Board Test (ICT),Basic,ICT-01,2,2,0,0.0
+2026-06-11,Board Test (ICT),Basic,ICT-02,4,0,0,0.0
+2026-06-11,Board Test (ICT),Plus,ICT-01,3,1,0,0.0
+2026-06-11,Board Test (ICT),Plus,ICT-02,1,0,0,0.0
+2026-06-11,Board Test (ICT),Pro,ICT-01,4,1,0,0.0
+2026-06-11,Board Test (ICT),Pro,ICT-02,1,0,0,0.0
+2026-06-11,Component Placement,Basic,CPL-01,6,2,0,0.0
+2026-06-11,Component Placement,Basic,CPL-02,4,0,0,0.0
+2026-06-11,Component Placement,Plus,CPL-01,3,0,0,0.0
+2026-06-11,Component Placement,Plus,CPL-02,3,0,0,0.0
+2026-06-11,Component Placement,Pro,CPL-01,8,1,0,0.0
+2026-06-11,Component Placement,Pro,CPL-02,4,1,0,0.0
+2026-06-11,Final Inspection,Basic,FIN-01,8,0,0,0.0
+2026-06-11,Final Inspection,Plus,FIN-01,9,0,0,0.0
+2026-06-11,Final Inspection,Pro,FIN-01,6,0,0,0.0
+2026-06-11,Functional Test,Basic,FCT-01,8,1,0,0.0
+2026-06-11,Functional Test,Basic,FCT-02,1,0,0,0.0
+2026-06-11,Functional Test,Basic,FCT-03,2,1,0,0.0
+2026-06-11,Functional Test,Plus,FCT-01,5,2,0,0.0
+2026-06-11,Functional Test,Plus,FCT-02,4,1,0,0.0
+2026-06-11,Functional Test,Plus,FCT-03,1,1,0,0.0
+2026-06-11,Functional Test,Pro,FCT-01,6,2,0,0.0
+2026-06-11,Functional Test,Pro,FCT-02,5,1,0,0.0
+2026-06-11,Functional Test,Pro,FCT-03,3,0,0,0.0
+2026-06-11,Housing Assembly,Basic,HSG-01,5,0,0,0.0
+2026-06-11,Housing Assembly,Basic,HSG-02,6,0,0,0.0
+2026-06-11,Housing Assembly,Plus,HSG-01,9,0,0,0.0
+2026-06-11,Housing Assembly,Plus,HSG-02,4,0,0,0.0
+2026-06-11,Housing Assembly,Pro,HSG-01,2,0,0,0.0
+2026-06-11,Housing Assembly,Pro,HSG-02,3,0,0,0.0
+2026-06-11,Packaging,Basic,PKG-01,1,0,0,0.0
+2026-06-11,Packaging,Plus,PKG-01,1,0,0,0.0
+2026-06-11,Packaging,Pro,PKG-01,5,0,0,0.0
+2026-06-11,Reflow Soldering,Basic,RFL-01,11,1,0,0.0
+2026-06-11,Reflow Soldering,Basic,RFL-02,5,0,0,0.0
+2026-06-11,Reflow Soldering,Plus,RFL-01,19,4,0,0.0
+2026-06-11,Reflow Soldering,Plus,RFL-02,9,1,0,0.0
+2026-06-11,Reflow Soldering,Pro,RFL-01,25,5,0,0.0
+2026-06-11,Reflow Soldering,Pro,RFL-02,7,3,0,0.0
+2026-06-11,Screen Assembly,Basic,SCR-01,2,1,0,0.0
+2026-06-11,Screen Assembly,Basic,SCR-02,0,1,0,0.0
+2026-06-11,Screen Assembly,Plus,SCR-01,6,0,0,0.0
+2026-06-11,Screen Assembly,Plus,SCR-02,2,1,0,0.0
+2026-06-11,Screen Assembly,Pro,SCR-01,4,1,0,0.0
+2026-06-11,Screen Assembly,Pro,SCR-02,1,5,0,0.0
+2026-06-11,Solder Paste Printing,Basic,SPP-01,7,0,0,0.0
+2026-06-11,Solder Paste Printing,Plus,SPP-01,8,0,0,0.0
+2026-06-11,Solder Paste Printing,Pro,SPP-01,7,1,0,0.0
+2026-06-12,AOI Inspection,Basic,AOI-01,7,0,0,0.0
+2026-06-12,AOI Inspection,Plus,AOI-01,6,0,0,0.0
+2026-06-12,AOI Inspection,Pro,AOI-01,6,0,0,0.0
+2026-06-12,Board Test (ICT),Basic,ICT-01,7,2,0,0.0
+2026-06-12,Board Test (ICT),Basic,ICT-02,6,1,0,0.0
+2026-06-12,Board Test (ICT),Plus,ICT-01,3,1,0,0.0
+2026-06-12,Board Test (ICT),Plus,ICT-02,2,0,0,0.0
+2026-06-12,Board Test (ICT),Pro,ICT-01,5,0,0,0.0
+2026-06-12,Board Test (ICT),Pro,ICT-02,2,0,0,0.0
+2026-06-12,Component Placement,Basic,CPL-01,15,1,0,0.0
+2026-06-12,Component Placement,Basic,CPL-02,4,0,0,0.0
+2026-06-12,Component Placement,Plus,CPL-01,13,0,0,0.0
+2026-06-12,Component Placement,Plus,CPL-02,5,0,0,0.0
+2026-06-12,Component Placement,Pro,CPL-01,12,1,0,0.0
+2026-06-12,Component Placement,Pro,CPL-02,8,1,0,0.0
+2026-06-12,Final Inspection,Basic,FIN-01,5,2,0,0.0
+2026-06-12,Final Inspection,Plus,FIN-01,10,2,0,0.0
+2026-06-12,Final Inspection,Pro,FIN-01,5,1,4,0.0
+2026-06-12,Functional Test,Basic,FCT-01,9,1,0,0.0
+2026-06-12,Functional Test,Basic,FCT-02,9,0,0,0.0
+2026-06-12,Functional Test,Basic,FCT-03,4,1,0,0.0
+2026-06-12,Functional Test,Plus,FCT-01,7,1,0,0.0
+2026-06-12,Functional Test,Plus,FCT-02,8,2,0,0.0
+2026-06-12,Functional Test,Plus,FCT-03,3,1,0,0.0
+2026-06-12,Functional Test,Pro,FCT-01,2,1,2,0.0
+2026-06-12,Functional Test,Pro,FCT-02,2,0,2,0.0
+2026-06-12,Functional Test,Pro,FCT-03,3,0,3,0.0
+2026-06-12,Housing Assembly,Basic,HSG-01,7,0,0,0.0
+2026-06-12,Housing Assembly,Basic,HSG-02,3,0,0,0.0
+2026-06-12,Housing Assembly,Plus,HSG-01,7,1,0,0.0
+2026-06-12,Housing Assembly,Plus,HSG-02,6,1,0,0.0
+2026-06-12,Housing Assembly,Pro,HSG-01,2,0,0,0.0
+2026-06-12,Housing Assembly,Pro,HSG-02,8,0,1,0.0
+2026-06-12,Packaging,Basic,PKG-01,3,0,0,0.0
+2026-06-12,Packaging,Plus,PKG-01,4,0,0,0.0
+2026-06-12,Reflow Soldering,Basic,RFL-01,26,2,0,0.0
+2026-06-12,Reflow Soldering,Basic,RFL-02,11,1,0,0.0
+2026-06-12,Reflow Soldering,Plus,RFL-01,18,4,0,0.0
+2026-06-12,Reflow Soldering,Plus,RFL-02,10,3,0,0.0
+2026-06-12,Reflow Soldering,Pro,RFL-01,32,2,0,0.0
+2026-06-12,Reflow Soldering,Pro,RFL-02,13,3,0,0.0
+2026-06-12,Screen Assembly,Basic,SCR-01,3,0,0,0.0
+2026-06-12,Screen Assembly,Basic,SCR-02,2,2,0,0.0
+2026-06-12,Screen Assembly,Plus,SCR-01,1,0,0,0.0
+2026-06-12,Screen Assembly,Plus,SCR-02,1,4,0,0.0
+2026-06-12,Screen Assembly,Pro,SCR-01,7,0,0,0.0
+2026-06-12,Screen Assembly,Pro,SCR-02,2,0,0,0.0
+2026-06-12,Solder Paste Printing,Basic,SPP-01,9,0,0,0.0
+2026-06-12,Solder Paste Printing,Plus,SPP-01,16,0,0,0.0
+2026-06-12,Solder Paste Printing,Pro,SPP-01,9,0,0,0.0

@@ -1,0 +1,7 @@
+test,outcome,error
+baris ganda (kunci sama),ditolak,ConstraintException
+jumlah negatif,ditolak,ConstraintException
+OK + NG > input,ditolak,ConstraintException
+shift kosong,ditolak,ConstraintException
+kode defect salah ketik,ditolak,ConstraintException
+rework selesai sebelum masuk,ditolak,ConstraintException

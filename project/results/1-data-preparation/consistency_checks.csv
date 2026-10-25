@@ -1,0 +1,7 @@
+check,violations
+ng_qty = jumlah defect_log per kunci,0
+baris rework_log = qty defect_log per tanggal/stasiun/model/kode,0
+rework date_out >= date_in,0
+result kosong hanya jika date_out kosong,0
+kunci production_daily unik,0
+OK + NG = input,0

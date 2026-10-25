@@ -1,0 +1,18 @@
+defect_code,defect_name,station,category,rework_min
+SPP-01,Pasta solder kurang,Solder Paste Printing,Solder,10
+CPL-01,Missing component,Component Placement,Komponen,12
+CPL-02,Komponen terbalik,Component Placement,Komponen,12
+RFL-01,Solder bridge,Reflow Soldering,Solder,18
+RFL-02,Cold solder,Reflow Soldering,Solder,15
+AOI-01,Komponen bergeser,AOI Inspection,Komponen,8
+ICT-01,Short circuit,Board Test (ICT),Elektrikal,25
+ICT-02,Open circuit,Board Test (ICT),Elektrikal,25
+SCR-01,Layar retak,Screen Assembly,Layar,20
+SCR-02,Dead pixel,Screen Assembly,Layar,20
+HSG-01,Gores casing,Housing Assembly,Casing,15
+HSG-02,Celah casing,Housing Assembly,Casing,15
+FIN-01,Cacat kosmetik,Final Inspection,Kosmetik,8
+FCT-01,Kamera gagal tes,Functional Test,Fungsi,30
+FCT-02,Sensor gagal tes,Functional Test,Fungsi,30
+FCT-03,Baterai gagal tes,Functional Test,Fungsi,30
+PKG-01,Label salah,Packaging,Label,5

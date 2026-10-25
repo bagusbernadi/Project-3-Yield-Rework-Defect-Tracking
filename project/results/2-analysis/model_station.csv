@@ -1,0 +1,31 @@
+model,seq,station,input_qty,ng_qty,fpy
+Basic,1,Solder Paste Printing,68770,717,0.9895739421
+Basic,2,Component Placement,68737,886,0.9871102899
+Basic,3,Reflow Soldering,68677,2308,0.9663934068
+Basic,4,AOI Inspection,68417,487,0.9928818861
+Basic,5,Board Test (ICT),68399,768,0.9887717657
+Basic,6,Screen Assembly,68289,721,0.9894419306
+Basic,7,Housing Assembly,68023,868,0.9872396101
+Basic,8,Final Inspection,67942,692,0.9898148421
+Basic,9,Functional Test,67909,1226,0.9819464283
+Basic,10,Packaging,67679,176,0.9973994888
+Plus,1,Solder Paste Printing,63038,787,0.9875154669
+Plus,2,Component Placement,63001,1007,0.9840161267
+Plus,3,Reflow Soldering,62939,2485,0.9605173263
+Plus,4,AOI Inspection,62646,468,0.9925294512
+Plus,5,Board Test (ICT),62624,805,0.9871455033
+Plus,6,Screen Assembly,62513,743,0.9881144722
+Plus,7,Housing Assembly,62246,910,0.9853805867
+Plus,8,Final Inspection,62160,728,0.9882882883
+Plus,9,Functional Test,62114,1310,0.9789097466
+Plus,10,Packaging,61856,170,0.9972516813
+Pro,1,Solder Paste Printing,54182,792,0.9853825994
+Pro,2,Component Placement,54150,1087,0.9799261311
+Pro,3,Reflow Soldering,54071,2658,0.9508424109
+Pro,4,AOI Inspection,53767,531,0.9901240538
+Pro,5,Board Test (ICT),53745,892,0.9834031073
+Pro,6,Screen Assembly,53625,805,0.984988345
+Pro,7,Housing Assembly,53301,1074,0.9798502842
+Pro,8,Final Inspection,53208,869,0.9836678695
+Pro,9,Functional Test,53165,1419,0.9733095081
+Pro,10,Packaging,52891,177,0.9966534949

@@ -1,0 +1,18 @@
+defect_code,qty,defect_name,station,category,share,cum_share,rank,vital_few
+RFL-01,5080,Solder bridge,Reflow Soldering,Solder,0.1778337884,0.1778337884,1,True
+RFL-02,2371,Cold solder,Reflow Soldering,Solder,0.08300077015,0.2608345586,2,True
+SPP-01,2296,Pasta solder kurang,Solder Paste Printing,Solder,0.0803752713,0.3412098299,3,True
+FIN-01,2289,Cacat kosmetik,Final Inspection,Kosmetik,0.08013022474,0.4213400546,4,True
+CPL-01,1774,Missing component,Component Placement,Komponen,0.06210179934,0.483441854,5,True
+HSG-01,1706,Gores casing,Housing Assembly,Casing,0.05972134706,0.543163201,6,True
+FCT-01,1531,Kamera gagal tes,Functional Test,Fungsi,0.05359518308,0.5967583841,7,True
+AOI-01,1486,Komponen bergeser,AOI Inspection,Komponen,0.05201988378,0.6487782679,8,True
+FCT-02,1418,Sensor gagal tes,Functional Test,Fungsi,0.04963943149,0.6984176994,9,True
+ICT-01,1359,Short circuit,Board Test (ICT),Elektrikal,0.04757403907,0.7459917384,10,True
+SCR-01,1274,Layar retak,Screen Assembly,Layar,0.04459847371,0.7905902121,11,True
+CPL-02,1206,Komponen terbalik,Component Placement,Komponen,0.04221802142,0.8328082336,12,True
+HSG-02,1146,Celah casing,Housing Assembly,Casing,0.04011762235,0.8729258559,13,False
+ICT-02,1106,Open circuit,Board Test (ICT),Elektrikal,0.0387173563,0.9116432122,14,False
+FCT-03,1006,Baterai gagal tes,Functional Test,Fungsi,0.03521669117,0.9468599034,15,False
+SCR-02,995,Dead pixel,Screen Assembly,Layar,0.03483161801,0.9816915214,16,False
+PKG-01,523,Label salah,Packaging,Label,0.01830847861,1,17,False
