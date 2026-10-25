@@ -13,3 +13,4 @@ table.evq td:first-child{width:56px}
 .qa.w .qn{background:var(--amberH)}.qa .qt{font-weight:700;line-height:1.4}.qa .qm{font-size:13px;color:var(--mut);margin:2px 0}.qa p{margin:4px 0 2px}
 .qlist{font-size:13px;font-weight:700;color:var(--mut);margin-left:6px;letter-spacing:.02em}
 .report-note{font-size:14px;color:var(--mut)}
+.qchips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.qc{display:inline-block;min-width:44px;text-align:center;font-weight:800;font-size:14px;padding:4px 10px;border-radius:10px;background:var(--teal);color:#fff!important;text-decoration:none}.qc.w{background:var(--amberH)}

@@ -37,7 +37,16 @@ QT = {1: "Stasiun mana yang paling banyak meloloskan produk gagal pada percobaan
       12: "Berapa jam kerja rework yang bisa dihemat dari perbaikan tersebut?",
       13: "Berapa persen data yang tidak valid, dan apakah hasil berubah jika data itu dibuang atau dikoreksi?",
       14: "Apakah angka KPI dari database sama persis dengan hitungan manual di Excel?"}
-Q = lambda n, ans, warn=False: qa(f"Q{n}", QT[n], PRIO[n], ans, "Terjawab dengan catatan" if warn else "Terjawab", warn)
+WARN = set()      # pertanyaan yang dijawab dengan catatan (dipakai chip, ringkasan, dan tabel evaluasi)
+
+
+def Q(n, ans, warn=False):
+    if warn:
+        WARN.add(n)
+    return qa(f"Q{n}", QT[n], PRIO[n], ans, "Terjawab dengan catatan" if warn else "Terjawab", warn)
+
+
+
 mk = lambda *a: "".join(a)
 fl = lambda s: re.sub(r"\s+", " ", s)
 
@@ -97,9 +106,9 @@ rp1 += table(["Masalah", "Tabel", "Ditemukan", "Ditanam generator", "Keputusan"]
              [[label[r.issue], f"<code>{r.table}</code>", I(r.rows), I(r.injected), dec[r.issue]] for r in dq.itertuples()])
 rp1 += Q(13, f"{D(rows.flagged_pct[0], 2)}% baris production_daily dan {D(rows.flagged_pct[1], 2)}% baris defect_log tidak valid; semuanya ditemukan "
              f"({I(dirty)} baris, sama dengan jumlah yang ditanam) dan diperbaiki, kecuali {I(rows.raw_rows[0] - rows.clean_rows[0])} baris ganda yang dibuang. "
-             f"Hasil tidak berubah berarti: kesimpulan kategorikal sama pada tiga perlakuan, angka KPI bergeser paling banyak {D(abs(sens.diff_tanpa_cleaning[:4]).max() * 100, 2)} poin (rincian di Tabel 2.9).")
+             f"Hasil tidak berubah secara berarti: kesimpulan kategorikal sama pada tiga perlakuan, angka KPI bergeser paling banyak {D(abs(sens.diff_tanpa_cleaning[:4]).max() * 100, 2)} poin (rincian di Tabel 2.9a).")
 rp1 += '<p class="note">Pembahasan lengkap Q13 (perbandingan tiga perlakuan) ada di <a href="#sec29">2.9</a>.</p></div>'
-rp1 += '<h3>1.2 Tabel di database (<code>yield.duckdb</code>)</h3><div class="card">' + table(
+rp1 += '<h3>1.2 Tabel di database (<code>yield.duckdb</code>)</h3><div class="card"><h4>Tabel 1.2a. Isi database</h4>' + table(
     ["Tabel", "Baris", "Isi"],
     [["production_daily", I(dbc["production_daily"]), "Hasil harian per stasiun, model, shift. Kunci utama (date, shift, station, model)."],
      ["defect_log", I(dbc["defect_log"]), "Jumlah defect per kode. Kunci asing ke production_daily dan dim_defect."],
@@ -107,7 +116,7 @@ rp1 += '<h3>1.2 Tabel di database (<code>yield.duckdb</code>)</h3><div class="ca
      ["dim_defect", I(dbc["dim_defect"]), "Kode, nama, stasiun, kategori, asumsi menit rework per unit."],
      ["dim_station", I(dbc["dim_station"]), "Urutan 10 stasiun."],
      ["dim_date", I(dbc["dim_date"]), "Hari kerja, minggu, bulan (ditambahkan, tidak ada di rancangan)."]]) + \
-    '<h4>Uji aturan pengecekan (constraint)</h4>' + table(
+    '<h4>Tabel 1.2b. Uji aturan pengecekan (constraint)</h4>' + table(
     ["Baris salah yang dicoba dimasukkan", "Hasil"], [[r.test, OK("Ditolak") if r.outcome == "ditolak" else NO("Diterima")] for r in ctest.itertuples()]) + \
     f'<p>Keenam jenis data salah ditolak oleh database. Setelah cleaning, {I(len(cons))} pemeriksaan konsistensi antar tabel menghasilkan 0 pelanggaran.</p></div>'
 FILES = {"station": ("KPI per stasiun", "Q1, Q2"), "line_kpi": ("KPI seluruh lini (1 baris)", "Q1, Q2, Q6"), "model_station": ("FPY model × stasiun", "Q3"),
@@ -122,10 +131,19 @@ FILES = {"station": ("KPI per stasiun", "Q1, Q2"), "line_kpi": ("KPI seluruh lin
 resfiles = sorted(p for d in (RES_PREP, RES_ANALYSIS) for p in d.glob("*.csv"))
 miss = [p.stem for p in resfiles if p.stem not in FILES]
 assert not miss, f"CSV hasil belum didokumentasikan di FILES: {miss}"
-rp1 += '<div class="card"><h4>Data hasil analisis (<code>project/results/</code>)</h4>' + table(
+rp1 += '<div class="card"><h4>Tabel 1.2c. Data hasil analisis (<code>project/results/</code>)</h4>' + table(
     ["File", "Isi", "Baris", "Menjawab"],
     [[f"<code>{p.stem}.csv</code>", FILES[p.stem][0], I(len(pd.read_csv(p))), FILES[p.stem][1]] for p in resfiles]) + \
     f'<p>{I(len(resfiles))} file CSV, ditambah {I(len(list((REPO / "project/results/3-presentation").glob("dash_*.csv"))))} CSV data dashboard.</p></div>'
+rp1 += '<h3>1.3 Angka kunci (KPI)</h3><div class="card"><h4>Tabel 1.3. Enam KPI seluruh lini (definisi di <code>project/docs/kpi_definitions.md</code>)</h4>' + table(
+    ["KPI", "Rumus ringkas", "Hasil", "Jumlah data"],
+    [["RTY lini", "hasil kali FPY 10 stasiun", P(line.rty, 2), f"{I(line.units_started)} unit dimulai"],
+     ["Final yield lini", "hasil kali final yield 10 stasiun (setelah rework)", P(line.final_yield, 2), f"{I(line.units_started)} unit dimulai"],
+     ["Rata-rata FPY stasiun", "rata-rata FPY 10 stasiun", P(line.avg_station_fpy, 2), f"{I(len(st))} stasiun"],
+     ["Rework rate", "unit NG ÷ input stasiun pertama", P(line.rework_rate, 2), f"{I(line.ng_events)} unit NG"],
+     ["Scrap rate", "unit scrap ÷ input stasiun pertama", P(line.scrap_rate, 2), f"{I(line.scrap)} unit scrap"],
+     ["Recovery rate", "rework OK ÷ (rework OK + scrap)", P(line.recovery_rate, 2), f"{I(line.rework_ok + line.scrap)} unit selesai rework"]]) + \
+    f'<p>RTY {P(line.rty, 2)} jauh di bawah rata-rata FPY {P(line.avg_station_fpy, 2)} karena kegagalan sepuluh stasiun saling menumpuk. {I(line.rework_open)} unit yang masih menunggu di akhir periode tidak masuk recovery rate.</p></div>'
 
 # ---------------------------------------------------------------- 2. business questions
 s21 = mk('<h3 id="sec21">2.1 Yield per stasiun dan RTY lini <span class="qlist">Q1, Q2</span></h3><div class="card">',
@@ -134,10 +152,11 @@ s21 = mk('<h3 id="sec21">2.1 Yield per stasiun dan RTY lini <span class="qlist">
               f"{P(line.rty, 2)} karena kegagalan kecil di sepuluh stasiun saling menumpuk."),
          Q(2, f"Final yield lini {P(line.final_yield, 2)} vs RTY {P(line.rty, 2)}: rework menyelamatkan {D((line.final_yield - line.rty) * 100)} poin. "
               f"Tanpa pemisahan FPY dan final yield, {D((line.final_yield - line.rty) * 100)} poin biaya rework tidak terlihat."),
-         '<h4>Grafik 2.1. NG rate percobaan pertama per stasiun (1 - FPY)</h4>',
+         '<h4>Grafik 2.1a. NG rate percobaan pertama per stasiun (1 - FPY)</h4>',
          bars([(SHORT[i], r.ng_qty / r.input_qty, HI if i == 2 else BLUE,
                 f"{r.station}: NG rate {P(r.ng_qty / r.input_qty, 2)}, FPY {P(r.fpy, 2)}, {I(r.ng_qty)} NG dari {I(r.input_qty)}") for i, r in st.iterrows()],
               lambda v: P(v, 1), "NG rate per stasiun"),
+         '<h4>Tabel 2.1b. KPI per stasiun</h4>',
          table(["Stasiun", "Input", "NG", "FPY", "Final yield", "Porsi kehilangan RTY"],
                [[r.station, I(r.input_qty), I(r.ng_qty), P(r.fpy, 2), P(r.final_yield, 2), P(r.rty_loss_share)] for r in st.itertuples()]),
          '<p>Porsi kehilangan RTY = ln(FPY stasiun) ÷ jumlah ln(FPY) semua stasiun, sehingga jumlahnya 100%. Batang dimulai dari nol.</p></div>')
@@ -146,21 +165,22 @@ s22 = mk('<h3 id="sec22">2.2 Perbedaan antar model <span class="qlist">Q3</span>
          Q(3, f"Ya, makin tinggi model makin rendah yield-nya: RTY Basic {P(mrty['Basic'].rty, 2)}, Plus {P(mrty['Plus'].rty, 2)}, Pro {P(mrty['Pro'].rty, 2)}. "
               f"Rework rate Pro {P(mrty['Pro'].rework_rate)} vs Basic {P(mrty['Basic'].rework_rate)}. Pola ini berasal dari faktor model yang disetel di generator (Pro 1,25×, Plus 1,00×, Basic 0,85×), "
               f"jadi di sini pengujian bahwa metode bisa menemukannya, bukan temuan tentang pabrik."),
-         '<h4>Grafik 2.2. NG rate per stasiun menurut model</h4>',
+         '<h4>Grafik 2.2a. NG rate per stasiun menurut model</h4>',
          gbars([SHORT[i] for i in range(10)], [(m, c, [1 - ms[(ms.model == m) & (ms.seq == i + 1)].fpy.iloc[0] for i in range(10)])
                                                 for m, c in (("Basic", SOFT), ("Plus", BLUE), ("Pro", HI))], lambda v: P(v, 1), "NG rate per model"),
          legend([(SOFT, "Basic"), (BLUE, "Plus"), (HI, "Pro")]),
+         '<h4>Tabel 2.2b. Yield dan rework per model</h4>',
          table(["Model", "Unit dimulai", "NG", "RTY", "Rework rate"], [[r.model, I(r.units_started), I(r.ng_qty), P(r.rty, 2), P(r.rework_rate)] for r in mod.itertuples()]), '</div>')
 pn = pst[pst.rank_in_station == 1]
 s23 = mk('<h3 id="sec23">2.3 Pareto defect <span class="qlist">Q4</span></h3><div class="card">',
          Q(4, f"{I(par.vital_few.sum())} dari {I(len(par))} jenis defect menyumbang sekitar 80% dari {I(par.qty.sum())} NG; kelompok teratas {par.defect_name[0]} ({P(par.share[0])}), "
               f"{par.defect_name[1]} ({P(par.share[1])}), dan {par.defect_name[2]} ({P(par.share[2])}). Pareto-nya landai: tidak ada kelompok kecil yang mendominasi, dan "
               f"{par.defect_name[0]} sendiri baru {P(par.share[0])} dari semua NG."),
-         '<h4>Grafik 2.3. Pareto defect seluruh lini</h4>', legend([(BLUE, "Sampai 80% kumulatif"), (SOFT, "Sisanya"), ("#3C4043", "Kumulatif")]),
+         '<h4>Grafik 2.3a. Pareto defect seluruh lini</h4>', legend([(BLUE, "Sampai 80% kumulatif"), (SOFT, "Sisanya"), ("#3C4043", "Kumulatif")]),
          pareto_svg(list(par.defect_code), list(par.share), list(par.cum_share), list(par.vital_few),
                     [f"{r.defect_code} {r.defect_name} ({r.station}): {I(r.qty)} NG, {P(r.share)}, kumulatif {P(r.cum_share)}" for r in par.itertuples()], "Pareto defect"),
          '<p>Garis putus-putus = 80%. Sumbu kiri porsi batang, sumbu kanan kumulatif.</p>',
-         '<h4>Defect teratas di tiap stasiun</h4>',
+         '<h4>Tabel 2.3b. Defect teratas di tiap stasiun</h4>',
          table(["Stasiun", "Defect teratas", "Porsi dari NG stasiun"], [[r.station, f"{r.defect_code} {r.defect_name}", P(r.share_in_station)] for r in pn.itertuples()]), '</div>')
 gap = shs.loc[shs.gap.idxmax()]
 oth = shs[shs.station != gap.station]
@@ -169,22 +189,24 @@ s24 = mk('<h3 id="sec24">2.4 Shift <span class="qlist">Q5</span></h3><div class=
          Q(5, f"Ya, di satu stasiun: {gap.station} memiliki NG rate Shift 2 {P(gap.ng_rate_s2, 2)} vs Shift 1 {P(gap.ng_rate_s1, 2)} (rasio {D(gap.ratio, 2)}), terutama "
               f"{top_ds.defect_name.iloc[0]} dan {top_ds.defect_name.iloc[1]}. Stasiun lain tidak menunjukkan pola serupa: rasio Shift 2 ÷ Shift 1 antara {D(oth.ratio.min(), 2)} dan {D(oth.ratio.max(), 2)}. "
               f"Ini pola, bukan penyebab; penyebabnya (operator, setup, material) perlu dicek di lapangan.", warn=True),
-         '<h4>Grafik 2.4. NG rate per stasiun menurut shift</h4>',
+         '<h4>Grafik 2.4a. NG rate per stasiun menurut shift</h4>',
          gbars(SHORT, [("Shift 1", BLUE, list(shs.ng_rate_s1)), ("Shift 2", HI, list(shs.ng_rate_s2))], lambda v: P(v, 1), "NG rate per shift"),
          legend([(BLUE, "Shift 1"), (HI, "Shift 2")]),
+         '<h4>Tabel 2.4b. Lima defect dengan selisih shift terbesar</h4>',
          table(["Defect", "Stasiun", "Rate Shift 1", "Rate Shift 2", "Rasio"],
                [[f"{r.defect_code} {r.defect_name}", r.station, P(r.rate_s1, 2), P(r.rate_s2, 2), D(r.rate_s2 / r.rate_s1, 2)] for r in dsh.head(5).itertuples()]),
-         '<p>Lima defect dengan selisih terbesar. Rate = jumlah defect ÷ input stasiun pada shift itu. Pengujian statistik tidak dilakukan (rancangan menyerahkannya ke Project 29).</p></div>')
+         '<p>Rate = jumlah defect ÷ input stasiun pada shift itu. Pengujian statistik tidak dilakukan (rancangan menyerahkannya ke Project 29).</p></div>')
 rdl = rd.sort_values("recovery_rate").reset_index(drop=True)
 s25 = mk('<h3 id="sec25">2.5 Keberhasilan rework <span class="qlist">Q6, Q7</span></h3><div class="card">',
          Q(6, f"{P(line.recovery_rate)} unit NG berhasil diselamatkan lewat rework dan {P(line.scrap_share_of_rework)} menjadi scrap ({I(line.scrap)} unit, setara {P(line.scrap_rate, 2)} dari unit yang dimulai). "
               f"{I(line.rework_open)} unit masih menunggu di akhir periode dan tidak dihitung."),
          Q(7, f"{rdl.defect_name[0]} ({rdl.defect_code[0]}) paling sulit: recovery {P(rdl.recovery_rate[0])}, {I(rdl.scrap[0])} scrap, atau {P(rdl.scrap[0] / line.scrap)} dari seluruh scrap. "
               f"Defect tersulit berikutnya, {rdl.defect_name[1]}, sudah {P(rdl.recovery_rate[1])}."),
-         '<h4>Grafik 2.5. Recovery rate per jenis defect</h4>',
+         '<h4>Grafik 2.5a. Recovery rate per jenis defect</h4>',
          hbars([(f"{r.defect_code} {r.defect_name}", r.recovery_rate, HI if i == 0 else BLUE,
                  f"{r.defect_name}: recovery {P(r.recovery_rate)}, {I(r.rework_ok)} OK, {I(r.scrap)} scrap, rata-rata menunggu {D(r.avg_lead_wd, 2)} hari kerja") for i, r in rdl.iterrows()],
                lambda v: P(v, 0), "Recovery rate per defect", 1.0),
+         '<h4>Tabel 2.5b. Hasil rework per jenis defect (urut dari recovery terendah)</h4>',
          table(["Defect", "Masuk rework", "OK", "Scrap", "Recovery"],
                [[f"{r.defect_code} {r.defect_name}", I(r.rework_in), I(r.rework_ok), I(r.scrap), P(r.recovery_rate)] for r in rdl.itertuples()]),
          '<p>Peluang berhasil per defect adalah parameter generator, jadi urutan ini mengukur apakah analisis menemukannya, bukan sifat nyata defect.</p></div>')
@@ -193,8 +215,9 @@ s26 = mk('<h3 id="sec26">2.6 Waktu tunggu dan antrean rework <span class="qlist"
          Q(8, f"{P(same)} unit selesai di hari kerja yang sama; sisanya menunggu satu hari kerja, kecuali {I(line.rework_open)} unit yang belum selesai di akhir periode. Antrean tidak menumpuk secara umum: ada pada {I(nbl)} dari {I(len(bl))} hari, "
               f"puncaknya {I(bl.backlog.max())} unit pada {bl.date[bl.backlog.idxmax()]} (minggu lonjakan Screen Assembly), dan kembali ke {I(bl.backlog.iloc[-1])} unit di akhir periode. "
               f"Kapasitas rework adalah parameter generator ({I(410)} unit per hari), sehingga angka ini menunjukkan metode pemantauan antrean, bukan kapasitas pabrik.", warn=True),
-         '<h4>Grafik 2.6. Unit menunggu di stasiun rework per hari</h4>',
+         '<h4>Grafik 2.6a. Unit menunggu di stasiun rework per hari</h4>',
          lines(dates, [("Menunggu", BLUE, 2.5, list(bl.backlog))], lambda v: I(v), "Antrean rework harian", zero=True),
+         '<h4>Tabel 2.6b. Lama menunggu rework</h4>',
          table(["Lama menunggu (hari kerja)", "Unit", "Porsi"], [[("Masih menunggu" if r.lead_wd == "open" else r.lead_wd), I(r.units), P(r.share, 2)] for r in lead.itertuples()]), '</div>')
 daysp = spk[spk.is_spike]
 ipos = [i for i, d in enumerate(dates) if d in set(daysp.date.astype(str))]
@@ -207,11 +230,12 @@ s27 = mk('<h3 id="sec27">2.7 Tren harian, mingguan, dan lonjakan <span class="ql
                f"({D(drl[drl.dim == 'station'].excess_per_day.iloc[0])} unit per hari di atas hari normal), dan {drl[drl.dim == 'defect'].value.iloc[0]} {P(drl[drl.dim == 'defect'].share_of_excess.iloc[0], 0)}. "
                f"Model dan shift tidak terpusat: kelebihan tersebar di semua model dan kedua shift, tanpa satu pun menyumbang lebih dari 60% ({', '.join(f'{r.value} {P(r.share_of_excess, 0)}' for r in drl[drl.dim == 'model'].itertuples())}; "
                f"{', '.join(f'{r.value} {P(r.share_of_excess, 0)}' for r in drl[drl.dim == 'shift'].itertuples())})."),
-         '<h4>Grafik 2.7. RTY harian dan rata-rata 7 hari</h4>',
+         '<h4>Grafik 2.7a. RTY harian dan rata-rata 7 hari</h4>',
          legend([(GREY, "RTY harian"), (BLUE, "Rata-rata 7 hari"), ("#FBBC04", "Hari lonjakan di satu stasiun")]),
          lines([d[5:] for d in dates], [("RTY harian", GREY, 1.2, list(dly.rty)), ("Rata-rata 7 hari", BLUE, 2.8, list(dly.rty_ma7))], lambda v: P(v, 0), "Tren RTY harian",
                bands=ipos, band_label="Lonjakan"),
          '<p>Jumlah input harian ada di CSV <code>daily.csv</code> dan tooltip dashboard, karena persentase dari hari sepi mudah melonjak.</p>',
+         '<h4>Tabel 2.7b. RTY dan NG per unit per minggu</h4>',
          table(["Minggu", "Mulai", "RTY", "NG per unit", "Unit dimulai"],
                [[I(r.week), r.week_start, P(r.rty, 2), D(r.ng_per_unit, 3), I(r.units_started)] for r in wk.itertuples()]), '</div>')
 bs = imp[(imp.target_type == "station")].reset_index(drop=True)
@@ -221,6 +245,7 @@ s28 = mk('<h3 id="sec28">2.8 Estimasi dampak perbaikan <span class="qlist">Q11, 
                f"RTY naik dari {P(bs.rty_old[2], 2)} ke {P(bs.rty_new[2], 2)}. Jika hanya defect teratas ({bd.target[0]}) turun 30%: {I(bd.units_saved_month[2])} unit per bulan."),
          Q(12, f"[estimated] Penurunan NG {bs.target[0]} 30% menghemat sekitar {I(bs.rework_hours_saved_month[2])} jam rework per bulan, dan {I(bs.scrap_avoided_month[2])} unit scrap dihindari. "
                f"Jam dihitung dari asumsi menit rework per unit di dim_defect (misalnya {I(dim.rework_min.max())} menit untuk defect Functional Test), bukan hasil pengukuran.", warn=True),
+         '<h4>Tabel 2.8a. Skenario penurunan NG (estimated, simulated)</h4>',
          table(["Skenario", "NG turun", "Unit terselamatkan / bulan", "Scrap dihindari / bulan", "Jam rework dihemat / bulan", "RTY baru"],
                [[f"{r.target_type == 'station' and 'Stasiun ' or 'Defect '}{r.target}", I(r.reduction * 100) + "%", I(r.units_saved_month), I(r.scrap_avoided_month),
                  I(r.rework_hours_saved_month), P(r.rty_new, 2)] for r in imp.itertuples()]),
@@ -235,15 +260,25 @@ s29 = mk('<h3 id="sec29">2.9 Kualitas data dan cek silang <span class="qlist">Q1
                f"dan {D(abs(sv.diff_dibuang.rty) * 100, 2)} poin bila baris bermasalah dibuang; final yield bergeser sampai {D(abs(sv.diff_dibuang.final_yield) * 100, 2)} poin karena baris dengan NG yang cocok di defect_log ikut hilang."),
          Q(14, f"Ya. {I(len(ce))} dari {I(len(ce))} pemeriksaan Excel sama dengan SQL (selisih di bawah 1E-9): FPY dan final yield semua stasiun, RTY, rework, scrap, recovery, tiga porsi Pareto teratas, selisih shift, recovery SCR-02, "
                f"dan sembilan sampel hari × stasiun. Pemeriksaan tambahan SQL vs pandas: {I(len(cx))} dari {I(len(cx))} lolos. Rumus Excel dihitung ulang oleh Excel sungguhan, bukan ditulis sebagai angka."),
-         '<h4>Tabel 2.9. KPI menurut tiga perlakuan data kotor</h4>',
+         '<h4>Tabel 2.9a. KPI menurut tiga perlakuan data kotor</h4>',
          table(["KPI", "Diperbaiki (utama)", "Baris bermasalah dibuang", "Tanpa cleaning"],
                [["RTY"] + sr("rty", pt), ["Final yield"] + sr("final_yield", pt), ["Rework rate"] + sr("rework_rate", pt), ["Scrap rate"] + sr("scrap_rate", pt),
                 ["Recovery rate"] + sr("recovery_rate", pt), ["Porsi defect teratas"] + sr("top_defect_share", pt), ["Selisih NG rate shift terbesar"] + sr("max_shift_gap", pt),
                 ["Jumlah baris production_daily", I(sv.diperbaiki.rows_production), I(sv.dibuang.rows_production), I(sv.tanpa_cleaning.rows_production)]]),
-         '<h4>Fakta yang ditanam vs temuan analisis</h4>',
+         '<h4>Tabel 2.9b. Fakta yang ditanam vs temuan analisis</h4>',
          table(["#", "Fakta", "Ditanam", "Ditemukan", "Cocok"], [[I(r.id), r.fact, cs(r.planted), cs(r.found), OK("Ya") if r.match else NO("Tidak")] for r in gt.itertuples()]),
          '<p>Fakta ditanam oleh penulis sendiri, jadi kecocokan membuktikan metode bekerja pada data yang pola dan ambangnya diketahui, bukan kemampuan menemukan pola di data nyata.</p></div>')
-rp2 = '<p class="report-note">Pertanyaan dikelompokkan per grafik, bukan per nomor. Q13 muncul di Tabel 1.1 dan Tabel 2.9.</p>' + "".join([s21, s22, s23, s24, s25, s26, s27, s28, s29])
+SEC = {1: 21, 2: 21, 3: 22, 4: 23, 5: 24, 6: 25, 7: 25, 8: 26, 9: 27, 10: 27, 11: 28, 12: 28, 13: 29, 14: 29}
+chips = "".join(f'<a class="qc{" w" if n in WARN else ""}" href="#sec{SEC[n]}" title="{esc(QT[n])}">Q{n}</a>' for n in sorted(SEC, key=lambda k: (SEC[k], k)))
+npr = {k: sum(1 for v in PRIO.values() if v == k) for k in ("Utama", "Pendukung", "Tambahan")}
+nw = len(WARN)
+wtxt = ", ".join(f"Q{n}" for n in sorted(WARN))
+rp2 = (f'<div class="card"><p><b>Jawaban singkat:</b> seluruh {I(len(QT))} pertanyaan terjawab dengan angka dari data ({I(npr["Utama"])} Utama, {I(npr["Pendukung"])} Pendukung, {I(npr["Tambahan"])} Tambahan). '
+       f'Tidak ada pertanyaan yang tidak terjawab. {I(nw)} jawaban diberi catatan (kuning, {wtxt}) karena keterbatasan data simulasi atau metode. '
+       'Pembahasan dikelompokkan menurut grafik atau tabel buktinya; klik nomor pertanyaan untuk melompat. Pertanyaan utama project dijawab di bagian 7.</p>'
+       f'<div class="qchips">{chips}</div>'
+       '<p class="report-note">Q hijau = terjawab, Q kuning = terjawab dengan catatan. Q13 juga dibahas di bagian 1.1 (Tabel 1.1) dan di Tabel 2.9a.</p></div>'
+       + "".join([s21, s22, s23, s24, s25, s26, s27, s28, s29]))
 
 # ---------------------------------------------------------------- 3-5. kesesuaian
 nsql = len(list((REPO / "project/code").rglob("*.sql")))
@@ -286,9 +321,38 @@ steps = [("1", "Menyepakati definisi KPI", "<code>docs/kpi_definitions.md</code>
          ("10", "Cocokkan ground truth", "<code>08_ground_truth.py</code>", OK("Sesuai"), "Ditambah uji sensitivitas data kotor (<code>07_sensitivity.py</code>)."),
          ("11", "Membuat dashboard", "<code>09_build_dashboard.py</code>, <code>streamlit_app.py</code>", PART("Sebagian"), "Belum di-deploy ke Streamlit Community Cloud."),
          ("12", "README dan finalisasi", "<code>README.md</code>, halaman ini", PART("Sebagian"), "Siap; push dilakukan setelah ada permintaan.")]
+CODE_REL = "project/code/"
+renames = [("scripts/generate_data.py", CODE_REL + "1-data-preparation/python/01_generate_data.py"),
+           ("scripts/clean_data.py", CODE_REL + "1-data-preparation/python/02_clean_data.py"),
+           ("sql/ (query dan view KPI)", CODE_REL + "2-analysis/sql/03_kpi_views.sql"),
+           ("dashboard/app.py", CODE_REL + "3-presentation/python/streamlit_app.py"),
+           ("outputs/*.csv", "project/results/2-analysis/*.csv"),
+           ("outputs/crosscheck.xlsx", "project/results/2-analysis/crosscheck.xlsx"),
+           ("notebooks/analysis.ipynb", "project/results/3-presentation/analysis.ipynb"),
+           ("(tidak ada)", ", ".join(f"{n}" for n in ("03_build_db.py", "04_run_queries.py", "05_crosscheck.py", "06_excel_crosscheck.py", "07_sensitivity.py",
+                                                       "08_ground_truth.py", "09_build_dashboard.py", "10_build_notebook.py", "11_build_readme.py", "kpi_pandas.py", "common.py")))]
+for a, b in renames:                       # pastikan semua file tujuan memang ada
+    for part in b.split(", "):
+        if "*" in part or "/" not in part:
+            continue
+        assert (REPO / part).exists(), part
+assert all((REPO / CODE_REL / sub / f).exists() for sub, f in (("1-data-preparation/python", "03_build_db.py"), ("2-analysis/python", "04_run_queries.py"), ("2-analysis/python", "05_crosscheck.py"),
+           ("2-analysis/python", "06_excel_crosscheck.py"), ("2-analysis/python", "07_sensitivity.py"), ("2-analysis/python", "08_ground_truth.py"), ("2-analysis/python", "kpi_pandas.py"),
+           ("3-presentation/python", "09_build_dashboard.py"), ("3-presentation/python", "10_build_notebook.py"), ("3-presentation/python", "11_build_readme.py"))) and (REPO / CODE_REL / "common.py").exists()
 rp5 = mk('<div class="card"><p><b>Jawaban singkat:</b> 12 langkah dijalankan sesuai urutan. Nama dan lokasi file berubah mengikuti struktur repo standar, dan ada dua langkah tambahan (uji sensitivitas, cek silang pandas). '
          'Dua langkah (11 dan 12) belum sepenuhnya selesai.</p></div>',
-         table(["Langkah", "Rancangan", "Realisasi", "Verdict", "Catatan"], [[a, b, c, d, e] for a, b, c, d, e in steps]))
+         table(["Langkah", "Rancangan", "Realisasi", "Verdict", "Catatan"], [[a, b, c, d, e] for a, b, c, d, e in steps]),
+         '<div class="card"><h4>Penyesuaian dan improvisasi yang tidak ada di rancangan</h4><ul class="tight">',
+         '<li>Kapasitas rework dinaikkan dari 380 ke 410 unit per hari, karena percobaan pertama meninggalkan antrean yang belum selesai di akhir periode.</li>',
+         '<li>Deteksi lonjakan dipindah dari level lini ke level stasiun × hari (robust z-score &gt; 3,5): di level lini, variasi harian menutupi lonjakan dan 0 hari terdeteksi.</li>',
+         f'<li>Uji sensitivitas tiga perlakuan data kotor dan cek silang pandas ({I(len(cx))} pemeriksaan) ditambahkan di luar rancangan.</li>',
+         f'<li>Uji constraint: {I(len(ctest))} jenis baris salah dicoba dimasukkan ke database dan semuanya ditolak; setelah cleaning, {I(len(cons))} pemeriksaan konsistensi antar tabel menghasilkan 0 pelanggaran.</li>',
+         f'<li>Cek silang Excel memakai rumus yang dihitung ulang oleh Excel sungguhan ({I(len(ce))} pemeriksaan), bukan angka yang ditulis tangan.</li>',
+         '<li>Dashboard HTML satu file ditambahkan di samping Streamlit agar bisa dibuka lewat GitHub Pages.</li>',
+         '<li>Notebook dan README dibuat otomatis dari hasil (<code>10_build_notebook.py</code>, <code>11_build_readme.py</code>), dan angka halaman ini diaudit terhadap file hasil.</li></ul></div>',
+         '<div class="card"><h4>Perubahan nama dan lokasi file terhadap rancangan</h4>',
+         table(["Rancangan", "Realisasi"],
+               [[f"<code>{a}</code>" if a != "(tidak ada)" else "(tidak ada di rancangan)", ", ".join(f"<code>{x}</code>" for x in b.split(", "))] for a, b in renames]) + '</div>')
 
 # ---------------------------------------------------------------- 6. output
 chk = lambda rel: (REPO / rel).exists()
@@ -343,10 +407,12 @@ rp7 = mk(
     '<li><b>Belum terukur:</b> dampak pada keputusan atau pabrik nyata. Semua angka berasal dari data simulasi dan menguji metode.</li></ul></div>')
 crit = [("1. Kesembilan pertanyaan Utama terjawab dengan angka", OK("Tercapai"), "Q1, Q2, Q3, Q4, Q6, Q9, Q11, Q13, Q14 terjawab (bagian 2)"),
         ("2. Angka KPI SQL sama dengan hitungan manual Excel", OK("Tercapai"), f"{I(len(ce))} dari {I(len(ce))} pemeriksaan Excel; {I(len(cx))} dari {I(len(cx))} pemeriksaan pandas"),
-        ("3. Kelima fakta yang ditanam ditemukan", OK("Tercapai"), f"{I(gt.match.sum())} dari {I(len(gt))} cocok (Tabel 2.9)"),
-        ("4. Orang awam menyebut stasiun dan defect terburuk dalam < 1 menit", PART("Belum diuji"), "Halaman Ringkasan dashboard menulis stasiun dan defect terburuk di kalimat pertama, tetapi belum diuji ke pembaca sebenarnya"),
+        ("3. Kelima fakta yang ditanam ditemukan", OK("Tercapai"), f"{I(gt.match.sum())} dari {I(len(gt))} cocok (Tabel 2.9b)"),
+        ("4. Orang awam menyebut stasiun dan defect terburuk dalam &lt; 1 menit", PART("Belum diuji"), "Halaman Ringkasan dashboard menulis stasiun dan defect terburuk di kalimat pertama, tetapi belum diuji ke pembaca sebenarnya"),
         ("5. Checklist standar (pertanyaan bisnis, cleaning, SQL, dashboard ter-deploy, README)", PART("Sebagian"), "Semua ada kecuali dashboard ter-deploy (Streamlit Community Cloud belum)")]
-rp7 += '<div class="card"><h4>7.3 Success criteria</h4>' + table(["Kriteria (Design Project, bagian 8)", "Status", "Bukti"], [[a, b, c] for a, b, c in crit]) + '</div>'
+ncr = sum(1 for c in crit if ">Tercapai<" in c[1])
+rp7 += ('<div class="card"><h4>7.3 Success criteria</h4>' + table(["Kriteria (Design Project, bagian 8)", "Status", "Bukti"], [[a, b, c] for a, b, c in crit])
+        + f'<p><b>Hasil:</b> {I(ncr)} dari {I(len(crit))} kriteria tercapai, {I(len(crit) - ncr)} sebagian atau belum diuji.</p></div>')
 rp7 += mk('<div class="card"><h4>7.4 Saran perbaikan</h4><ul class="tight">',
           '<li>Deploy <code>streamlit_app.py</code> ke Streamlit Community Cloud dan uji dashboard ke satu pembaca awam untuk mengisi kriteria 4 dan 5.</li>',
           '<li>Buat one-sheet infografik (label Utama di rancangan).</li>',
@@ -367,12 +433,12 @@ rp7 += mk('<div class="card"><h4>7.6 Item terbuka</h4><ul class="tight">',
           '<li>Tidak ada masalah lisensi dataset (data buatan sendiri).</li></ul></div>')
 
 evq = [("1", "rp1", "Data yang didapat", OK("Didapat"), f"{I(rows.clean_rows[0])} baris produksi, {I(rows.clean_rows[1])} baris defect, {I(rows.clean_rows[2])} unit rework, {I(dirty)} baris kotor ditangani"),
-       ("2", "rp2", "Business question terjawab?", OK("14 dari 14"), "Semua terjawab (9 Utama, 4 Pendukung, 1 Tambahan); 3 dengan catatan (Q5, Q8, Q12)"),
+       ("2", "rp2", "Business question terjawab?", OK(f"{len(QT)} dari {len(QT)}"), f"Semua terjawab ({npr['Utama']} Utama, {npr['Pendukung']} Pendukung, {npr['Tambahan']} Tambahan); {nw} dengan catatan ({wtxt})"),
        ("3", "rp3", "Dataset sesuai?", PART("Sesuai + penyesuaian"), "Data buatan sesuai rancangan; defect_log lebih besar, efek Shift 2 lebih kuat dari \"sedikit\""),
        ("4", "rp4", "Tools sesuai?", PART("Sesuai + tambahan"), "Semua tools dipakai; Streamlit belum di-deploy; dashboard HTML ditambahkan"),
        ("5", "rp5", "Alur sesuai?", PART("Sesuai + penyesuaian"), "12 langkah dijalankan; deteksi lonjakan diganti ke level stasiun; dua langkah tambahan"),
        ("6", "rp6", "Output tercapai?", PART(f"{cnt('Tercapai')} penuh, {cnt('Sebagian')} sebagian"), f"{cnt('Tercapai')} dari {len(nU)} output Utama penuh; infografik tidak dibuat"),
-       ("7", "rp7", "Kesimpulan", OK("Tersedia"), "Hasil analisis, Impact, 5 kriteria sukses, saran perbaikan, rekomendasi, item terbuka")]
+       ("7", "rp7", "Kesimpulan", OK("Tersedia"), f"Hasil analisis, Impact, {len(crit)} kriteria sukses, saran perbaikan, rekomendasi, item terbuka")]
 evq_html = '<div class="scroll"><table class="evq"><tr><th>No</th><th>Pertanyaan evaluasi</th><th>Verdict</th><th>Ringkasan</th></tr>' + "".join(
     f'<tr><td><span class="en">{n}</span></td><td><a href="#{h}">{t}</a></td><td>{v}</td><td>{s}</td></tr>' for n, h, t, v, s in evq) + "</table></div>"
 H = lambda i, t, sm, body: f'\n<h2 id="rp{i}">{i}. {t}<small>{sm}</small></h2>\n{body}\n'
@@ -400,7 +466,9 @@ manual = [("seluruh CSV hasil terdokumentasi", not miss), ("fakta ditanam 5 dari
           ("crosscheck Excel semua PASS", (ce.status == "PASS").all()), ("lonjakan = 5 hari di satu stasiun", spk.is_spike.sum() == 5),
           ("jumlah rework_log = jumlah qty defect_log", rows.clean_rows[2] == par.qty.sum()), ("RTY lini = hasil kali FPY", abs(line.rty - st.fpy.prod()) < 1e-9),
           ("penjumlahan porsi kehilangan RTY = 1", abs(st.rty_loss_share.sum() - 1) < 1e-9), ("tiga model: RTY Pro < Plus < Basic", True),
-          ("scrap + OK + menunggu = unit rework", line.rework_ok + line.scrap + line.rework_open == rows.clean_rows[2])]
+          ("scrap + OK + menunggu = unit rework", line.rework_ok + line.scrap + line.rework_open == rows.clean_rows[2]),
+          ("semua uji constraint ditolak", (ctest.outcome == "ditolak").all()), ("semua pemeriksaan konsistensi 0 pelanggaran", (cons.violations == 0).all()),
+          ("jumlah pertanyaan = 14 (9 Utama, 4 Pendukung, 1 Tambahan)", len(QT) == 14 and npr == {"Utama": 9, "Pendukung": 4, "Tambahan": 1}), ("catatan hanya Q5, Q8, Q12", WARN == {5, 8, 12})]
 assert all(v for _, v in manual), [k for k, v in manual if not v]
 if bad:
     print("TOKEN TIDAK TERDAFTAR:", bad)
