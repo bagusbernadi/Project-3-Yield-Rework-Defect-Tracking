@@ -13,4 +13,11 @@ table.evq td:first-child{width:56px}
 .qa.w .qn{background:var(--amberH)}.qa .qt{font-weight:700;line-height:1.4}.qa .qm{font-size:13px;color:var(--mut);margin:2px 0}.qa p{margin:4px 0 2px}
 .qlist{font-size:13px;font-weight:700;color:var(--mut);margin-left:6px;letter-spacing:.02em}
 .report-note{font-size:14px;color:var(--mut)}
-.qchips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.qc{display:inline-block;min-width:44px;text-align:center;font-weight:800;font-size:14px;padding:4px 10px;border-radius:10px;background:var(--teal);color:#fff!important;text-decoration:none}.qc.w{background:var(--amberH)}
+.qchips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.qc{display:inline-block;min-width:44px;text-align:center;font-weight:800;font-size:14px;padding:4px 10px;border-radius:10px;background:var(--teal);color:#fff!important;text-decoration:none}.qc.w{background:var(--amberH)}a.qc:hover{filter:brightness(1.12)}
+@media (min-width:1280px){
+main{grid-template-columns:250px minmax(0,1fr)}
+main>nav{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+main>nav .tab{padding:10px 8px;font-size:15px;text-align:center;border:2px solid var(--line);border-top:6px solid var(--c)}
+main>nav .tab.on{border-color:var(--c);background:var(--c);color:#fff}
+main>nav .links{grid-column:1/-1;margin:8px 0 0 4px}
+}
