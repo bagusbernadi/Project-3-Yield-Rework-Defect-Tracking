@@ -448,11 +448,11 @@ report = mk(
     f'Hasil SQL dicek silang dengan pandas ({I(len(cx))} dari {I(len(cx))} pemeriksaan) dan dengan Excel ({I(len(ce))} dari {I(len(ce))}). Angka pada teks diaudit terhadap file di <code>project/results/</code>: @@AUDIT@@ angka diperiksa tanpa selisih. '
     'Semua angka bersumber dari data simulasi buatan sendiri dan menguji metode, bukan kondisi pabrik. Rancangan lengkap ada di tab <a href="#design">Design Project</a>.</p></div>\n',
     evq_html,
-    H(1, "Data yang berhasil didapatkan", "Isi data, tabel di database, dan data hasil analisis", rp1),
+    H(1, "Data yang berhasil didapatkan", "Isi data mentah, tabel di database, dan data hasil analisis", rp1),
     H(2, "Apakah business question terjawab?", f"{len(QT)} pertanyaan pada Design Project, dijawab dengan data", rp2),
     H(3, "Apakah dataset sesuai dengan Design Project?", "Perbandingan rancangan dengan realisasi", rp3),
-    H(4, "Apakah tools yang digunakan sesuai?", "Perbandingan rancangan dengan realisasi", rp4),
-    H(5, "Apakah alur pengerjaan sesuai dengan Design Project?", "Work Plan 12 langkah", rp5),
+    H(4, "Apakah tools yang digunakan sesuai?", "Perbandingan rancangan dengan eksekusi", rp4),
+    H(5, "Apakah alur pengerjaan sesuai dengan Design Project?", "12 langkah rancangan vs yang dijalankan", rp5),
     H(6, "Apakah project output tercapai?", "Output pada Design Project, bagian 7", rp6),
     H(7, "Kesimpulan", "Hasil analisis, Impact, success criteria, rekomendasi, saran perbaikan, dan batasan", rp7),
     '</div>\n')
