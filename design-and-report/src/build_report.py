@@ -413,18 +413,18 @@ crit = [("1. Kesembilan pertanyaan Utama terjawab dengan angka", OK("Tercapai"),
 ncr = sum(1 for c in crit if ">Tercapai<" in c[1])
 rp7 += ('<div class="card"><h4>7.3 Success criteria</h4>' + table(["Kriteria (Design Project, bagian 8)", "Status", "Bukti"], [[a, b, c] for a, b, c in crit])
         + f'<p><b>Hasil:</b> {I(ncr)} dari {I(len(crit))} kriteria tercapai, {I(len(crit) - ncr)} sebagian atau belum diuji.</p></div>')
-rp7 += mk('<div class="card"><h4>7.4 Saran perbaikan</h4><ul class="tight">',
-          '<li>Deploy <code>streamlit_app.py</code> ke Streamlit Community Cloud dan uji dashboard ke satu pembaca awam untuk mengisi kriteria 4 dan 5.</li>',
-          '<li>Buat one-sheet infografik (label Utama di rancangan).</li>',
-          '<li>Ulangi pembuatan data dengan seed lain dan parameter berbeda untuk melihat apakah deteksi lonjakan dan fakta shift tetap ditemukan.</li>',
-          '<li>Ganti asumsi menit rework dengan data pengukuran nyata bila memakai data pabrik, dan uji statistik perbedaan shift (Project 29).</li></ul></div>')
-rp7 += mk('<div class="card"><h4>7.5 Rekomendasi</h4><ul class="tight">',
+rp7 += mk('<div class="card"><h4>7.4 Rekomendasi</h4><ul class="tight">',
           f'<li>Prioritaskan {st.station[2]} dan defect {par.defect_name[0]}: stasiun ini membawa {D(st.rty_loss_share[2] * 100)}% kehilangan RTY.</li>',
           f'<li>Periksa di lapangan mengapa {gap.station} lebih buruk di Shift 2 (operator, setup, material) sebelum menyimpulkan penyebab.</li>',
           f'<li>{rdl.defect_name[0]}: recovery {P(rdl.recovery_rate[0])}, sehingga mencegah di hulu lebih efektif daripada rework; defect ini menyumbang {P(rdl.scrap[0] / line.scrap)} dari seluruh scrap.</li>',
           '<li>Pasang peringatan lonjakan per stasiun (bukan per lini) di dashboard harian, dan tampilkan input harian di samping persentase.</li>',
           '<li>Pakai satu definisi KPI (dokumen definisi) dan tampilkan FPY dan final yield berdampingan di semua laporan.</li></ul></div>')
-rp7 += mk('<div class="card"><h4>7.6 Item terbuka</h4><ul class="tight">',
+rp7 += mk('<div class="card"><h4>7.5 Saran perbaikan</h4><ul class="tight">',
+          '<li>Deploy <code>streamlit_app.py</code> ke Streamlit Community Cloud dan uji dashboard ke satu pembaca awam untuk mengisi kriteria 4 dan 5.</li>',
+          '<li>Buat one-sheet infografik (label Utama di rancangan).</li>',
+          '<li>Ulangi pembuatan data dengan seed lain dan parameter berbeda untuk melihat apakah deteksi lonjakan dan fakta shift tetap ditemukan.</li>',
+          '<li>Ganti asumsi menit rework dengan data pengukuran nyata bila memakai data pabrik, dan uji statistik perbedaan shift (Project 29).</li></ul></div>')
+rp7 += mk('<div class="card"><h4>7.6 Batasan</h4><ul class="tight">',
           '<li>Dashboard Streamlit belum di-deploy; success criteria 4 dan 5 belum terpenuhi.</li>',
           '<li>One-sheet infografik (Utama) dan slide presentasi (Opsional) tidak dibuat.</li>',
           '<li>Semua temuan berasal dari data simulasi; fakta yang ditemukan adalah fakta yang ditanam sendiri.</li>',
@@ -438,7 +438,7 @@ evq = [("1", "rp1", "Data yang didapat", OK("Didapat"), f"{I(rows.clean_rows[0])
        ("4", "rp4", "Tools sesuai?", PART("Sesuai + tambahan"), "Semua tools dipakai; Streamlit belum di-deploy; dashboard HTML ditambahkan"),
        ("5", "rp5", "Alur sesuai?", PART("Sesuai + penyesuaian"), "12 langkah dijalankan; deteksi lonjakan diganti ke level stasiun; dua langkah tambahan"),
        ("6", "rp6", "Output tercapai?", PART(f"{cnt('Tercapai')} penuh, {cnt('Sebagian')} sebagian"), f"{cnt('Tercapai')} dari {len(nU)} output Utama penuh; infografik tidak dibuat"),
-       ("7", "rp7", "Kesimpulan", OK("Tersedia"), f"Hasil analisis, Impact, {len(crit)} kriteria sukses, saran perbaikan, rekomendasi, item terbuka")]
+       ("7", "rp7", "Kesimpulan", OK("Tersedia"), f"Hasil analisis, Impact, {len(crit)} kriteria sukses, rekomendasi, saran perbaikan, batasan")]
 evq_html = '<div class="scroll"><table class="evq"><tr><th>No</th><th>Pertanyaan evaluasi</th><th>Verdict</th><th>Ringkasan</th></tr>' + "".join(
     f'<tr><td><span class="en">{n}</span></td><td><a href="#{h}">{t}</a></td><td>{v}</td><td>{s}</td></tr>' for n, h, t, v, s in evq) + "</table></div>"
 H = lambda i, t, sm, body: f'\n<h2 id="rp{i}">{i}. {t}<small>{sm}</small></h2>\n{body}\n'
@@ -449,12 +449,12 @@ report = mk(
     'Semua angka bersumber dari data simulasi buatan sendiri dan menguji metode, bukan kondisi pabrik. Rancangan lengkap ada di tab <a href="#design">Design Project</a>.</p></div>\n',
     evq_html,
     H(1, "Data yang berhasil didapatkan", "Isi data, tabel di database, dan data hasil analisis", rp1),
-    H(2, "Apakah business question terjawab?", "Dikelompokkan per grafik", rp2),
+    H(2, "Apakah business question terjawab?", f"{len(QT)} pertanyaan pada Design Project, dijawab dengan data", rp2),
     H(3, "Apakah dataset sesuai dengan Design Project?", "Perbandingan rancangan dengan realisasi", rp3),
-    H(4, "Apakah tools sesuai dengan Design Project?", "Perbandingan rancangan dengan realisasi", rp4),
-    H(5, "Apakah alur kerja sesuai dengan Design Project?", "Work Plan 12 langkah", rp5),
+    H(4, "Apakah tools yang digunakan sesuai?", "Perbandingan rancangan dengan realisasi", rp4),
+    H(5, "Apakah alur pengerjaan sesuai dengan Design Project?", "Work Plan 12 langkah", rp5),
     H(6, "Apakah project output tercapai?", "Output pada Design Project, bagian 7", rp6),
-    H(7, "Kesimpulan", "Hasil analisis, Impact, success criteria, saran perbaikan, rekomendasi, item terbuka", rp7),
+    H(7, "Kesimpulan", "Hasil analisis, Impact, success criteria, rekomendasi, saran perbaikan, dan batasan", rp7),
     '</div>\n')
 
 # ---------------------------------------------------------------- audit angka
